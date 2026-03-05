@@ -1,0 +1,781 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #09090b;
+  --bg-elevated: #18181b;
+  --bg-card: rgba(24, 24, 27, 0.6);
+  --bg-glass: rgba(255, 255, 255, 0.03);
+  --bg-glass-hover: rgba(255, 255, 255, 0.06);
+  --border: rgba(255, 255, 255, 0.06);
+  --border-hover: rgba(255, 255, 255, 0.12);
+  --text: #fafafa;
+  --text-secondary: #a1a1aa;
+  --text-muted: #52525b;
+  --accent: #a78bfa;
+  --accent-2: #818cf8;
+  --green: #4ade80;
+  --green-bg: rgba(74, 222, 128, 0.1);
+  --red: #f87171;
+  --red-bg: rgba(248, 113, 113, 0.1);
+  --blue: #60a5fa;
+  --amber: #fbbf24;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --mono: 'JetBrains Mono', monospace;
+  --radius: 16px;
+  --radius-sm: 12px;
+  --radius-xs: 8px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ─── TICKER ─── */
+.ticker-bar {
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+  white-space: nowrap;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  backdrop-filter: blur(12px);
+}
+
+.ticker-track {
+  display: flex;
+  gap: 28px;
+  animation: scroll 50s linear infinite;
+  padding: 0 16px;
+}
+
+.ticker-item {
+  font-family: var(--mono);
+  font-size: 12px;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-shrink: 0;
+  letter-spacing: -0.02em;
+}
+
+.ticker-item .label {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.ticker-item .value {
+  color: var(--text-secondary);
+  font-weight: 600;
+}
+
+.ticker-item .change.positive {
+  color: var(--green);
+}
+
+.ticker-item .change.negative {
+  color: var(--red);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ─── HEADER ─── */
+.site-header {
+  padding: 32px 0 24px;
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.logo-icon {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 800;
+  color: #fff;
+}
+
+.logo h1 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+}
+
+.logo h1 span {
+  color: var(--accent);
+}
+
+.header-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.report-date {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--text-muted);
+  background: var(--bg-glass);
+  padding: 6px 12px;
+  border-radius: var(--radius-xs);
+  border: 1px solid var(--border);
+}
+
+.lang-toggle {
+  display: flex;
+  border-radius: var(--radius-xs);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.lang-toggle button {
+  background: transparent;
+  color: var(--text-muted);
+  border: none;
+  padding: 5px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  font-family: var(--font);
+  font-weight: 500;
+  transition: all 0.2s;
+}
+
+.lang-toggle button.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.market-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.status-dot.open {
+  background: var(--green);
+  box-shadow: 0 0 8px var(--green);
+}
+
+.status-dot.closed {
+  background: var(--red);
+}
+
+/* ─── LAYOUT ─── */
+.main-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+.section {
+  margin-bottom: 48px;
+}
+
+.section-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.section-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.section-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* ─── BENTO MARKET GRID ─── */
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.market-card {
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+.market-card:hover {
+  background: var(--bg-glass-hover);
+  border-color: var(--border-hover);
+}
+
+.market-card .card-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+
+.market-card .card-value {
+  font-family: var(--mono);
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: var(--text);
+}
+
+.market-card .card-change {
+  font-family: var(--mono);
+  font-size: 13px;
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+.positive-text {
+  color: var(--green) !important;
+}
+
+.negative-text {
+  color: var(--red) !important;
+}
+
+/* ─── MACRO CARD ─── */
+.macro-content {
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.macro-content p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.factor-list {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.factor-item {
+  padding: 14px 0;
+  border-top: 1px solid var(--border);
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.factor-badge {
+  font-size: 10px;
+  padding: 3px 10px;
+  border-radius: 100px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  flex-shrink: 0;
+}
+
+.factor-badge.positive {
+  background: var(--green-bg);
+  color: var(--green);
+}
+
+.factor-badge.negative {
+  background: var(--red-bg);
+  color: var(--red);
+}
+
+.factor-badge.neutral {
+  background: rgba(96, 165, 250, 0.1);
+  color: var(--blue);
+}
+
+.factor-badge.mixed {
+  background: rgba(251, 191, 36, 0.1);
+  color: var(--amber);
+}
+
+/* ─── RISK METER ─── */
+.risk-meter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px 0;
+}
+
+.risk-bar {
+  flex: 1;
+  height: 4px;
+  background: var(--bg-elevated);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.risk-fill {
+  height: 100%;
+  border-radius: 2px;
+  transition: width 1s cubic-bezier(.4, 0, .2, 1);
+}
+
+.risk-fill.low {
+  width: 25%;
+  background: var(--green);
+}
+
+.risk-fill.moderate {
+  width: 50%;
+  background: var(--amber);
+}
+
+.risk-fill.elevated {
+  width: 75%;
+  background: var(--amber);
+}
+
+.risk-fill.high {
+  width: 100%;
+  background: var(--red);
+}
+
+.risk-label {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: var(--mono);
+  min-width: 80px;
+  text-align: right;
+}
+
+/* ─── SECTOR HEATMAP ─── */
+.heatmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 6px;
+}
+
+.heatmap-cell {
+  padding: 14px 10px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+  transition: transform 0.15s ease;
+  cursor: default;
+}
+
+.heatmap-cell:hover {
+  transform: scale(1.04);
+}
+
+.heatmap-cell .sector-name {
+  font-size: 11px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 4px;
+}
+
+.heatmap-cell .sector-change {
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* ─── STOCK PICKS ─── */
+.picks-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 16px;
+}
+
+.pick-card {
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.pick-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 0 40px rgba(167, 139, 250, 0.08);
+}
+
+.pick-header {
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.pick-stock-info h3 {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.pick-stock-info h3 .stock-code {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-weight: 600;
+}
+
+.pick-sector {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}
+
+.pick-score {
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.pick-body {
+  padding: 20px 24px;
+}
+
+.price-levels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.price-level {
+  text-align: center;
+  padding: 12px 8px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-elevated);
+}
+
+.price-level .level-label {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 500;
+}
+
+.price-level .level-value {
+  font-family: var(--mono);
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.price-level.entry .level-value {
+  color: var(--blue);
+}
+
+.price-level.target .level-value {
+  color: var(--green);
+}
+
+.price-level.stop .level-value {
+  color: var(--red);
+}
+
+.rr-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 100px;
+  margin-bottom: 14px;
+  font-weight: 600;
+}
+
+.rr-badge.good {
+  background: var(--green-bg);
+  color: var(--green);
+}
+
+.rr-badge.moderate {
+  background: rgba(251, 191, 36, 0.1);
+  color: var(--amber);
+}
+
+.rr-badge.poor {
+  background: var(--red-bg);
+  color: var(--red);
+}
+
+.rationale {
+  font-size: 13px;
+  color: var(--text-secondary);
+  line-height: 1.8;
+}
+
+.rationale strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.rationale p {
+  margin-bottom: 6px;
+}
+
+.fundamentals-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.fund-item {
+  font-family: var(--mono);
+  font-size: 12px;
+}
+
+.fund-item .fund-label {
+  color: var(--text-muted);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.fund-item .fund-value {
+  color: var(--accent);
+  font-weight: 700;
+}
+
+/* ─── METHOD ─── */
+.method-content {
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.method-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.method-tag {
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 4px 12px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+/* ─── AD ─── */
+.ad-slot {
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.ad-slot .ad-label {
+  font-size: 9px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 8px;
+}
+
+/* ─── DISCLAIMER ─── */
+.disclaimer {
+  background: var(--bg-glass);
+  border: 1px solid rgba(248, 113, 113, 0.15);
+  border-radius: var(--radius);
+  padding: 24px;
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.8;
+}
+
+.disclaimer h3 {
+  color: var(--red);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* ─── FOOTER ─── */
+.site-footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 24px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 16px;
+}
+
+.footer-links a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 13px;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+.footer-copy {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* ─── LOADING ─── */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  gap: 20px;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-text {
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 900px) {
+  .market-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .market-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .picks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-content {
+    padding: 24px 16px;
+  }
+
+  .section {
+    margin-bottom: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .market-card .card-value {
+    font-size: 18px;
+  }
+
+  .heatmap-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

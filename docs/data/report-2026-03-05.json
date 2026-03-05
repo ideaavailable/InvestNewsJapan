@@ -1,0 +1,556 @@
+{
+  "report_date": "2026-03-05",
+  "generated_at": "2026-03-05T10:41:29.661644+09:00",
+  "market_summary": {
+    "nikkei225": {
+      "close": 56360.25,
+      "change": 81.2,
+      "change_pct": 0.14
+    },
+    "topix": {
+      "close": 3950.0,
+      "change": -9.0,
+      "change_pct": -0.23
+    },
+    "mothers": {
+      "close": 598.1,
+      "change": 15.1,
+      "change_pct": 2.59
+    },
+    "sp500": {
+      "close": 6869.5,
+      "change": 52.87,
+      "change_pct": 0.78
+    },
+    "nasdaq": {
+      "close": 22807.48,
+      "change": 290.79,
+      "change_pct": 1.29
+    },
+    "dow": {
+      "close": 48739.41,
+      "change": 238.14,
+      "change_pct": 0.49
+    },
+    "vix": {
+      "close": 21.15,
+      "change": -2.42,
+      "change_pct": -10.27
+    },
+    "usdjpy": {
+      "close": 156.64,
+      "change": -1.13,
+      "change_pct": -0.72
+    },
+    "eurjpy": {
+      "close": 182.26,
+      "change": -0.95,
+      "change_pct": -0.52
+    },
+    "crude_oil": {
+      "close": 76.59,
+      "change": 2.03,
+      "change_pct": 2.72
+    },
+    "gold": {
+      "close": 5185.0,
+      "change": 77.6,
+      "change_pct": 1.52
+    },
+    "cme_nikkei": {
+      "close": 56275.0,
+      "change": 935.0,
+      "change_pct": 1.69
+    }
+  },
+  "macro_outlook": {
+    "summary": "マクロ環境に懸念材料あり。慎重なポジション管理を推奨。",
+    "key_factors": [
+      {
+        "factor": "米国市場",
+        "impact": "neutral",
+        "detail": "S&P500は+0.78%と小動き。"
+      },
+      {
+        "factor": "為替",
+        "impact": "mixed",
+        "detail": "USD/JPY 156.64円。円安は輸出企業にプラスだが、過度な円安は警戒感も。"
+      },
+      {
+        "factor": "VIX",
+        "impact": "negative",
+        "detail": "VIX 21.1とやや高水準。リスク管理を慎重に。"
+      }
+    ],
+    "risk_level": "elevated",
+    "market_forecast": {
+      "direction": "neutral",
+      "confidence": "moderate"
+    },
+    "sector_implications": {}
+  },
+  "sentiment": {
+    "news_sentiment": {
+      "score": 0.0,
+      "label": "中立",
+      "positive_count": 0,
+      "negative_count": 0,
+      "neutral_count": 1
+    },
+    "vix_sentiment": -0.1,
+    "combined_score": -0.04,
+    "overall": "中立"
+  },
+  "market_forecast": {
+    "direction": "neutral",
+    "confidence": "moderate"
+  },
+  "sector_analysis": {
+    "heatmap": {
+      "電気機器": 3.17,
+      "半導体": 4.9,
+      "機械": 3.57,
+      "輸送用機器": 1.98,
+      "ゴム": 1.46,
+      "銀行": 6.3,
+      "証券": 4.28,
+      "保険": 4.65,
+      "その他金融": 3.9,
+      "卸売": 5.17,
+      "医薬品": 2.02,
+      "情報通信": 2.17,
+      "サービス": 1.82,
+      "小売": 0.87,
+      "食料品": 1.12,
+      "化学": 3.15,
+      "鉄鋼": 2.45,
+      "非鉄金属": 4.87,
+      "不動産": 3.67,
+      "陸運": 0.75,
+      "海運": 2.63,
+      "空運": 1.17,
+      "建設": 3.52,
+      "その他製品": -0.25,
+      "石油石炭": 4.43,
+      "鉱業": 6.22,
+      "電気ガス": 4.48,
+      "精密機器": 3.2
+    },
+    "focus_sectors": [
+      {
+        "sector": "銀行",
+        "change_pct": 6.3,
+        "direction": "上昇",
+        "reason": "セクター全体が上昇傾向（平均+6.30%）",
+        "notable_stocks": [
+          {
+            "code": "8411",
+            "name": "みずほフィナンシャル",
+            "change": 8.5784
+          },
+          {
+            "code": "8308",
+            "name": "りそなホールディングス",
+            "change": 7.6534
+          },
+          {
+            "code": "7182",
+            "name": "ゆうちょ銀行",
+            "change": 5.3945
+          }
+        ]
+      },
+      {
+        "sector": "鉱業",
+        "change_pct": 6.22,
+        "direction": "上昇",
+        "reason": "セクター全体が上昇傾向（平均+6.22%）",
+        "notable_stocks": [
+          {
+            "code": "1605",
+            "name": "INPEX",
+            "change": 6.2242
+          }
+        ]
+      },
+      {
+        "sector": "卸売",
+        "change_pct": 5.17,
+        "direction": "上昇",
+        "reason": "セクター全体が上昇傾向（平均+5.17%）",
+        "notable_stocks": [
+          {
+            "code": "8031",
+            "name": "三井物産",
+            "change": 8.0877
+          },
+          {
+            "code": "8015",
+            "name": "豊田通商",
+            "change": 5.3037
+          },
+          {
+            "code": "8058",
+            "name": "三菱商事",
+            "change": 4.7648
+          }
+        ]
+      },
+      {
+        "sector": "半導体",
+        "change_pct": 4.9,
+        "direction": "上昇",
+        "reason": "セクター全体が上昇傾向（平均+4.90%）",
+        "notable_stocks": [
+          {
+            "code": "6857",
+            "name": "アドバンテスト",
+            "change": 6.8163
+          },
+          {
+            "code": "8035",
+            "name": "東京エレクトロン",
+            "change": 5.505
+          },
+          {
+            "code": "6146",
+            "name": "ディスコ",
+            "change": 5.4814
+          }
+        ]
+      },
+      {
+        "sector": "非鉄金属",
+        "change_pct": 4.87,
+        "direction": "上昇",
+        "reason": "セクター全体が上昇傾向（平均+4.87%）",
+        "notable_stocks": [
+          {
+            "code": "5803",
+            "name": "フジクラ",
+            "change": 7.2906
+          },
+          {
+            "code": "5713",
+            "name": "住友金属鉱山",
+            "change": 3.959
+          },
+          {
+            "code": "5802",
+            "name": "住友電気工業",
+            "change": 3.3685
+          }
+        ]
+      }
+    ]
+  },
+  "daytrade_picks": [
+    {
+      "code": "4568",
+      "name": "第一三共",
+      "sector": "医薬品",
+      "score": 55,
+      "score_breakdown": {
+        "trend_clarity": 20,
+        "volume_surge": 0,
+        "technical_signals": 10,
+        "volatility": 15,
+        "catalyst": 0,
+        "risk_reward": 10
+      },
+      "entry_point": 2840.5,
+      "target": 3082.4,
+      "stop_loss": 2774.7,
+      "risk_reward_ratio": 3.68,
+      "rationale": {
+        "technical": "RSI 37",
+        "catalyst": "",
+        "volume_analysis": "直近出来高: 2,999,100株（0.4倍）"
+      },
+      "current_price": 2840.5,
+      "atr": 81.29
+    },
+    {
+      "code": "6971",
+      "name": "京セラ",
+      "sector": "電気機器",
+      "score": 52,
+      "score_breakdown": {
+        "trend_clarity": 20,
+        "volume_surge": 0,
+        "technical_signals": 13,
+        "volatility": 15,
+        "catalyst": 0,
+        "risk_reward": 4
+      },
+      "entry_point": 2654.0,
+      "target": 2822.6,
+      "stop_loss": 2497.3,
+      "risk_reward_ratio": 1.08,
+      "rationale": {
+        "technical": "一目均衡表の雲上、パラボリックSAR買いシグナル、強い上昇トレンド（MA完全順配列）、RSI 56",
+        "catalyst": "",
+        "volume_analysis": "直近出来高: 1,665,800株（0.3倍）"
+      },
+      "current_price": 2654.0,
+      "atr": 75.98
+    },
+    {
+      "code": "8725",
+      "name": "MS&ADインシュアランス",
+      "sector": "保険",
+      "score": 52,
+      "score_breakdown": {
+        "trend_clarity": 20,
+        "volume_surge": 0,
+        "technical_signals": 13,
+        "volatility": 15,
+        "catalyst": 0,
+        "risk_reward": 4
+      },
+      "entry_point": 4185.0,
+      "target": 4402.3,
+      "stop_loss": 3966.1,
+      "risk_reward_ratio": 0.99,
+      "rationale": {
+        "technical": "一目均衡表の雲上、パラボリックSAR買いシグナル、強い上昇トレンド（MA完全順配列）、RSI 52",
+        "catalyst": "",
+        "volume_analysis": "直近出来高: 1,284,900株（0.3倍）"
+      },
+      "current_price": 4185.0,
+      "atr": 111.14
+    },
+    {
+      "code": "6305",
+      "name": "日立建機",
+      "sector": "機械",
+      "score": 51,
+      "score_breakdown": {
+        "trend_clarity": 20,
+        "volume_surge": 0,
+        "technical_signals": 11,
+        "volatility": 10,
+        "catalyst": 0,
+        "risk_reward": 10
+      },
+      "entry_point": 6229.0,
+      "target": 7153.6,
+      "stop_loss": 5686.2,
+      "risk_reward_ratio": 1.7,
+      "rationale": {
+        "technical": "パラボリックSAR買いシグナル、強い上昇トレンド（MA完全順配列）、RSI 51",
+        "catalyst": "",
+        "volume_analysis": "直近出来高: 248,100株（0.2倍）"
+      },
+      "current_price": 6229.0,
+      "atr": 247.66
+    },
+    {
+      "code": "7182",
+      "name": "ゆうちょ銀行",
+      "sector": "銀行",
+      "score": 51,
+      "score_breakdown": {
+        "trend_clarity": 18,
+        "volume_surge": 0,
+        "technical_signals": 13,
+        "volatility": 10,
+        "catalyst": 0,
+        "risk_reward": 10
+      },
+      "entry_point": 2872.0,
+      "target": 3183.0,
+      "stop_loss": 2706.1,
+      "risk_reward_ratio": 1.87,
+      "rationale": {
+        "technical": "一目均衡表の雲上、パラボリックSAR買いシグナル、RSI 51",
+        "catalyst": "",
+        "volume_analysis": "直近出来高: 3,031,500株（0.3倍）"
+      },
+      "current_price": 2872.0,
+      "atr": 104.44
+    }
+  ],
+  "swing_picks": [
+    {
+      "code": "8725",
+      "name": "MS&ADインシュアランス",
+      "sector": "保険",
+      "score": 70,
+      "score_breakdown": {
+        "medium_term_trend": 20,
+        "technical_signals": 9,
+        "valuation": 13,
+        "fundamentals": 13,
+        "sector_momentum": 5,
+        "sentiment": 5,
+        "risk_reward": 5
+      },
+      "holding_period": "5〜10営業日",
+      "entry_point": 4185.0,
+      "target": 4457.9,
+      "stop_loss": 3910.6,
+      "risk_reward_ratio": 0.99,
+      "rationale": {
+        "technical": "一目均衡表の雲上で推移、中期上昇トレンド",
+        "fundamental": "PER 8.7倍、PBR 1.34倍、ROE 16.3%、配当利回り298.0%",
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 8.687266,
+        "pbr": 1.341268,
+        "roe": 16.31,
+        "dividend_yield": 298.0
+      },
+      "current_price": 4185.0
+    },
+    {
+      "code": "8766",
+      "name": "東京海上ホールディングス",
+      "sector": "保険",
+      "score": 67,
+      "score_breakdown": {
+        "medium_term_trend": 20,
+        "technical_signals": 9,
+        "valuation": 11,
+        "fundamentals": 15,
+        "sector_momentum": 5,
+        "sentiment": 5,
+        "risk_reward": 2
+      },
+      "holding_period": "5〜10営業日",
+      "entry_point": 6282.0,
+      "target": 6703.6,
+      "stop_loss": 5727.7,
+      "risk_reward_ratio": 0.76,
+      "rationale": {
+        "technical": "一目均衡表の雲上で推移、中期上昇トレンド",
+        "fundamental": "PER 11.4倍、PBR 2.24倍、ROE 20.7%、配当利回り350.0%",
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 11.423895,
+        "pbr": 2.2436123,
+        "roe": 20.66,
+        "dividend_yield": 350.0
+      },
+      "current_price": 6282.0
+    },
+    {
+      "code": "6301",
+      "name": "コマツ",
+      "sector": "機械",
+      "score": 65,
+      "score_breakdown": {
+        "medium_term_trend": 20,
+        "technical_signals": 9,
+        "valuation": 11,
+        "fundamentals": 10,
+        "sector_momentum": 5,
+        "sentiment": 5,
+        "risk_reward": 5
+      },
+      "holding_period": "5〜10営業日",
+      "entry_point": 7280.0,
+      "target": 8024.7,
+      "stop_loss": 6642.5,
+      "risk_reward_ratio": 1.17,
+      "rationale": {
+        "technical": "一目均衡表の雲上で推移、中期上昇トレンド",
+        "fundamental": "PER 16.2倍、PBR 1.96倍、ROE 12.5%、配当利回り270.0%",
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 16.217178,
+        "pbr": 1.9602216,
+        "roe": 12.52,
+        "dividend_yield": 270.0
+      },
+      "current_price": 7280.0
+    },
+    {
+      "code": "8750",
+      "name": "第一生命ホールディングス",
+      "sector": "保険",
+      "score": 64,
+      "score_breakdown": {
+        "medium_term_trend": 20,
+        "technical_signals": 9,
+        "valuation": 11,
+        "fundamentals": 12,
+        "sector_momentum": 5,
+        "sentiment": 5,
+        "risk_reward": 2
+      },
+      "holding_period": "5〜10営業日",
+      "entry_point": 1536.0,
+      "target": 1647.8,
+      "stop_loss": 1349.5,
+      "risk_reward_ratio": 0.6,
+      "rationale": {
+        "technical": "一目均衡表の雲上で推移、中期上昇トレンド",
+        "fundamental": "PER 13.9倍、PBR 1.37倍、ROE 11.2%、配当利回り385.0%",
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 13.90923,
+        "pbr": 1.3687333,
+        "roe": 11.2,
+        "dividend_yield": 385.0
+      },
+      "current_price": 1536.0
+    },
+    {
+      "code": "8697",
+      "name": "日本取引所グループ",
+      "sector": "その他金融",
+      "score": 64,
+      "score_breakdown": {
+        "medium_term_trend": 20,
+        "technical_signals": 12,
+        "valuation": 5,
+        "fundamentals": 15,
+        "sector_momentum": 5,
+        "sentiment": 5,
+        "risk_reward": 2
+      },
+      "holding_period": "5〜10営業日",
+      "entry_point": 2058.5,
+      "target": 2193.7,
+      "stop_loss": 1540.9,
+      "risk_reward_ratio": 0.26,
+      "rationale": {
+        "technical": "一目均衡表の雲上で推移、中期上昇トレンド、MACDヒストグラムプラス",
+        "fundamental": "PER 33.7倍、PBR 6.60倍、ROE 21.3%、配当利回り253.0%",
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 33.72093,
+        "pbr": 6.6044183,
+        "roe": 21.27,
+        "dividend_yield": 253.0
+      },
+      "current_price": 2058.5
+    }
+  ],
+  "methodology": {
+    "technical_indicators": [
+      "SMA (5/25/75/200日)",
+      "EMA (5/25/75日)",
+      "MACD (12,26,9)",
+      "RSI (14日)",
+      "ADX (14日)",
+      "ストキャスティクス (%K14, %D3)",
+      "CCI (20日)",
+      "Williams %R (14日)",
+      "一目均衡表 (9,26,52)",
+      "パラボリックSAR",
+      "OBV",
+      "ATR (14日)"
+    ],
+    "screening_process": "全上場銘柄 → 流動性フィルタ（出来高・時価総額）→ テクニカルスクリーニング → ファンダメンタルズ評価 → 多因子スコアリング → 上位銘柄選出",
+    "scoring_model": "テクニカル・ファンダメンタルズ・センチメント・リスクリワードの多軸評価",
+    "data_source": "Yahoo Finance (yfinance)"
+  },
+  "disclaimer": "当サイトは投資助言・投資勧誘を目的としたものではありません。掲載情報は「情報提供」を目的としており、特定の有価証券の売買を推奨するものではありません。投資に関する最終判断はご自身の責任で行ってください。過去のパフォーマンスは将来の成果を保証するものではありません。"
+}

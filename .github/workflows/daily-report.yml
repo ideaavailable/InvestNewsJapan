@@ -1,0 +1,45 @@
+name: Daily Report Generation
+
+on:
+  schedule:
+    # 毎週月〜金 06:00 JST = 21:00 UTC (前日)
+    - cron: '0 21 * * 0-4'
+  workflow_dispatch:  # 手動実行ボタンも有効
+
+permissions:
+  contents: write
+
+jobs:
+  generate-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate daily report
+        run: python backend/main.py --force
+        env:
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+
+      - name: Commit and push report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/data/
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "📊 Daily report $(TZ=Asia/Tokyo date +%Y-%m-%d)"
+            git push
+          fi
