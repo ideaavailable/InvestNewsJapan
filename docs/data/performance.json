@@ -1,0 +1,81 @@
+{
+  "initial_capital": 10000000,
+  "current_capital": 10057156.22,
+  "total_trades": 5,
+  "wins": 4,
+  "losses": 1,
+  "total_profit": 62572.043999999994,
+  "total_loss": 5415.8240000000005,
+  "max_drawdown": 0,
+  "peak_capital": 10057156.22,
+  "daily_results": [
+    {
+      "date": "2026-03-05",
+      "eval_date": "2026-03-06",
+      "trades": [
+        {
+          "code": "4568",
+          "name": "第一三共",
+          "entry": 2810.0,
+          "target": 3082.4,
+          "stop": 2774.7,
+          "exit": 2825.5,
+          "result": "win",
+          "shares": 711,
+          "pnl": 9023,
+          "pnl_pct": 0.45
+        },
+        {
+          "code": "6971",
+          "name": "京セラ",
+          "entry": 2603.0,
+          "target": 2822.6,
+          "stop": 2497.3,
+          "exit": 2631.5,
+          "result": "win",
+          "shares": 768,
+          "pnl": 19889,
+          "pnl_pct": 0.99
+        },
+        {
+          "code": "8725",
+          "name": "MS&ADインシュアランス",
+          "entry": 4098.0,
+          "target": 4402.3,
+          "stop": 3966.1,
+          "exit": 4091.0,
+          "result": "loss",
+          "shares": 488,
+          "pnl": -5416,
+          "pnl_pct": -0.27
+        },
+        {
+          "code": "6305",
+          "name": "日立建機",
+          "entry": 5994.0,
+          "target": 7153.6,
+          "stop": 5686.2,
+          "exit": 6026.0,
+          "result": "win",
+          "shares": 333,
+          "pnl": 8660,
+          "pnl_pct": 0.43
+        },
+        {
+          "code": "7182",
+          "name": "ゆうちょ銀行",
+          "entry": 2777.0,
+          "target": 3183.0,
+          "stop": 2706.1,
+          "exit": 2814.5,
+          "result": "win",
+          "shares": 720,
+          "pnl": 25001,
+          "pnl_pct": 1.25
+        }
+      ],
+      "day_pnl": 57156,
+      "capital_after": 10057156
+    }
+  ]
+}

@@ -27,12 +27,12 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Generate daily report
+      - name: Generate daily report & evaluate performance
         run: python backend/main.py --force
         env:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
 
-      - name: Commit and push report
+      - name: Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

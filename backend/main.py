@@ -75,7 +75,7 @@ def main(force=False):
     sector_data = build_sector_analysis(tech_results, STOCK_UNIVERSE)
 
     # Step 7: Select picks & generate report
-    logger.info("[7/7] Selecting picks and generating report...")
+    logger.info("[7/8] Selecting picks and generating report...")
     daytrade_picks = select_daytrade_picks(tech_results, fund_results, sentiment_score)
     swing_picks = select_swing_picks(tech_results, fund_results, sentiment_score)
     logger.info(f"  Daytrade picks: {len(daytrade_picks)}, Swing picks: {len(swing_picks)}")
@@ -92,6 +92,22 @@ def main(force=False):
     )
     filepath = save_report(report, today)
     logger.info(f"=== Report generated: {filepath} ===")
+
+    # Step 8: Evaluate previous day's performance
+    logger.info("[8/8] Evaluating previous day's performance...")
+    try:
+        from backend.performance_tracker import evaluate_previous_day, get_summary_stats
+        perf = evaluate_previous_day(today)
+        if perf:
+            stats = get_summary_stats(perf)
+            logger.info(
+                f"  Performance: ¥{stats['current_capital']:,} "
+                f"(P&L: ¥{stats['cumulative_pnl']:+,}, "
+                f"Win: {stats['win_rate']}%, PF: {stats['profit_factor']})"
+            )
+    except Exception as e:
+        logger.warning(f"  Performance evaluation skipped: {e}")
+
     return filepath
 
 
