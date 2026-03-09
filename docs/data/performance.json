@@ -1,13 +1,13 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 10057156.22,
-  "total_trades": 5,
-  "wins": 4,
-  "losses": 1,
-  "total_profit": 62572.043999999994,
+  "current_capital": 10357600.278,
+  "total_trades": 10,
+  "wins": 7,
+  "losses": 3,
+  "total_profit": 258803.414,
   "total_loss": 5415.8240000000005,
   "max_drawdown": 0,
-  "peak_capital": 10057156.22,
+  "peak_capital": 10357600.278,
   "daily_results": [
     {
       "date": "2026-03-05",
@@ -83,6 +83,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 10057156
+    },
+    {
+      "date": "2026-03-09",
+      "eval_date": "2026-03-10",
+      "trades": [
+        {
+          "code": "3382",
+          "name": "セブン&アイ",
+          "entry": 1982.5,
+          "target": 2378.1,
+          "stop": 1972.5,
+          "exit": 2065.0,
+          "result": "win",
+          "shares": 1014,
+          "pnl": 81645,
+          "pnl_pct": 4.06
+        },
+        {
+          "code": "6971",
+          "name": "京セラ",
+          "entry": 2504.0,
+          "target": 2822.5,
+          "stop": 2517.2,
+          "exit": 2517.2,
+          "result": "loss",
+          "shares": 803,
+          "pnl": 8589,
+          "pnl_pct": 0.43
+        },
+        {
+          "code": "4568",
+          "name": "第一三共",
+          "entry": 2771.0,
+          "target": 3082.8,
+          "stop": 2762.4,
+          "exit": 2849.0,
+          "result": "win",
+          "shares": 725,
+          "pnl": 54541,
+          "pnl_pct": 2.71
+        },
+        {
+          "code": "6504",
+          "name": "富士電機",
+          "entry": 10200.0,
+          "target": 14066.0,
+          "stop": 10028.3,
+          "exit": 10515.0,
+          "result": "win",
+          "shares": 197,
+          "pnl": 60046,
+          "pnl_pct": 2.99
+        },
+        {
+          "code": "9201",
+          "name": "日本航空",
+          "entry": 2550.0,
+          "target": 3263.9,
+          "stop": 2673.9,
+          "exit": 2673.9,
+          "result": "loss",
+          "shares": 788,
+          "pnl": 95624,
+          "pnl_pct": 4.76
+        }
+      ],
+      "day_pnl": 300444,
+      "capital_after": 10357600
     }
   ]
 }
