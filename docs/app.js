@@ -79,23 +79,26 @@ function setLang(lang) {
 
 // === Data Loading ===
 async function loadReport() {
-  const today = new Date();
-  for (let i = 0; i < 7; i++) {
-    const d = new Date(today);
-    d.setDate(d.getDate() - i);
-    const dateStr = d.toISOString().split("T")[0];
-    try {
-      const resp = await fetch(`data/report-${dateStr}.json`);
-      if (resp.ok) {
-        const data = await resp.json();
-        window._reportData = data;
-        document.getElementById("loadingState").style.display = "none";
-        document.getElementById("reportContent").style.display = "block";
-        renderReport(data);
-        return;
+  // index.json から利用可能な日付リストを取得（タイムゾーン非依存）
+  try {
+    const indexResp = await fetch(`data/index.json?t=${Date.now()}`);
+    if (indexResp.ok) {
+      const dates = await indexResp.json();
+      for (const dateStr of dates) {
+        try {
+          const resp = await fetch(`data/report-${dateStr}.json?t=${Date.now()}`);
+          if (resp.ok) {
+            const data = await resp.json();
+            window._reportData = data;
+            document.getElementById("loadingState").style.display = "none";
+            document.getElementById("reportContent").style.display = "block";
+            renderReport(data);
+            return;
+          }
+        } catch (e) { /* try next date */ }
       }
-    } catch (e) { /* try next date */ }
-  }
+    }
+  } catch (e) { /* index.json fetch failed */ }
   document.getElementById("loadingState").innerHTML =
     `<div style="text-align:center;color:var(--text-secondary);padding:60px 20px;">
       <div style="font-size:48px;margin-bottom:16px;">📊</div>
@@ -341,7 +344,7 @@ function renderDisclaimer(text) {
 // === Performance ===
 async function loadPerformance() {
   try {
-    const resp = await fetch("data/performance.json");
+    const resp = await fetch(`data/performance.json?t=${Date.now()}`);
     if (!resp.ok) return;
     const data = await resp.json();
     renderPerformance(data);
