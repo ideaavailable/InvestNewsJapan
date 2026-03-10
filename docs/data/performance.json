@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 10357600.278,
-  "total_trades": 10,
-  "wins": 7,
-  "losses": 3,
-  "total_profit": 258803.414,
-  "total_loss": 5415.8240000000005,
-  "max_drawdown": 0,
+  "current_capital": 10316250.4265,
+  "total_trades": 15,
+  "wins": 9,
+  "losses": 6,
+  "total_profit": 283481.3685,
+  "total_loss": 71443.63,
+  "max_drawdown": 41349.851500000805,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -151,6 +151,74 @@
       ],
       "day_pnl": 300444,
       "capital_after": 10357600
+    },
+    {
+      "date": "2026-03-10",
+      "eval_date": "2026-03-11",
+      "trades": [
+        {
+          "code": "4568",
+          "name": "第一三共",
+          "entry": 2899.0,
+          "target": 3083.6,
+          "stop": 2743.5,
+          "exit": 2846.0,
+          "result": "loss",
+          "shares": 714,
+          "pnl": -39912,
+          "pnl_pct": -1.93
+        },
+        {
+          "code": "8725",
+          "name": "MS&ADインシュアランス",
+          "entry": 4095.0,
+          "target": 4403.9,
+          "stop": 3922.1,
+          "exit": 4089.0,
+          "result": "loss",
+          "shares": 505,
+          "pnl": -5098,
+          "pnl_pct": -0.25
+        },
+        {
+          "code": "9202",
+          "name": "ANAホールディングス",
+          "entry": 3005.0,
+          "target": 3429.8,
+          "stop": 2925.8,
+          "exit": 2977.5,
+          "result": "loss",
+          "shares": 689,
+          "pnl": -21018,
+          "pnl_pct": -1.02
+        },
+        {
+          "code": "5020",
+          "name": "ENEOSホールディングス",
+          "entry": 1351.5,
+          "target": 1548.6,
+          "stop": 1295.5,
+          "exit": 1360.5,
+          "result": "win",
+          "shares": 1532,
+          "pnl": 11718,
+          "pnl_pct": 0.57
+        },
+        {
+          "code": "6752",
+          "name": "パナソニック",
+          "entry": 2478.5,
+          "target": 2631.7,
+          "stop": 2265.6,
+          "exit": 2496.5,
+          "result": "win",
+          "shares": 835,
+          "pnl": 12960,
+          "pnl_pct": 0.63
+        }
+      ],
+      "day_pnl": -41350,
+      "capital_after": 10316250
     }
   ]
 }
