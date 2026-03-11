@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 10316250.4265,
-  "total_trades": 15,
-  "wins": 9,
-  "losses": 6,
-  "total_profit": 283481.3685,
-  "total_loss": 71443.63,
-  "max_drawdown": 41349.851500000805,
+  "current_capital": 10297521.816318847,
+  "total_trades": 20,
+  "wins": 12,
+  "losses": 8,
+  "total_profit": 306944.0975,
+  "total_loss": 113634.96918115235,
+  "max_drawdown": 60078.461681153625,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -219,6 +219,74 @@
       ],
       "day_pnl": -41350,
       "capital_after": 10316250
+    },
+    {
+      "date": "2026-03-11",
+      "eval_date": "2026-03-12",
+      "trades": [
+        {
+          "code": "6301",
+          "name": "コマツ",
+          "entry": 7276.0,
+          "target": 7914.6,
+          "stop": 6630.5,
+          "exit": 7300.0,
+          "result": "win",
+          "shares": 283,
+          "pnl": 4733,
+          "pnl_pct": 0.23
+        },
+        {
+          "code": "8015",
+          "name": "豊田通商",
+          "entry": 6511.0,
+          "target": 7273.3,
+          "stop": 5872.4,
+          "exit": 6542.0,
+          "result": "win",
+          "shares": 316,
+          "pnl": 7739,
+          "pnl_pct": 0.38
+        },
+        {
+          "code": "9202",
+          "name": "ANAホールディングス",
+          "entry": 3001.0,
+          "target": 3429.3,
+          "stop": 2904.7,
+          "exit": 3020.0,
+          "result": "win",
+          "shares": 687,
+          "pnl": 10991,
+          "pnl_pct": 0.53
+        },
+        {
+          "code": "8725",
+          "name": "MS&ADインシュアランス",
+          "entry": 4131.0,
+          "target": 4403.7,
+          "stop": 3922.5,
+          "exit": 4094.0,
+          "result": "loss",
+          "shares": 499,
+          "pnl": -20524,
+          "pnl_pct": -1.0
+        },
+        {
+          "code": "4188",
+          "name": "三菱ケミカルG",
+          "entry": 978.4,
+          "target": 1174.2,
+          "stop": 941.6,
+          "exit": 969.1,
+          "result": "loss",
+          "shares": 2108,
+          "pnl": -21667,
+          "pnl_pct": -1.05
+        }
+      ],
+      "day_pnl": -18729,
+      "capital_after": 10297522
     }
   ]
 }
