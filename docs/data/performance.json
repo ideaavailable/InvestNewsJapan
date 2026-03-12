@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 10297521.816318847,
-  "total_trades": 20,
-  "wins": 12,
-  "losses": 8,
-  "total_profit": 306944.0975,
-  "total_loss": 113634.96918115235,
-  "max_drawdown": 60078.461681153625,
+  "current_capital": 10216420.017818848,
+  "total_trades": 25,
+  "wins": 13,
+  "losses": 12,
+  "total_profit": 373055.56649999996,
+  "total_loss": 260848.23668115243,
+  "max_drawdown": 141180.2601811532,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -287,6 +287,74 @@
       ],
       "day_pnl": -18729,
       "capital_after": 10297522
+    },
+    {
+      "date": "2026-03-12",
+      "eval_date": "2026-03-13",
+      "trades": [
+        {
+          "code": "4568",
+          "name": "第一三共",
+          "entry": 2807.0,
+          "target": 3082.6,
+          "stop": 2745.2,
+          "exit": 2900.0,
+          "result": "win",
+          "shares": 733,
+          "pnl": 66111,
+          "pnl_pct": 3.21
+        },
+        {
+          "code": "8725",
+          "name": "MS&ADインシュアランス",
+          "entry": 4065.0,
+          "target": 4402.8,
+          "stop": 3924.0,
+          "exit": 4011.0,
+          "result": "loss",
+          "shares": 506,
+          "pnl": -29381,
+          "pnl_pct": -1.43
+        },
+        {
+          "code": "4188",
+          "name": "三菱ケミカルG",
+          "entry": 962.5,
+          "target": 1173.6,
+          "stop": 929.4,
+          "exit": 929.4,
+          "result": "loss",
+          "shares": 2139,
+          "pnl": -72860,
+          "pnl_pct": -3.54
+        },
+        {
+          "code": "9107",
+          "name": "川崎汽船",
+          "entry": 2675.0,
+          "target": 2709.7,
+          "stop": 2255.7,
+          "exit": 2669.5,
+          "result": "loss",
+          "shares": 769,
+          "pnl": -6287,
+          "pnl_pct": -0.31
+        },
+        {
+          "code": "5020",
+          "name": "ENEOSホールディングス",
+          "entry": 1377.0,
+          "target": 1547.7,
+          "stop": 1292.8,
+          "exit": 1352.5,
+          "result": "loss",
+          "shares": 1495,
+          "pnl": -38686,
+          "pnl_pct": -1.88
+        }
+      ],
+      "day_pnl": -81102,
+      "capital_after": 10216420
     }
   ]
 }
