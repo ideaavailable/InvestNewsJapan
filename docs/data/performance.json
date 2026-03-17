@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 10209627.297318848,
-  "total_trades": 30,
-  "wins": 16,
-  "losses": 14,
-  "total_profit": 414679.58849999995,
-  "total_loss": 309264.9791811524,
-  "max_drawdown": 147972.980681153,
+  "current_capital": 10183660.357318848,
+  "total_trades": 35,
+  "wins": 18,
+  "losses": 17,
+  "total_profit": 427315.45349999995,
+  "total_loss": 347867.78418115247,
+  "max_drawdown": 173939.9206811525,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -430,6 +430,74 @@
       ],
       "day_pnl": -6793,
       "capital_after": 10209627
+    },
+    {
+      "date": "2026-03-17",
+      "eval_date": "2026-03-18",
+      "trades": [
+        {
+          "code": "4502",
+          "name": "武田薬品工業",
+          "entry": 5810.0,
+          "target": 5874.5,
+          "stop": 5463.5,
+          "exit": 5820.0,
+          "result": "win",
+          "shares": 351,
+          "pnl": 1471,
+          "pnl_pct": 0.07
+        },
+        {
+          "code": "8725",
+          "name": "MS&ADインシュアランス",
+          "entry": 4041.0,
+          "target": 4401.6,
+          "stop": 3889.4,
+          "exit": 4030.0,
+          "result": "loss",
+          "shares": 505,
+          "pnl": -7596,
+          "pnl_pct": -0.37
+        },
+        {
+          "code": "2802",
+          "name": "味の素",
+          "entry": 4520.0,
+          "target": 5048.9,
+          "stop": 4231.4,
+          "exit": 4490.0,
+          "result": "loss",
+          "shares": 451,
+          "pnl": -15569,
+          "pnl_pct": -0.76
+        },
+        {
+          "code": "9202",
+          "name": "ANAホールディングス",
+          "entry": 2935.0,
+          "target": 3427.4,
+          "stop": 2859.2,
+          "exit": 2954.0,
+          "result": "win",
+          "shares": 695,
+          "pnl": 11165,
+          "pnl_pct": 0.55
+        },
+        {
+          "code": "8308",
+          "name": "りそなホールディングス",
+          "entry": 1752.0,
+          "target": 2068.2,
+          "stop": 1625.3,
+          "exit": 1740.5,
+          "result": "loss",
+          "shares": 1165,
+          "pnl": -15439,
+          "pnl_pct": -0.76
+        }
+      ],
+      "day_pnl": -25967,
+      "capital_after": 10183660
     }
   ]
 }
