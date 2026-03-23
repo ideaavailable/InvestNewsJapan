@@ -1,0 +1,629 @@
+{
+  "report_date": "2026-03-24",
+  "generated_at": "2026-03-24T07:01:06.158159+09:00",
+  "market_summary": {
+    "nikkei225": {
+      "close": 51515.49,
+      "change": -1857.04,
+      "change_pct": -3.48
+    },
+    "topix": {
+      "close": 3659.0,
+      "change": -132.0,
+      "change_pct": -3.48
+    },
+    "mothers": {
+      "close": 557.9,
+      "change": -27.1,
+      "change_pct": -4.63
+    },
+    "sp500": {
+      "close": 6581.0,
+      "change": 74.52,
+      "change_pct": 1.15
+    },
+    "nasdaq": {
+      "close": 21946.76,
+      "change": 299.15,
+      "change_pct": 1.38
+    },
+    "dow": {
+      "close": 46208.47,
+      "change": 631.0,
+      "change_pct": 1.38
+    },
+    "vix": {
+      "close": 26.15,
+      "change": -0.63,
+      "change_pct": -2.35
+    },
+    "usdjpy": {
+      "close": 158.37,
+      "change": -0.86,
+      "change_pct": -0.54
+    },
+    "eurjpy": {
+      "close": 183.93,
+      "change": -0.14,
+      "change_pct": -0.08
+    },
+    "crude_oil": {
+      "close": 88.87,
+      "change": -9.45,
+      "change_pct": -9.61
+    },
+    "gold": {
+      "close": 4410.4,
+      "change": -160.0,
+      "change_pct": -3.5
+    },
+    "cme_nikkei": {
+      "close": 53075.0,
+      "change": 1975.0,
+      "change_pct": 3.86
+    }
+  },
+  "macro_outlook": {
+    "summary": "マクロ環境はやや強気。下支え要因が優勢であり、押し目買いのスタンスが有効な局面と判断される。",
+    "key_factors": [
+      {
+        "factor": "米国市場",
+        "impact": "positive",
+        "detail": "S&P500が+1.15%と堅調。日本株にもプラスの影響が期待される。"
+      },
+      {
+        "factor": "為替",
+        "impact": "mixed",
+        "detail": "USD/JPY 158.37円（前日比-0.54%）。歴史的な円安水準が持続しており、輸出企業にはプラスだが、為替介入リスクや輸入コスト増が警戒材料。"
+      },
+      {
+        "factor": "VIX",
+        "impact": "negative",
+        "detail": "VIX 26.1と高水準。パニック相場の兆候あり。慎重な取引姿勢が不可欠。"
+      },
+      {
+        "factor": "CME日経先物",
+        "impact": "positive",
+        "detail": "CME日経先物は大証比+1,560円（+3.03%）。明確な上方乖離で高寄りが予想される。"
+      },
+      {
+        "factor": "原油",
+        "impact": "mixed",
+        "detail": "WTI原油が-9.6%下落。エネルギー株に逆風だが、コスト低減は内需に好材料。"
+      }
+    ],
+    "risk_level": "high",
+    "market_forecast": {
+      "direction": "bullish",
+      "confidence": "moderate"
+    },
+    "sector_implications": {},
+    "detailed_commentary": "前日の米国市場はS&P500が+1.15%と堅調に推移。大きなサプライズはないものの、底堅い相場展開は日本株にとっても追い風材料。 為替市場ではドル円が158.37円と高水準を維持。輸出企業の業績押し上げ効果が期待される一方、政府・日銀による為替介入への警戒感も根強い。この水準では自動車・電子部品セクターが恩恵を受けやすいが、内需・輸入関連企業にとってはコスト増の重荷となる。 VIXが26.1と危険水準に達しており、市場のパニック的な動きに警戒が必要。このような高ボラティリティ環境では、デイトレードのポジションサイズを通常の50%以下に縮小し、スイングトレードは新規エントリーを控えることが賢明。損切りがATR×1.5以内に収まらない銘柄は見送りを推奨する。 CME日経225先物は大証終値比+1,560円（+3.03%）の上方乖離。東京市場の寄り付きは大きくギャップアップしてスタートする見込み。デイトレードでは寄り付き直後の飛び乗りではなく、初動の値幅が落ち着いた後の押し目買いが有効な戦略となる。"
+  },
+  "sentiment": {
+    "news_sentiment": {
+      "score": 0.05,
+      "label": "中立",
+      "positive_count": 1,
+      "negative_count": 0,
+      "neutral_count": 19
+    },
+    "vix_sentiment": -0.3,
+    "combined_score": -0.09,
+    "overall": "やや弱気"
+  },
+  "market_forecast": {
+    "direction": "bullish",
+    "confidence": "moderate"
+  },
+  "sector_analysis": {
+    "heatmap": {
+      "電気機器": -4.04,
+      "半導体": -4.55,
+      "機械": -6.01,
+      "輸送用機器": -2.56,
+      "ゴム": -0.73,
+      "銀行": -3.76,
+      "証券": -0.59,
+      "保険": -3.12,
+      "その他金融": -2.23,
+      "卸売": -4.4,
+      "医薬品": -1.93,
+      "情報通信": -1.17,
+      "サービス": -1.7,
+      "小売": -2.46,
+      "食料品": -2.88,
+      "化学": -2.73,
+      "鉄鋼": -1.41,
+      "非鉄金属": -6.57,
+      "不動産": -7.48,
+      "陸運": -1.8,
+      "海運": -7.59,
+      "空運": -0.91,
+      "建設": -5.72,
+      "その他製品": -2.21,
+      "石油石炭": -5.41,
+      "鉱業": -4.62,
+      "電気ガス": -3.88,
+      "精密機器": -0.85
+    },
+    "focus_sectors": [
+      {
+        "sector": "海運",
+        "change_pct": -7.59,
+        "direction": "下落",
+        "reason": "セクター全体が下落傾向（平均-7.59%）",
+        "notable_stocks": [
+          {
+            "code": "9104",
+            "name": "商船三井",
+            "change": -8.5149
+          },
+          {
+            "code": "9107",
+            "name": "川崎汽船",
+            "change": -7.3175
+          },
+          {
+            "code": "9101",
+            "name": "日本郵船",
+            "change": -6.9381
+          }
+        ]
+      },
+      {
+        "sector": "不動産",
+        "change_pct": -7.48,
+        "direction": "下落",
+        "reason": "セクター全体が下落傾向（平均-7.48%）",
+        "notable_stocks": [
+          {
+            "code": "8802",
+            "name": "三菱地所",
+            "change": -8.2016
+          },
+          {
+            "code": "8830",
+            "name": "住友不動産",
+            "change": -7.1398
+          },
+          {
+            "code": "8801",
+            "name": "三井不動産",
+            "change": -7.1114
+          }
+        ]
+      },
+      {
+        "sector": "非鉄金属",
+        "change_pct": -6.57,
+        "direction": "下落",
+        "reason": "セクター全体が下落傾向（平均-6.57%）",
+        "notable_stocks": [
+          {
+            "code": "5713",
+            "name": "住友金属鉱山",
+            "change": -8.3726
+          },
+          {
+            "code": "5802",
+            "name": "住友電気工業",
+            "change": -7.3784
+          },
+          {
+            "code": "5803",
+            "name": "フジクラ",
+            "change": -3.9479
+          }
+        ]
+      },
+      {
+        "sector": "機械",
+        "change_pct": -6.01,
+        "direction": "下落",
+        "reason": "セクター全体が下落傾向（平均-6.01%）",
+        "notable_stocks": [
+          {
+            "code": "7013",
+            "name": "IHI",
+            "change": -7.9331
+          },
+          {
+            "code": "6273",
+            "name": "SMC",
+            "change": -6.9986
+          },
+          {
+            "code": "7012",
+            "name": "川崎重工業",
+            "change": -6.8788
+          }
+        ]
+      },
+      {
+        "sector": "建設",
+        "change_pct": -5.72,
+        "direction": "下落",
+        "reason": "セクター全体が下落傾向（平均-5.72%）",
+        "notable_stocks": [
+          {
+            "code": "1801",
+            "name": "大成建設",
+            "change": -7.2408
+          },
+          {
+            "code": "1812",
+            "name": "鹿島建設",
+            "change": -6.001
+          },
+          {
+            "code": "1802",
+            "name": "大林組",
+            "change": -3.9093
+          }
+        ]
+      }
+    ]
+  },
+  "daytrade_picks": [
+    {
+      "code": "4502",
+      "name": "武田薬品工業",
+      "sector": "医薬品",
+      "score": 60,
+      "score_breakdown": {
+        "trend_clarity": 20,
+        "volume_surge": 8,
+        "technical_signals": 7,
+        "volatility": 15,
+        "catalyst": 0,
+        "risk_reward": 10
+      },
+      "entry_point": 5577.0,
+      "target": 5899.4,
+      "stop_loss": 5478.3,
+      "risk_reward_ratio": 3.27,
+      "rationale": {
+        "technical": "移動平均線が完全順配列（短期>中期>長期）を形成しており、明確な上昇トレンドが確認できる。ADXが36とトレンドの強さを示しており、トレンドフォロー戦略が有効。200日移動平均線の上方に位置し、長期トレンドは上向き。 RSIは47と中立圏で、過熱感はなくまだ上昇余地がある。パラボリックSARが買いシグナルを点灯中。",
+        "volume_analysis": "出来高は5,922,600株（平均比1.2倍）と平均的な水準。OBVが下降傾向にあり、上昇局面でも売り圧力が潜在的に存在する点に注意。",
+        "entry_strategy": "エントリーは現在値¥5,577.0付近。直近サポートが¥5,539.0に位置する。直近レジスタンス¥5,863.0を突破すれば¥5,899.4への上昇が期待できる。ATR（14日）は121.4円で、日中の平均値幅として適度なボラティリティ。損切りは¥5,478.3（エントリーから1.8%下方）に設定。",
+        "quick_signals": [
+          "PSAR買い",
+          "MA順配列",
+          "RSI47"
+        ],
+        "catalyst": ""
+      },
+      "current_price": 5577.0,
+      "atr": 121.44
+    },
+    {
+      "code": "4063",
+      "name": "信越化学工業",
+      "sector": "化学",
+      "score": 56,
+      "score_breakdown": {
+        "trend_clarity": 20,
+        "volume_surge": 12,
+        "technical_signals": 7,
+        "volatility": 10,
+        "catalyst": 0,
+        "risk_reward": 7
+      },
+      "entry_point": 6073.0,
+      "target": 6765.0,
+      "stop_loss": 5558.9,
+      "risk_reward_ratio": 1.35,
+      "rationale": {
+        "technical": "移動平均線が完全順配列（短期>中期>長期）を形成しており、明確な上昇トレンドが確認できる。ADXが36とトレンドの強さを示しており、トレンドフォロー戦略が有効。200日移動平均線の上方に位置し、長期トレンドは上向き。 RSIは50と中立圏で、過熱感はなくまだ上昇余地がある。パラボリックSARが買いシグナルを点灯中。",
+        "volume_analysis": "出来高は17,076,600株（平均比1.7倍）と増加傾向。市場参加者の注目度が高まっている。OBVが下降傾向にあり、上昇局面でも売り圧力が潜在的に存在する点に注意。",
+        "entry_strategy": "エントリーは現在値¥6,073.0付近。直近サポートが¥5,691.7に位置する。直近レジスタンス¥6,685.3を突破すれば¥6,765.0への上昇が期待できる。ATR（14日）は265.5円で、日中の平均値幅として適度なボラティリティ。損切りは¥5,558.9（エントリーから8.5%下方）に設定。",
+        "quick_signals": [
+          "PSAR買い",
+          "MA順配列",
+          "RSI50"
+        ],
+        "catalyst": ""
+      },
+      "current_price": 6073.0,
+      "atr": 265.51
+    },
+    {
+      "code": "6526",
+      "name": "ソシオネクスト",
+      "sector": "半導体",
+      "score": 51,
+      "score_breakdown": {
+        "trend_clarity": 17,
+        "volume_surge": 8,
+        "technical_signals": 6,
+        "volatility": 10,
+        "catalyst": 0,
+        "risk_reward": 10
+      },
+      "entry_point": 1745.0,
+      "target": 2060.2,
+      "stop_loss": 1664.9,
+      "risk_reward_ratio": 3.94,
+      "rationale": {
+        "technical": "移動平均線が逆配列となっており、下降トレンドが鮮明。ADXが25と方向性が出始めている。200日移動平均線を下回っており、長期トレンドには注意が必要。 MACDヒストグラムがプラス圏で推移しており、上昇モメンタムが維持されている。RSIが36とやや売られすぎの領域に接近。逆張りの好機となりうる。",
+        "volume_analysis": "出来高は4,944,200株（平均比1.2倍）と平均的な水準。OBV（出来高累計指標）は上昇トレンドにあり、価格上昇に買い蓄積が伴っていることを確認。",
+        "entry_strategy": "エントリーは現在値¥1,745.0付近。直近サポートが¥1,702.3に位置する。直近レジスタンス¥2,037.8を突破すれば¥2,060.2への上昇が期待できる。ATR（14日）は74.8円で、日中の平均値幅として適度なボラティリティ。損切りは¥1,664.9（エントリーから4.6%下方）に設定。",
+        "quick_signals": [
+          "RSI36"
+        ],
+        "catalyst": ""
+      },
+      "current_price": 1745.0,
+      "atr": 74.82
+    },
+    {
+      "code": "9202",
+      "name": "ANAホールディングス",
+      "sector": "空運",
+      "score": 51,
+      "score_breakdown": {
+        "trend_clarity": 18,
+        "volume_surge": 4,
+        "technical_signals": 4,
+        "volatility": 15,
+        "catalyst": 0,
+        "risk_reward": 10
+      },
+      "entry_point": 2881.5,
+      "target": 3406.1,
+      "stop_loss": 2832.2,
+      "risk_reward_ratio": 10.64,
+      "rationale": {
+        "technical": "下落基調にある。ADXが32とトレンドの強さを示しており、トレンドフォロー戦略が有効。200日移動平均線を下回っており、長期トレンドには注意が必要。 RSIが35とやや売られすぎの領域に接近。逆張りの好機となりうる。",
+        "volume_analysis": "出来高は3,514,300株（平均比1.0倍）と平均的な水準。OBVが下降傾向にあり、上昇局面でも売り圧力が潜在的に存在する点に注意。",
+        "entry_strategy": "エントリーは現在値¥2,881.5付近。直近サポートが¥2,869.0に位置する。直近レジスタンス¥3,384.0を突破すれば¥3,406.1への上昇が期待できる。ATR（14日）は73.7円で、日中の平均値幅として適度なボラティリティ。損切りは¥2,832.2（エントリーから1.7%下方）に設定。",
+        "quick_signals": [
+          "RSI35"
+        ],
+        "catalyst": ""
+      },
+      "current_price": 2881.5,
+      "atr": 73.69
+    },
+    {
+      "code": "7751",
+      "name": "キヤノン",
+      "sector": "電気機器",
+      "score": 50,
+      "score_breakdown": {
+        "trend_clarity": 17,
+        "volume_surge": 4,
+        "technical_signals": 4,
+        "volatility": 15,
+        "catalyst": 0,
+        "risk_reward": 10
+      },
+      "entry_point": 4273.0,
+      "target": 4777.4,
+      "stop_loss": 4227.2,
+      "risk_reward_ratio": 11.01,
+      "rationale": {
+        "technical": "移動平均線が逆配列となっており、下降トレンドが鮮明。ADXが27と方向性が出始めている。200日移動平均線を下回っており、長期トレンドには注意が必要。 RSIが28と売られすぎ水準まで低下。反発の可能性が高まっている。ストキャスティクスが売られすぎ圏からの反転で買いサイン。",
+        "volume_analysis": "出来高は4,300,700株（平均比1.0倍）と平均的な水準。OBVが下降傾向にあり、上昇局面でも売り圧力が潜在的に存在する点に注意。",
+        "entry_strategy": "エントリーは現在値¥4,273.0付近。直近サポートが¥4,270.0に位置する。直近レジスタンス¥4,751.7を突破すれば¥4,777.4への上昇が期待できる。ATR（14日）は85.7円で、日中の平均値幅として適度なボラティリティ。損切りは¥4,227.2（エントリーから1.1%下方）に設定。",
+        "quick_signals": [
+          "RSI28"
+        ],
+        "catalyst": ""
+      },
+      "current_price": 4273.0,
+      "atr": 85.66
+    }
+  ],
+  "swing_picks": [
+    {
+      "code": "8031",
+      "name": "三井物産",
+      "sector": "卸売",
+      "score": 64,
+      "score_breakdown": {
+        "medium_term_trend": 20,
+        "technical_signals": 7,
+        "valuation": 9,
+        "fundamentals": 10,
+        "sector_momentum": 5,
+        "sentiment": 5,
+        "risk_reward": 8
+      },
+      "holding_period": "5〜10営業日",
+      "entry_point": 5874.0,
+      "target": 6746.6,
+      "stop_loss": 5176.5,
+      "risk_reward_ratio": 1.25,
+      "rationale": {
+        "technical": "移動平均線が完全順配列（短期>中期>長期）を形成しており、明確な上昇トレンドが確認できる。200日移動平均線の上方に位置し、長期トレンドは上向き。 MACDヒストグラムがプラス圏で推移しており、上昇モメンタムが維持されている。RSIは52と中立圏で、過熱感はなくまだ上昇余地がある。",
+        "fundamental": "PER 18.6倍と適正水準。PBR 1.99倍。ROE 10.8%と安定した収益性。",
+        "volume_analysis": "出来高は11,685,800株（平均比1.3倍）と平均的な水準。OBVが下降傾向にあり、上昇局面でも売り圧力が潜在的に存在する点に注意。",
+        "entry_strategy": "エントリーは現在値¥5,874.0付近。直近サポートが¥5,456.3に位置する。直近レジスタンス¥6,522.7を突破すれば¥6,746.6への上昇が期待できる。ATR（14日）は279.8円で、日中の平均値幅として適度なボラティリティ。損切りは¥5,176.5（エントリーから11.9%下方）に設定。",
+        "quick_signals": [
+          "上昇トレンド",
+          "MACDプラス"
+        ],
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 18.64762,
+        "pbr": 1.9916307,
+        "roe": 10.78,
+        "dividend_yield": 1.92
+      },
+      "current_price": 5874.0
+    },
+    {
+      "code": "9432",
+      "name": "日本電信電話",
+      "sector": "情報通信",
+      "score": 62,
+      "score_breakdown": {
+        "medium_term_trend": 14,
+        "technical_signals": 15,
+        "valuation": 11,
+        "fundamentals": 10,
+        "sector_momentum": 5,
+        "sentiment": 5,
+        "risk_reward": 2
+      },
+      "holding_period": "5〜10営業日",
+      "entry_point": 157.0,
+      "target": 161.0,
+      "stop_loss": 148.0,
+      "risk_reward_ratio": 0.44,
+      "rationale": {
+        "technical": "上昇トレンドが継続中。200日移動平均線の上方に位置し、長期トレンドは上向き。 MACDヒストグラムがプラス圏で推移しており、上昇モメンタムが維持されている。RSIは59と中立圏で、過熱感はなくまだ上昇余地がある。一目均衡表の雲の上で推移しており、上値抵抗帯をクリアした強い形状。",
+        "fundamental": "PER 12.5倍と適正〜やや割安な水準で、投資妙味がある。PBR 1.35倍。ROE 10.7%と安定した収益性。配当利回り3.3%。",
+        "volume_analysis": "出来高は304,311,800株（平均比1.2倍）と平均的な水準。OBV（出来高累計指標）は上昇トレンドにあり、価格上昇に買い蓄積が伴っていることを確認。",
+        "entry_strategy": "エントリーは現在値¥157.0付近。直近サポートが¥150.2に位置する。直近レジスタンス¥159.2を突破すれば¥161.0への上昇が期待できる。ATR（14日）は2.2円で、日中の平均値幅として適度なボラティリティ。損切りは¥148.0（エントリーから5.7%下方）に設定。",
+        "quick_signals": [
+          "雲上",
+          "上昇トレンド",
+          "OBV上昇",
+          "MACDプラス"
+        ],
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 12.5,
+        "pbr": 1.3491101,
+        "roe": 10.72,
+        "dividend_yield": 3.34
+      },
+      "current_price": 157.0
+    },
+    {
+      "code": "9434",
+      "name": "ソフトバンク",
+      "sector": "情報通信",
+      "score": 61,
+      "score_breakdown": {
+        "medium_term_trend": 14,
+        "technical_signals": 15,
+        "valuation": 7,
+        "fundamentals": 13,
+        "sector_momentum": 5,
+        "sentiment": 5,
+        "risk_reward": 2
+      },
+      "holding_period": "5〜10営業日",
+      "entry_point": 216.3,
+      "target": 219.9,
+      "stop_loss": 206.0,
+      "risk_reward_ratio": 0.35,
+      "rationale": {
+        "technical": "上昇トレンドが継続中。200日移動平均線を下回っており、長期トレンドには注意が必要。 MACDヒストグラムがプラス圏で推移しており、上昇モメンタムが維持されている。RSIは56と中立圏で、過熱感はなくまだ上昇余地がある。一目均衡表の雲の上で推移しており、上値抵抗帯をクリアした強い形状。",
+        "fundamental": "PER 19.2倍と適正水準。ROE 17.6%と高い資本効率を誇り、経営の質の高さを示す。配当利回り4.0%と高配当で下値サポート要因。",
+        "volume_analysis": "出来高は95,913,800株（平均比1.1倍）と平均的な水準。OBV（出来高累計指標）は上昇トレンドにあり、価格上昇に買い蓄積が伴っていることを確認。",
+        "entry_strategy": "エントリーは現在値¥216.3付近。直近サポートが¥208.6に位置する。直近レジスタンス¥217.8を突破すれば¥219.9への上昇が期待できる。ATR（14日）は2.6円で、日中の平均値幅として適度なボラティリティ。損切りは¥206.0（エントリーから4.8%下方）に設定。",
+        "quick_signals": [
+          "雲上",
+          "上昇トレンド",
+          "OBV上昇",
+          "MACDプラス"
+        ],
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 19.158548,
+        "pbr": 3.616331,
+        "roe": 17.56,
+        "dividend_yield": 3.99
+      },
+      "current_price": 216.3
+    },
+    {
+      "code": "4503",
+      "name": "アステラス製薬",
+      "sector": "医薬品",
+      "score": 59,
+      "score_breakdown": {
+        "medium_term_trend": 8,
+        "technical_signals": 4,
+        "valuation": 7,
+        "fundamentals": 15,
+        "sector_momentum": 5,
+        "sentiment": 5,
+        "risk_reward": 15
+      },
+      "holding_period": "5〜10営業日",
+      "entry_point": 2361.0,
+      "target": 2632.4,
+      "stop_loss": 2241.1,
+      "risk_reward_ratio": 2.26,
+      "rationale": {
+        "technical": "下落基調にある。200日移動平均線の上方に位置し、長期トレンドは上向き。 RSIは47と中立圏で、過熱感はなくまだ上昇余地がある。パラボリックSARが買いシグナルを点灯中。",
+        "fundamental": "PER 34.2倍とやや高めの評価であり、成長期待が株価に織り込まれている。ROE 19.8%と高い資本効率を誇り、経営の質の高さを示す。配当利回り3.3%。売上成長率10.4%と力強い成長を維持。",
+        "volume_analysis": "出来高は6,344,700株（平均比0.9倍）とやや低調。大口の参入は限定的な可能性がある。OBVが下降傾向にあり、上昇局面でも売り圧力が潜在的に存在する点に注意。",
+        "entry_strategy": "エントリーは現在値¥2,361.0付近。直近サポートが¥2,315.0に位置する。直近レジスタンス¥2,573.3を突破すれば¥2,632.4への上昇が期待できる。ATR（14日）は73.9円で、日中の平均値幅として適度なボラティリティ。損切りは¥2,241.1（エントリーから5.1%下方）に設定。",
+        "quick_signals": [],
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 34.24717,
+        "pbr": 2.3988807,
+        "roe": 19.82,
+        "dividend_yield": 3.27
+      },
+      "current_price": 2361.0
+    },
+    {
+      "code": "8766",
+      "name": "東京海上ホールディングス",
+      "sector": "保険",
+      "score": 58,
+      "score_breakdown": {
+        "medium_term_trend": 3,
+        "technical_signals": 4,
+        "valuation": 11,
+        "fundamentals": 15,
+        "sector_momentum": 5,
+        "sentiment": 5,
+        "risk_reward": 15
+      },
+      "holding_period": "5〜10営業日",
+      "entry_point": 5857.0,
+      "target": 6688.1,
+      "stop_loss": 5615.8,
+      "risk_reward_ratio": 3.45,
+      "rationale": {
+        "technical": "下落基調にある。200日移動平均線を下回っており、長期トレンドには注意が必要。 RSIは41と中立圏で、過熱感はなくまだ上昇余地がある。",
+        "fundamental": "PER 10.6倍と適正〜やや割安な水準で、投資妙味がある。ROE 20.7%と高い資本効率を誇り、経営の質の高さを示す。配当利回り3.5%。売上成長率21.8%と力強い成長を維持。",
+        "volume_analysis": "出来高は5,707,400株（平均比1.0倍）と平均的な水準。OBVが下降傾向にあり、上昇局面でも売り圧力が潜在的に存在する点に注意。",
+        "entry_strategy": "エントリーは現在値¥5,857.0付近。直近サポートが¥5,786.3に位置する。直近レジスタンス¥6,551.7を突破すれば¥6,688.1への上昇が期待できる。ATR（14日）は170.5円で、日中の平均値幅として適度なボラティリティ。損切りは¥5,615.8（エントリーから4.1%下方）に設定。",
+        "quick_signals": [],
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 10.646768,
+        "pbr": 2.0918238,
+        "roe": 20.66,
+        "dividend_yield": 3.5
+      },
+      "current_price": 5857.0
+    }
+  ],
+  "methodology": {
+    "technical_indicators": [
+      "SMA (5/25/75/200日)",
+      "EMA (5/25/75日)",
+      "MACD (12,26,9)",
+      "RSI (14日)",
+      "ADX (14日)",
+      "ストキャスティクス (%K14, %D3)",
+      "CCI (20日)",
+      "Williams %R (14日)",
+      "一目均衡表 (9,26,52)",
+      "パラボリックSAR",
+      "OBV",
+      "ATR (14日)"
+    ],
+    "screening_process": "全上場銘柄 → 流動性フィルタ（出来高・時価総額）→ テクニカルスクリーニング → ファンダメンタルズ評価 → 多因子スコアリング → 上位銘柄選出",
+    "scoring_model": "テクニカル・ファンダメンタルズ・センチメント・リスクリワードの多軸評価",
+    "data_source": "Yahoo Finance (yfinance)"
+  },
+  "disclaimer": "当サイトは投資助言・投資勧誘を目的としたものではありません。掲載情報は「情報提供」を目的としており、特定の有価証券の売買を推奨するものではありません。投資に関する最終判断はご自身の責任で行ってください。過去のパフォーマンスは将来の成果を保証するものではありません。"
+}
