@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 9941156.76581885,
-  "total_trades": 55,
-  "wins": 28,
-  "losses": 27,
-  "total_profit": 545988.0155,
-  "total_loss": 527567.3816811525,
-  "max_drawdown": 416443.51218115166,
+  "current_capital": 9866220.55898639,
+  "total_trades": 60,
+  "wins": 30,
+  "losses": 30,
+  "total_profit": 570159.4415,
+  "total_loss": 626675.014513611,
+  "max_drawdown": 491379.71901361085,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -777,6 +777,74 @@
       ],
       "day_pnl": -80513,
       "capital_after": 9941157
+    },
+    {
+      "date": "2026-03-25",
+      "eval_date": "2026-03-26",
+      "trades": [
+        {
+          "code": "5411",
+          "name": "JFEホールディングス",
+          "entry": 1935.5,
+          "target": 2250.8,
+          "stop": 1838.4,
+          "exit": 1887.0,
+          "result": "loss",
+          "shares": 1027,
+          "pnl": -51797,
+          "pnl_pct": -2.61
+        },
+        {
+          "code": "5401",
+          "name": "日本製鉄",
+          "entry": 598.2,
+          "target": 658.0,
+          "stop": 571.3,
+          "exit": 594.6,
+          "result": "loss",
+          "shares": 3323,
+          "pnl": -13951,
+          "pnl_pct": -0.7
+        },
+        {
+          "code": "7270",
+          "name": "SUBARU",
+          "entry": 2626.5,
+          "target": 3005.6,
+          "stop": 2456.2,
+          "exit": 2585.0,
+          "result": "loss",
+          "shares": 756,
+          "pnl": -33360,
+          "pnl_pct": -1.68
+        },
+        {
+          "code": "8725",
+          "name": "MS&ADインシュアランス",
+          "entry": 4162.0,
+          "target": 4388.4,
+          "stop": 3854.4,
+          "exit": 4214.0,
+          "result": "win",
+          "shares": 477,
+          "pnl": 22819,
+          "pnl_pct": 1.15
+        },
+        {
+          "code": "9202",
+          "name": "ANAホールディングス",
+          "entry": 2975.0,
+          "target": 3406.0,
+          "stop": 2832.3,
+          "exit": 2980.0,
+          "result": "win",
+          "shares": 668,
+          "pnl": 1353,
+          "pnl_pct": 0.07
+        }
+      ],
+      "day_pnl": -74936,
+      "capital_after": 9866221
     }
   ]
 }
