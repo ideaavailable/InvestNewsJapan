@@ -1,11 +1,11 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 9867614.029909547,
-  "total_trades": 75,
-  "wins": 38,
-  "losses": 37,
-  "total_profit": 776543.097,
-  "total_loss": 714212.763090454,
+  "current_capital": 9888691.835909547,
+  "total_trades": 80,
+  "wins": 42,
+  "losses": 38,
+  "total_profit": 806179.2079999999,
+  "total_loss": 722771.0680904541,
   "max_drawdown": 665394.0875904541,
   "peak_capital": 10357600.278,
   "daily_results": [
@@ -1056,6 +1056,74 @@
       ],
       "day_pnl": 58431,
       "capital_after": 9867614
+    },
+    {
+      "date": "2026-04-01",
+      "eval_date": "2026-04-02",
+      "trades": [
+        {
+          "code": "9022",
+          "name": "JR東海",
+          "entry": 4173.0,
+          "target": 4611.4,
+          "stop": 4001.2,
+          "exit": 4192.0,
+          "result": "win",
+          "shares": 472,
+          "pnl": 6998,
+          "pnl_pct": 0.36
+        },
+        {
+          "code": "6645",
+          "name": "オムロン",
+          "entry": 4585.0,
+          "target": 5239.6,
+          "stop": 4121.6,
+          "exit": 4598.0,
+          "result": "win",
+          "shares": 430,
+          "pnl": 3618,
+          "pnl_pct": 0.18
+        },
+        {
+          "code": "8802",
+          "name": "三菱地所",
+          "entry": 4495.0,
+          "target": 5164.3,
+          "stop": 4119.8,
+          "exit": 4480.0,
+          "result": "loss",
+          "shares": 439,
+          "pnl": -8558,
+          "pnl_pct": -0.43
+        },
+        {
+          "code": "6988",
+          "name": "日東電工",
+          "entry": 3150.0,
+          "target": 3420.7,
+          "stop": 2929.8,
+          "exit": 3183.0,
+          "result": "win",
+          "shares": 626,
+          "pnl": 18686,
+          "pnl_pct": 0.95
+        },
+        {
+          "code": "8801",
+          "name": "三井不動産",
+          "entry": 1711.0,
+          "target": 2035.4,
+          "stop": 1608.0,
+          "exit": 1713.0,
+          "result": "win",
+          "shares": 1153,
+          "pnl": 333,
+          "pnl_pct": 0.02
+        }
+      ],
+      "day_pnl": 21078,
+      "capital_after": 9888692
     }
   ]
 }
