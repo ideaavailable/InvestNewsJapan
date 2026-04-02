@@ -1,11 +1,11 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 9888691.835909547,
-  "total_trades": 80,
-  "wins": 42,
-  "losses": 38,
+  "current_capital": 9735048.346909547,
+  "total_trades": 85,
+  "wins": 43,
+  "losses": 42,
   "total_profit": 806179.2079999999,
-  "total_loss": 722771.0680904541,
+  "total_loss": 825222.1570904541,
   "max_drawdown": 665394.0875904541,
   "peak_capital": 10357600.278,
   "daily_results": [
@@ -1124,6 +1124,74 @@
       ],
       "day_pnl": 21078,
       "capital_after": 9888692
+    },
+    {
+      "date": "2026-04-02",
+      "eval_date": "2026-04-03",
+      "trades": [
+        {
+          "code": "7267",
+          "name": "ホンダ",
+          "entry": 1291.5,
+          "target": 1460.1,
+          "stop": 1224.5,
+          "exit": 1273.0,
+          "result": "loss",
+          "shares": 1531,
+          "pnl": -30301,
+          "pnl_pct": -1.53
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1947.5,
+          "target": 2095.8,
+          "stop": 1840.3,
+          "exit": 1927.5,
+          "result": "loss",
+          "shares": 1015,
+          "pnl": -22277,
+          "pnl_pct": -1.13
+        },
+        {
+          "code": "5411",
+          "name": "JFEホールディングス",
+          "entry": 1870.0,
+          "target": 1998.8,
+          "stop": 1767.3,
+          "exit": 1831.0,
+          "result": "loss",
+          "shares": 1057,
+          "pnl": -43200,
+          "pnl_pct": -2.19
+        },
+        {
+          "code": "4502",
+          "name": "武田薬品工業",
+          "entry": 6000.0,
+          "target": 5850.4,
+          "stop": 5378.7,
+          "exit": 5850.4,
+          "result": "win",
+          "shares": 329,
+          "pnl": -51192,
+          "pnl_pct": -2.59
+        },
+        {
+          "code": "9022",
+          "name": "JR東海",
+          "entry": 4200.0,
+          "target": 4546.5,
+          "stop": 4000.9,
+          "exit": 4190.0,
+          "result": "loss",
+          "shares": 470,
+          "pnl": -6674,
+          "pnl_pct": -0.34
+        }
+      ],
+      "day_pnl": -153643,
+      "capital_after": 9735048
     }
   ]
 }
