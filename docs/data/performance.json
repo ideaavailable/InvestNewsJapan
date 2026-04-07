@@ -1,11 +1,11 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 9646084.71268103,
-  "total_trades": 90,
-  "wins": 43,
-  "losses": 47,
-  "total_profit": 806179.2079999999,
-  "total_loss": 914185.7913189697,
+  "current_capital": 9654890.04968103,
+  "total_trades": 95,
+  "wins": 45,
+  "losses": 50,
+  "total_profit": 860648.5639999999,
+  "total_loss": 959849.8103189698,
   "max_drawdown": 711515.56531897,
   "peak_capital": 10357600.278,
   "daily_results": [
@@ -1267,6 +1267,74 @@
       ],
       "day_pnl": -88964,
       "capital_after": 9646085
+    },
+    {
+      "date": "2026-04-07",
+      "eval_date": "2026-04-08",
+      "trades": [
+        {
+          "code": "7267",
+          "name": "ホンダ",
+          "entry": 1260.0,
+          "target": 1450.8,
+          "stop": 1226.0,
+          "exit": 1252.0,
+          "result": "loss",
+          "shares": 1531,
+          "pnl": -14177,
+          "pnl_pct": -0.73
+        },
+        {
+          "code": "5411",
+          "name": "JFEホールディングス",
+          "entry": 1832.0,
+          "target": 1969.1,
+          "stop": 1768.9,
+          "exit": 1827.0,
+          "result": "loss",
+          "shares": 1053,
+          "pnl": -7194,
+          "pnl_pct": -0.37
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1939.5,
+          "target": 2049.5,
+          "stop": 1841.3,
+          "exit": 1917.0,
+          "result": "loss",
+          "shares": 994,
+          "pnl": -24293,
+          "pnl_pct": -1.26
+        },
+        {
+          "code": "6702",
+          "name": "富士通",
+          "entry": 3267.0,
+          "target": 3665.1,
+          "stop": 3079.4,
+          "exit": 3345.0,
+          "result": "win",
+          "shares": 590,
+          "pnl": 44092,
+          "pnl_pct": 2.29
+        },
+        {
+          "code": "7270",
+          "name": "SUBARU",
+          "entry": 2506.0,
+          "target": 2696.4,
+          "stop": 2390.4,
+          "exit": 2522.0,
+          "result": "win",
+          "shares": 769,
+          "pnl": 10377,
+          "pnl_pct": 0.54
+        }
+      ],
+      "day_pnl": 8805,
+      "capital_after": 9654890
     }
   ]
 }
