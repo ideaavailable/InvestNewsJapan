@@ -1,11 +1,11 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 9660329.514473021,
-  "total_trades": 105,
-  "wins": 49,
-  "losses": 56,
-  "total_profit": 955426.0395,
-  "total_loss": 1049187.8210269776,
+  "current_capital": 9728881.473939817,
+  "total_trades": 110,
+  "wins": 52,
+  "losses": 58,
+  "total_profit": 1023408.7289667969,
+  "total_loss": 1060729.4310269777,
   "max_drawdown": 711515.56531897,
   "peak_capital": 10357600.278,
   "daily_results": [
@@ -1478,6 +1478,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 9660330
+    },
+    {
+      "date": "2026-04-13",
+      "eval_date": "2026-04-14",
+      "trades": [
+        {
+          "code": "4385",
+          "name": "メルカリ",
+          "entry": 3568.0,
+          "target": 4097.4,
+          "stop": 3321.9,
+          "exit": 3602.0,
+          "result": "win",
+          "shares": 541,
+          "pnl": 16464,
+          "pnl_pct": 0.85
+        },
+        {
+          "code": "9434",
+          "name": "ソフトバンク",
+          "entry": 214.1,
+          "target": 219.6,
+          "stop": 207.7,
+          "exit": 219.5,
+          "result": "win",
+          "shares": 9024,
+          "pnl": 46798,
+          "pnl_pct": 2.42
+        },
+        {
+          "code": "3382",
+          "name": "セブン&アイ",
+          "entry": 2010.0,
+          "target": 2262.9,
+          "stop": 1978.5,
+          "exit": 2000.0,
+          "result": "loss",
+          "shares": 961,
+          "pnl": -11542,
+          "pnl_pct": -0.6
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1760.0,
+          "target": 2037.0,
+          "stop": 1772.8,
+          "exit": 1772.8,
+          "result": "loss",
+          "shares": 1097,
+          "pnl": 12111,
+          "pnl_pct": 0.63
+        },
+        {
+          "code": "9433",
+          "name": "KDDI",
+          "entry": 2611.0,
+          "target": 2797.1,
+          "stop": 2531.1,
+          "exit": 2620.0,
+          "result": "win",
+          "shares": 739,
+          "pnl": 4721,
+          "pnl_pct": 0.24
+        }
+      ],
+      "day_pnl": 68552,
+      "capital_after": 9728881
     }
   ]
 }
