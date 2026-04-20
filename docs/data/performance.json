@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 9666955.71246902,
-  "total_trades": 125,
-  "wins": 61,
-  "losses": 64,
-  "total_profit": 1137218.6394772949,
-  "total_loss": 1150240.8730082707,
-  "max_drawdown": 735442.6474081762,
+  "current_capital": 9474134.17446902,
+  "total_trades": 130,
+  "wins": 62,
+  "losses": 68,
+  "total_profit": 1145051.4644772948,
+  "total_loss": 1350895.2360082709,
+  "max_drawdown": 883466.1035309806,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -1757,6 +1757,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 9666956
+    },
+    {
+      "date": "2026-04-20",
+      "eval_date": "2026-04-21",
+      "trades": [
+        {
+          "code": "5411",
+          "name": "JFEホールディングス",
+          "entry": 1803.5,
+          "target": 1905.6,
+          "stop": 1770.8,
+          "exit": 1771.5,
+          "result": "loss",
+          "shares": 1072,
+          "pnl": -36237,
+          "pnl_pct": -1.87
+        },
+        {
+          "code": "9502",
+          "name": "中部電力",
+          "entry": 2893.0,
+          "target": 2962.1,
+          "stop": 2452.7,
+          "exit": 2780.0,
+          "result": "loss",
+          "shares": 668,
+          "pnl": -77417,
+          "pnl_pct": -4.01
+        },
+        {
+          "code": "9101",
+          "name": "日本郵船",
+          "entry": 6051.0,
+          "target": 6413.4,
+          "stop": 5454.1,
+          "exit": 5908.0,
+          "result": "loss",
+          "shares": 319,
+          "pnl": -47547,
+          "pnl_pct": -2.46
+        },
+        {
+          "code": "7741",
+          "name": "HOYA",
+          "entry": 29495.0,
+          "target": 30412.3,
+          "stop": 25975.0,
+          "exit": 29645.0,
+          "result": "win",
+          "shares": 65,
+          "pnl": 7833,
+          "pnl_pct": 0.41
+        },
+        {
+          "code": "3382",
+          "name": "セブン&アイ",
+          "entry": 2061.0,
+          "target": 2261.5,
+          "stop": 1938.3,
+          "exit": 2021.0,
+          "result": "loss",
+          "shares": 938,
+          "pnl": -39453,
+          "pnl_pct": -2.04
+        }
+      ],
+      "day_pnl": -192822,
+      "capital_after": 9474134
     }
   ]
 }
