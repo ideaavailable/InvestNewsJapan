@@ -1,45 +1,79 @@
-"""Final stock recommender - selects top picks with detailed analysis rationale."""
+"""Final stock recommender - selects top picks with detailed analysis rationale.
+
+Enhanced with multi-timeframe context, new indicators, confidence levels,
+sector rotation insights, and risk management data.
+"""
 import logging
 from backend.config import DAYTRADE_PICKS_COUNT, SWING_PICKS_COUNT, get_stock_info
-from backend.screener.universe import filter_by_liquidity, filter_by_technical
+from backend.screener.universe import filter_by_liquidity, filter_by_technical, filter_sector_balance
 from backend.screener.scoring import score_daytrade, score_swing
 
 logger = logging.getLogger("investnews.recommender")
 
 
-def select_daytrade_picks(tech_results, fund_results, sentiment_score=0, count=None):
-    """Select top daytrade candidates."""
+def select_daytrade_picks(tech_results, fund_results, sentiment_score=0,
+                          weekly_results=None, sector_scores=None, vix_regime=None,
+                          count=None):
+    """Select top daytrade candidates with expanded scoring."""
     count = count or DAYTRADE_PICKS_COUNT
+    sector_scores = sector_scores or {}
     candidates = filter_by_liquidity(tech_results, fund_results, mode="daytrade")
     candidates = filter_by_technical(candidates, tech_results, mode="daytrade")
     scored = []
     for ticker in candidates:
         tech = tech_results.get(ticker, {})
         fund = fund_results.get(ticker, {})
-        score = score_daytrade(ticker, tech, fund, sentiment_score)
+        # Get MTF data
+        mtf_data = None
+        if weekly_results and ticker in weekly_results:
+            from backend.analyzer.multi_timeframe import get_mtf_alignment
+            mtf_data = get_mtf_alignment(tech, weekly_results[ticker])
+        # Get sector score
+        code = ticker.replace(".T", "")
+        info = get_stock_info(code)
+        s_score = sector_scores.get(info["sector"], 5) if info else 5
+        score = score_daytrade(ticker, tech, fund, sentiment_score,
+                               mtf_data=mtf_data, sector_score=s_score, vix_regime=vix_regime)
         score["tech"] = tech
         score["fund"] = fund
+        score["mtf"] = mtf_data
         scored.append(score)
     scored.sort(key=lambda x: x["total"], reverse=True)
-    picks = scored[:count]
+    picks = scored[:count * 2]  # Get extra for sector balance
+    picks = filter_sector_balance(picks, max_per_sector=2)
+    picks = picks[:count]
     return [_format_daytrade_pick(p) for p in picks]
 
 
-def select_swing_picks(tech_results, fund_results, sentiment_score=0, count=None):
-    """Select top swing trade candidates."""
+def select_swing_picks(tech_results, fund_results, sentiment_score=0,
+                       weekly_results=None, sector_scores=None, vix_regime=None,
+                       count=None):
+    """Select top swing trade candidates with expanded scoring."""
     count = count or SWING_PICKS_COUNT
+    sector_scores = sector_scores or {}
     candidates = filter_by_liquidity(tech_results, fund_results, mode="swing")
     candidates = filter_by_technical(candidates, tech_results, mode="swing")
     scored = []
     for ticker in candidates:
         tech = tech_results.get(ticker, {})
         fund = fund_results.get(ticker, {})
-        score = score_swing(ticker, tech, fund, sentiment_score)
+        mtf_data = None
+        if weekly_results and ticker in weekly_results:
+            from backend.analyzer.multi_timeframe import get_mtf_alignment
+            mtf_data = get_mtf_alignment(tech, weekly_results[ticker])
+        code = ticker.replace(".T", "")
+        info = get_stock_info(code)
+        s_score = sector_scores.get(info["sector"], 5) if info else 5
+        score = score_swing(ticker, tech, fund, sentiment_score,
+                            mtf_data=mtf_data, sector_score=s_score, vix_regime=vix_regime)
         score["tech"] = tech
         score["fund"] = fund
+        score["mtf"] = mtf_data
         scored.append(score)
     scored.sort(key=lambda x: x["total"], reverse=True)
-    picks = scored[:count]
+    picks = scored[:count * 2]
+    picks = filter_sector_balance(picks, max_per_sector=2)
+    picks = picks[:count]
     return [_format_swing_pick(p) for p in picks]
 
 
@@ -78,7 +112,7 @@ def _build_trend_commentary(tech):
 
 
 def _build_signal_commentary(tech):
-    """Build detailed signal analysis text."""
+    """Build detailed signal analysis text including new indicators."""
     parts = []
     if tech.get("macd_cross_bullish"):
         parts.append("MACDがシグナル線を上抜けるゴールデンクロスが発生しており、短期的な買いシグナル")
@@ -104,6 +138,37 @@ def _build_signal_commentary(tech):
         parts.append("パラボリックSARが買いシグナルを点灯中")
     if tech.get("stoch_bullish"):
         parts.append("ストキャスティクスが売られすぎ圏からの反転で買いサイン")
+
+    # New indicator signals
+    if tech.get("ttm_squeeze"):
+        parts.append("TTMスクイーズ発動中。ボリンジャーバンドがケルトナーチャネル内に収束しており、ブレイクアウトの前兆")
+    elif tech.get("bb_squeeze"):
+        parts.append("ボリンジャーバンド幅が縮小中。ボラティリティスクイーズ後のブレイクに注目")
+
+    if tech.get("above_vwap"):
+        parts.append("VWAP（出来高加重平均価格）の上方で推移しており、機関投資家の支えがある水準")
+
+    if tech.get("bullish_divergence_rsi"):
+        parts.append("RSIに強気ダイバージェンスが検出。価格は安値更新だがRSIは底打ちしており、トレンド反転の兆候")
+    if tech.get("bullish_divergence_macd"):
+        parts.append("MACDにも強気ダイバージェンスが確認")
+
+    # Candlestick patterns
+    if tech.get("bullish_engulfing"):
+        parts.append("直近ローソク足で強気の包み足（ブリッシュ・エンガルフィング）パターンが出現")
+    if tech.get("hammer"):
+        parts.append("ハンマー足の出現により、底値圏での買い支えを示唆")
+    if tech.get("morning_star"):
+        parts.append("モーニングスター（明けの明星）パターンが出現。強力な反転シグナル")
+    if tech.get("three_white_soldiers"):
+        parts.append("三白兵パターンが形成され、強い上昇圧力を示唆")
+
+    mfi = tech.get("mfi")
+    if mfi:
+        if mfi < 20:
+            parts.append(f"MFI（マネーフロー指数）が{mfi:.0f}と売られすぎ領域。スマートマネーの蓄積を示唆")
+        elif mfi > 80:
+            parts.append(f"MFI（マネーフロー指数）が{mfi:.0f}と過熱。利確圧力に注意")
 
     return "。".join(parts) + "。" if parts else ""
 
@@ -132,6 +197,16 @@ def _build_volume_commentary(tech):
     elif obv_trend == "down":
         parts.append("OBVが下降傾向にあり、上昇局面でも売り圧力が潜在的に存在する点に注意")
 
+    # Volume profile context
+    poc = tech.get("vol_poc")
+    if poc:
+        price = tech.get("current_price", 0)
+        if price and poc:
+            if abs(price - poc) / price < 0.02:
+                parts.append(f"価格帯別出来高のPOC（最大出来高価格帯: ¥{poc:,.0f}）付近で推移しており、強いサポート")
+            elif price > poc:
+                parts.append(f"POC（¥{poc:,.0f}）の上方に位置し、売り圧力の少ないゾーン")
+
     return "。".join(parts) + "。" if parts else ""
 
 
@@ -145,6 +220,19 @@ def _build_entry_rationale(price, entry, target, stop, atr, tech):
         parts.append(f"エントリーは現在値¥{entry:,.1f}付近。直近サポートが¥{support:,.1f}に位置する")
     if resistance and resistance > 0:
         parts.append(f"直近レジスタンス¥{resistance:,.1f}を突破すれば¥{target:,.1f}への上昇が期待できる")
+
+    # Fibonacci context
+    fib_nearest = tech.get("fib_nearest")
+    fib_dist = tech.get("fib_nearest_dist_pct")
+    if fib_nearest and fib_dist is not None and fib_dist < 2:
+        parts.append(f"フィボナッチリトレースメント水準¥{fib_nearest:,.0f}付近にあり、テクニカル的な節目として注目")
+
+    # Pivot context
+    pivot = tech.get("pivot")
+    if pivot:
+        if price and price > pivot:
+            parts.append(f"ピボットポイント¥{pivot:,.0f}を上回っており、日中の上方バイアスが有効")
+
     if atr:
         parts.append(f"ATR（14日）は{atr:.1f}円で、日中の平均値幅として適度なボラティリティ")
     if stop > 0:
@@ -173,24 +261,40 @@ def _format_daytrade_pick(pick):
     volume_text = _build_volume_commentary(tech)
     level_text = _build_entry_rationale(price, price, target, stop_loss, atr, tech)
 
+    # MTF context
+    mtf = pick.get("mtf") or {}
+    mtf_text = mtf.get("mtf_context", "")
+
     # Build concise signal list for quick reference
     quick_signals = []
     if tech.get("macd_cross_bullish"): quick_signals.append("MACDゴールデンクロス")
     if tech.get("above_cloud"): quick_signals.append("雲上")
     if tech.get("psar_bullish"): quick_signals.append("PSAR買い")
     if tech.get("trend") == "strong_up": quick_signals.append("MA順配列")
+    if tech.get("ttm_squeeze"): quick_signals.append("TTMスクイーズ")
+    elif tech.get("bb_squeeze"): quick_signals.append("BBスクイーズ")
+    if tech.get("above_vwap"): quick_signals.append("VWAP上")
+    if tech.get("bullish_divergence_rsi"): quick_signals.append("RSIダイバージェンス")
+    if tech.get("bullish_engulfing"): quick_signals.append("包み足")
+    if tech.get("hammer"): quick_signals.append("ハンマー")
+    if tech.get("morning_star"): quick_signals.append("明けの明星")
     rsi = tech.get("rsi")
     if rsi: quick_signals.append(f"RSI{rsi:.0f}")
+    if mtf.get("mtf_aligned"): quick_signals.append("週足一致")
+
+    confidence = tech.get("confidence", "medium")
 
     return {
         "code": info["code"], "name": info["name"], "sector": info["sector"],
         "score": pick["total"], "score_breakdown": pick["breakdown"],
+        "confidence": confidence,
         "entry_point": round(price, 1), "target": target, "stop_loss": stop_loss,
         "risk_reward_ratio": rr,
         "rationale": {
             "technical": " ".join([trend_text, signal_text]).strip() or "テクニカル指標総合判断",
             "volume_analysis": volume_text or f"直近出来高: {tech.get('volume_current', 0):,.0f}株",
             "entry_strategy": level_text,
+            "mtf_context": mtf_text,
             "quick_signals": quick_signals,
             "catalyst": "",
         },
@@ -218,14 +322,17 @@ def _format_swing_pick(pick):
     signal_text = _build_signal_commentary(tech)
     volume_text = _build_volume_commentary(tech)
     level_text = _build_entry_rationale(price, price, target, stop_loss, atr, tech)
-
-    # Build fundamental commentary
     fund_commentary = _build_fundamental_commentary(fund)
+
+    mtf = pick.get("mtf") or {}
+    mtf_text = mtf.get("mtf_context", "")
 
     per = fund.get("per")
     pbr = fund.get("pbr")
     roe = fund.get("roe")
     div_y = fund.get("dividend_yield")
+    ev_ebitda = fund.get("ev_ebitda")
+    roic = fund.get("roic")
 
     # Quick signal list
     quick_signals = []
@@ -233,10 +340,16 @@ def _format_swing_pick(pick):
     if "up" in tech.get("trend", ""): quick_signals.append("上昇トレンド")
     if tech.get("obv_trend") == "up": quick_signals.append("OBV上昇")
     if tech.get("macd_hist", 0) and tech["macd_hist"] > 0: quick_signals.append("MACDプラス")
+    if tech.get("above_vwap"): quick_signals.append("VWAP上")
+    if tech.get("bullish_divergence_rsi"): quick_signals.append("RSIダイバージェンス")
+    if mtf.get("mtf_aligned"): quick_signals.append("週足一致")
+
+    confidence = tech.get("confidence", "medium")
 
     return {
         "code": info["code"], "name": info["name"], "sector": info["sector"],
         "score": pick["total"], "score_breakdown": pick["breakdown"],
+        "confidence": confidence,
         "holding_period": "5〜10営業日",
         "entry_point": round(price, 1), "target": target, "stop_loss": stop_loss,
         "risk_reward_ratio": rr,
@@ -245,12 +358,13 @@ def _format_swing_pick(pick):
             "fundamental": fund_commentary,
             "volume_analysis": volume_text,
             "entry_strategy": level_text,
+            "mtf_context": mtf_text,
             "quick_signals": quick_signals,
             "catalyst": "",
         },
         "fundamentals": {
             "per": per, "pbr": pbr, "roe": roe,
-            "dividend_yield": div_y,
+            "dividend_yield": div_y, "ev_ebitda": ev_ebitda, "roic": roic,
         },
         "current_price": round(price, 1),
     }
@@ -264,6 +378,9 @@ def _build_fundamental_commentary(fund):
     roe = fund.get("roe")
     div_y = fund.get("dividend_yield")
     rev_g = fund.get("revenue_growth")
+    roic = fund.get("roic")
+    ev_ebitda = fund.get("ev_ebitda")
+    de = fund.get("debt_equity")
 
     if per:
         if per < 10:
@@ -288,6 +405,19 @@ def _build_fundamental_commentary(fund):
             parts.append(f"ROE {roe:.1f}%と安定した収益性")
         elif roe > 0:
             parts.append(f"ROE {roe:.1f}%")
+
+    if roic and roic > 10:
+        parts.append(f"ROIC {roic:.1f}%と投下資本に対する優れたリターン")
+
+    if ev_ebitda and ev_ebitda > 0:
+        if ev_ebitda < 8:
+            parts.append(f"EV/EBITDA {ev_ebitda:.1f}倍と企業価値ベースでも割安")
+
+    if de is not None:
+        if de < 0.3:
+            parts.append(f"D/Eレシオ{de:.2f}と実質無借金に近い健全な財務体質")
+        elif de < 0.5:
+            parts.append(f"D/Eレシオ{de:.2f}と低レバレッジの堅実な財務")
 
     if div_y and 0 < div_y < 15:
         if div_y > 3.5:

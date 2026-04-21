@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="InvestNews Japan - 毎朝7時更新。機関投資家レベルのテクニカル・ファンダメンタルズ分析に基づく日本株デイトレード・スイングトレード推奨銘柄情報。">
   <meta name="keywords" content="日本株,デイトレード,スイングトレード,テクニカル分析,株式投資,推奨銘柄">
   <title>InvestNews Japan | 日本株デイトレード・スイング推奨銘柄</title>
@@ -11,6 +11,9 @@
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📈</text></svg>">
   <meta name="google-site-verification" content="usiyev1Tl8IkzSyeCunyQ0U3LcxUT0opfdeojCezvpk" />
+  <meta name="theme-color" content="#09090b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 </head>
 
 <body>
@@ -18,6 +21,21 @@
   <div class="ticker-bar" id="tickerBar">
     <div class="ticker-track" id="tickerTrack"></div>
   </div>
+
+  <!-- Mobile Navigation Overlay -->
+  <nav class="mobile-nav" id="mobileNav">
+    <button class="nav-close" onclick="closeMobileNav()">✕</button>
+    <a href="#sectionMarket" onclick="closeMobileNav()">📊 マーケット</a>
+    <a href="#sectionSentiment" onclick="closeMobileNav()">🧠 センチメント</a>
+    <a href="#sectionMacro" onclick="closeMobileNav()">🌐 マクロ</a>
+    <a href="#sectionForecast" onclick="closeMobileNav()">🔮 市場見通し</a>
+    <a href="#sectionSector" onclick="closeMobileNav()">🏭 セクター</a>
+    <a href="#sectionRotation" onclick="closeMobileNav()">🔄 ローテーション</a>
+    <a href="#sectionDaytrade" onclick="closeMobileNav()">⚡ デイトレード</a>
+    <a href="#sectionSwing" onclick="closeMobileNav()">📈 スイング</a>
+    <a href="#sectionRisk" onclick="closeMobileNav()">🛡️ リスク管理</a>
+    <a href="#sectionPerformance" onclick="closeMobileNav()">📊 実績</a>
+  </nav>
 
   <!-- Header -->
   <header class="site-header">
@@ -38,6 +56,7 @@
           <button class="active" onclick="setLang('ja')">JP</button>
           <button onclick="setLang('en')">EN</button>
         </div>
+        <button class="menu-btn" onclick="openMobileNav()" aria-label="メニュー">☰</button>
       </div>
     </div>
   </header>
@@ -54,47 +73,86 @@
 
       <!-- 1. Market Summary -->
       <section class="section" id="sectionMarket">
-        <div class="section-header">
+        <div class="section-header" onclick="toggleSection('sectionMarket')">
           <div class="section-icon">📊</div>
           <h2 data-i18n="section_market">マーケットサマリー</h2>
+          <span class="section-toggle">▼</span>
         </div>
-        <div class="market-grid" id="marketGrid"></div>
+        <div class="section-body" id="sectionMarketBody">
+          <div class="market-grid" id="marketGrid"></div>
+        </div>
       </section>
 
-      <!-- 2. Macro Outlook -->
+      <!-- 2. Sentiment Dashboard (NEW) -->
+      <section class="section" id="sectionSentiment">
+        <div class="section-header" onclick="toggleSection('sectionSentiment')">
+          <div class="section-icon">🧠</div>
+          <h2 data-i18n="section_sentiment">市場センチメント</h2>
+          <span class="section-toggle">▼</span>
+        </div>
+        <div class="section-body" id="sectionSentimentBody">
+          <div class="sentiment-grid" id="sentimentGrid"></div>
+        </div>
+      </section>
+
+      <!-- 3. Macro Outlook -->
       <section class="section" id="sectionMacro">
-        <div class="section-header">
+        <div class="section-header" onclick="toggleSection('sectionMacro')">
           <div class="section-icon">🌐</div>
           <h2 data-i18n="section_macro">グローバルマクロ概況</h2>
+          <span class="section-toggle">▼</span>
         </div>
-        <div class="macro-content" id="macroContent"></div>
+        <div class="section-body" id="sectionMacroBody">
+          <div class="macro-content" id="macroContent"></div>
+        </div>
       </section>
 
-      <!-- 3. Market Forecast -->
+      <!-- 4. Market Forecast -->
       <section class="section" id="sectionForecast">
-        <div class="section-header">
+        <div class="section-header" onclick="toggleSection('sectionForecast')">
           <div class="section-icon">🔮</div>
           <h2 data-i18n="section_forecast">本日の市場見通し</h2>
+          <span class="section-toggle">▼</span>
         </div>
-        <div class="macro-content" id="forecastContent"></div>
+        <div class="section-body" id="sectionForecastBody">
+          <div class="macro-content" id="forecastContent"></div>
+        </div>
       </section>
 
-      <!-- 4. Performance Tracking -->
+      <!-- 5. Performance Tracking -->
       <section class="section" id="sectionPerformance" style="display:none;">
-        <div class="section-header">
+        <div class="section-header" onclick="toggleSection('sectionPerformance')">
           <div class="section-icon">📊</div>
           <h2 data-i18n="section_performance">デイトレード実績（¥10M シミュレーション）</h2>
+          <span class="section-toggle">▼</span>
         </div>
-        <div class="macro-content" id="performanceContent"></div>
+        <div class="section-body" id="sectionPerformanceBody">
+          <div class="macro-content" id="performanceContent"></div>
+        </div>
       </section>
 
-      <!-- 5. Sector Heatmap -->
+      <!-- 6. Sector Heatmap -->
       <section class="section" id="sectionSector">
-        <div class="section-header">
+        <div class="section-header" onclick="toggleSection('sectionSector')">
           <div class="section-icon">🏭</div>
           <h2 data-i18n="section_sector">セクター分析</h2>
+          <span class="section-toggle">▼</span>
         </div>
-        <div class="heatmap-grid" id="sectorHeatmap"></div>
+        <div class="section-body" id="sectionSectorBody">
+          <div class="heatmap-grid" id="sectorHeatmap"></div>
+        </div>
+      </section>
+
+      <!-- 7. Sector Rotation (NEW) -->
+      <section class="section" id="sectionRotation">
+        <div class="section-header" onclick="toggleSection('sectionRotation')">
+          <div class="section-icon">🔄</div>
+          <h2 data-i18n="section_rotation">セクターローテーション</h2>
+          <span class="section-toggle">▼</span>
+        </div>
+        <div class="section-body" id="sectionRotationBody">
+          <div class="rotation-content" id="rotationContent"></div>
+        </div>
       </section>
 
       <!-- Ad Slot 1 -->
@@ -108,31 +166,52 @@
         </div>
       </div>
 
-      <!-- 5. Daytrade Picks -->
+      <!-- 8. Daytrade Picks -->
       <section class="section" id="sectionDaytrade">
-        <div class="section-header">
+        <div class="section-header" onclick="toggleSection('sectionDaytrade')">
           <div class="section-icon">⚡</div>
           <h2 data-i18n="section_daytrade">デイトレード推奨銘柄</h2>
+          <span class="section-toggle">▼</span>
         </div>
-        <div class="picks-grid" id="daytradeGrid"></div>
+        <div class="section-body" id="sectionDaytradeBody">
+          <div class="picks-grid" id="daytradeGrid"></div>
+        </div>
       </section>
 
-      <!-- 6. Swing Picks -->
+      <!-- 9. Swing Picks -->
       <section class="section" id="sectionSwing">
-        <div class="section-header">
+        <div class="section-header" onclick="toggleSection('sectionSwing')">
           <div class="section-icon">📈</div>
           <h2 data-i18n="section_swing">スイングトレード推奨銘柄</h2>
+          <span class="section-toggle">▼</span>
         </div>
-        <div class="picks-grid" id="swingGrid"></div>
+        <div class="section-body" id="sectionSwingBody">
+          <div class="picks-grid" id="swingGrid"></div>
+        </div>
       </section>
 
-      <!-- 7. Methodology -->
+      <!-- 10. Risk Dashboard (NEW) -->
+      <section class="section" id="sectionRisk">
+        <div class="section-header" onclick="toggleSection('sectionRisk')">
+          <div class="section-icon">🛡️</div>
+          <h2 data-i18n="section_risk">リスク管理ダッシュボード</h2>
+          <span class="section-toggle">▼</span>
+        </div>
+        <div class="section-body" id="sectionRiskBody">
+          <div class="macro-content" id="riskContent"></div>
+        </div>
+      </section>
+
+      <!-- 11. Methodology -->
       <section class="section" id="sectionMethod">
-        <div class="section-header">
+        <div class="section-header" onclick="toggleSection('sectionMethod')">
           <div class="section-icon">🔬</div>
           <h2 data-i18n="section_method">分析手法</h2>
+          <span class="section-toggle collapsed">▼</span>
         </div>
-        <div class="method-content" id="methodContent"></div>
+        <div class="section-body collapsed" id="sectionMethodBody">
+          <div class="method-content" id="methodContent"></div>
+        </div>
       </section>
 
       <!-- Ad Slot 2 -->
@@ -146,12 +225,23 @@
         </div>
       </div>
 
-      <!-- 8. Disclaimer -->
+      <!-- 12. Disclaimer -->
       <section class="section">
         <div class="disclaimer" id="disclaimerContent"></div>
       </section>
     </div>
   </main>
+
+  <!-- Bottom Navigation (Mobile) -->
+  <nav class="bottom-nav" id="bottomNav">
+    <div class="bottom-nav-inner">
+      <a href="#sectionMarket" class="active"><span class="nav-icon">📊</span>マーケット</a>
+      <a href="#sectionDaytrade"><span class="nav-icon">⚡</span>デイトレ</a>
+      <a href="#sectionSwing"><span class="nav-icon">📈</span>スイング</a>
+      <a href="#sectionSentiment"><span class="nav-icon">🧠</span>心理</a>
+      <a href="#sectionRisk"><span class="nav-icon">🛡️</span>リスク</a>
+    </div>
+  </nav>
 
   <!-- Footer -->
   <footer class="site-footer">

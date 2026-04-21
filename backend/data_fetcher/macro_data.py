@@ -1,4 +1,4 @@
-"""Macro economic data fetcher."""
+"""Macro economic data fetcher - expanded with yield curve analysis."""
 import yfinance as yf
 import logging
 
@@ -6,8 +6,9 @@ logger = logging.getLogger("investnews.macro")
 
 
 def fetch_macro_data():
-    """Fetch macro economic indicators."""
-    result = {"us_10y_yield": None, "us_2y_yield": None, "dxy": None}
+    """Fetch macro economic indicators including yield curve data."""
+    result = {"us_10y_yield": None, "us_2y_yield": None, "dxy": None,
+              "yield_spread": None, "yield_curve_signal": None}
     macro_tickers = {"us_10y_yield": "^TNX", "us_2y_yield": "^IRX", "dxy": "DX-Y.NYB"}
     for name, ticker in macro_tickers.items():
         try:
@@ -19,6 +20,19 @@ def fetch_macro_data():
                 result[name] = round(float(val), 2)
         except Exception as e:
             logger.warning(f"Error fetching {name}: {e}")
+
+    # Calculate yield spread (10Y - 2Y)
+    if result["us_10y_yield"] and result["us_2y_yield"]:
+        result["yield_spread"] = round(result["us_10y_yield"] - result["us_2y_yield"], 2)
+        if result["yield_spread"] < 0:
+            result["yield_curve_signal"] = "inverted"
+        elif result["yield_spread"] < 0.5:
+            result["yield_curve_signal"] = "flat"
+        elif result["yield_spread"] < 1.5:
+            result["yield_curve_signal"] = "normal"
+        else:
+            result["yield_curve_signal"] = "steep"
+
     return result
 
 

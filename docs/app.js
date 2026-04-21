@@ -1,6 +1,8 @@
 /**
  * InvestNews Japan - Frontend Application
  * Loads daily report JSON, renders all sections, handles i18n.
+ * Enhanced with sentiment dashboard, sector rotation, risk management,
+ * mobile navigation, section accordion, and pick card toggle.
  */
 
 // === i18n ===
@@ -9,11 +11,14 @@ const I18N = {
     loading: "データを読み込み中...",
     status_premarket: "プレマーケット",
     section_market: "マーケットサマリー",
+    section_sentiment: "市場センチメント",
     section_macro: "グローバルマクロ概況",
     section_forecast: "本日の市場見通し",
     section_sector: "セクター分析",
+    section_rotation: "セクターローテーション",
     section_daytrade: "デイトレード推奨銘柄",
     section_swing: "スイングトレード推奨銘柄",
+    section_risk: "リスク管理ダッシュボード",
     section_method: "分析手法",
     footer_archive: "過去のレポート",
     footer_disclaimer: "免責事項",
@@ -32,16 +37,20 @@ const I18N = {
     sp500: "S&P 500", nasdaq: "NASDAQ", dow: "NYダウ",
     vix: "VIX恐怖指数", usdjpy: "USD/JPY", eurjpy: "EUR/JPY",
     crude_oil: "原油(WTI)", gold: "金(GOLD)", cme_nikkei: "CME日経先物",
+    mtf: "マルチタイムフレーム",
   },
   en: {
     loading: "Loading data...",
     status_premarket: "Pre-Market",
     section_market: "Market Summary",
+    section_sentiment: "Market Sentiment",
     section_macro: "Global Macro Overview",
     section_forecast: "Today's Market Outlook",
     section_sector: "Sector Analysis",
+    section_rotation: "Sector Rotation",
     section_daytrade: "Day Trade Recommendations",
     section_swing: "Swing Trade Recommendations",
+    section_risk: "Risk Management Dashboard",
     section_method: "Methodology",
     footer_archive: "Archives",
     footer_disclaimer: "Disclaimer",
@@ -60,6 +69,7 @@ const I18N = {
     sp500: "S&P 500", nasdaq: "NASDAQ", dow: "DOW",
     vix: "VIX", usdjpy: "USD/JPY", eurjpy: "EUR/JPY",
     crude_oil: "Crude Oil", gold: "Gold", cme_nikkei: "CME Nikkei",
+    mtf: "Multi-Timeframe",
   }
 };
 let currentLang = "ja";
@@ -77,9 +87,42 @@ function setLang(lang) {
   if (window._reportData) renderReport(window._reportData);
 }
 
+// === Mobile Navigation ===
+function openMobileNav() { document.getElementById("mobileNav").classList.add("open"); }
+function closeMobileNav() { document.getElementById("mobileNav").classList.remove("open"); }
+
+// === Section Accordion ===
+function toggleSection(sectionId) {
+  const body = document.getElementById(sectionId + "Body");
+  const toggle = body?.previousElementSibling?.querySelector(".section-toggle");
+  if (!body) return;
+  body.classList.toggle("collapsed");
+  if (toggle) toggle.classList.toggle("collapsed");
+}
+
+// === Pick Card Toggle (mobile) ===
+function togglePickBody(el) {
+  const body = el.nextElementSibling;
+  if (body) body.classList.toggle("collapsed");
+}
+
+// === Bottom Nav Active State ===
+function updateBottomNav() {
+  const sections = document.querySelectorAll(".section[id]");
+  const navLinks = document.querySelectorAll(".bottom-nav a");
+  let current = "";
+  sections.forEach(section => {
+    const top = section.getBoundingClientRect().top;
+    if (top < 200) current = "#" + section.id;
+  });
+  navLinks.forEach(link => {
+    link.classList.toggle("active", link.getAttribute("href") === current);
+  });
+}
+window.addEventListener("scroll", updateBottomNav, { passive: true });
+
 // === Data Loading ===
 async function loadReport() {
-  // index.json から利用可能な日付リストを取得（タイムゾーン非依存）
   try {
     const indexResp = await fetch(`data/index.json?t=${Date.now()}`);
     if (indexResp.ok) {
@@ -112,12 +155,15 @@ function renderReport(data) {
   renderDate(data);
   renderTicker(data.market_summary);
   renderMarketGrid(data.market_summary);
+  renderSentiment(data.sentiment);
   renderMacro(data.macro_outlook);
   renderForecast(data.macro_outlook, data.market_summary);
   loadPerformance();
   renderSectorHeatmap(data.sector_analysis);
+  renderSectorRotation(data.sector_rotation);
   renderPicks("daytradeGrid", data.daytrade_picks, "daytrade");
   renderPicks("swingGrid", data.swing_picks, "swing");
+  renderRiskDashboard(data.risk_dashboard);
   renderMethodology(data.methodology);
   renderDisclaimer(data.disclaimer);
 }
@@ -152,10 +198,7 @@ function renderTicker(market) {
 function renderMarketGrid(market) {
   const grid = document.getElementById("marketGrid");
   if (!market) { grid.innerHTML = "<p>データなし</p>"; return; }
-  const items = [
-    "nikkei225", "topix", "sp500", "nasdaq", "dow",
-    "usdjpy", "eurjpy", "vix", "crude_oil", "gold", "cme_nikkei",
-  ];
+  const items = ["nikkei225", "topix", "sp500", "nasdaq", "dow", "usdjpy", "eurjpy", "vix", "crude_oil", "gold", "cme_nikkei"];
   grid.innerHTML = items.map(key => {
     const d = market[key];
     if (!d || d.close === null) return "";
@@ -167,6 +210,46 @@ function renderMarketGrid(market) {
       <div class="card-change ${cls}-text">${sign}${(d.change_pct || 0).toFixed(2)}%</div>
     </div>`;
   }).join("");
+}
+
+// === NEW: Sentiment Dashboard ===
+function renderSentiment(sentiment) {
+  const grid = document.getElementById("sentimentGrid");
+  if (!sentiment) { grid.innerHTML = ""; return; }
+  const fgScore = sentiment.fear_greed_index || 50;
+  const fgLabel = sentiment.overall || "中立";
+  const breadth = sentiment.market_breadth || {};
+  const adv = breadth.advancing || 0;
+  const dec = breadth.declining || 0;
+  const total = adv + dec || 1;
+  const advPct = (adv / total * 100).toFixed(0);
+  const decPct = (dec / total * 100).toFixed(0);
+
+  grid.innerHTML = `
+    <div class="fear-greed-gauge">
+      <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:8px;">Fear & Greed Index</div>
+      <div class="fg-score">${fgScore}</div>
+      <div class="fg-label">${fgLabel}</div>
+      <div class="fg-bar"><div class="fg-indicator" style="left:${fgScore}%"></div></div>
+      <div style="display:flex;justify-content:space-between;margin-top:8px;font-size:10px;color:var(--text-muted);">
+        <span>😨 極度の恐怖</span><span>😊 極度の強気</span>
+      </div>
+    </div>
+    <div class="breadth-card">
+      <div style="font-size:11px;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.06em;margin-bottom:12px;">マーケット・ブレッドス</div>
+      <div style="display:flex;justify-content:space-between;font-size:13px;margin-bottom:4px;">
+        <span class="positive-text">上昇 ${adv}銘柄（${advPct}%）</span>
+        <span class="negative-text">下落 ${dec}銘柄（${decPct}%）</span>
+      </div>
+      <div class="breadth-bar-container">
+        <div class="breadth-advance" style="width:${advPct}%"></div>
+        <div class="breadth-decline" style="width:${decPct}%"></div>
+      </div>
+      <div style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:8px;font-size:12px;">
+        <div><span style="color:var(--text-muted);">VIX</span> <span style="color:var(--text);font-family:var(--mono);font-weight:600;">${sentiment.vix_level ? sentiment.vix_level.toFixed(1) : 'N/A'}</span></div>
+        <div><span style="color:var(--text-muted);">複合スコア</span> <span style="color:var(--text);font-family:var(--mono);font-weight:600;">${sentiment.combined_score ? sentiment.combined_score.toFixed(3) : '0'}</span></div>
+      </div>
+    </div>`;
 }
 
 function renderMacro(macro) {
@@ -245,15 +328,70 @@ function renderSectorHeatmap(sector) {
   }).join("");
 }
 
+// === NEW: Sector Rotation ===
+function renderSectorRotation(rotation) {
+  const el = document.getElementById("rotationContent");
+  if (!rotation) { el.innerHTML = "<p style='color:var(--text-muted)'>データなし</p>"; return; }
+  const phase = rotation.economic_phase || {};
+  let html = `<div class="phase-badge">📊 ${phase.phase || "unknown"}</div>
+    <p style="font-size:14px;color:var(--text-secondary);margin-bottom:16px;">${phase.description || ""}</p>`;
+  if (phase.favored_sectors && phase.favored_sectors.length) {
+    html += `<div style="margin-bottom:16px;"><span style="font-size:12px;color:var(--text-muted);">注目セクター：</span>
+      <div style="display:flex;flex-wrap:wrap;gap:4px;margin-top:6px;">${phase.favored_sectors.map(s => `<span class="method-tag">${s}</span>`).join("")}</div></div>`;
+  }
+  const signals = rotation.rotation_signals || [];
+  if (signals.length) {
+    html += `<div style="margin-top:12px;">`;
+    signals.forEach(sig => {
+      const icon = sig.direction === "inflow" ? "🟢" : "🔴";
+      html += `<div class="rotation-signal">${icon} ${sig.comment}</div>`;
+    });
+    html += `</div>`;
+  }
+  el.innerHTML = html;
+}
+
+// === NEW: Risk Dashboard ===
+function renderRiskDashboard(risk) {
+  const el = document.getElementById("riskContent");
+  if (!risk) { el.innerHTML = "<p style='color:var(--text-muted)'>データなし</p>"; return; }
+  const ps = risk.position_sizing || {};
+  const pr = risk.portfolio_risk || {};
+  const rm = risk.risk_metrics || {};
+  let html = `<div class="risk-grid">
+    <div class="risk-card"><div class="risk-title">VIXレジーム</div><div class="risk-value">${(ps.regime || "N/A").toUpperCase()}</div><div class="risk-detail">VIX ${risk.vix_level || "N/A"}</div></div>
+    <div class="risk-card"><div class="risk-title">推奨ポジション</div><div class="risk-value">¥${(ps.per_pick_amount || 0).toLocaleString()}</div><div class="risk-detail">1銘柄あたり (${ps.per_pick_fraction || 0}%)</div></div>
+    <div class="risk-card"><div class="risk-title">最大損失</div><div class="risk-value negative-text">¥${(ps.max_loss_scenario?.max_loss || 0).toLocaleString()}</div><div class="risk-detail">全損切りシナリオ</div></div>
+    <div class="risk-card"><div class="risk-title">Kelly比率</div><div class="risk-value">${ps.safe_kelly || 0}%</div><div class="risk-detail">Half Kelly</div></div>
+    <div class="risk-card"><div class="risk-title">分散スコア</div><div class="risk-value">${pr.diversification_score || 0}</div><div class="risk-detail">/100</div></div>
+    <div class="risk-card"><div class="risk-title">シャープレシオ</div><div class="risk-value">${rm.sharpe_ratio || "N/A"}</div><div class="risk-detail">${rm.trading_days || 0}日間</div></div>
+  </div>`;
+  if (ps.recommendation) {
+    html += `<p style="font-size:13px;color:var(--text-secondary);line-height:1.8;margin-bottom:16px;">${ps.recommendation}</p>`;
+  }
+  const warnings = pr.warnings || [];
+  if (warnings.length) {
+    html += `<div style="margin-top:12px;">`;
+    warnings.forEach(w => {
+      html += `<div style="font-size:13px;color:var(--text-secondary);padding:8px 0;border-top:1px solid var(--border);">${w.message}</div>`;
+    });
+    html += `</div>`;
+  }
+  el.innerHTML = html;
+}
+
 function renderPicks(containerId, picks, type) {
   const grid = document.getElementById(containerId);
   if (!picks || picks.length === 0) {
     grid.innerHTML = `<p style="color:var(--text-muted);padding:20px;">推奨銘柄なし</p>`;
     return;
   }
-  grid.innerHTML = picks.map(pick => {
+  const isMobile = window.innerWidth <= 768;
+  grid.innerHTML = picks.map((pick, idx) => {
     const rr = pick.risk_reward_ratio || 0;
     const rrClass = rr >= 2 ? "good" : rr >= 1.5 ? "moderate" : "poor";
+    const conf = pick.confidence || "medium";
+    const confLabel = conf === "high" ? "高確信" : conf === "medium" ? "中確信" : "低確信";
     // Quick signal tags
     let signalTags = "";
     if (pick.rationale?.quick_signals?.length) {
@@ -270,6 +408,8 @@ function renderPicks(containerId, picks, type) {
         rationaleHtml += `<div style="margin-bottom:10px;"><strong style="color:var(--accent);font-size:12px;">${t("volume")}</strong><p>${pick.rationale.volume_analysis}</p></div>`;
       if (pick.rationale.entry_strategy)
         rationaleHtml += `<div style="margin-bottom:10px;"><strong style="color:var(--accent);font-size:12px;">売買戦略</strong><p>${pick.rationale.entry_strategy}</p></div>`;
+      if (pick.rationale.mtf_context)
+        rationaleHtml += `<div style="margin-bottom:10px;"><strong style="color:var(--accent);font-size:12px;">${t("mtf")}</strong><p>${pick.rationale.mtf_context}</p></div>`;
     }
     let fundHtml = "";
     if (type === "swing" && pick.fundamentals) {
@@ -278,6 +418,8 @@ function renderPicks(containerId, picks, type) {
       if (f.per) items.push(`<span class="fund-item"><span class="fund-label">PER</span> <span class="fund-value">${f.per.toFixed(1)}</span></span>`);
       if (f.pbr) items.push(`<span class="fund-item"><span class="fund-label">PBR</span> <span class="fund-value">${f.pbr.toFixed(2)}</span></span>`);
       if (f.roe) items.push(`<span class="fund-item"><span class="fund-label">ROE</span> <span class="fund-value">${f.roe.toFixed(1)}%</span></span>`);
+      if (f.ev_ebitda) items.push(`<span class="fund-item"><span class="fund-label">EV/EBITDA</span> <span class="fund-value">${f.ev_ebitda.toFixed(1)}</span></span>`);
+      if (f.roic) items.push(`<span class="fund-item"><span class="fund-label">ROIC</span> <span class="fund-value">${f.roic.toFixed(1)}%</span></span>`);
       if (f.dividend_yield && f.dividend_yield < 20) items.push(`<span class="fund-item"><span class="fund-label">配当</span> <span class="fund-value">${f.dividend_yield.toFixed(1)}%</span></span>`);
       if (items.length) fundHtml = `<div class="fundamentals-row">${items.join("")}</div>`;
     }
@@ -286,14 +428,17 @@ function renderPicks(containerId, picks, type) {
       holdingHtml = `<p style="font-size:12px;color:var(--text-muted);margin-top:8px;">${t("holding")}: ${pick.holding_period}</p>`;
     }
     return `<div class="pick-card">
-      <div class="pick-header">
+      <div class="pick-header" onclick="togglePickBody(this)">
         <div class="pick-stock-info">
           <h3><span class="stock-code">${pick.code}</span> ${pick.name}</h3>
           <div class="pick-sector">${pick.sector}</div>
         </div>
-        <div class="pick-score">${pick.score}</div>
+        <div class="pick-meta">
+          <span class="confidence-badge ${conf}">${confLabel}</span>
+          <div class="pick-score">${pick.score}</div>
+        </div>
       </div>
-      <div class="pick-body">
+      <div class="pick-body${isMobile && idx > 0 ? ' collapsed' : ''}">
         ${signalTags}
         <div class="price-levels">
           <div class="price-level entry">
@@ -329,6 +474,10 @@ function renderMethodology(method) {
   if (method.screening_process) {
     html += `<h3 style="color:var(--accent);font-size:15px;margin:20px 0 8px;">${t("screening")}</h3>`;
     html += `<p style="color:var(--text-secondary);font-size:14px;">${method.screening_process}</p>`;
+  }
+  if (method.risk_management) {
+    html += `<h3 style="color:var(--accent);font-size:15px;margin:20px 0 8px;">リスク管理</h3>`;
+    html += `<p style="color:var(--text-secondary);font-size:14px;">${method.risk_management}</p>`;
   }
   if (method.data_source) {
     html += `<p style="margin-top:12px;font-size:13px;color:var(--text-muted);">${t("data_source")}: ${method.data_source}</p>`;
@@ -366,7 +515,7 @@ function renderPerformance(perf) {
   const ddPct = perf.peak_capital > 0 ? (perf.max_drawdown / perf.peak_capital * 100).toFixed(1) : "0";
   const pnlClass = pnl >= 0 ? "positive-text" : "negative-text";
 
-  let html = `<div class="market-grid" style="grid-template-columns:repeat(6,1fr);margin-bottom:24px;">
+  let html = `<div class="perf-grid">
     <div class="market-card"><div class="card-label">${t("perf_capital")}</div><div class="card-value" style="font-size:18px;">¥${perf.current_capital.toLocaleString()}</div></div>
     <div class="market-card"><div class="card-label">${t("perf_pnl")}</div><div class="card-value ${pnlClass}" style="font-size:18px;">¥${pnl >= 0 ? "+" : ""}${pnl.toLocaleString()}</div></div>
     <div class="market-card"><div class="card-label">${t("perf_return")}</div><div class="card-value ${pnlClass}" style="font-size:18px;">${pnl >= 0 ? "+" : ""}${returnPct}%</div></div>
@@ -380,9 +529,9 @@ function renderPerformance(perf) {
   if (daily.length > 0) {
     const maxAbs = Math.max(...daily.map(d => Math.abs(d.day_pnl)), 1);
     html += `<h4 style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">日次損益推移</h4>`;
-    html += `<div style="display:flex;align-items:end;gap:3px;height:100px;padding:8px 0;">`;
+    html += `<div class="pnl-chart">`;
     daily.forEach(d => {
-      const h = Math.max(2, Math.abs(d.day_pnl) / maxAbs * 80);
+      const h = Math.max(2, Math.abs(d.day_pnl) / maxAbs * 70);
       const color = d.day_pnl >= 0 ? "var(--green)" : "var(--red)";
       const tooltip = `${d.date}: ¥${d.day_pnl >= 0 ? "+" : ""}${d.day_pnl.toLocaleString()}`;
       html += `<div title="${tooltip}" style="flex:1;background:${color};height:${h}px;border-radius:2px;opacity:0.7;min-width:4px;"></div>`;
@@ -396,7 +545,7 @@ function renderPerformance(perf) {
       html += `<div style="display:grid;gap:6px;">`;
       latest.trades.forEach(tr => {
         const cls = tr.result === "win" ? "positive" : "negative";
-        html += `<div style="display:flex;justify-content:space-between;align-items:center;padding:8px 12px;background:var(--bg-elevated);border-radius:var(--radius-xs);font-size:13px;">
+        html += `<div class="trade-row">
           <span><strong>${tr.code}</strong> ${tr.name}</span>
           <span style="font-family:var(--mono);">¥${tr.entry.toLocaleString()} → ¥${tr.exit.toLocaleString()}</span>
           <span class="${cls}-text" style="font-family:var(--mono);font-weight:600;">¥${tr.pnl >= 0 ? "+" : ""}${tr.pnl.toLocaleString()} (${tr.pnl_pct >= 0 ? "+" : ""}${tr.pnl_pct}%)</span>

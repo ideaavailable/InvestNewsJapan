@@ -241,6 +241,37 @@ def analyze_macro_environment(market_data, macro_data):
             f"バリュー株や高配当株への選好が強まる可能性がある。"
         )
 
+    # ── Yield Curve Analysis ──
+    yield_spread = macro_data.get("yield_spread")
+    yield_signal = macro_data.get("yield_curve_signal")
+    if yield_spread is not None:
+        if yield_signal == "inverted":
+            factors.append({"factor": "イールドカーブ", "impact": "negative",
+                           "detail": f"逆イールド（10Y-2Yスプレッド: {yield_spread:+.2f}%）。景気後退の先行指標として警戒。"})
+            commentary_parts.append(
+                f"米国債イールドカーブが逆転しており（10Y-2Yスプレッド: {yield_spread:+.2f}%）、"
+                f"歴史的に景気後退の先行指標として高い予測精度を持つ。"
+                f"ディフェンシブセクターや高配当株への資金シフトが見込まれる。"
+            )
+            bearish_points += 1
+        elif yield_signal == "flat":
+            factors.append({"factor": "イールドカーブ", "impact": "mixed",
+                           "detail": f"イールドカーブフラット化（スプレッド: {yield_spread:+.2f}%）。景気先行きに不透明感。"})
+        elif yield_signal == "steep":
+            factors.append({"factor": "イールドカーブ", "impact": "positive",
+                           "detail": f"正常なイールドカーブ（スプレッド: {yield_spread:+.2f}%）。景気拡大期待を示唆。"})
+            bullish_points += 1
+
+    # ── DXY (Dollar Index) Analysis ──
+    dxy = macro_data.get("dxy")
+    if dxy:
+        if dxy > 107:
+            factors.append({"factor": "ドル指数", "impact": "mixed",
+                           "detail": f"DXY {dxy:.1f}とドル高水準。日本株の為替差益拡大に寄与するが、新興国からの資金還流懸念も。"})
+        elif dxy < 100:
+            factors.append({"factor": "ドル指数", "impact": "mixed",
+                           "detail": f"DXY {dxy:.1f}とドル安傾向。円高リスクに注意。新興国資産への資金流入活発化。"})
+
     analysis["key_factors"] = factors
 
     # ── Generate Summary ──

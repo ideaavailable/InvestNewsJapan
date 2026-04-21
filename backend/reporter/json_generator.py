@@ -1,4 +1,4 @@
-"""JSON report generator."""
+"""JSON report generator - expanded with new analysis sections."""
 import json
 import os
 import logging
@@ -10,7 +10,8 @@ logger = logging.getLogger("investnews.reporter")
 
 
 def generate_report(report_date, market_data, macro_analysis, sentiment_analysis,
-                    sector_data, daytrade_picks, swing_picks):
+                    sector_data, daytrade_picks, swing_picks,
+                    sector_rotation=None, risk_dashboard=None):
     """Generate the full daily report as a dict."""
     report = {
         "report_date": report_date.isoformat(),
@@ -20,6 +21,8 @@ def generate_report(report_date, market_data, macro_analysis, sentiment_analysis
         "sentiment": sentiment_analysis,
         "market_forecast": macro_analysis.get("market_forecast", {}),
         "sector_analysis": sector_data,
+        "sector_rotation": sector_rotation,
+        "risk_dashboard": risk_dashboard,
         "daytrade_picks": daytrade_picks,
         "swing_picks": swing_picks,
         "methodology": {
@@ -28,13 +31,26 @@ def generate_report(report_date, market_data, macro_analysis, sentiment_analysis
                 "RSI (14日)", "ADX (14日)", "ストキャスティクス (%K14, %D3)",
                 "CCI (20日)", "Williams %R (14日)", "一目均衡表 (9,26,52)",
                 "パラボリックSAR", "OBV", "ATR (14日)",
+                "ボリンジャーバンド (20,2)", "ケルトナーチャネル", "TTMスクイーズ",
+                "MFI (14日)", "VWAP", "フィボナッチリトレースメント",
+                "ピボットポイント", "出来高プロファイル (POC/VA)",
+                "ローソク足パターン認識", "RSI/MACDダイバージェンス検出",
             ],
             "screening_process": (
                 "全上場銘柄 → 流動性フィルタ（出来高・時価総額）→ "
-                "テクニカルスクリーニング → ファンダメンタルズ評価 → "
-                "多因子スコアリング → 上位銘柄選出"
+                "テクニカルスクリーニング → マルチタイムフレーム分析 → "
+                "ファンダメンタルズ評価（5軸） → セクターローテーション判定 → "
+                "多因子スコアリング（11因子） → セクターバランス調整 → 上位銘柄選出"
             ),
-            "scoring_model": "テクニカル・ファンダメンタルズ・センチメント・リスクリワードの多軸評価",
+            "scoring_model": (
+                "トレンド・出来高・テクニカルシグナル・ボラティリティ・カタリスト・"
+                "リスクリワード・MTFアライメント・BBスクイーズ・キャンドルパターン・"
+                "ダイバージェンス・VIX適応調整の多軸評価"
+            ),
+            "risk_management": (
+                "Kelly基準ポジションサイジング・VIX適応型パラメータ調整・"
+                "ポートフォリオ相関分析・セクター分散・最大損失シナリオ計算"
+            ),
             "data_source": "Yahoo Finance (yfinance)",
         },
         "disclaimer": (

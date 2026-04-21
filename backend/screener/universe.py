@@ -1,4 +1,4 @@
-"""Stock universe definition and filtering."""
+"""Stock universe definition and filtering - expanded with sector balance."""
 import logging
 from backend.config import STOCK_UNIVERSE, MIN_AVG_VOLUME_DAYTRADE, MIN_AVG_VOLUME_SWING, MIN_MARKET_CAP
 
@@ -47,3 +47,65 @@ def filter_by_technical(tickers, tech_results, mode="daytrade"):
                 filtered.append(ticker)
     logger.info(f"Technical filter ({mode}): {len(tickers)} -> {len(filtered)}")
     return filtered
+
+
+def filter_sector_balance(picks, max_per_sector=2):
+    """Ensure sector diversification by limiting picks per sector.
+
+    Args:
+        picks: list of scored pick dicts with 'ticker' key
+        max_per_sector: max picks per sector
+
+    Returns:
+        filtered list of picks
+    """
+    from backend.config import get_stock_info
+    sector_count = {}
+    filtered = []
+
+    for pick in picks:
+        ticker = pick.get("ticker", "")
+        code = ticker.replace(".T", "")
+        info = get_stock_info(code)
+        sector = info["sector"] if info else "不明"
+
+        if sector not in sector_count:
+            sector_count[sector] = 0
+
+        if sector_count[sector] < max_per_sector:
+            filtered.append(pick)
+            sector_count[sector] += 1
+
+    if len(picks) != len(filtered):
+        logger.info(f"Sector balance filter: {len(picks)} -> {len(filtered)}")
+
+    return filtered
+
+
+def filter_by_mtf(tickers, tech_results, weekly_results):
+    """Filter stocks preferring those with multi-timeframe alignment.
+
+    Doesn't strictly filter out, but sorts by alignment quality.
+    """
+    if not weekly_results:
+        return tickers
+
+    aligned = []
+    non_aligned = []
+
+    for ticker in tickers:
+        weekly = weekly_results.get(ticker)
+        tech = tech_results.get(ticker, {})
+
+        if weekly:
+            daily_up = tech.get("trend", "") in ("strong_up", "up")
+            weekly_up = weekly.get("w_trend", "") in ("strong_up", "up")
+            if daily_up and weekly_up:
+                aligned.append(ticker)
+            else:
+                non_aligned.append(ticker)
+        else:
+            non_aligned.append(ticker)
+
+    logger.info(f"MTF filter: {len(aligned)} aligned, {len(non_aligned)} non-aligned")
+    return aligned + non_aligned

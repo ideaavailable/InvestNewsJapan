@@ -36,15 +36,51 @@ TA_PARAMS = {
     "ichimoku_tenkan": 9, "ichimoku_kijun": 26, "ichimoku_senkou": 52,
     "atr_period": 14, "psar_step": 0.02, "psar_max_step": 0.2,
     "volume_avg_period": 20, "volume_surge_threshold": 1.5,
+    # --- New indicators ---
+    "bb_period": 20, "bb_std": 2,
+    "keltner_period": 20, "keltner_atr_mult": 1.5,
+    "mfi_period": 14,
+    "fib_lookback": 60,
+    "vwap_period": 20,
+    "volume_profile_bins": 20,
+    "pivot_period": 1,
+    "divergence_lookback": 14,
+}
+
+# Multi-timeframe parameters
+MTF_PARAMS = {
+    "weekly_period": "2y",
+    "weekly_sma_periods": [13, 26],
+    "weekly_rsi_period": 14,
+}
+
+# VIX-adaptive parameter sets
+VIX_REGIMES = {
+    "low": {"threshold": 15, "rr_min": 1.5, "position_mult": 1.2, "score_bias": 3},
+    "normal": {"threshold": 20, "rr_min": 1.5, "position_mult": 1.0, "score_bias": 0},
+    "elevated": {"threshold": 25, "rr_min": 2.0, "position_mult": 0.7, "score_bias": -3},
+    "high": {"threshold": 999, "rr_min": 2.5, "position_mult": 0.5, "score_bias": -6},
 }
 
 DAYTRADE_SCORING = {
-    "trend_clarity": 20, "volume_surge": 20, "technical_signals": 20,
-    "volatility": 15, "catalyst": 15, "risk_reward": 10,
+    "trend_clarity": 15, "volume_surge": 15, "technical_signals": 15,
+    "volatility": 10, "catalyst": 10, "risk_reward": 10,
+    "mtf_alignment": 8, "bb_squeeze": 5, "candle_pattern": 5,
+    "divergence": 4, "vix_adjustment": 3,
 }
 SWING_SCORING = {
-    "medium_term_trend": 20, "technical_signals": 15, "valuation": 15,
-    "fundamentals": 15, "sector_momentum": 10, "sentiment": 10, "risk_reward": 15,
+    "medium_term_trend": 15, "technical_signals": 12, "valuation": 12,
+    "fundamentals": 12, "sector_momentum": 8, "sentiment": 8, "risk_reward": 12,
+    "mtf_alignment": 8, "financial_health": 5, "divergence": 4,
+    "vix_adjustment": 4,
+}
+
+# Sector cycle mapping (economic phases)
+SECTOR_CYCLE = {
+    "recovery": ["情報通信", "サービス", "小売", "不動産"],
+    "expansion": ["半導体", "電気機器", "機械", "輸送用機器", "化学"],
+    "peak": ["石油石炭", "鉱業", "鉄鋼", "非鉄金属", "卸売"],
+    "contraction": ["医薬品", "食料品", "電気ガス", "銀行", "保険"],
 }
 
 # (ticker_code, company_name, sector)
