@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 9352507.32196902,
-  "total_trades": 140,
-  "wins": 66,
-  "losses": 74,
-  "total_profit": 1176902.114477295,
-  "total_loss": 1486184.5620082708,
-  "max_drawdown": 1005092.9560309816,
+  "current_capital": 9188717.868469018,
+  "total_trades": 145,
+  "wins": 67,
+  "losses": 78,
+  "total_profit": 1178056.904477295,
+  "total_loss": 1651128.8055082709,
+  "max_drawdown": 1168882.4095309824,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -1961,6 +1961,74 @@
       ],
       "day_pnl": -46469,
       "capital_after": 9352507
+    },
+    {
+      "date": "2026-04-23",
+      "eval_date": "2026-04-24",
+      "trades": [
+        {
+          "code": "5411",
+          "name": "JFEホールディングス",
+          "entry": 1724.0,
+          "target": 1899.8,
+          "stop": 1725.5,
+          "exit": 1725.5,
+          "result": "loss",
+          "shares": 1084,
+          "pnl": -243,
+          "pnl_pct": -0.01
+        },
+        {
+          "code": "9502",
+          "name": "中部電力",
+          "entry": 2622.5,
+          "target": 2963.7,
+          "stop": 2506.1,
+          "exit": 2594.0,
+          "result": "loss",
+          "shares": 713,
+          "pnl": -22190,
+          "pnl_pct": -1.19
+        },
+        {
+          "code": "9501",
+          "name": "東京電力HD",
+          "entry": 623.0,
+          "target": 688.9,
+          "stop": 585.7,
+          "exit": 585.7,
+          "result": "loss",
+          "shares": 3002,
+          "pnl": -113845,
+          "pnl_pct": -6.09
+        },
+        {
+          "code": "7013",
+          "name": "IHI",
+          "entry": 3071.0,
+          "target": 3594.3,
+          "stop": 2933.4,
+          "exit": 3027.0,
+          "result": "loss",
+          "shares": 609,
+          "pnl": -28666,
+          "pnl_pct": -1.53
+        },
+        {
+          "code": "4503",
+          "name": "アステラス製薬",
+          "entry": 2472.5,
+          "target": 2710.2,
+          "stop": 2442.0,
+          "exit": 2476.5,
+          "result": "win",
+          "shares": 756,
+          "pnl": 1155,
+          "pnl_pct": 0.06
+        }
+      ],
+      "day_pnl": -163789,
+      "capital_after": 9188718
     }
   ]
 }
