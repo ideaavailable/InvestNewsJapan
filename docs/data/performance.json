@@ -1,11 +1,11 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 9188717.868469018,
-  "total_trades": 145,
+  "current_capital": 9233015.977969019,
+  "total_trades": 150,
   "wins": 67,
-  "losses": 78,
+  "losses": 83,
   "total_profit": 1178056.904477295,
-  "total_loss": 1651128.8055082709,
+  "total_loss": 1690658.625508271,
   "max_drawdown": 1168882.4095309824,
   "peak_capital": 10357600.278,
   "daily_results": [
@@ -2036,6 +2036,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 9188718
+    },
+    {
+      "date": "2026-04-27",
+      "eval_date": "2026-04-28",
+      "trades": [
+        {
+          "code": "2801",
+          "name": "キッコーマン",
+          "entry": 1374.0,
+          "target": 1604.1,
+          "stop": 1390.3,
+          "exit": 1390.3,
+          "result": "loss",
+          "shares": 1337,
+          "pnl": 19956,
+          "pnl_pct": 1.09
+        },
+        {
+          "code": "7270",
+          "name": "SUBARU",
+          "entry": 2440.0,
+          "target": 2612.5,
+          "stop": 2425.7,
+          "exit": 2425.7,
+          "result": "loss",
+          "shares": 753,
+          "pnl": -12605,
+          "pnl_pct": -0.69
+        },
+        {
+          "code": "8766",
+          "name": "東京海上ホールディングス",
+          "entry": 7180.0,
+          "target": 7625.8,
+          "stop": 6744.8,
+          "exit": 7164.0,
+          "result": "loss",
+          "shares": 255,
+          "pnl": -5911,
+          "pnl_pct": -0.32
+        },
+        {
+          "code": "4568",
+          "name": "第一三共",
+          "entry": 2499.5,
+          "target": 3021.5,
+          "stop": 2588.9,
+          "exit": 2588.9,
+          "result": "loss",
+          "shares": 735,
+          "pnl": 63872,
+          "pnl_pct": 3.48
+        },
+        {
+          "code": "5401",
+          "name": "日本製鉄",
+          "entry": 575.0,
+          "target": 608.1,
+          "stop": 566.5,
+          "exit": 569.0,
+          "result": "loss",
+          "shares": 3196,
+          "pnl": -21014,
+          "pnl_pct": -1.14
+        }
+      ],
+      "day_pnl": 44298,
+      "capital_after": 9233016
     }
   ]
 }
