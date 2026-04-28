@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 9233015.977969019,
-  "total_trades": 150,
-  "wins": 67,
-  "losses": 83,
-  "total_profit": 1178056.904477295,
-  "total_loss": 1690658.625508271,
-  "max_drawdown": 1168882.4095309824,
+  "current_capital": 9127477.895969018,
+  "total_trades": 155,
+  "wins": 69,
+  "losses": 86,
+  "total_profit": 1215359.666477295,
+  "total_loss": 1833499.4695082707,
+  "max_drawdown": 1230122.3820309825,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -2104,6 +2104,74 @@
       ],
       "day_pnl": 44298,
       "capital_after": 9233016
+    },
+    {
+      "date": "2026-04-28",
+      "eval_date": "2026-04-29",
+      "trades": [
+        {
+          "code": "4307",
+          "name": "野村総合研究所",
+          "entry": 4479.0,
+          "target": 5241.7,
+          "stop": 4241.5,
+          "exit": 4313.0,
+          "result": "loss",
+          "shares": 412,
+          "pnl": -70237,
+          "pnl_pct": -3.81
+        },
+        {
+          "code": "6902",
+          "name": "デンソー",
+          "entry": 1914.0,
+          "target": 2000.9,
+          "stop": 1848.5,
+          "exit": 1848.5,
+          "result": "loss",
+          "shares": 964,
+          "pnl": -64987,
+          "pnl_pct": -3.52
+        },
+        {
+          "code": "7211",
+          "name": "三菱自動車",
+          "entry": 320.0,
+          "target": 339.5,
+          "stop": 298.8,
+          "exit": 319.0,
+          "result": "loss",
+          "shares": 5770,
+          "pnl": -7616,
+          "pnl_pct": -0.41
+        },
+        {
+          "code": "5108",
+          "name": "ブリヂストン",
+          "entry": 3305.0,
+          "target": 3486.4,
+          "stop": 3235.5,
+          "exit": 3322.0,
+          "result": "win",
+          "shares": 558,
+          "pnl": 7642,
+          "pnl_pct": 0.41
+        },
+        {
+          "code": "4568",
+          "name": "第一三共",
+          "entry": 2606.0,
+          "target": 3022.9,
+          "stop": 2498.6,
+          "exit": 2650.5,
+          "result": "win",
+          "shares": 708,
+          "pnl": 29661,
+          "pnl_pct": 1.61
+        }
+      ],
+      "day_pnl": -105538,
+      "capital_after": 9127478
     }
   ]
 }
