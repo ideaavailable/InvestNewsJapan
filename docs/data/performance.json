@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 9244036.096969018,
-  "total_trades": 160,
-  "wins": 71,
-  "losses": 89,
-  "total_profit": 1252640.096477295,
-  "total_loss": 1833499.4695082707,
-  "max_drawdown": 1230122.3820309825,
+  "current_capital": 9125795.424469016,
+  "total_trades": 165,
+  "wins": 73,
+  "losses": 92,
+  "total_profit": 1269921.8554772951,
+  "total_loss": 1877871.061008271,
+  "max_drawdown": 1231804.8535309844,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -2275,6 +2275,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 9244036
+    },
+    {
+      "date": "2026-05-07",
+      "eval_date": "2026-05-08",
+      "trades": [
+        {
+          "code": "7211",
+          "name": "三菱自動車",
+          "entry": 312.0,
+          "target": 339.5,
+          "stop": 297.6,
+          "exit": 310.0,
+          "result": "loss",
+          "shares": 5925,
+          "pnl": -13699,
+          "pnl_pct": -0.74
+        },
+        {
+          "code": "9021",
+          "name": "JR西日本",
+          "entry": 2808.5,
+          "target": 3231.4,
+          "stop": 2808.7,
+          "exit": 2808.7,
+          "result": "loss",
+          "shares": 658,
+          "pnl": -1716,
+          "pnl_pct": -0.09
+        },
+        {
+          "code": "7270",
+          "name": "SUBARU",
+          "entry": 2371.5,
+          "target": 2610.1,
+          "stop": 2336.7,
+          "exit": 2336.7,
+          "result": "loss",
+          "shares": 779,
+          "pnl": -28957,
+          "pnl_pct": -1.57
+        },
+        {
+          "code": "9020",
+          "name": "JR東日本",
+          "entry": 3573.0,
+          "target": 3724.2,
+          "stop": 3312.3,
+          "exit": 3610.0,
+          "result": "win",
+          "shares": 517,
+          "pnl": 17282,
+          "pnl_pct": 0.94
+        },
+        {
+          "code": "6861",
+          "name": "キーエンス",
+          "entry": 80280.0,
+          "target": 76397.2,
+          "stop": 56336.8,
+          "exit": 76397.2,
+          "result": "win",
+          "shares": 23,
+          "pnl": -91151,
+          "pnl_pct": -4.94
+        }
+      ],
+      "day_pnl": -118241,
+      "capital_after": 9125795
     }
   ]
 }
