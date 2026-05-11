@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 9125795.424469016,
-  "total_trades": 165,
-  "wins": 73,
-  "losses": 92,
+  "current_capital": 8948157.255469017,
+  "total_trades": 170,
+  "wins": 74,
+  "losses": 96,
   "total_profit": 1269921.8554772951,
-  "total_loss": 1877871.061008271,
-  "max_drawdown": 1231804.8535309844,
+  "total_loss": 2031439.822008271,
+  "max_drawdown": 1409443.0225309841,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -2350,6 +2350,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 9125795
+    },
+    {
+      "date": "2026-05-11",
+      "eval_date": "2026-05-12",
+      "trades": [
+        {
+          "code": "5411",
+          "name": "JFEホールディングス",
+          "entry": 1747.0,
+          "target": 1899.5,
+          "stop": 1653.3,
+          "exit": 1685.5,
+          "result": "loss",
+          "shares": 1044,
+          "pnl": -66030,
+          "pnl_pct": -3.62
+        },
+        {
+          "code": "7013",
+          "name": "IHI",
+          "entry": 2950.0,
+          "target": 3513.8,
+          "stop": 2741.8,
+          "exit": 2870.0,
+          "result": "loss",
+          "shares": 618,
+          "pnl": -51263,
+          "pnl_pct": -2.81
+        },
+        {
+          "code": "7270",
+          "name": "SUBARU",
+          "entry": 2330.0,
+          "target": 2610.0,
+          "stop": 2304.4,
+          "exit": 2304.4,
+          "result": "loss",
+          "shares": 783,
+          "pnl": -21869,
+          "pnl_pct": -1.2
+        },
+        {
+          "code": "9433",
+          "name": "KDDI",
+          "entry": 2537.0,
+          "target": 2778.4,
+          "stop": 2485.0,
+          "exit": 2519.5,
+          "result": "loss",
+          "shares": 719,
+          "pnl": -14407,
+          "pnl_pct": -0.79
+        },
+        {
+          "code": "2802",
+          "name": "味の素",
+          "entry": 5179.0,
+          "target": 5115.8,
+          "stop": 4480.2,
+          "exit": 5115.8,
+          "result": "win",
+          "shares": 352,
+          "pnl": -24069,
+          "pnl_pct": -1.32
+        }
+      ],
+      "day_pnl": -177638,
+      "capital_after": 8948157
     }
   ]
 }
