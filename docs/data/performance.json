@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8948157.255469017,
-  "total_trades": 170,
-  "wins": 74,
-  "losses": 96,
-  "total_profit": 1269921.8554772951,
-  "total_loss": 2031439.822008271,
-  "max_drawdown": 1409443.0225309841,
+  "current_capital": 8944222.841308434,
+  "total_trades": 175,
+  "wins": 77,
+  "losses": 98,
+  "total_profit": 1295841.2488167116,
+  "total_loss": 2061293.629508271,
+  "max_drawdown": 1413377.4366915673,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -2418,6 +2418,74 @@
       ],
       "day_pnl": -177638,
       "capital_after": 8948157
+    },
+    {
+      "date": "2026-05-12",
+      "eval_date": "2026-05-13",
+      "trades": [
+        {
+          "code": "5411",
+          "name": "JFEホールディングス",
+          "entry": 1675.5,
+          "target": 1900.5,
+          "stop": 1650.5,
+          "exit": 1683.0,
+          "result": "win",
+          "shares": 1068,
+          "pnl": 6221,
+          "pnl_pct": 0.35
+        },
+        {
+          "code": "7270",
+          "name": "SUBARU",
+          "entry": 2279.5,
+          "target": 2611.8,
+          "stop": 2271.2,
+          "exit": 2271.2,
+          "result": "loss",
+          "shares": 785,
+          "pnl": -8305,
+          "pnl_pct": -0.46
+        },
+        {
+          "code": "7211",
+          "name": "三菱自動車",
+          "entry": 321.3,
+          "target": 339.6,
+          "stop": 297.5,
+          "exit": 323.1,
+          "result": "win",
+          "shares": 5569,
+          "pnl": 8235,
+          "pnl_pct": 0.46
+        },
+        {
+          "code": "1605",
+          "name": "INPEX",
+          "entry": 3915.0,
+          "target": 4376.3,
+          "stop": 3673.4,
+          "exit": 3944.0,
+          "result": "win",
+          "shares": 457,
+          "pnl": 11464,
+          "pnl_pct": 0.64
+        },
+        {
+          "code": "3382",
+          "name": "セブン&アイ",
+          "entry": 1900.0,
+          "target": 2229.4,
+          "stop": 1826.8,
+          "exit": 1879.0,
+          "result": "loss",
+          "shares": 941,
+          "pnl": -21549,
+          "pnl_pct": -1.21
+        }
+      ],
+      "day_pnl": -3934,
+      "capital_after": 8944223
     }
   ]
 }
