@@ -1,11 +1,11 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 9053384.176808434,
-  "total_trades": 180,
-  "wins": 79,
-  "losses": 101,
-  "total_profit": 1468936.6688167118,
-  "total_loss": 2125227.714008271,
+  "current_capital": 8977305.566069603,
+  "total_trades": 185,
+  "wins": 81,
+  "losses": 104,
+  "total_profit": 1546499.8483167118,
+  "total_loss": 2278869.504247102,
   "max_drawdown": 1413377.4366915673,
   "peak_capital": 10357600.278,
   "daily_results": [
@@ -2554,6 +2554,74 @@
       ],
       "day_pnl": 109161,
       "capital_after": 9053384
+    },
+    {
+      "date": "2026-05-14",
+      "eval_date": "2026-05-15",
+      "trades": [
+        {
+          "code": "5411",
+          "name": "JFEホールディングス",
+          "entry": 1724.0,
+          "target": 1881.4,
+          "stop": 1648.8,
+          "exit": 1690.5,
+          "result": "loss",
+          "shares": 1050,
+          "pnl": -36985,
+          "pnl_pct": -2.04
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1535.0,
+          "target": 1792.3,
+          "stop": 1474.2,
+          "exit": 1474.2,
+          "result": "loss",
+          "shares": 1179,
+          "pnl": -73493,
+          "pnl_pct": -4.06
+        },
+        {
+          "code": "9433",
+          "name": "KDDI",
+          "entry": 2590.5,
+          "target": 2692.2,
+          "stop": 2474.1,
+          "exit": 2645.5,
+          "result": "win",
+          "shares": 698,
+          "pnl": 36582,
+          "pnl_pct": 2.02
+        },
+        {
+          "code": "5401",
+          "name": "日本製鉄",
+          "entry": 569.2,
+          "target": 606.0,
+          "stop": 551.1,
+          "exit": 556.2,
+          "result": "loss",
+          "shares": 3181,
+          "pnl": -43164,
+          "pnl_pct": -2.38
+        },
+        {
+          "code": "7270",
+          "name": "SUBARU",
+          "entry": 2346.5,
+          "target": 2594.7,
+          "stop": 2227.1,
+          "exit": 2402.0,
+          "result": "win",
+          "shares": 771,
+          "pnl": 40981,
+          "pnl_pct": 2.27
+        }
+      ],
+      "day_pnl": -76079,
+      "capital_after": 8977306
     }
   ]
 }
