@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8977305.566069603,
-  "total_trades": 185,
-  "wins": 81,
-  "losses": 104,
-  "total_profit": 1546499.8483167118,
-  "total_loss": 2278869.504247102,
-  "max_drawdown": 1413377.4366915673,
+  "current_capital": 8822371.226569602,
+  "total_trades": 190,
+  "wins": 82,
+  "losses": 108,
+  "total_profit": 1548533.9518167118,
+  "total_loss": 2435837.947247102,
+  "max_drawdown": 1535229.0514303986,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -2629,6 +2629,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 8977306
+    },
+    {
+      "date": "2026-05-18",
+      "eval_date": "2026-05-19",
+      "trades": [
+        {
+          "code": "3382",
+          "name": "セブン&アイ",
+          "entry": 1874.5,
+          "target": 2086.3,
+          "stop": 1813.2,
+          "exit": 1878.5,
+          "result": "win",
+          "shares": 957,
+          "pnl": 2034,
+          "pnl_pct": 0.11
+        },
+        {
+          "code": "7270",
+          "name": "SUBARU",
+          "entry": 2417.5,
+          "target": 2648.8,
+          "stop": 2218.2,
+          "exit": 2385.0,
+          "result": "loss",
+          "shares": 742,
+          "pnl": -25909,
+          "pnl_pct": -1.44
+        },
+        {
+          "code": "5803",
+          "name": "フジクラ",
+          "entry": 5842.0,
+          "target": 8038.6,
+          "stop": 5272.5,
+          "exit": 5653.0,
+          "result": "loss",
+          "shares": 307,
+          "pnl": -59816,
+          "pnl_pct": -3.34
+        },
+        {
+          "code": "7203",
+          "name": "トヨタ自動車",
+          "entry": 2990.0,
+          "target": 3454.6,
+          "stop": 2784.7,
+          "exit": 2954.5,
+          "result": "loss",
+          "shares": 600,
+          "pnl": -23094,
+          "pnl_pct": -1.29
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1491.0,
+          "target": 1777.3,
+          "stop": 1452.5,
+          "exit": 1452.5,
+          "result": "loss",
+          "shares": 1204,
+          "pnl": -48149,
+          "pnl_pct": -2.68
+        }
+      ],
+      "day_pnl": -154934,
+      "capital_after": 8822371
     }
   ]
 }
