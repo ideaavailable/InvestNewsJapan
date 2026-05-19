@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8822371.226569602,
-  "total_trades": 190,
-  "wins": 82,
-  "losses": 108,
-  "total_profit": 1548533.9518167118,
-  "total_loss": 2435837.947247102,
-  "max_drawdown": 1535229.0514303986,
+  "current_capital": 8811801.551069602,
+  "total_trades": 195,
+  "wins": 85,
+  "losses": 110,
+  "total_profit": 1665964.8513167116,
+  "total_loss": 2563838.522247102,
+  "max_drawdown": 1545798.7269303985,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -2697,6 +2697,74 @@
       ],
       "day_pnl": -154934,
       "capital_after": 8822371
+    },
+    {
+      "date": "2026-05-19",
+      "eval_date": "2026-05-20",
+      "trades": [
+        {
+          "code": "3382",
+          "name": "セブン&アイ",
+          "entry": 1915.0,
+          "target": 2086.1,
+          "stop": 1813.5,
+          "exit": 1947.0,
+          "result": "win",
+          "shares": 921,
+          "pnl": 27708,
+          "pnl_pct": 1.57
+        },
+        {
+          "code": "5803",
+          "name": "フジクラ",
+          "entry": 5600.0,
+          "target": 8035.1,
+          "stop": 5278.4,
+          "exit": 5278.4,
+          "result": "loss",
+          "shares": 315,
+          "pnl": -103068,
+          "pnl_pct": -5.84
+        },
+        {
+          "code": "4502",
+          "name": "武田薬品工業",
+          "entry": 5325.0,
+          "target": 5713.9,
+          "stop": 5054.5,
+          "exit": 5255.0,
+          "result": "loss",
+          "shares": 331,
+          "pnl": -24933,
+          "pnl_pct": -1.41
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1449.5,
+          "target": 1778.0,
+          "stop": 1427.7,
+          "exit": 1500.5,
+          "result": "win",
+          "shares": 1217,
+          "pnl": 60303,
+          "pnl_pct": 3.42
+        },
+        {
+          "code": "7974",
+          "name": "任天堂",
+          "entry": 7388.0,
+          "target": 8681.6,
+          "stop": 6724.0,
+          "exit": 7519.0,
+          "result": "win",
+          "shares": 238,
+          "pnl": 29420,
+          "pnl_pct": 1.67
+        }
+      ],
+      "day_pnl": -10570,
+      "capital_after": 8811802
     }
   ]
 }
