@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8587510.238569602,
-  "total_trades": 205,
-  "wins": 87,
-  "losses": 118,
+  "current_capital": 8350116.3755696025,
+  "total_trades": 210,
+  "wins": 88,
+  "losses": 122,
   "total_profit": 1671413.8198167116,
-  "total_loss": 2793578.8032471025,
-  "max_drawdown": 1770090.0394303985,
+  "total_loss": 2901460.6462471024,
+  "max_drawdown": 2007483.9024303984,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -2908,6 +2908,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 8587510
+    },
+    {
+      "date": "2026-05-25",
+      "eval_date": "2026-05-26",
+      "trades": [
+        {
+          "code": "9022",
+          "name": "JR東海",
+          "entry": 3553.0,
+          "target": 4247.6,
+          "stop": 3471.6,
+          "exit": 3552.0,
+          "result": "loss",
+          "shares": 483,
+          "pnl": -2199,
+          "pnl_pct": -0.13
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1480.0,
+          "target": 1703.5,
+          "stop": 1404.8,
+          "exit": 1410.0,
+          "result": "loss",
+          "shares": 1160,
+          "pnl": -82917,
+          "pnl_pct": -4.83
+        },
+        {
+          "code": "3382",
+          "name": "セブン&アイ",
+          "entry": 1845.0,
+          "target": 2026.4,
+          "stop": 1812.2,
+          "exit": 1837.5,
+          "result": "loss",
+          "shares": 930,
+          "pnl": -8691,
+          "pnl_pct": -0.51
+        },
+        {
+          "code": "6762",
+          "name": "TDK",
+          "entry": 3580.0,
+          "target": 3313.2,
+          "stop": 2479.7,
+          "exit": 3313.2,
+          "result": "win",
+          "shares": 479,
+          "pnl": -129512,
+          "pnl_pct": -7.55
+        },
+        {
+          "code": "4502",
+          "name": "武田薬品工業",
+          "entry": 5141.0,
+          "target": 5510.1,
+          "stop": 5038.0,
+          "exit": 5104.0,
+          "result": "loss",
+          "shares": 334,
+          "pnl": -14075,
+          "pnl_pct": -0.82
+        }
+      ],
+      "day_pnl": -237394,
+      "capital_after": 8350116
     }
   ]
 }
