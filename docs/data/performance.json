@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8350116.3755696025,
-  "total_trades": 210,
-  "wins": 88,
-  "losses": 122,
-  "total_profit": 1671413.8198167116,
-  "total_loss": 2901460.6462471024,
-  "max_drawdown": 2007483.9024303984,
+  "current_capital": 8338464.215113975,
+  "total_trades": 215,
+  "wins": 91,
+  "losses": 124,
+  "total_profit": 1689978.733361084,
+  "total_loss": 2931677.7202471024,
+  "max_drawdown": 2019136.0628860258,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -2976,6 +2976,74 @@
       ],
       "day_pnl": -237394,
       "capital_after": 8350116
+    },
+    {
+      "date": "2026-05-26",
+      "eval_date": "2026-05-27",
+      "trades": [
+        {
+          "code": "9022",
+          "name": "JR東海",
+          "entry": 3554.0,
+          "target": 4190.7,
+          "stop": 3460.3,
+          "exit": 3547.0,
+          "result": "loss",
+          "shares": 469,
+          "pnl": -4950,
+          "pnl_pct": -0.3
+        },
+        {
+          "code": "3382",
+          "name": "セブン&アイ",
+          "entry": 1835.0,
+          "target": 2016.7,
+          "stop": 1801.4,
+          "exit": 1839.0,
+          "result": "win",
+          "shares": 910,
+          "pnl": 1970,
+          "pnl_pct": 0.12
+        },
+        {
+          "code": "9021",
+          "name": "JR西日本",
+          "entry": 2688.0,
+          "target": 3029.8,
+          "stop": 2650.0,
+          "exit": 2650.0,
+          "result": "loss",
+          "shares": 621,
+          "pnl": -25267,
+          "pnl_pct": -1.51
+        },
+        {
+          "code": "4661",
+          "name": "オリエンタルランド",
+          "entry": 2134.0,
+          "target": 2576.8,
+          "stop": 2077.7,
+          "exit": 2155.5,
+          "result": "win",
+          "shares": 782,
+          "pnl": 15144,
+          "pnl_pct": 0.91
+        },
+        {
+          "code": "4755",
+          "name": "楽天グループ",
+          "entry": 749.2,
+          "target": 819.4,
+          "stop": 724.7,
+          "exit": 750.6,
+          "result": "win",
+          "shares": 2229,
+          "pnl": 1451,
+          "pnl_pct": 0.09
+        }
+      ],
+      "day_pnl": -11652,
+      "capital_after": 8338464
     }
   ]
 }
