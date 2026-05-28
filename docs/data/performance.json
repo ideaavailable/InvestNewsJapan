@@ -1,11 +1,11 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8401082.250113975,
-  "total_trades": 220,
-  "wins": 94,
-  "losses": 126,
-  "total_profit": 1782980.513361084,
-  "total_loss": 2962061.465247102,
+  "current_capital": 8355060.9051139755,
+  "total_trades": 225,
+  "wins": 95,
+  "losses": 130,
+  "total_profit": 1803982.193361084,
+  "total_loss": 3029084.4902471025,
   "max_drawdown": 2019136.0628860258,
   "peak_capital": 10357600.278,
   "daily_results": [
@@ -3112,6 +3112,74 @@
       ],
       "day_pnl": 62618,
       "capital_after": 8401082
+    },
+    {
+      "date": "2026-05-28",
+      "eval_date": "2026-05-29",
+      "trades": [
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1425.0,
+          "target": 1597.5,
+          "stop": 1374.4,
+          "exit": 1402.0,
+          "result": "loss",
+          "shares": 1179,
+          "pnl": -28797,
+          "pnl_pct": -1.71
+        },
+        {
+          "code": "9503",
+          "name": "関西電力",
+          "entry": 2310.0,
+          "target": 2532.6,
+          "stop": 2221.8,
+          "exit": 2291.0,
+          "result": "loss",
+          "shares": 727,
+          "pnl": -15492,
+          "pnl_pct": -0.92
+        },
+        {
+          "code": "4661",
+          "name": "オリエンタルランド",
+          "entry": 2220.0,
+          "target": 2462.4,
+          "stop": 2077.1,
+          "exit": 2250.0,
+          "result": "win",
+          "shares": 756,
+          "pnl": 21002,
+          "pnl_pct": 1.25
+        },
+        {
+          "code": "4502",
+          "name": "武田薬品工業",
+          "entry": 5128.0,
+          "target": 5396.3,
+          "stop": 4986.9,
+          "exit": 5120.0,
+          "result": "loss",
+          "shares": 327,
+          "pnl": -4293,
+          "pnl_pct": -0.26
+        },
+        {
+          "code": "3382",
+          "name": "セブン&アイ",
+          "entry": 1854.0,
+          "target": 1993.3,
+          "stop": 1790.9,
+          "exit": 1835.5,
+          "result": "loss",
+          "shares": 906,
+          "pnl": -18441,
+          "pnl_pct": -1.1
+        }
+      ],
+      "day_pnl": -46021,
+      "capital_after": 8355061
     }
   ]
 }
