@@ -1,11 +1,11 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8216511.66728585,
-  "total_trades": 240,
-  "wins": 99,
-  "losses": 141,
-  "total_profit": 1930594.861361084,
-  "total_loss": 3312262.3840752277,
+  "current_capital": 8191747.103232628,
+  "total_trades": 245,
+  "wins": 101,
+  "losses": 144,
+  "total_profit": 2000210.3193610841,
+  "total_loss": 3372724.5861284505,
   "max_drawdown": 2191644.5968860257,
   "peak_capital": 10357600.278,
   "daily_results": [
@@ -3391,6 +3391,74 @@
       ],
       "day_pnl": -18046,
       "capital_after": 8216512
+    },
+    {
+      "date": "2026-06-04",
+      "eval_date": "2026-06-05",
+      "trades": [
+        {
+          "code": "9021",
+          "name": "JR西日本",
+          "entry": 2489.0,
+          "target": 2892.8,
+          "stop": 2465.0,
+          "exit": 2465.0,
+          "result": "loss",
+          "shares": 660,
+          "pnl": -17483,
+          "pnl_pct": -1.06
+        },
+        {
+          "code": "6971",
+          "name": "京セラ",
+          "entry": 3772.0,
+          "target": 3697.8,
+          "stop": 2725.6,
+          "exit": 3697.8,
+          "result": "win",
+          "shares": 435,
+          "pnl": -33918,
+          "pnl_pct": -2.07
+        },
+        {
+          "code": "5401",
+          "name": "日本製鉄",
+          "entry": 544.7,
+          "target": 583.1,
+          "stop": 532.1,
+          "exit": 540.5,
+          "result": "loss",
+          "shares": 3016,
+          "pnl": -14310,
+          "pnl_pct": -0.87
+        },
+        {
+          "code": "9503",
+          "name": "関西電力",
+          "entry": 2370.0,
+          "target": 2472.7,
+          "stop": 2217.3,
+          "exit": 2331.0,
+          "result": "loss",
+          "shares": 693,
+          "pnl": -28669,
+          "pnl_pct": -1.75
+        },
+        {
+          "code": "6752",
+          "name": "パナソニック",
+          "entry": 3642.0,
+          "target": 3875.7,
+          "stop": 3085.4,
+          "exit": 3800.0,
+          "result": "win",
+          "shares": 451,
+          "pnl": 69615,
+          "pnl_pct": 4.24
+        }
+      ],
+      "day_pnl": -24765,
+      "capital_after": 8191747
     }
   ]
 }
