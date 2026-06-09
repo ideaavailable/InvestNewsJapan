@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8197185.159232628,
-  "total_trades": 250,
-  "wins": 103,
-  "losses": 147,
-  "total_profit": 2061833.5723610842,
-  "total_loss": 3428909.7831284506,
-  "max_drawdown": 2191644.5968860257,
+  "current_capital": 8138994.1835306315,
+  "total_trades": 255,
+  "wins": 104,
+  "losses": 151,
+  "total_profit": 2067320.7723610841,
+  "total_loss": 3492587.9588304465,
+  "max_drawdown": 2218606.0944693694,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -3534,6 +3534,74 @@
       ],
       "day_pnl": 5438,
       "capital_after": 8197185
+    },
+    {
+      "date": "2026-06-09",
+      "eval_date": "2026-06-10",
+      "trades": [
+        {
+          "code": "9022",
+          "name": "JR東海",
+          "entry": 3448.0,
+          "target": 3679.2,
+          "stop": 3252.5,
+          "exit": 3463.0,
+          "result": "win",
+          "shares": 475,
+          "pnl": 5487,
+          "pnl_pct": 0.34
+        },
+        {
+          "code": "9021",
+          "name": "JR西日本",
+          "entry": 2576.0,
+          "target": 2797.8,
+          "stop": 2439.7,
+          "exit": 2552.0,
+          "result": "loss",
+          "shares": 636,
+          "pnl": -16902,
+          "pnl_pct": -1.03
+        },
+        {
+          "code": "9432",
+          "name": "日本電信電話",
+          "entry": 148.3,
+          "target": 156.8,
+          "stop": 144.5,
+          "exit": 146.7,
+          "result": "loss",
+          "shares": 11054,
+          "pnl": -19326,
+          "pnl_pct": -1.18
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1383.5,
+          "target": 1565.9,
+          "stop": 1300.9,
+          "exit": 1370.0,
+          "result": "loss",
+          "shares": 1184,
+          "pnl": -17622,
+          "pnl_pct": -1.08
+        },
+        {
+          "code": "2502",
+          "name": "アサヒグループ",
+          "entry": 1500.0,
+          "target": 1604.8,
+          "stop": 1449.5,
+          "exit": 1492.5,
+          "result": "loss",
+          "shares": 1092,
+          "pnl": -9828,
+          "pnl_pct": -0.6
+        }
+      ],
+      "day_pnl": -58191,
+      "capital_after": 8138994
     }
   ]
 }
