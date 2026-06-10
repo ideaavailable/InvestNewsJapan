@@ -1,11 +1,11 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8138994.1835306315,
-  "total_trades": 255,
-  "wins": 104,
-  "losses": 151,
-  "total_profit": 2067320.7723610841,
-  "total_loss": 3492587.9588304465,
+  "current_capital": 8149432.092530631,
+  "total_trades": 260,
+  "wins": 108,
+  "losses": 152,
+  "total_profit": 2119697.0483610844,
+  "total_loss": 3534526.3258304466,
   "max_drawdown": 2218606.0944693694,
   "peak_capital": 10357600.278,
   "daily_results": [
@@ -3602,6 +3602,74 @@
       ],
       "day_pnl": -58191,
       "capital_after": 8138994
+    },
+    {
+      "date": "2026-06-10",
+      "eval_date": "2026-06-11",
+      "trades": [
+        {
+          "code": "9022",
+          "name": "JR東海",
+          "entry": 3493.0,
+          "target": 3679.6,
+          "stop": 3251.9,
+          "exit": 3507.0,
+          "result": "win",
+          "shares": 466,
+          "pnl": 4896,
+          "pnl_pct": 0.3
+        },
+        {
+          "code": "8801",
+          "name": "三井不動産",
+          "entry": 1529.5,
+          "target": 1637.8,
+          "stop": 1424.8,
+          "exit": 1546.5,
+          "result": "win",
+          "shares": 1064,
+          "pnl": 16461,
+          "pnl_pct": 1.01
+        },
+        {
+          "code": "9021",
+          "name": "JR西日本",
+          "entry": 2578.0,
+          "target": 2797.6,
+          "stop": 2440.0,
+          "exit": 2617.0,
+          "result": "win",
+          "shares": 631,
+          "pnl": 22982,
+          "pnl_pct": 1.41
+        },
+        {
+          "code": "4502",
+          "name": "武田薬品工業",
+          "entry": 5040.0,
+          "target": 5382.4,
+          "stop": 4694.4,
+          "exit": 5070.0,
+          "result": "win",
+          "shares": 322,
+          "pnl": 8037,
+          "pnl_pct": 0.5
+        },
+        {
+          "code": "7011",
+          "name": "三菱重工業",
+          "entry": 3669.0,
+          "target": 4423.2,
+          "stop": 3397.0,
+          "exit": 3578.0,
+          "result": "loss",
+          "shares": 443,
+          "pnl": -41938,
+          "pnl_pct": -2.58
+        }
+      ],
+      "day_pnl": 10438,
+      "capital_after": 8149432
     }
   ]
 }
