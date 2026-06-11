@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8149432.092530631,
-  "total_trades": 260,
-  "wins": 108,
-  "losses": 152,
-  "total_profit": 2119697.0483610844,
-  "total_loss": 3534526.3258304466,
-  "max_drawdown": 2218606.0944693694,
+  "current_capital": 8097823.375030631,
+  "total_trades": 265,
+  "wins": 110,
+  "losses": 155,
+  "total_profit": 2128709.5598610844,
+  "total_loss": 3595147.554830447,
+  "max_drawdown": 2259776.9029693697,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -3670,6 +3670,74 @@
       ],
       "day_pnl": 10438,
       "capital_after": 8149432
+    },
+    {
+      "date": "2026-06-11",
+      "eval_date": "2026-06-12",
+      "trades": [
+        {
+          "code": "9022",
+          "name": "JR東海",
+          "entry": 3473.0,
+          "target": 3669.7,
+          "stop": 3252.3,
+          "exit": 3405.0,
+          "result": "loss",
+          "shares": 469,
+          "pnl": -33521,
+          "pnl_pct": -2.06
+        },
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3448.0,
+          "target": 4427.3,
+          "stop": 3295.0,
+          "exit": 3468.0,
+          "result": "win",
+          "shares": 472,
+          "pnl": 7813,
+          "pnl_pct": 0.48
+        },
+        {
+          "code": "8750",
+          "name": "第一生命ホールディングス",
+          "entry": 1727.5,
+          "target": 1759.7,
+          "stop": 1488.1,
+          "exit": 1730.5,
+          "result": "win",
+          "shares": 943,
+          "pnl": 1200,
+          "pnl_pct": 0.07
+        },
+        {
+          "code": "5411",
+          "name": "JFEホールディングス",
+          "entry": 1577.0,
+          "target": 1729.7,
+          "stop": 1549.1,
+          "exit": 1573.0,
+          "result": "loss",
+          "shares": 1033,
+          "pnl": -5761,
+          "pnl_pct": -0.35
+        },
+        {
+          "code": "4523",
+          "name": "エーザイ",
+          "entry": 3709.0,
+          "target": 4705.6,
+          "stop": 3664.1,
+          "exit": 3664.1,
+          "result": "loss",
+          "shares": 439,
+          "pnl": -21339,
+          "pnl_pct": -1.31
+        }
+      ],
+      "day_pnl": -51609,
+      "capital_after": 8097823
     }
   ]
 }
