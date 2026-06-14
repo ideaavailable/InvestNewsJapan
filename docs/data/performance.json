@@ -3738,6 +3738,13 @@
       ],
       "day_pnl": -51609,
       "capital_after": 8097823
+    },
+    {
+      "date": "2026-06-12",
+      "eval_date": "2026-06-15",
+      "trades": [],
+      "day_pnl": 0,
+      "capital_after": 8097823
     }
   ]
 }
