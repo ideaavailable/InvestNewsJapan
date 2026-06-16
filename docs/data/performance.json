@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8126684.561030631,
-  "total_trades": 270,
-  "wins": 114,
-  "losses": 156,
-  "total_profit": 2174961.819861084,
-  "total_loss": 3612538.628830447,
-  "max_drawdown": 2259776.9029693697,
+  "current_capital": 8062587.819030631,
+  "total_trades": 275,
+  "wins": 117,
+  "losses": 158,
+  "total_profit": 2199766.1188610843,
+  "total_loss": 3701326.494830447,
+  "max_drawdown": 2295012.4589693695,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -3813,6 +3813,74 @@
       ],
       "day_pnl": 28861,
       "capital_after": 8126685
+    },
+    {
+      "date": "2026-06-16",
+      "eval_date": "2026-06-17",
+      "trades": [
+        {
+          "code": "9022",
+          "name": "JR東海",
+          "entry": 3303.0,
+          "target": 3640.1,
+          "stop": 3251.6,
+          "exit": 3351.0,
+          "result": "win",
+          "shares": 492,
+          "pnl": 21991,
+          "pnl_pct": 1.35
+        },
+        {
+          "code": "4523",
+          "name": "エーザイ",
+          "entry": 3796.0,
+          "target": 4457.7,
+          "stop": 3643.4,
+          "exit": 3750.0,
+          "result": "loss",
+          "shares": 428,
+          "pnl": -21313,
+          "pnl_pct": -1.31
+        },
+        {
+          "code": "8306",
+          "name": "三菱UFJフィナンシャル",
+          "entry": 3225.0,
+          "target": 3329.5,
+          "stop": 2924.7,
+          "exit": 3228.0,
+          "result": "win",
+          "shares": 503,
+          "pnl": -113,
+          "pnl_pct": -0.01
+        },
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3702.0,
+          "target": 4025.9,
+          "stop": 3298.3,
+          "exit": 3552.0,
+          "result": "loss",
+          "shares": 439,
+          "pnl": -67475,
+          "pnl_pct": -4.15
+        },
+        {
+          "code": "9021",
+          "name": "JR西日本",
+          "entry": 2562.5,
+          "target": 2785.8,
+          "stop": 2439.7,
+          "exit": 2569.5,
+          "result": "win",
+          "shares": 634,
+          "pnl": 2813,
+          "pnl_pct": 0.17
+        }
+      ],
+      "day_pnl": -64097,
+      "capital_after": 8062588
     }
   ]
 }
