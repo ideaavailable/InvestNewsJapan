@@ -1,11 +1,11 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8024221.310685554,
-  "total_trades": 280,
-  "wins": 118,
-  "losses": 162,
-  "total_profit": 2259334.0488610845,
-  "total_loss": 3799260.933175524,
+  "current_capital": 8071725.066405601,
+  "total_trades": 285,
+  "wins": 122,
+  "losses": 163,
+  "total_profit": 2314499.7765811314,
+  "total_loss": 3806922.9051755243,
   "max_drawdown": 2333378.9673144473,
   "peak_capital": 10357600.278,
   "daily_results": [
@@ -3949,6 +3949,74 @@
       ],
       "day_pnl": -38367,
       "capital_after": 8024221
+    },
+    {
+      "date": "2026-06-18",
+      "eval_date": "2026-06-19",
+      "trades": [
+        {
+          "code": "4523",
+          "name": "エーザイ",
+          "entry": 3888.0,
+          "target": 4273.4,
+          "stop": 3642.2,
+          "exit": 3969.0,
+          "result": "win",
+          "shares": 412,
+          "pnl": 31770,
+          "pnl_pct": 1.98
+        },
+        {
+          "code": "9022",
+          "name": "JR東海",
+          "entry": 3293.0,
+          "target": 3606.8,
+          "stop": 3233.9,
+          "exit": 3331.0,
+          "result": "win",
+          "shares": 487,
+          "pnl": 16902,
+          "pnl_pct": 1.05
+        },
+        {
+          "code": "9432",
+          "name": "日本電信電話",
+          "entry": 147.3,
+          "target": 154.9,
+          "stop": 144.3,
+          "exit": 147.9,
+          "result": "win",
+          "shares": 10895,
+          "pnl": 4932,
+          "pnl_pct": 0.31
+        },
+        {
+          "code": "1605",
+          "name": "INPEX",
+          "entry": 3442.0,
+          "target": 3898.8,
+          "stop": 3280.0,
+          "exit": 3429.0,
+          "result": "loss",
+          "shares": 466,
+          "pnl": -7662,
+          "pnl_pct": -0.48
+        },
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3546.0,
+          "target": 3973.9,
+          "stop": 3297.3,
+          "exit": 3553.0,
+          "result": "win",
+          "shares": 452,
+          "pnl": 1561,
+          "pnl_pct": 0.1
+        }
+      ],
+      "day_pnl": 47504,
+      "capital_after": 8071725
     }
   ]
 }
