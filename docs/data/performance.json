@@ -1,11 +1,11 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 7972358.1663317485,
-  "total_trades": 300,
-  "wins": 129,
-  "losses": 171,
-  "total_profit": 2414904.183055497,
-  "total_loss": 4015572.3752715928,
+  "current_capital": 7952202.518590843,
+  "total_trades": 305,
+  "wins": 131,
+  "losses": 174,
+  "total_profit": 2470235.248314591,
+  "total_loss": 4091059.088271593,
   "max_drawdown": 2425488.9331426173,
   "peak_capital": 10357600.278,
   "daily_results": [
@@ -4228,6 +4228,74 @@
       ],
       "day_pnl": 40247,
       "capital_after": 7972358
+    },
+    {
+      "date": "2026-06-25",
+      "eval_date": "2026-06-26",
+      "trades": [
+        {
+          "code": "9501",
+          "name": "東京電力HD",
+          "entry": 475.7,
+          "target": 582.6,
+          "stop": 449.4,
+          "exit": 481.2,
+          "result": "win",
+          "shares": 3351,
+          "pnl": 16836,
+          "pnl_pct": 1.06
+        },
+        {
+          "code": "8001",
+          "name": "伊藤忠商事",
+          "entry": 1845.0,
+          "target": 1951.3,
+          "stop": 1791.8,
+          "exit": 1814.0,
+          "result": "loss",
+          "shares": 864,
+          "pnl": -28378,
+          "pnl_pct": -1.78
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1320.0,
+          "target": 1438.4,
+          "stop": 1268.0,
+          "exit": 1300.0,
+          "result": "loss",
+          "shares": 1207,
+          "pnl": -25733,
+          "pnl_pct": -1.62
+        },
+        {
+          "code": "6752",
+          "name": "パナソニック",
+          "entry": 4469.0,
+          "target": 4581.6,
+          "stop": 3339.2,
+          "exit": 4581.6,
+          "result": "win",
+          "shares": 356,
+          "pnl": 38495,
+          "pnl_pct": 2.42
+        },
+        {
+          "code": "9022",
+          "name": "JR東海",
+          "entry": 3383.0,
+          "target": 3550.0,
+          "stop": 3178.6,
+          "exit": 3341.0,
+          "result": "loss",
+          "shares": 471,
+          "pnl": -21375,
+          "pnl_pct": -1.34
+        }
+      ],
+      "day_pnl": -20156,
+      "capital_after": 7952203
     }
   ]
 }
