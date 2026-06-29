@@ -1,11 +1,11 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 7952202.518590843,
-  "total_trades": 305,
-  "wins": 131,
-  "losses": 174,
-  "total_profit": 2470235.248314591,
-  "total_loss": 4091059.088271593,
+  "current_capital": 7998424.190590844,
+  "total_trades": 310,
+  "wins": 135,
+  "losses": 175,
+  "total_profit": 2537600.589314591,
+  "total_loss": 4111360.5232715933,
   "max_drawdown": 2425488.9331426173,
   "peak_capital": 10357600.278,
   "daily_results": [
@@ -4303,6 +4303,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 7952203
+    },
+    {
+      "date": "2026-06-29",
+      "eval_date": "2026-06-30",
+      "trades": [
+        {
+          "code": "8001",
+          "name": "伊藤忠商事",
+          "entry": 1845.0,
+          "target": 1925.0,
+          "stop": 1788.3,
+          "exit": 1849.5,
+          "result": "win",
+          "shares": 862,
+          "pnl": 2289,
+          "pnl_pct": 0.14
+        },
+        {
+          "code": "7203",
+          "name": "トヨタ自動車",
+          "entry": 2805.0,
+          "target": 2974.4,
+          "stop": 2657.3,
+          "exit": 2772.0,
+          "result": "loss",
+          "shares": 567,
+          "pnl": -20301,
+          "pnl_pct": -1.28
+        },
+        {
+          "code": "8725",
+          "name": "MS&ADインシュアランス",
+          "entry": 4258.0,
+          "target": 4748.3,
+          "stop": 4140.3,
+          "exit": 4260.0,
+          "result": "win",
+          "shares": 373,
+          "pnl": -842,
+          "pnl_pct": -0.05
+        },
+        {
+          "code": "8801",
+          "name": "三井不動産",
+          "entry": 1500.0,
+          "target": 1602.8,
+          "stop": 1418.2,
+          "exit": 1520.5,
+          "result": "win",
+          "shares": 1060,
+          "pnl": 20140,
+          "pnl_pct": 1.27
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1333.0,
+          "target": 1429.1,
+          "stop": 1265.4,
+          "exit": 1372.0,
+          "result": "win",
+          "shares": 1193,
+          "pnl": 44937,
+          "pnl_pct": 2.83
+        }
+      ],
+      "day_pnl": 46222,
+      "capital_after": 7998424
     }
   ]
 }
