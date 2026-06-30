@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 7998424.190590844,
-  "total_trades": 310,
-  "wins": 135,
-  "losses": 175,
-  "total_profit": 2537600.589314591,
-  "total_loss": 4111360.5232715933,
-  "max_drawdown": 2425488.9331426173,
+  "current_capital": 7901042.960659782,
+  "total_trades": 315,
+  "wins": 136,
+  "losses": 179,
+  "total_profit": 2538310.3683835305,
+  "total_loss": 4209451.532271593,
+  "max_drawdown": 2456557.3173402185,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -4371,6 +4371,74 @@
       ],
       "day_pnl": 46222,
       "capital_after": 7998424
+    },
+    {
+      "date": "2026-06-30",
+      "eval_date": "2026-07-01",
+      "trades": [
+        {
+          "code": "6971",
+          "name": "京セラ",
+          "entry": 3572.0,
+          "target": 3911.8,
+          "stop": 3329.6,
+          "exit": 3561.0,
+          "result": "loss",
+          "shares": 447,
+          "pnl": -6514,
+          "pnl_pct": -0.41
+        },
+        {
+          "code": "9434",
+          "name": "ソフトバンク",
+          "entry": 207.8,
+          "target": 219.3,
+          "stop": 201.6,
+          "exit": 208.1,
+          "result": "win",
+          "shares": 7698,
+          "pnl": 710,
+          "pnl_pct": 0.04
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1385.0,
+          "target": 1430.0,
+          "stop": 1263.8,
+          "exit": 1341.0,
+          "result": "loss",
+          "shares": 1155,
+          "pnl": -52420,
+          "pnl_pct": -3.28
+        },
+        {
+          "code": "7974",
+          "name": "任天堂",
+          "entry": 6955.0,
+          "target": 7879.3,
+          "stop": 6530.7,
+          "exit": 6815.0,
+          "result": "loss",
+          "shares": 230,
+          "pnl": -33800,
+          "pnl_pct": -2.11
+        },
+        {
+          "code": "8725",
+          "name": "MS&ADインシュアランス",
+          "entry": 4250.0,
+          "target": 4747.8,
+          "stop": 4135.1,
+          "exit": 4240.0,
+          "result": "loss",
+          "shares": 376,
+          "pnl": -5358,
+          "pnl_pct": -0.34
+        }
+      ],
+      "day_pnl": -97381,
+      "capital_after": 7901043
     }
   ]
 }
