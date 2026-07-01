@@ -1,12 +1,12 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 7901042.960659782,
-  "total_trades": 315,
+  "current_capital": 7823741.872193107,
+  "total_trades": 320,
   "wins": 136,
-  "losses": 179,
+  "losses": 184,
   "total_profit": 2538310.3683835305,
-  "total_loss": 4209451.532271593,
-  "max_drawdown": 2456557.3173402185,
+  "total_loss": 4286752.620738268,
+  "max_drawdown": 2533858.4058068935,
   "peak_capital": 10357600.278,
   "daily_results": [
     {
@@ -4439,6 +4439,74 @@
       ],
       "day_pnl": -97381,
       "capital_after": 7901043
+    },
+    {
+      "date": "2026-07-01",
+      "eval_date": "2026-07-02",
+      "trades": [
+        {
+          "code": "8001",
+          "name": "伊藤忠商事",
+          "entry": 1854.0,
+          "target": 1917.9,
+          "stop": 1788.9,
+          "exit": 1852.0,
+          "result": "loss",
+          "shares": 852,
+          "pnl": -3284,
+          "pnl_pct": -0.21
+        },
+        {
+          "code": "8031",
+          "name": "三井物産",
+          "entry": 4497.0,
+          "target": 5158.3,
+          "stop": 4391.3,
+          "exit": 4440.0,
+          "result": "loss",
+          "shares": 351,
+          "pnl": -21585,
+          "pnl_pct": -1.37
+        },
+        {
+          "code": "9434",
+          "name": "ソフトバンク",
+          "entry": 207.9,
+          "target": 218.6,
+          "stop": 201.6,
+          "exit": 206.4,
+          "result": "loss",
+          "shares": 7600,
+          "pnl": -12980,
+          "pnl_pct": -0.82
+        },
+        {
+          "code": "7203",
+          "name": "トヨタ自動車",
+          "entry": 2765.0,
+          "target": 2936.2,
+          "stop": 2657.2,
+          "exit": 2724.5,
+          "result": "loss",
+          "shares": 571,
+          "pnl": -24704,
+          "pnl_pct": -1.56
+        },
+        {
+          "code": "9432",
+          "name": "日本電信電話",
+          "entry": 144.0,
+          "target": 150.6,
+          "stop": 141.7,
+          "exit": 142.8,
+          "result": "loss",
+          "shares": 10973,
+          "pnl": -14748,
+          "pnl_pct": -0.93
+        }
+      ],
+      "day_pnl": -77301,
+      "capital_after": 7823742
     }
   ]
 }
