@@ -1,10 +1,10 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 7823741.872193107,
-  "total_trades": 320,
-  "wins": 136,
+  "current_capital": 7984054.133701088,
+  "total_trades": 325,
+  "wins": 141,
   "losses": 184,
-  "total_profit": 2538310.3683835305,
+  "total_profit": 2699496.9368915106,
   "total_loss": 4286752.620738268,
   "max_drawdown": 2533858.4058068935,
   "peak_capital": 10357600.278,
@@ -4507,6 +4507,74 @@
       ],
       "day_pnl": -77301,
       "capital_after": 7823742
+    },
+    {
+      "date": "2026-07-02",
+      "eval_date": "2026-07-03",
+      "trades": [
+        {
+          "code": "8031",
+          "name": "三井物産",
+          "entry": 4549.0,
+          "target": 5118.9,
+          "stop": 4371.2,
+          "exit": 4551.0,
+          "result": "win",
+          "shares": 343,
+          "pnl": -874,
+          "pnl_pct": -0.06
+        },
+        {
+          "code": "9432",
+          "name": "日本電信電話",
+          "entry": 143.8,
+          "target": 150.6,
+          "stop": 141.6,
+          "exit": 146.1,
+          "result": "win",
+          "shares": 10881,
+          "pnl": 23462,
+          "pnl_pct": 1.5
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1328.0,
+          "target": 1430.2,
+          "stop": 1261.1,
+          "exit": 1354.0,
+          "result": "win",
+          "shares": 1178,
+          "pnl": 29064,
+          "pnl_pct": 1.86
+        },
+        {
+          "code": "7211",
+          "name": "三菱自動車",
+          "entry": 314.5,
+          "target": 346.6,
+          "stop": 301.3,
+          "exit": 328.9,
+          "result": "win",
+          "shares": 4975,
+          "pnl": 70075,
+          "pnl_pct": 4.48
+        },
+        {
+          "code": "8725",
+          "name": "MS&ADインシュアランス",
+          "entry": 4285.0,
+          "target": 4745.4,
+          "stop": 4156.9,
+          "exit": 4395.0,
+          "result": "win",
+          "shares": 365,
+          "pnl": 38586,
+          "pnl_pct": 2.47
+        }
+      ],
+      "day_pnl": 160312,
+      "capital_after": 7984054
     }
   ]
 }
