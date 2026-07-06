@@ -1,0 +1,1737 @@
+{
+  "report_date": "2026-07-07",
+  "generated_at": "2026-07-07T07:07:08.610890+09:00",
+  "market_summary": {
+    "nikkei225": {
+      "close": 69744.07,
+      "change": 1010.92,
+      "change_pct": 1.47
+    },
+    "topix": {
+      "close": 435.4,
+      "change": 3.7,
+      "change_pct": 0.86
+    },
+    "mothers": {
+      "close": 590.9,
+      "change": 7.0,
+      "change_pct": 1.2
+    },
+    "sp500": {
+      "close": 7537.43,
+      "change": 54.19,
+      "change_pct": 0.72
+    },
+    "nasdaq": {
+      "close": 26121.16,
+      "change": 288.49,
+      "change_pct": 1.12
+    },
+    "dow": {
+      "close": 53055.91,
+      "change": 155.84,
+      "change_pct": 0.29
+    },
+    "vix": {
+      "close": 15.57,
+      "change": -0.58,
+      "change_pct": -3.59
+    },
+    "usdjpy": {
+      "close": 162.04,
+      "change": 0.6,
+      "change_pct": 0.37
+    },
+    "eurjpy": {
+      "close": 185.45,
+      "change": 1.05,
+      "change_pct": 0.57
+    },
+    "crude_oil": {
+      "close": 68.78,
+      "change": 0.09,
+      "change_pct": 0.13
+    },
+    "gold": {
+      "close": 4187.3,
+      "change": 74.6,
+      "change_pct": 1.81
+    },
+    "cme_nikkei": {
+      "close": 70345.0,
+      "change": 1925.0,
+      "change_pct": 2.81
+    }
+  },
+  "macro_outlook": {
+    "summary": "マクロ環境は強気。複数のポジティブ要因が重なっており、積極的なリスクテイクが可能な局面。上昇局面では利益確定の目標を引き上げることも検討したい。",
+    "key_factors": [
+      {
+        "factor": "米国市場",
+        "impact": "positive",
+        "detail": "S&P500が+0.72%と堅調。日本株にもプラスの影響が期待される。"
+      },
+      {
+        "factor": "為替",
+        "impact": "mixed",
+        "detail": "USD/JPY 162.04円（前日比+0.37%）。歴史的な円安水準が持続しており、輸出企業にはプラスだが、為替介入リスクや輸入コスト増が警戒材料。"
+      },
+      {
+        "factor": "VIX",
+        "impact": "neutral",
+        "detail": "VIX 15.6と平常水準。通常のリスク管理で十分。"
+      },
+      {
+        "factor": "CME日経先物",
+        "impact": "positive",
+        "detail": "CME日経先物は大証比+601円（+0.86%）。明確な上方乖離で高寄りが予想される。"
+      },
+      {
+        "factor": "金",
+        "impact": "mixed",
+        "detail": "金価格が+1.8%上昇。安全資産需要の高まりを示唆。"
+      }
+    ],
+    "risk_level": "moderate",
+    "market_forecast": {
+      "direction": "bullish",
+      "confidence": "high"
+    },
+    "sector_implications": {},
+    "detailed_commentary": "前日の米国市場はS&P500が+0.72%と堅調に推移。大きなサプライズはないものの、底堅い相場展開は日本株にとっても追い風材料。 為替市場ではドル円が162.04円と高水準を維持。輸出企業の業績押し上げ効果が期待される一方、政府・日銀による為替介入への警戒感も根強い。この水準では自動車・電子部品セクターが恩恵を受けやすいが、内需・輸入関連企業にとってはコスト増の重荷となる。 CME日経225先物は大証終値比+601円（+0.86%）の上方乖離。東京市場の寄り付きは大きくギャップアップしてスタートする見込み。デイトレードでは寄り付き直後の飛び乗りではなく、初動の値幅が落ち着いた後の押し目買いが有効な戦略となる。"
+  },
+  "sentiment": {
+    "news_sentiment": {
+      "score": 0.154,
+      "label": "やや強気",
+      "positive_count": 2,
+      "negative_count": 0,
+      "neutral_count": 11
+    },
+    "vix_sentiment": 0.3,
+    "breadth_sentiment": 0.189,
+    "volume_sentiment": 0.2,
+    "combined_score": 0.213,
+    "overall": "強気",
+    "fear_greed_index": 71,
+    "fear_greed_label": "greed",
+    "market_breadth": {
+      "advancing": 97,
+      "declining": 22,
+      "ratio": 0.82
+    },
+    "vix_level": 15.57
+  },
+  "market_forecast": {
+    "direction": "bullish",
+    "confidence": "high"
+  },
+  "sector_analysis": {
+    "heatmap": {
+      "電気機器": -0.46,
+      "半導体": -1.94,
+      "機械": 3.29,
+      "輸送用機器": 2.46,
+      "ゴム": 2.59,
+      "銀行": 1.47,
+      "証券": 1.5,
+      "保険": 2.31,
+      "その他金融": 0.68,
+      "卸売": 1.04,
+      "医薬品": 2.18,
+      "情報通信": 0.97,
+      "サービス": 1.31,
+      "小売": 2.67,
+      "食料品": 1.39,
+      "化学": 2.24,
+      "鉄鋼": 2.67,
+      "非鉄金属": -0.94,
+      "不動産": 0.74,
+      "陸運": 1.71,
+      "海運": 3.2,
+      "空運": 1.69,
+      "建設": 2.58,
+      "その他製品": 0.47,
+      "石油石炭": 3.19,
+      "鉱業": 2.07,
+      "電気ガス": 0.61,
+      "精密機器": -0.8
+    },
+    "focus_sectors": [
+      {
+        "sector": "機械",
+        "change_pct": 3.29,
+        "direction": "上昇",
+        "reason": "セクター全体が上昇傾向（平均+3.29%）",
+        "notable_stocks": [
+          {
+            "code": "7011",
+            "name": "三菱重工業",
+            "change": 8.3861
+          },
+          {
+            "code": "7013",
+            "name": "IHI",
+            "change": 7.0221
+          },
+          {
+            "code": "7012",
+            "name": "川崎重工業",
+            "change": 6.4894
+          }
+        ]
+      },
+      {
+        "sector": "海運",
+        "change_pct": 3.2,
+        "direction": "上昇",
+        "reason": "セクター全体が上昇傾向（平均+3.20%）",
+        "notable_stocks": [
+          {
+            "code": "9104",
+            "name": "商船三井",
+            "change": 3.5817
+          },
+          {
+            "code": "9101",
+            "name": "日本郵船",
+            "change": 3.0512
+          },
+          {
+            "code": "9107",
+            "name": "川崎汽船",
+            "change": 2.9684
+          }
+        ]
+      },
+      {
+        "sector": "石油石炭",
+        "change_pct": 3.19,
+        "direction": "上昇",
+        "reason": "セクター全体が上昇傾向（平均+3.19%）",
+        "notable_stocks": [
+          {
+            "code": "5020",
+            "name": "ENEOSホールディングス",
+            "change": 3.1941
+          }
+        ]
+      },
+      {
+        "sector": "小売",
+        "change_pct": 2.67,
+        "direction": "上昇",
+        "reason": "セクター全体が上昇傾向（平均+2.67%）",
+        "notable_stocks": [
+          {
+            "code": "8267",
+            "name": "イオン",
+            "change": 3.3748
+          },
+          {
+            "code": "3382",
+            "name": "セブン&アイ",
+            "change": 2.915
+          },
+          {
+            "code": "9983",
+            "name": "ファーストリテイリング",
+            "change": 2.8757
+          }
+        ]
+      },
+      {
+        "sector": "鉄鋼",
+        "change_pct": 2.67,
+        "direction": "上昇",
+        "reason": "セクター全体が上昇傾向（平均+2.67%）",
+        "notable_stocks": [
+          {
+            "code": "5411",
+            "name": "JFEホールディングス",
+            "change": 3.375
+          },
+          {
+            "code": "5401",
+            "name": "日本製鉄",
+            "change": 1.9701
+          }
+        ]
+      }
+    ]
+  },
+  "sector_rotation": {
+    "economic_phase": {
+      "phase": "recovery",
+      "description": "景気回復期：テクノロジー・不動産が先行して回復",
+      "score": 1,
+      "signals": [],
+      "favored_sectors": [
+        "情報通信",
+        "サービス",
+        "小売",
+        "不動産"
+      ]
+    },
+    "rs_ranking": [
+      {
+        "sector": "ゴム",
+        "rs_score": 166.68,
+        "avg_change": 2.589,
+        "trend_consensus": 2.0,
+        "avg_volume_ratio": 0.96,
+        "rank": 1
+      },
+      {
+        "sector": "機械",
+        "rs_score": 140.28,
+        "avg_change": 3.294,
+        "trend_consensus": 0.22,
+        "avg_volume_ratio": 1.0,
+        "rank": 2
+      },
+      {
+        "sector": "建設",
+        "rs_score": 132.7,
+        "avg_change": 2.582,
+        "trend_consensus": 1.0,
+        "avg_volume_ratio": 0.87,
+        "rank": 3
+      },
+      {
+        "sector": "空運",
+        "rs_score": 132.64,
+        "avg_change": 1.686,
+        "trend_consensus": 2.0,
+        "avg_volume_ratio": 1.02,
+        "rank": 4
+      },
+      {
+        "sector": "化学",
+        "rs_score": 125.32,
+        "avg_change": 2.238,
+        "trend_consensus": 1.17,
+        "avg_volume_ratio": 0.89,
+        "rank": 5
+      },
+      {
+        "sector": "小売",
+        "rs_score": 124.24,
+        "avg_change": 2.672,
+        "trend_consensus": 0.5,
+        "avg_volume_ratio": 0.98,
+        "rank": 6
+      },
+      {
+        "sector": "輸送用機器",
+        "rs_score": 122.74,
+        "avg_change": 2.462,
+        "trend_consensus": 0.75,
+        "avg_volume_ratio": 0.96,
+        "rank": 7
+      },
+      {
+        "sector": "保険",
+        "rs_score": 122.44,
+        "avg_change": 2.315,
+        "trend_consensus": 1.0,
+        "avg_volume_ratio": 0.84,
+        "rank": 8
+      },
+      {
+        "sector": "証券",
+        "rs_score": 120.06,
+        "avg_change": 1.505,
+        "trend_consensus": 2.0,
+        "avg_volume_ratio": 0.78,
+        "rank": 9
+      },
+      {
+        "sector": "銀行",
+        "rs_score": 115.66,
+        "avg_change": 1.47,
+        "trend_consensus": 2.0,
+        "avg_volume_ratio": 0.7,
+        "rank": 10
+      },
+      {
+        "sector": "医薬品",
+        "rs_score": 107.86,
+        "avg_change": 2.18,
+        "trend_consensus": 0.71,
+        "avg_volume_ratio": 0.86,
+        "rank": 11
+      },
+      {
+        "sector": "食料品",
+        "rs_score": 105.42,
+        "avg_change": 1.392,
+        "trend_consensus": 1.8,
+        "avg_volume_ratio": 0.66,
+        "rank": 12
+      },
+      {
+        "sector": "サービス",
+        "rs_score": 99.46,
+        "avg_change": 1.31,
+        "trend_consensus": 1.6,
+        "avg_volume_ratio": 0.75,
+        "rank": 13
+      },
+      {
+        "sector": "陸運",
+        "rs_score": 96.82,
+        "avg_change": 1.711,
+        "trend_consensus": 1.0,
+        "avg_volume_ratio": 0.81,
+        "rank": 14
+      },
+      {
+        "sector": "その他金融",
+        "rs_score": 80.8,
+        "avg_change": 0.68,
+        "trend_consensus": 2.0,
+        "avg_volume_ratio": 0.57,
+        "rank": 15
+      },
+      {
+        "sector": "海運",
+        "rs_score": 63.24,
+        "avg_change": 3.2,
+        "trend_consensus": -2.0,
+        "avg_volume_ratio": 0.74,
+        "rank": 16
+      },
+      {
+        "sector": "石油石炭",
+        "rs_score": 62.24,
+        "avg_change": 3.194,
+        "trend_consensus": -2.0,
+        "avg_volume_ratio": 0.69,
+        "rank": 17
+      },
+      {
+        "sector": "不動産",
+        "rs_score": 51.94,
+        "avg_change": 0.74,
+        "trend_consensus": 1.0,
+        "avg_volume_ratio": 0.55,
+        "rank": 18
+      },
+      {
+        "sector": "鉄鋼",
+        "rs_score": 49.06,
+        "avg_change": 2.673,
+        "trend_consensus": -2.0,
+        "avg_volume_ratio": 1.04,
+        "rank": 19
+      },
+      {
+        "sector": "情報通信",
+        "rs_score": 28.78,
+        "avg_change": 0.972,
+        "trend_consensus": -0.14,
+        "avg_volume_ratio": 0.66,
+        "rank": 20
+      },
+      {
+        "sector": "鉱業",
+        "rs_score": 12.22,
+        "avg_change": 2.067,
+        "trend_consensus": -2.0,
+        "avg_volume_ratio": 0.55,
+        "rank": 21
+      },
+      {
+        "sector": "その他製品",
+        "rs_score": 1.2,
+        "avg_change": 0.468,
+        "trend_consensus": -0.5,
+        "avg_volume_ratio": 0.79,
+        "rank": 22
+      },
+      {
+        "sector": "電気ガス",
+        "rs_score": 0.08,
+        "avg_change": 0.611,
+        "trend_consensus": -0.67,
+        "avg_volume_ratio": 0.76,
+        "rank": 23
+      },
+      {
+        "sector": "卸売",
+        "rs_score": -2.6,
+        "avg_change": 1.042,
+        "trend_consensus": -1.33,
+        "avg_volume_ratio": 0.8,
+        "rank": 24
+      },
+      {
+        "sector": "電気機器",
+        "rs_score": -3.06,
+        "avg_change": -0.456,
+        "trend_consensus": 0.6,
+        "avg_volume_ratio": 0.81,
+        "rank": 25
+      },
+      {
+        "sector": "半導体",
+        "rs_score": -20.94,
+        "avg_change": -1.941,
+        "trend_consensus": 2.0,
+        "avg_volume_ratio": 0.8,
+        "rank": 26
+      },
+      {
+        "sector": "非鉄金属",
+        "rs_score": -65.36,
+        "avg_change": -0.945,
+        "trend_consensus": -0.67,
+        "avg_volume_ratio": 0.69,
+        "rank": 27
+      },
+      {
+        "sector": "精密機器",
+        "rs_score": -84.54,
+        "avg_change": -0.798,
+        "trend_consensus": -1.5,
+        "avg_volume_ratio": 0.63,
+        "rank": 28
+      }
+    ],
+    "rotation_signals": [
+      {
+        "sector": "ゴム",
+        "direction": "inflow",
+        "strength": "strong",
+        "phase_aligned": false,
+        "comment": "ゴムセクターに資金流入の兆候"
+      },
+      {
+        "sector": "機械",
+        "direction": "inflow",
+        "strength": "strong",
+        "phase_aligned": false,
+        "comment": "機械セクターに資金流入の兆候"
+      },
+      {
+        "sector": "建設",
+        "direction": "inflow",
+        "strength": "strong",
+        "phase_aligned": false,
+        "comment": "建設セクターに資金流入の兆候"
+      },
+      {
+        "sector": "非鉄金属",
+        "direction": "outflow",
+        "strength": "strong",
+        "comment": "非鉄金属セクターから資金流出の傾向"
+      },
+      {
+        "sector": "精密機器",
+        "direction": "outflow",
+        "strength": "strong",
+        "comment": "精密機器セクターから資金流出の傾向"
+      }
+    ],
+    "sector_scores": {
+      "ゴム": 8.0,
+      "機械": 7.7,
+      "建設": 7.4,
+      "空運": 7.1,
+      "化学": 6.9,
+      "小売": 8.6,
+      "輸送用機器": 6.3,
+      "保険": 6.0,
+      "証券": 5.7,
+      "銀行": 5.4,
+      "医薬品": 5.1,
+      "食料品": 4.9,
+      "サービス": 6.6,
+      "陸運": 4.3,
+      "その他金融": 4.0,
+      "海運": 3.7,
+      "石油石炭": 3.4,
+      "不動産": 5.1,
+      "鉄鋼": 2.9,
+      "情報通信": 4.6,
+      "鉱業": 2.3,
+      "その他製品": 2.0,
+      "電気ガス": 1.7,
+      "卸売": 1.4,
+      "電気機器": 1.1,
+      "半導体": 0.9,
+      "非鉄金属": 0.6,
+      "精密機器": 0.3
+    },
+    "sector_metrics": {
+      "電気機器": {
+        "avg_change": -0.456,
+        "avg_volume_ratio": 0.81,
+        "avg_adx": 19.1,
+        "avg_rsi": 54.9,
+        "trend_consensus": 0.6,
+        "stock_count": 15,
+        "top_movers": [
+          {
+            "code": "6981",
+            "name": "村田製作所",
+            "change": -7.491
+          },
+          {
+            "code": "6762",
+            "name": "TDK",
+            "change": -5.3528
+          },
+          {
+            "code": "6501",
+            "name": "日立製作所",
+            "change": 4.117
+          }
+        ]
+      },
+      "半導体": {
+        "avg_change": -1.941,
+        "avg_volume_ratio": 0.8,
+        "avg_adx": 25.8,
+        "avg_rsi": 53.5,
+        "trend_consensus": 2.0,
+        "stock_count": 6,
+        "top_movers": [
+          {
+            "code": "6526",
+            "name": "ソシオネクスト",
+            "change": -6.0543
+          },
+          {
+            "code": "7735",
+            "name": "SCREENホールディングス",
+            "change": -5.7022
+          },
+          {
+            "code": "6146",
+            "name": "ディスコ",
+            "change": 1.841
+          }
+        ]
+      },
+      "機械": {
+        "avg_change": 3.294,
+        "avg_volume_ratio": 1.0,
+        "avg_adx": 13.4,
+        "avg_rsi": 59.6,
+        "trend_consensus": 0.22,
+        "stock_count": 9,
+        "top_movers": [
+          {
+            "code": "7011",
+            "name": "三菱重工業",
+            "change": 8.3861
+          },
+          {
+            "code": "7013",
+            "name": "IHI",
+            "change": 7.0221
+          },
+          {
+            "code": "7012",
+            "name": "川崎重工業",
+            "change": 6.4894
+          }
+        ]
+      },
+      "輸送用機器": {
+        "avg_change": 2.462,
+        "avg_volume_ratio": 0.96,
+        "avg_adx": 18.8,
+        "avg_rsi": 62.8,
+        "trend_consensus": 0.75,
+        "stock_count": 8,
+        "top_movers": [
+          {
+            "code": "7203",
+            "name": "トヨタ自動車",
+            "change": 3.3593
+          },
+          {
+            "code": "7267",
+            "name": "ホンダ",
+            "change": 3.1613
+          },
+          {
+            "code": "7270",
+            "name": "SUBARU",
+            "change": 2.9418
+          }
+        ]
+      },
+      "ゴム": {
+        "avg_change": 2.589,
+        "avg_volume_ratio": 0.96,
+        "avg_adx": 14.5,
+        "avg_rsi": 69.6,
+        "trend_consensus": 2.0,
+        "stock_count": 1,
+        "top_movers": [
+          {
+            "code": "5108",
+            "name": "ブリヂストン",
+            "change": 2.5889
+          }
+        ]
+      },
+      "銀行": {
+        "avg_change": 1.47,
+        "avg_volume_ratio": 0.7,
+        "avg_adx": 23.4,
+        "avg_rsi": 64.3,
+        "trend_consensus": 2.0,
+        "stock_count": 5,
+        "top_movers": [
+          {
+            "code": "8316",
+            "name": "三井住友フィナンシャル",
+            "change": 1.9185
+          },
+          {
+            "code": "8308",
+            "name": "りそなホールディングス",
+            "change": 1.67
+          },
+          {
+            "code": "8411",
+            "name": "みずほフィナンシャル",
+            "change": 1.4484
+          }
+        ]
+      },
+      "証券": {
+        "avg_change": 1.505,
+        "avg_volume_ratio": 0.78,
+        "avg_adx": 23.6,
+        "avg_rsi": 71.3,
+        "trend_consensus": 2.0,
+        "stock_count": 2,
+        "top_movers": [
+          {
+            "code": "8601",
+            "name": "大和証券グループ",
+            "change": 1.7518
+          },
+          {
+            "code": "8604",
+            "name": "野村ホールディングス",
+            "change": 1.2572
+          }
+        ]
+      },
+      "保険": {
+        "avg_change": 2.315,
+        "avg_volume_ratio": 0.84,
+        "avg_adx": 21.5,
+        "avg_rsi": 65.2,
+        "trend_consensus": 1.0,
+        "stock_count": 3,
+        "top_movers": [
+          {
+            "code": "8766",
+            "name": "東京海上ホールディングス",
+            "change": 2.98
+          },
+          {
+            "code": "8725",
+            "name": "MS&ADインシュアランス",
+            "change": 2.2003
+          },
+          {
+            "code": "8750",
+            "name": "第一生命ホールディングス",
+            "change": 1.7634
+          }
+        ]
+      },
+      "その他金融": {
+        "avg_change": 0.68,
+        "avg_volume_ratio": 0.57,
+        "avg_adx": 21.9,
+        "avg_rsi": 61.0,
+        "trend_consensus": 2.0,
+        "stock_count": 2,
+        "top_movers": [
+          {
+            "code": "8591",
+            "name": "オリックス",
+            "change": 0.9003
+          },
+          {
+            "code": "8697",
+            "name": "日本取引所グループ",
+            "change": 0.4589
+          }
+        ]
+      },
+      "卸売": {
+        "avg_change": 1.042,
+        "avg_volume_ratio": 0.8,
+        "avg_adx": 22.4,
+        "avg_rsi": 48.1,
+        "trend_consensus": -1.33,
+        "stock_count": 6,
+        "top_movers": [
+          {
+            "code": "8031",
+            "name": "三井物産",
+            "change": 1.4565
+          },
+          {
+            "code": "8002",
+            "name": "丸紅",
+            "change": 1.2694
+          },
+          {
+            "code": "8015",
+            "name": "豊田通商",
+            "change": 1.1261
+          }
+        ]
+      },
+      "医薬品": {
+        "avg_change": 2.18,
+        "avg_volume_ratio": 0.86,
+        "avg_adx": 17.9,
+        "avg_rsi": 60.8,
+        "trend_consensus": 0.71,
+        "stock_count": 7,
+        "top_movers": [
+          {
+            "code": "4568",
+            "name": "第一三共",
+            "change": 4.0951
+          },
+          {
+            "code": "4578",
+            "name": "大塚ホールディングス",
+            "change": 3.3628
+          },
+          {
+            "code": "4502",
+            "name": "武田薬品工業",
+            "change": 2.9483
+          }
+        ]
+      },
+      "情報通信": {
+        "avg_change": 0.972,
+        "avg_volume_ratio": 0.66,
+        "avg_adx": 18.3,
+        "avg_rsi": 54.5,
+        "trend_consensus": -0.14,
+        "stock_count": 7,
+        "top_movers": [
+          {
+            "code": "4307",
+            "name": "野村総合研究所",
+            "change": 3.6049
+          },
+          {
+            "code": "9984",
+            "name": "ソフトバンクグループ",
+            "change": -3.0799
+          },
+          {
+            "code": "9766",
+            "name": "コナミグループ",
+            "change": 2.6554
+          }
+        ]
+      },
+      "サービス": {
+        "avg_change": 1.31,
+        "avg_volume_ratio": 0.75,
+        "avg_adx": 28.9,
+        "avg_rsi": 70.3,
+        "trend_consensus": 1.6,
+        "stock_count": 5,
+        "top_movers": [
+          {
+            "code": "2413",
+            "name": "エムスリー",
+            "change": 2.2575
+          },
+          {
+            "code": "6532",
+            "name": "ベイカレント",
+            "change": 2.1436
+          },
+          {
+            "code": "4755",
+            "name": "楽天グループ",
+            "change": 1.6492
+          }
+        ]
+      },
+      "小売": {
+        "avg_change": 2.672,
+        "avg_volume_ratio": 0.98,
+        "avg_adx": 25.5,
+        "avg_rsi": 63.8,
+        "trend_consensus": 0.5,
+        "stock_count": 4,
+        "top_movers": [
+          {
+            "code": "8267",
+            "name": "イオン",
+            "change": 3.3748
+          },
+          {
+            "code": "3382",
+            "name": "セブン&アイ",
+            "change": 2.915
+          },
+          {
+            "code": "9983",
+            "name": "ファーストリテイリング",
+            "change": 2.8757
+          }
+        ]
+      },
+      "食料品": {
+        "avg_change": 1.392,
+        "avg_volume_ratio": 0.66,
+        "avg_adx": 24.0,
+        "avg_rsi": 62.7,
+        "trend_consensus": 1.8,
+        "stock_count": 5,
+        "top_movers": [
+          {
+            "code": "2502",
+            "name": "アサヒグループ",
+            "change": 3.1552
+          },
+          {
+            "code": "2914",
+            "name": "日本たばこ産業",
+            "change": 2.1793
+          },
+          {
+            "code": "2801",
+            "name": "キッコーマン",
+            "change": 1.5936
+          }
+        ]
+      },
+      "化学": {
+        "avg_change": 2.238,
+        "avg_volume_ratio": 0.89,
+        "avg_adx": 20.4,
+        "avg_rsi": 64.5,
+        "trend_consensus": 1.17,
+        "stock_count": 6,
+        "top_movers": [
+          {
+            "code": "4063",
+            "name": "信越化学工業",
+            "change": 6.568
+          },
+          {
+            "code": "4188",
+            "name": "三菱ケミカルG",
+            "change": 3.8263
+          },
+          {
+            "code": "4911",
+            "name": "資生堂",
+            "change": 1.571
+          }
+        ]
+      },
+      "鉄鋼": {
+        "avg_change": 2.673,
+        "avg_volume_ratio": 1.04,
+        "avg_adx": 15.7,
+        "avg_rsi": 56.7,
+        "trend_consensus": -2.0,
+        "stock_count": 2,
+        "top_movers": [
+          {
+            "code": "5411",
+            "name": "JFEホールディングス",
+            "change": 3.375
+          },
+          {
+            "code": "5401",
+            "name": "日本製鉄",
+            "change": 1.9701
+          }
+        ]
+      },
+      "非鉄金属": {
+        "avg_change": -0.945,
+        "avg_volume_ratio": 0.69,
+        "avg_adx": 18.2,
+        "avg_rsi": 43.7,
+        "trend_consensus": -0.67,
+        "stock_count": 3,
+        "top_movers": [
+          {
+            "code": "5802",
+            "name": "住友電気工業",
+            "change": -2.6839
+          },
+          {
+            "code": "5713",
+            "name": "住友金属鉱山",
+            "change": -0.0757
+          },
+          {
+            "code": "5803",
+            "name": "フジクラ",
+            "change": -0.0747
+          }
+        ]
+      },
+      "不動産": {
+        "avg_change": 0.74,
+        "avg_volume_ratio": 0.55,
+        "avg_adx": 18.4,
+        "avg_rsi": 56.7,
+        "trend_consensus": 1.0,
+        "stock_count": 3,
+        "top_movers": [
+          {
+            "code": "8801",
+            "name": "三井不動産",
+            "change": 1.0065
+          },
+          {
+            "code": "8802",
+            "name": "三菱地所",
+            "change": 0.9015
+          },
+          {
+            "code": "8830",
+            "name": "住友不動産",
+            "change": 0.3119
+          }
+        ]
+      },
+      "陸運": {
+        "avg_change": 1.711,
+        "avg_volume_ratio": 0.81,
+        "avg_adx": 20.8,
+        "avg_rsi": 60.9,
+        "trend_consensus": 1.0,
+        "stock_count": 3,
+        "top_movers": [
+          {
+            "code": "9021",
+            "name": "JR西日本",
+            "change": 2.6104
+          },
+          {
+            "code": "9022",
+            "name": "JR東海",
+            "change": 1.2806
+          },
+          {
+            "code": "9020",
+            "name": "JR東日本",
+            "change": 1.2431
+          }
+        ]
+      },
+      "海運": {
+        "avg_change": 3.2,
+        "avg_volume_ratio": 0.74,
+        "avg_adx": 19.1,
+        "avg_rsi": 52.2,
+        "trend_consensus": -2.0,
+        "stock_count": 3,
+        "top_movers": [
+          {
+            "code": "9104",
+            "name": "商船三井",
+            "change": 3.5817
+          },
+          {
+            "code": "9101",
+            "name": "日本郵船",
+            "change": 3.0512
+          },
+          {
+            "code": "9107",
+            "name": "川崎汽船",
+            "change": 2.9684
+          }
+        ]
+      },
+      "空運": {
+        "avg_change": 1.686,
+        "avg_volume_ratio": 1.02,
+        "avg_adx": 24.6,
+        "avg_rsi": 74.0,
+        "trend_consensus": 2.0,
+        "stock_count": 2,
+        "top_movers": [
+          {
+            "code": "9201",
+            "name": "日本航空",
+            "change": 2.0984
+          },
+          {
+            "code": "9202",
+            "name": "ANAホールディングス",
+            "change": 1.2739
+          }
+        ]
+      },
+      "建設": {
+        "avg_change": 2.582,
+        "avg_volume_ratio": 0.87,
+        "avg_adx": 14.2,
+        "avg_rsi": 60.1,
+        "trend_consensus": 1.0,
+        "stock_count": 3,
+        "top_movers": [
+          {
+            "code": "1801",
+            "name": "大成建設",
+            "change": 3.1058
+          },
+          {
+            "code": "1802",
+            "name": "大林組",
+            "change": 3.0257
+          },
+          {
+            "code": "1812",
+            "name": "鹿島建設",
+            "change": 1.6155
+          }
+        ]
+      },
+      "その他製品": {
+        "avg_change": 0.468,
+        "avg_volume_ratio": 0.79,
+        "avg_adx": 19.3,
+        "avg_rsi": 58.4,
+        "trend_consensus": -0.5,
+        "stock_count": 2,
+        "top_movers": [
+          {
+            "code": "7832",
+            "name": "バンダイナムコ",
+            "change": 2.3238
+          },
+          {
+            "code": "7974",
+            "name": "任天堂",
+            "change": -1.3881
+          }
+        ]
+      },
+      "石油石炭": {
+        "avg_change": 3.194,
+        "avg_volume_ratio": 0.69,
+        "avg_adx": 18.3,
+        "avg_rsi": 53.4,
+        "trend_consensus": -2.0,
+        "stock_count": 1,
+        "top_movers": [
+          {
+            "code": "5020",
+            "name": "ENEOSホールディングス",
+            "change": 3.1941
+          }
+        ]
+      },
+      "鉱業": {
+        "avg_change": 2.067,
+        "avg_volume_ratio": 0.55,
+        "avg_adx": 34.7,
+        "avg_rsi": 42.7,
+        "trend_consensus": -2.0,
+        "stock_count": 1,
+        "top_movers": [
+          {
+            "code": "1605",
+            "name": "INPEX",
+            "change": 2.0666
+          }
+        ]
+      },
+      "電気ガス": {
+        "avg_change": 0.611,
+        "avg_volume_ratio": 0.76,
+        "avg_adx": 27.3,
+        "avg_rsi": 52.7,
+        "trend_consensus": -0.67,
+        "stock_count": 3,
+        "top_movers": [
+          {
+            "code": "9502",
+            "name": "中部電力",
+            "change": 0.8192
+          },
+          {
+            "code": "9501",
+            "name": "東京電力HD",
+            "change": 0.8172
+          },
+          {
+            "code": "9503",
+            "name": "関西電力",
+            "change": 0.1978
+          }
+        ]
+      },
+      "精密機器": {
+        "avg_change": -0.798,
+        "avg_volume_ratio": 0.63,
+        "avg_adx": 13.6,
+        "avg_rsi": 48.9,
+        "trend_consensus": -1.5,
+        "stock_count": 2,
+        "top_movers": [
+          {
+            "code": "7741",
+            "name": "HOYA",
+            "change": -1.3691
+          },
+          {
+            "code": "7733",
+            "name": "オリンパス",
+            "change": -0.2262
+          }
+        ]
+      }
+    }
+  },
+  "risk_dashboard": {
+    "position_sizing": {
+      "regime": "normal",
+      "kelly_fraction": 2.0,
+      "safe_kelly": 1.0,
+      "vix_multiplier": 1.0,
+      "per_pick_fraction": 0.2,
+      "per_pick_amount": 15968,
+      "total_exposure": 1.0,
+      "max_loss_scenario": {
+        "max_loss": 4888,
+        "max_loss_pct": 6.12
+      },
+      "recommendation": "通常のボラティリティ環境。標準的なポジションサイズで選別的にトレード。"
+    },
+    "portfolio_risk": {
+      "warnings": [],
+      "sector_distribution": {
+        "鉱業": 1,
+        "卸売": 1,
+        "電気ガス": 1,
+        "海運": 1,
+        "輸送用機器": 1
+      },
+      "risk_level": "low",
+      "diversification_score": 100
+    },
+    "vix_level": 15.6,
+    "risk_metrics": {
+      "sharpe_ratio": -4.37,
+      "sortino_ratio": -5.98,
+      "calmar_ratio": -2.32,
+      "avg_daily_return_pct": -0.232,
+      "daily_volatility_pct": 0.829,
+      "trading_days": 87
+    },
+    "guidelines": [
+      {
+        "title": "推奨ポジションサイズ",
+        "value": "1銘柄あたり ¥15,968",
+        "detail": "全体エクスポージャー: 1.0%"
+      },
+      {
+        "title": "最大損失シナリオ",
+        "value": "¥4,888",
+        "detail": "全銘柄が損切りに到達した場合の想定損失"
+      }
+    ]
+  },
+  "daytrade_picks": [
+    {
+      "code": "1605",
+      "name": "INPEX",
+      "sector": "鉱業",
+      "score": 60,
+      "score_breakdown": {
+        "trend_clarity": 15,
+        "volume_surge": 0,
+        "technical_signals": 10,
+        "volatility": 10,
+        "catalyst": 1,
+        "risk_reward": 10,
+        "mtf_alignment": 8,
+        "bb_squeeze": 1,
+        "candle_pattern": 0,
+        "divergence": 4,
+        "vix_adjustment": 1
+      },
+      "confidence": "medium",
+      "entry_point": 3309.0,
+      "target": 3624.7,
+      "stop_loss": 3148.3,
+      "risk_reward_ratio": 1.96,
+      "rationale": {
+        "technical": "移動平均線が逆配列となっており、下降トレンドが鮮明。ADXが35とトレンドの強さを示しており、トレンドフォロー戦略が有効。200日移動平均線を下回っており、長期トレンドには注意が必要。 MACDがシグナル線を上抜けるゴールデンクロスが発生しており、短期的な買いシグナル。RSIは43と中立圏で、過熱感はなくまだ上昇余地がある。RSIに強気ダイバージェンスが検出。価格は安値更新だがRSIは底打ちしており、トレンド反転の兆候。MACDにも強気ダイバージェンスが確認。",
+        "volume_analysis": "出来高は2,810,900株（平均比0.5倍）とやや低調。大口の参入は限定的な可能性がある。OBVが下降傾向にあり、上昇局面でも売り圧力が潜在的に存在する点に注意。",
+        "entry_strategy": "エントリーは現在値¥3,309.0付近。直近サポートが¥3,197.2に位置する。直近レジスタンス¥3,595.4を突破すれば¥3,624.7への上昇が期待できる。ピボットポイント¥3,239を上回っており、日中の上方バイアスが有効。ATR（14日）は97.8円で、日中の平均値幅として適度なボラティリティ。損切りは¥3,148.3（エントリーから4.9%下方）に設定。",
+        "mtf_context": "日足・週足ともに強いトレンドが一致しており、高確信度のシグナル。",
+        "quick_signals": [
+          "MACDゴールデンクロス",
+          "RSIダイバージェンス",
+          "RSI43",
+          "週足一致"
+        ],
+        "catalyst": ""
+      },
+      "current_price": 3309.0,
+      "atr": 97.78
+    },
+    {
+      "code": "8031",
+      "name": "三井物産",
+      "sector": "卸売",
+      "score": 53,
+      "score_breakdown": {
+        "trend_clarity": 15,
+        "volume_surge": 0,
+        "technical_signals": 6,
+        "volatility": 10,
+        "catalyst": 1,
+        "risk_reward": 4,
+        "mtf_alignment": 8,
+        "bb_squeeze": 4,
+        "candle_pattern": 0,
+        "divergence": 4,
+        "vix_adjustment": 1
+      },
+      "confidence": "low",
+      "entry_point": 4667.0,
+      "target": 5023.6,
+      "stop_loss": 4368.4,
+      "risk_reward_ratio": 1.19,
+      "rationale": {
+        "technical": "移動平均線が逆配列となっており、下降トレンドが鮮明。ADXが42とトレンドの強さを示しており、トレンドフォロー戦略が有効。200日移動平均線を下回っており、長期トレンドには注意が必要。 MACDヒストグラムがプラス圏で推移しており、上昇モメンタムが維持されている。RSIは41と中立圏で、過熱感はなくまだ上昇余地がある。ボリンジャーバンド幅が縮小中。ボラティリティスクイーズ後のブレイクに注目。RSIに強気ダイバージェンスが検出。価格は安値更新だがRSIは底打ちしており、トレンド反転の兆候。MACDにも強気ダイバージェンスが確認。",
+        "volume_analysis": "出来高は4,670,200株（平均比0.7倍）とやや低調。大口の参入は限定的な可能性がある。OBV（出来高累計指標）は上昇トレンドにあり、価格上昇に買い蓄積が伴っていることを確認。",
+        "entry_strategy": "エントリーは現在値¥4,667.0付近。直近サポートが¥4,437.7に位置する。直近レジスタンス¥4,982.0を突破すれば¥5,023.6への上昇が期待できる。ピボットポイント¥4,627を上回っており、日中の上方バイアスが有効。ATR（14日）は138.5円で、日中の平均値幅として適度なボラティリティ。損切りは¥4,368.4（エントリーから6.4%下方）に設定。",
+        "mtf_context": "日足・週足ともに強いトレンドが一致しており、高確信度のシグナル。",
+        "quick_signals": [
+          "BBスクイーズ",
+          "RSIダイバージェンス",
+          "RSI41",
+          "週足一致"
+        ],
+        "catalyst": ""
+      },
+      "current_price": 4667.0,
+      "atr": 138.52
+    },
+    {
+      "code": "9501",
+      "name": "東京電力HD",
+      "sector": "電気ガス",
+      "score": 52,
+      "score_breakdown": {
+        "trend_clarity": 15,
+        "volume_surge": 0,
+        "technical_signals": 9,
+        "volatility": 7,
+        "catalyst": 1,
+        "risk_reward": 10,
+        "mtf_alignment": 8,
+        "bb_squeeze": 1,
+        "candle_pattern": 0,
+        "divergence": 0,
+        "vix_adjustment": 1
+      },
+      "confidence": "low",
+      "entry_point": 468.8,
+      "target": 541.5,
+      "stop_loss": 437.4,
+      "risk_reward_ratio": 2.32,
+      "rationale": {
+        "technical": "移動平均線が逆配列となっており、下降トレンドが鮮明。ADXが33とトレンドの強さを示しており、トレンドフォロー戦略が有効。200日移動平均線を下回っており、長期トレンドには注意が必要。 MACDがシグナル線を上抜けるゴールデンクロスが発生しており、短期的な買いシグナル。RSIが38とやや売られすぎの領域に接近。逆張りの好機となりうる。",
+        "volume_analysis": "出来高は24,111,500株（平均比0.7倍）とやや低調。大口の参入は限定的な可能性がある。OBV（出来高累計指標）は上昇トレンドにあり、価格上昇に買い蓄積が伴っていることを確認。",
+        "entry_strategy": "エントリーは現在値¥468.8付近。直近サポートが¥447.9に位置する。直近レジスタンス¥535.2を突破すれば¥541.5への上昇が期待できる。ピボットポイント¥465を上回っており、日中の上方バイアスが有効。ATR（14日）は20.9円で、日中の平均値幅として適度なボラティリティ。損切りは¥437.4（エントリーから6.7%下方）に設定。",
+        "mtf_context": "日足・週足ともに強いトレンドが一致しており、高確信度のシグナル。",
+        "quick_signals": [
+          "MACDゴールデンクロス",
+          "RSI38",
+          "週足一致"
+        ],
+        "catalyst": ""
+      },
+      "current_price": 468.8,
+      "atr": 20.93
+    },
+    {
+      "code": "9104",
+      "name": "商船三井",
+      "sector": "海運",
+      "score": 49,
+      "score_breakdown": {
+        "trend_clarity": 12,
+        "volume_surge": 0,
+        "technical_signals": 10,
+        "volatility": 10,
+        "catalyst": 1,
+        "risk_reward": 6,
+        "mtf_alignment": 8,
+        "bb_squeeze": 1,
+        "candle_pattern": 0,
+        "divergence": 0,
+        "vix_adjustment": 1
+      },
+      "confidence": "medium",
+      "entry_point": 5379.0,
+      "target": 5953.0,
+      "stop_loss": 4998.3,
+      "risk_reward_ratio": 1.51,
+      "rationale": {
+        "technical": "移動平均線が逆配列となっており、下降トレンドが鮮明。ADXが27と方向性が出始めている。200日移動平均線の上方に位置し、長期トレンドは上向き。 MACDがシグナル線を上抜けるゴールデンクロスが発生しており、短期的な買いシグナル。RSIは48と中立圏で、過熱感はなくまだ上昇余地がある。",
+        "volume_analysis": "出来高は2,442,600株（平均比0.8倍）とやや低調。大口の参入は限定的な可能性がある。OBV（出来高累計指標）は上昇トレンドにあり、価格上昇に買い蓄積が伴っていることを確認。",
+        "entry_strategy": "エントリーは現在値¥5,379.0付近。直近サポートが¥5,075.0に位置する。直近レジスタンス¥5,907.0を突破すれば¥5,953.0への上昇が期待できる。フィボナッチリトレースメント水準¥5,459付近にあり、テクニカル的な節目として注目。ピボットポイント¥5,213を上回っており、日中の上方バイアスが有効。ATR（14日）は153.4円で、日中の平均値幅として適度なボラティリティ。損切りは¥4,998.3（エントリーから7.1%下方）に設定。",
+        "mtf_context": "日足・週足ともに強いトレンドが一致しており、高確信度のシグナル。",
+        "quick_signals": [
+          "MACDゴールデンクロス",
+          "RSI48",
+          "週足一致"
+        ],
+        "catalyst": ""
+      },
+      "current_price": 5379.0,
+      "atr": 153.38
+    },
+    {
+      "code": "7201",
+      "name": "日産自動車",
+      "sector": "輸送用機器",
+      "score": 46,
+      "score_breakdown": {
+        "trend_clarity": 9,
+        "volume_surge": 0,
+        "technical_signals": 10,
+        "volatility": 7,
+        "catalyst": 1,
+        "risk_reward": 6,
+        "mtf_alignment": 8,
+        "bb_squeeze": 1,
+        "candle_pattern": 0,
+        "divergence": 3,
+        "vix_adjustment": 1
+      },
+      "confidence": "medium",
+      "entry_point": 319.1,
+      "target": 361.9,
+      "stop_loss": 288.7,
+      "risk_reward_ratio": 1.41,
+      "rationale": {
+        "technical": "移動平均線が逆配列となっており、下降トレンドが鮮明。200日移動平均線を下回っており、長期トレンドには注意が必要。 MACDがシグナル線を上抜けるゴールデンクロスが発生しており、短期的な買いシグナル。RSIは45と中立圏で、過熱感はなくまだ上昇余地がある。RSIに強気ダイバージェンスが検出。価格は安値更新だがRSIは底打ちしており、トレンド反転の兆候。",
+        "volume_analysis": "出来高は35,392,500株（平均比1.0倍）とやや低調。大口の参入は限定的な可能性がある。OBV（出来高累計指標）は上昇トレンドにあり、価格上昇に買い蓄積が伴っていることを確認。",
+        "entry_strategy": "エントリーは現在値¥319.1付近。直近サポートが¥294.6に位置する。直近レジスタンス¥358.4を突破すれば¥361.9への上昇が期待できる。フィボナッチリトレースメント水準¥321付近にあり、テクニカル的な節目として注目。ピボットポイント¥314を上回っており、日中の上方バイアスが有効。ATR（14日）は11.7円で、日中の平均値幅として適度なボラティリティ。損切りは¥288.7（エントリーから9.5%下方）に設定。",
+        "mtf_context": "日足・週足ともに強いトレンドが一致しており、高確信度のシグナル。",
+        "quick_signals": [
+          "MACDゴールデンクロス",
+          "RSIダイバージェンス",
+          "RSI45",
+          "週足一致"
+        ],
+        "catalyst": ""
+      },
+      "current_price": 319.1,
+      "atr": 11.73
+    }
+  ],
+  "swing_picks": [
+    {
+      "code": "7269",
+      "name": "スズキ",
+      "sector": "輸送用機器",
+      "score": 67,
+      "score_breakdown": {
+        "medium_term_trend": 15,
+        "technical_signals": 9,
+        "valuation": 10,
+        "fundamentals": 9,
+        "sector_momentum": 5,
+        "sentiment": 4,
+        "risk_reward": 2,
+        "mtf_alignment": 6,
+        "financial_health": 5,
+        "divergence": 0,
+        "vix_adjustment": 2
+      },
+      "confidence": "medium",
+      "holding_period": "5〜10営業日",
+      "entry_point": 2144.5,
+      "target": 2172.9,
+      "stop_loss": 1741.7,
+      "risk_reward_ratio": 0.07,
+      "rationale": {
+        "technical": "移動平均線が完全順配列（短期>中期>長期）を形成しており、明確な上昇トレンドが確認できる。200日移動平均線の上方に位置し、長期トレンドは上向き。 MACDヒストグラムがプラス圏で推移しており、上昇モメンタムが維持されている。RSIが73と買われすぎ水準。短期的な調整リスクに留意。一目均衡表の雲の上で推移しており、上値抵抗帯をクリアした強い形状。ストキャスティクスが売られすぎ圏からの反転で買いサイン。VWAP（出来高加重平均価格）の上方で推移しており、機関投資家の支えがある水準。三白兵パターンが形成され、強い上昇圧力を示唆。",
+        "fundamental": "PER 9.4倍と割安水準にあり、バリュー投資の観点から魅力的。PBR 1.22倍。ROE 13.9%と安定した収益性。EV/EBITDA 5.3倍と企業価値ベースでも割安。D/Eレシオ0.18と実質無借金に近い健全な財務体質。配当利回り2.5%。売上成長率15.2%と力強い成長を維持。",
+        "volume_analysis": "出来高は6,731,400株（平均比0.8倍）とやや低調。大口の参入は限定的な可能性がある。OBV（出来高累計指標）は上昇トレンドにあり、価格上昇に買い蓄積が伴っていることを確認。POC（¥1,924）の上方に位置し、売り圧力の少ないゾーン。",
+        "entry_strategy": "エントリーは現在値¥2,144.5付近。直近サポートが¥1,801.8に位置する。直近レジスタンス¥2,124.8を突破すれば¥2,172.9への上昇が期待できる。ピボットポイント¥2,110を上回っており、日中の上方バイアスが有効。ATR（14日）は60.1円で、日中の平均値幅として適度なボラティリティ。損切りは¥1,741.7（エントリーから18.8%下方）に設定。",
+        "mtf_context": "日足（強い上昇）と週足（上昇）のトレンドが一致。週足MACDもプラス推移で上昇基調を裏付け。",
+        "quick_signals": [
+          "雲上",
+          "上昇トレンド",
+          "OBV上昇",
+          "MACDプラス",
+          "VWAP上",
+          "週足一致"
+        ],
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 9.419335,
+        "pbr": 1.2233076,
+        "roe": 13.87,
+        "dividend_yield": 2.46,
+        "ev_ebitda": 5.308,
+        "roic": 5.98
+      },
+      "current_price": 2144.5
+    },
+    {
+      "code": "6273",
+      "name": "SMC",
+      "sector": "機械",
+      "score": 66,
+      "score_breakdown": {
+        "medium_term_trend": 15,
+        "technical_signals": 12,
+        "valuation": 5,
+        "fundamentals": 7,
+        "sector_momentum": 6,
+        "sentiment": 4,
+        "risk_reward": 2,
+        "mtf_alignment": 8,
+        "financial_health": 5,
+        "divergence": 0,
+        "vix_adjustment": 2
+      },
+      "confidence": "medium",
+      "holding_period": "5〜10営業日",
+      "entry_point": 75790.0,
+      "target": 78962.4,
+      "stop_loss": 56702.8,
+      "risk_reward_ratio": 0.17,
+      "rationale": {
+        "technical": "移動平均線が完全順配列（短期>中期>長期）を形成しており、明確な上昇トレンドが確認できる。200日移動平均線の上方に位置し、長期トレンドは上向き。 MACDヒストグラムがプラス圏で推移しており、上昇モメンタムが維持されている。RSIは60と中立圏で、過熱感はなくまだ上昇余地がある。一目均衡表の雲の上で推移しており、上値抵抗帯をクリアした強い形状。VWAP（出来高加重平均価格）の上方で推移しており、機関投資家の支えがある水準。",
+        "fundamental": "PER 28.7倍とやや高めの評価であり、成長期待が株価に織り込まれている。ROE 8.3%。D/Eレシオ0.00と実質無借金に近い健全な財務体質。売上成長率15.4%と力強い成長を維持。",
+        "volume_analysis": "出来高は273,700株（平均比0.9倍）とやや低調。大口の参入は限定的な可能性がある。OBV（出来高累計指標）は上昇トレンドにあり、価格上昇に買い蓄積が伴っていることを確認。POC（¥71,843）の上方に位置し、売り圧力の少ないゾーン。",
+        "entry_strategy": "エントリーは現在値¥75,790.0付近。直近サポートが¥59,893.3に位置する。直近レジスタンス¥76,410.0を突破すれば¥78,962.4への上昇が期待できる。フィボナッチリトレースメント水準¥75,917付近にあり、テクニカル的な節目として注目。ピボットポイント¥74,407を上回っており、日中の上方バイアスが有効。ATR（14日）は3190.5円で、日中の平均値幅として適度なボラティリティ。損切りは¥56,702.8（エントリーから25.2%下方）に設定。",
+        "mtf_context": "日足・週足ともに強いトレンドが一致しており、高確信度のシグナル。",
+        "quick_signals": [
+          "雲上",
+          "上昇トレンド",
+          "OBV上昇",
+          "MACDプラス",
+          "VWAP上",
+          "週足一致"
+        ],
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 28.73184,
+        "pbr": 2.2624624,
+        "roe": 8.27,
+        "dividend_yield": 1.32,
+        "ev_ebitda": 17.327,
+        "roic": 5.4
+      },
+      "current_price": 75790.0
+    },
+    {
+      "code": "7272",
+      "name": "ヤマハ発動機",
+      "sector": "輸送用機器",
+      "score": 66,
+      "score_breakdown": {
+        "medium_term_trend": 15,
+        "technical_signals": 12,
+        "valuation": 10,
+        "fundamentals": 6,
+        "sector_momentum": 5,
+        "sentiment": 4,
+        "risk_reward": 2,
+        "mtf_alignment": 8,
+        "financial_health": 2,
+        "divergence": 0,
+        "vix_adjustment": 2
+      },
+      "confidence": "medium",
+      "holding_period": "5〜10営業日",
+      "entry_point": 1274.0,
+      "target": 1283.1,
+      "stop_loss": 1139.0,
+      "risk_reward_ratio": 0.07,
+      "rationale": {
+        "technical": "移動平均線が完全順配列（短期>中期>長期）を形成しており、明確な上昇トレンドが確認できる。200日移動平均線の上方に位置し、長期トレンドは上向き。 MACDヒストグラムがプラス圏で推移しており、上昇モメンタムが維持されている。RSIは64とやや高めだが、強いトレンド下では許容範囲。一目均衡表の雲の上で推移しており、上値抵抗帯をクリアした強い形状。パラボリックSARが買いシグナルを点灯中。VWAP（出来高加重平均価格）の上方で推移しており、機関投資家の支えがある水準。",
+        "fundamental": "PER 7.9倍と割安水準にあり、バリュー投資の観点から魅力的。PBR 1.06倍。ROE 3.8%。配当利回り4.0%と高配当で下値サポート要因。売上成長率16.6%と力強い成長を維持。",
+        "volume_analysis": "出来高は5,232,000株（平均比0.9倍）とやや低調。大口の参入は限定的な可能性がある。OBV（出来高累計指標）は上昇トレンドにあり、価格上昇に買い蓄積が伴っていることを確認。POC（¥1,223）の上方に位置し、売り圧力の少ないゾーン。",
+        "entry_strategy": "エントリーは現在値¥1,274.0付近。直近サポートが¥1,167.5に位置する。直近レジスタンス¥1,260.3を突破すれば¥1,283.1への上昇が期待できる。フィボナッチリトレースメント水準¥1,250付近にあり、テクニカル的な節目として注目。ピボットポイント¥1,249を上回っており、日中の上方バイアスが有効。ATR（14日）は28.5円で、日中の平均値幅として適度なボラティリティ。損切りは¥1,139.0（エントリーから10.6%下方）に設定。",
+        "mtf_context": "日足・週足ともに強いトレンドが一致しており、高確信度のシグナル。週足MACDもプラス推移で上昇基調を裏付け。",
+        "quick_signals": [
+          "雲上",
+          "上昇トレンド",
+          "OBV上昇",
+          "MACDプラス",
+          "VWAP上",
+          "週足一致"
+        ],
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 7.9317646,
+        "pbr": 1.0631135,
+        "roe": 3.84,
+        "dividend_yield": 4.0,
+        "ev_ebitda": 9.284,
+        "roic": 2.7
+      },
+      "current_price": 1274.0
+    },
+    {
+      "code": "8411",
+      "name": "みずほフィナンシャル",
+      "sector": "銀行",
+      "score": 65,
+      "score_breakdown": {
+        "medium_term_trend": 15,
+        "technical_signals": 12,
+        "valuation": 7,
+        "fundamentals": 9,
+        "sector_momentum": 4,
+        "sentiment": 4,
+        "risk_reward": 2,
+        "mtf_alignment": 8,
+        "financial_health": 2,
+        "divergence": 0,
+        "vix_adjustment": 2
+      },
+      "confidence": "high",
+      "holding_period": "5〜10営業日",
+      "entry_point": 8195.0,
+      "target": 8447.3,
+      "stop_loss": 7224.4,
+      "risk_reward_ratio": 0.26,
+      "rationale": {
+        "technical": "移動平均線が完全順配列（短期>中期>長期）を形成しており、明確な上昇トレンドが確認できる。ADXが26と方向性が出始めている。200日移動平均線の上方に位置し、長期トレンドは上向き。 MACDがシグナル線を上抜けるゴールデンクロスが発生しており、短期的な買いシグナル。RSIは64とやや高めだが、強いトレンド下では許容範囲。一目均衡表の雲の上で推移しており、上値抵抗帯をクリアした強い形状。パラボリックSARが買いシグナルを点灯中。VWAP（出来高加重平均価格）の上方で推移しており、機関投資家の支えがある水準。三白兵パターンが形成され、強い上昇圧力を示唆。",
+        "fundamental": "PER 16.3倍と適正水準。PBR 1.77倍。ROE 11.4%と安定した収益性。売上成長率16.7%と力強い成長を維持。",
+        "volume_analysis": "出来高は6,572,200株（平均比0.7倍）とやや低調。大口の参入は限定的な可能性がある。OBV（出来高累計指標）は上昇トレンドにあり、価格上昇に買い蓄積が伴っていることを確認。POC（¥6,790）の上方に位置し、売り圧力の少ないゾーン。",
+        "entry_strategy": "エントリーは現在値¥8,195.0付近。直近サポートが¥7,462.3に位置する。直近レジスタンス¥8,257.0を突破すれば¥8,447.3への上昇が期待できる。ピボットポイント¥8,023を上回っており、日中の上方バイアスが有効。ATR（14日）は237.9円で、日中の平均値幅として適度なボラティリティ。損切りは¥7,224.4（エントリーから11.8%下方）に設定。",
+        "mtf_context": "日足・週足ともに強いトレンドが一致しており、高確信度のシグナル。週足RSI 70と過熱感あり。週足MACDもプラス推移で上昇基調を裏付け。",
+        "quick_signals": [
+          "雲上",
+          "上昇トレンド",
+          "OBV上昇",
+          "MACDプラス",
+          "VWAP上",
+          "週足一致"
+        ],
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 16.283829,
+        "pbr": 1.7658863,
+        "roe": 11.44,
+        "dividend_yield": 1.86,
+        "ev_ebitda": null,
+        "roic": 0.43
+      },
+      "current_price": 8195.0
+    },
+    {
+      "code": "8604",
+      "name": "野村ホールディングス",
+      "sector": "証券",
+      "score": 64,
+      "score_breakdown": {
+        "medium_term_trend": 15,
+        "technical_signals": 9,
+        "valuation": 9,
+        "fundamentals": 9,
+        "sector_momentum": 4,
+        "sentiment": 4,
+        "risk_reward": 2,
+        "mtf_alignment": 8,
+        "financial_health": 2,
+        "divergence": 0,
+        "vix_adjustment": 2
+      },
+      "confidence": "medium",
+      "holding_period": "5〜10営業日",
+      "entry_point": 1490.0,
+      "target": 1509.6,
+      "stop_loss": 1314.3,
+      "risk_reward_ratio": 0.11,
+      "rationale": {
+        "technical": "移動平均線が完全順配列（短期>中期>長期）を形成しており、明確な上昇トレンドが確認できる。ADXが26と方向性が出始めている。200日移動平均線の上方に位置し、長期トレンドは上向き。 MACDヒストグラムがプラス圏で推移しており、上昇モメンタムが維持されている。RSIは69とやや高めだが、強いトレンド下では許容範囲。一目均衡表の雲の上で推移しており、上値抵抗帯をクリアした強い形状。パラボリックSARが買いシグナルを点灯中。ボリンジャーバンド幅が縮小中。ボラティリティスクイーズ後のブレイクに注目。VWAP（出来高加重平均価格）の上方で推移しており、機関投資家の支えがある水準。三白兵パターンが形成され、強い上昇圧力を示唆。",
+        "fundamental": "PER 12.5倍と適正〜やや割安な水準で、投資妙味がある。PBR 1.17倍。ROE 10.1%と安定した収益性。配当利回り3.5%。売上成長率27.5%と力強い成長を維持。",
+        "volume_analysis": "出来高は7,782,800株（平均比0.8倍）とやや低調。大口の参入は限定的な可能性がある。OBV（出来高累計指標）は上昇トレンドにあり、価格上昇に買い蓄積が伴っていることを確認。POC（¥1,260）の上方に位置し、売り圧力の少ないゾーン。",
+        "entry_strategy": "エントリーは現在値¥1,490.0付近。直近サポートが¥1,349.8に位置する。直近レジスタンス¥1,481.2を突破すれば¥1,509.6への上昇が期待できる。ピボットポイント¥1,466を上回っており、日中の上方バイアスが有効。ATR（14日）は35.5円で、日中の平均値幅として適度なボラティリティ。損切りは¥1,314.3（エントリーから11.8%下方）に設定。",
+        "mtf_context": "日足・週足ともに強いトレンドが一致しており、高確信度のシグナル。週足MACDもプラス推移で上昇基調を裏付け。",
+        "quick_signals": [
+          "雲上",
+          "上昇トレンド",
+          "OBV上昇",
+          "MACDプラス",
+          "VWAP上",
+          "週足一致"
+        ],
+        "catalyst": ""
+      },
+      "fundamentals": {
+        "per": 12.516801,
+        "pbr": 1.165897,
+        "roe": 10.07,
+        "dividend_yield": 3.47,
+        "ev_ebitda": null,
+        "roic": 0.63
+      },
+      "current_price": 1490.0
+    }
+  ],
+  "methodology": {
+    "technical_indicators": [
+      "SMA (5/25/75/200日)",
+      "EMA (5/25/75日)",
+      "MACD (12,26,9)",
+      "RSI (14日)",
+      "ADX (14日)",
+      "ストキャスティクス (%K14, %D3)",
+      "CCI (20日)",
+      "Williams %R (14日)",
+      "一目均衡表 (9,26,52)",
+      "パラボリックSAR",
+      "OBV",
+      "ATR (14日)",
+      "ボリンジャーバンド (20,2)",
+      "ケルトナーチャネル",
+      "TTMスクイーズ",
+      "MFI (14日)",
+      "VWAP",
+      "フィボナッチリトレースメント",
+      "ピボットポイント",
+      "出来高プロファイル (POC/VA)",
+      "ローソク足パターン認識",
+      "RSI/MACDダイバージェンス検出"
+    ],
+    "screening_process": "全上場銘柄 → 流動性フィルタ（出来高・時価総額）→ テクニカルスクリーニング → マルチタイムフレーム分析 → ファンダメンタルズ評価（5軸） → セクターローテーション判定 → 多因子スコアリング（11因子） → セクターバランス調整 → 上位銘柄選出",
+    "scoring_model": "トレンド・出来高・テクニカルシグナル・ボラティリティ・カタリスト・リスクリワード・MTFアライメント・BBスクイーズ・キャンドルパターン・ダイバージェンス・VIX適応調整の多軸評価",
+    "risk_management": "Kelly基準ポジションサイジング・VIX適応型パラメータ調整・ポートフォリオ相関分析・セクター分散・最大損失シナリオ計算",
+    "data_source": "Yahoo Finance (yfinance)"
+  },
+  "disclaimer": "当サイトは投資助言・投資勧誘を目的としたものではありません。掲載情報は「情報提供」を目的としており、特定の有価証券の売買を推奨するものではありません。投資に関する最終判断はご自身の責任で行ってください。過去のパフォーマンスは将来の成果を保証するものではありません。"
+}
