@@ -1,11 +1,11 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 7979300.094926643,
-  "total_trades": 335,
-  "wins": 147,
-  "losses": 188,
-  "total_profit": 2770572.1063915105,
-  "total_loss": 4362581.829012712,
+  "current_capital": 8044634.8318451,
+  "total_trades": 340,
+  "wins": 151,
+  "losses": 189,
+  "total_profit": 2873570.353309967,
+  "total_loss": 4400245.339012712,
   "max_drawdown": 2533858.4058068935,
   "peak_capital": 10357600.278,
   "daily_results": [
@@ -4718,6 +4718,74 @@
       ],
       "day_pnl": -66188,
       "capital_after": 7979300
+    },
+    {
+      "date": "2026-07-08",
+      "eval_date": "2026-07-09",
+      "trades": [
+        {
+          "code": "8031",
+          "name": "三井物産",
+          "entry": 4765.0,
+          "target": 5003.3,
+          "stop": 4368.4,
+          "exit": 4657.0,
+          "result": "loss",
+          "shares": 334,
+          "pnl": -37664,
+          "pnl_pct": -2.37
+        },
+        {
+          "code": "1605",
+          "name": "INPEX",
+          "entry": 3350.0,
+          "target": 3594.6,
+          "stop": 3149.3,
+          "exit": 3388.0,
+          "result": "win",
+          "shares": 476,
+          "pnl": 16493,
+          "pnl_pct": 1.03
+        },
+        {
+          "code": "9104",
+          "name": "商船三井",
+          "entry": 5391.0,
+          "target": 5881.9,
+          "stop": 4996.4,
+          "exit": 5421.0,
+          "result": "win",
+          "shares": 296,
+          "pnl": 7284,
+          "pnl_pct": 0.46
+        },
+        {
+          "code": "6981",
+          "name": "村田製作所",
+          "entry": 8912.0,
+          "target": 13029.4,
+          "stop": 7866.3,
+          "exit": 9027.0,
+          "result": "win",
+          "shares": 179,
+          "pnl": 18990,
+          "pnl_pct": 1.19
+        },
+        {
+          "code": "9501",
+          "name": "東京電力HD",
+          "entry": 462.0,
+          "target": 537.0,
+          "stop": 437.7,
+          "exit": 479.9,
+          "result": "win",
+          "shares": 3454,
+          "pnl": 60231,
+          "pnl_pct": 3.77
+        }
+      ],
+      "day_pnl": 65335,
+      "capital_after": 8044635
     }
   ]
 }
