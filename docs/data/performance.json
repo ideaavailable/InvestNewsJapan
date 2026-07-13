@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8000262.274937812,
-  "total_trades": 345,
-  "wins": 153,
-  "losses": 192,
-  "total_profit": 2876338.7624026793,
-  "total_loss": 4431228.145012712,
+  "current_capital": 7958161.153937812,
+  "total_trades": 350,
+  "wins": 154,
+  "losses": 196,
+  "total_profit": 2887336.716402679,
+  "total_loss": 4484327.220012711,
   "max_drawdown": 2533858.4058068935,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-03-09",
-      "eval_date": "2026-03-10",
-      "trades": [
-        {
-          "code": "3382",
-          "name": "セブン&アイ",
-          "entry": 1982.5,
-          "target": 2378.1,
-          "stop": 1972.5,
-          "exit": 2065.0,
-          "result": "win",
-          "shares": 1014,
-          "pnl": 81645,
-          "pnl_pct": 4.06
-        },
-        {
-          "code": "6971",
-          "name": "京セラ",
-          "entry": 2504.0,
-          "target": 2822.5,
-          "stop": 2517.2,
-          "exit": 2517.2,
-          "result": "loss",
-          "shares": 803,
-          "pnl": 8589,
-          "pnl_pct": 0.43
-        },
-        {
-          "code": "4568",
-          "name": "第一三共",
-          "entry": 2771.0,
-          "target": 3082.8,
-          "stop": 2762.4,
-          "exit": 2849.0,
-          "result": "win",
-          "shares": 725,
-          "pnl": 54541,
-          "pnl_pct": 2.71
-        },
-        {
-          "code": "6504",
-          "name": "富士電機",
-          "entry": 10200.0,
-          "target": 14066.0,
-          "stop": 10028.3,
-          "exit": 10515.0,
-          "result": "win",
-          "shares": 197,
-          "pnl": 60046,
-          "pnl_pct": 2.99
-        },
-        {
-          "code": "9201",
-          "name": "日本航空",
-          "entry": 2550.0,
-          "target": 3263.9,
-          "stop": 2673.9,
-          "exit": 2673.9,
-          "result": "loss",
-          "shares": 788,
-          "pnl": 95624,
-          "pnl_pct": 4.76
-        }
-      ],
-      "day_pnl": 300444,
-      "capital_after": 10357600
-    },
     {
       "date": "2026-03-10",
       "eval_date": "2026-03-11",
@@ -4786,6 +4718,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 8000262
+    },
+    {
+      "date": "2026-07-13",
+      "eval_date": "2026-07-14",
+      "trades": [
+        {
+          "code": "9983",
+          "name": "ファーストリテイリング",
+          "entry": 81720.0,
+          "target": 89011.6,
+          "stop": 79119.5,
+          "exit": 81230.0,
+          "result": "loss",
+          "shares": 19,
+          "pnl": -10863,
+          "pnl_pct": -0.7
+        },
+        {
+          "code": "8031",
+          "name": "三井物産",
+          "entry": 4618.0,
+          "target": 4929.9,
+          "stop": 4372.4,
+          "exit": 4580.0,
+          "result": "loss",
+          "shares": 346,
+          "pnl": -14746,
+          "pnl_pct": -0.92
+        },
+        {
+          "code": "9503",
+          "name": "関西電力",
+          "entry": 2262.0,
+          "target": 2389.0,
+          "stop": 2205.3,
+          "exit": 2252.5,
+          "result": "loss",
+          "shares": 707,
+          "pnl": -8316,
+          "pnl_pct": -0.52
+        },
+        {
+          "code": "2503",
+          "name": "キリン",
+          "entry": 2863.5,
+          "target": 2952.6,
+          "stop": 2613.6,
+          "exit": 2832.0,
+          "result": "loss",
+          "shares": 558,
+          "pnl": -19175,
+          "pnl_pct": -1.2
+        },
+        {
+          "code": "8306",
+          "name": "三菱UFJフィナンシャル",
+          "entry": 3487.0,
+          "target": 3514.5,
+          "stop": 3148.2,
+          "exit": 3514.5,
+          "result": "win",
+          "shares": 458,
+          "pnl": 10998,
+          "pnl_pct": 0.69
+        }
+      ],
+      "day_pnl": -42101,
+      "capital_after": 7958161
     }
   ]
 }
