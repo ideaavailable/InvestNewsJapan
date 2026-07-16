@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 7956896.595937812,
-  "total_trades": 360,
-  "wins": 160,
-  "losses": 200,
-  "total_profit": 2983788.0084026796,
-  "total_loss": 4549929.054012711,
+  "current_capital": 7914128.2249378115,
+  "total_trades": 365,
+  "wins": 163,
+  "losses": 202,
+  "total_profit": 2990524.8864026796,
+  "total_loss": 4588569.417512711,
   "max_drawdown": 2533858.4058068935,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-03-12",
-      "eval_date": "2026-03-13",
-      "trades": [
-        {
-          "code": "4568",
-          "name": "第一三共",
-          "entry": 2807.0,
-          "target": 3082.6,
-          "stop": 2745.2,
-          "exit": 2900.0,
-          "result": "win",
-          "shares": 733,
-          "pnl": 66111,
-          "pnl_pct": 3.21
-        },
-        {
-          "code": "8725",
-          "name": "MS&ADインシュアランス",
-          "entry": 4065.0,
-          "target": 4402.8,
-          "stop": 3924.0,
-          "exit": 4011.0,
-          "result": "loss",
-          "shares": 506,
-          "pnl": -29381,
-          "pnl_pct": -1.43
-        },
-        {
-          "code": "4188",
-          "name": "三菱ケミカルG",
-          "entry": 962.5,
-          "target": 1173.6,
-          "stop": 929.4,
-          "exit": 929.4,
-          "result": "loss",
-          "shares": 2139,
-          "pnl": -72860,
-          "pnl_pct": -3.54
-        },
-        {
-          "code": "9107",
-          "name": "川崎汽船",
-          "entry": 2675.0,
-          "target": 2709.7,
-          "stop": 2255.7,
-          "exit": 2669.5,
-          "result": "loss",
-          "shares": 769,
-          "pnl": -6287,
-          "pnl_pct": -0.31
-        },
-        {
-          "code": "5020",
-          "name": "ENEOSホールディングス",
-          "entry": 1377.0,
-          "target": 1547.7,
-          "stop": 1292.8,
-          "exit": 1352.5,
-          "result": "loss",
-          "shares": 1495,
-          "pnl": -38686,
-          "pnl_pct": -1.88
-        }
-      ],
-      "day_pnl": -81102,
-      "capital_after": 10216420
-    },
     {
       "date": "2026-03-13",
       "eval_date": "2026-03-16",
@@ -4786,6 +4718,74 @@
       ],
       "day_pnl": -20617,
       "capital_after": 7956897
+    },
+    {
+      "date": "2026-07-16",
+      "eval_date": "2026-07-17",
+      "trades": [
+        {
+          "code": "7012",
+          "name": "川崎重工業",
+          "entry": 2766.5,
+          "target": 3371.9,
+          "stop": 2524.7,
+          "exit": 2737.5,
+          "result": "loss",
+          "shares": 575,
+          "pnl": -18266,
+          "pnl_pct": -1.15
+        },
+        {
+          "code": "5713",
+          "name": "住友金属鉱山",
+          "entry": 7238.0,
+          "target": 9231.8,
+          "stop": 6815.8,
+          "exit": 7276.0,
+          "result": "win",
+          "shares": 219,
+          "pnl": 6737,
+          "pnl_pct": 0.43
+        },
+        {
+          "code": "8306",
+          "name": "三菱UFJフィナンシャル",
+          "entry": 3678.0,
+          "target": 3658.6,
+          "stop": 3152.1,
+          "exit": 3658.6,
+          "result": "win",
+          "shares": 432,
+          "pnl": -9970,
+          "pnl_pct": -0.63
+        },
+        {
+          "code": "8411",
+          "name": "みずほフィナンシャル",
+          "entry": 8541.0,
+          "target": 8666.5,
+          "stop": 7526.8,
+          "exit": 8440.0,
+          "result": "loss",
+          "shares": 186,
+          "pnl": -20375,
+          "pnl_pct": -1.28
+        },
+        {
+          "code": "8604",
+          "name": "野村ホールディングス",
+          "entry": 1601.5,
+          "target": 1602.2,
+          "stop": 1377.0,
+          "exit": 1602.2,
+          "result": "win",
+          "shares": 993,
+          "pnl": -895,
+          "pnl_pct": -0.06
+        }
+      ],
+      "day_pnl": -42768,
+      "capital_after": 7914128
     }
   ]
 }
