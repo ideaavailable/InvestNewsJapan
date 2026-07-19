@@ -10,13 +10,6 @@
   "peak_capital": 10357600.278,
   "daily_results": [
     {
-      "date": "2026-03-13",
-      "eval_date": "2026-03-16",
-      "trades": [],
-      "day_pnl": 0,
-      "capital_after": 10216420
-    },
-    {
       "date": "2026-03-16",
       "eval_date": "2026-03-17",
       "trades": [
@@ -4785,6 +4778,13 @@
         }
       ],
       "day_pnl": -42768,
+      "capital_after": 7914128
+    },
+    {
+      "date": "2026-07-17",
+      "eval_date": "2026-07-20",
+      "trades": [],
+      "day_pnl": 0,
       "capital_after": 7914128
     }
   ]
