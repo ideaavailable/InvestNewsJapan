@@ -10,74 +10,6 @@
   "peak_capital": 10357600.278,
   "daily_results": [
     {
-      "date": "2026-03-16",
-      "eval_date": "2026-03-17",
-      "trades": [
-        {
-          "code": "3382",
-          "name": "セブン&アイ",
-          "entry": 2038.0,
-          "target": 2363.2,
-          "stop": 1965.2,
-          "exit": 2045.0,
-          "result": "win",
-          "shares": 1002,
-          "pnl": 4972,
-          "pnl_pct": 0.24
-        },
-        {
-          "code": "9202",
-          "name": "ANAホールディングス",
-          "entry": 2936.5,
-          "target": 3428.0,
-          "stop": 2876.3,
-          "exit": 2916.0,
-          "result": "loss",
-          "shares": 695,
-          "pnl": -16288,
-          "pnl_pct": -0.8
-        },
-        {
-          "code": "4568",
-          "name": "第一三共",
-          "entry": 2815.0,
-          "target": 3084.3,
-          "stop": 2739.0,
-          "exit": 2773.5,
-          "result": "loss",
-          "shares": 725,
-          "pnl": -32128,
-          "pnl_pct": -1.57
-        },
-        {
-          "code": "8830",
-          "name": "住友不動産",
-          "entry": 4771.0,
-          "target": 5400.7,
-          "stop": 4607.4,
-          "exit": 4820.0,
-          "result": "win",
-          "shares": 428,
-          "pnl": 18930,
-          "pnl_pct": 0.93
-        },
-        {
-          "code": "8002",
-          "name": "丸紅",
-          "entry": 5579.0,
-          "target": 6232.2,
-          "stop": 4997.0,
-          "exit": 5633.0,
-          "result": "win",
-          "shares": 366,
-          "pnl": 17722,
-          "pnl_pct": 0.87
-        }
-      ],
-      "day_pnl": -6793,
-      "capital_after": 10209627
-    },
-    {
       "date": "2026-03-17",
       "eval_date": "2026-03-18",
       "trades": [
@@ -4783,6 +4715,13 @@
     {
       "date": "2026-07-17",
       "eval_date": "2026-07-20",
+      "trades": [],
+      "day_pnl": 0,
+      "capital_after": 7914128
+    },
+    {
+      "date": "2026-07-20",
+      "eval_date": "2026-07-21",
       "trades": [],
       "day_pnl": 0,
       "capital_after": 7914128
