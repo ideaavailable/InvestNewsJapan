@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 7914128.2249378115,
-  "total_trades": 365,
-  "wins": 163,
-  "losses": 202,
-  "total_profit": 2990524.8864026796,
-  "total_loss": 4588569.417512711,
+  "current_capital": 8040116.392937811,
+  "total_trades": 370,
+  "wins": 167,
+  "losses": 203,
+  "total_profit": 3146297.2344026794,
+  "total_loss": 4618353.597512711,
   "max_drawdown": 2533858.4058068935,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-03-17",
-      "eval_date": "2026-03-18",
-      "trades": [
-        {
-          "code": "4502",
-          "name": "武田薬品工業",
-          "entry": 5810.0,
-          "target": 5874.5,
-          "stop": 5463.5,
-          "exit": 5820.0,
-          "result": "win",
-          "shares": 351,
-          "pnl": 1471,
-          "pnl_pct": 0.07
-        },
-        {
-          "code": "8725",
-          "name": "MS&ADインシュアランス",
-          "entry": 4041.0,
-          "target": 4401.6,
-          "stop": 3889.4,
-          "exit": 4030.0,
-          "result": "loss",
-          "shares": 505,
-          "pnl": -7596,
-          "pnl_pct": -0.37
-        },
-        {
-          "code": "2802",
-          "name": "味の素",
-          "entry": 4520.0,
-          "target": 5048.9,
-          "stop": 4231.4,
-          "exit": 4490.0,
-          "result": "loss",
-          "shares": 451,
-          "pnl": -15569,
-          "pnl_pct": -0.76
-        },
-        {
-          "code": "9202",
-          "name": "ANAホールディングス",
-          "entry": 2935.0,
-          "target": 3427.4,
-          "stop": 2859.2,
-          "exit": 2954.0,
-          "result": "win",
-          "shares": 695,
-          "pnl": 11165,
-          "pnl_pct": 0.55
-        },
-        {
-          "code": "8308",
-          "name": "りそなホールディングス",
-          "entry": 1752.0,
-          "target": 2068.2,
-          "stop": 1625.3,
-          "exit": 1740.5,
-          "result": "loss",
-          "shares": 1165,
-          "pnl": -15439,
-          "pnl_pct": -0.76
-        }
-      ],
-      "day_pnl": -25967,
-      "capital_after": 10183660
-    },
     {
       "date": "2026-03-18",
       "eval_date": "2026-03-19",
@@ -4725,6 +4657,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 7914128
+    },
+    {
+      "date": "2026-07-21",
+      "eval_date": "2026-07-22",
+      "trades": [
+        {
+          "code": "8591",
+          "name": "オリックス",
+          "entry": 6241.0,
+          "target": 6642.5,
+          "stop": 6009.3,
+          "exit": 6502.0,
+          "result": "win",
+          "shares": 253,
+          "pnl": 64454,
+          "pnl_pct": 4.08
+        },
+        {
+          "code": "8411",
+          "name": "みずほフィナンシャル",
+          "entry": 8038.0,
+          "target": 8696.9,
+          "stop": 7512.9,
+          "exit": 8302.0,
+          "result": "win",
+          "shares": 196,
+          "pnl": 50169,
+          "pnl_pct": 3.18
+        },
+        {
+          "code": "8306",
+          "name": "三菱UFJフィナンシャル",
+          "entry": 3519.0,
+          "target": 3711.5,
+          "stop": 3148.0,
+          "exit": 3580.0,
+          "result": "win",
+          "shares": 449,
+          "pnl": 25809,
+          "pnl_pct": 1.63
+        },
+        {
+          "code": "7735",
+          "name": "SCREENホールディングス",
+          "entry": 16800.0,
+          "target": 19670.9,
+          "stop": 15246.8,
+          "exit": 16980.0,
+          "result": "win",
+          "shares": 94,
+          "pnl": 15341,
+          "pnl_pct": 0.97
+        },
+        {
+          "code": "2801",
+          "name": "キッコーマン",
+          "entry": 1655.0,
+          "target": 1712.3,
+          "stop": 1527.3,
+          "exit": 1625.5,
+          "result": "loss",
+          "shares": 956,
+          "pnl": -29784,
+          "pnl_pct": -1.88
+        }
+      ],
+      "day_pnl": 125988,
+      "capital_after": 8040116
     }
   ]
 }
