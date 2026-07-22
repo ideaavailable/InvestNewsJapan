@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8040116.392937811,
-  "total_trades": 370,
-  "wins": 167,
-  "losses": 203,
-  "total_profit": 3146297.2344026794,
-  "total_loss": 4618353.597512711,
+  "current_capital": 8066664.210937811,
+  "total_trades": 375,
+  "wins": 171,
+  "losses": 204,
+  "total_profit": 3185130.4424026795,
+  "total_loss": 4630638.9875127105,
   "max_drawdown": 2533858.4058068935,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-03-18",
-      "eval_date": "2026-03-19",
-      "trades": [
-        {
-          "code": "4568",
-          "name": "第一三共",
-          "entry": 2890.0,
-          "target": 3086.5,
-          "stop": 2725.9,
-          "exit": 2977.0,
-          "result": "win",
-          "shares": 704,
-          "pnl": 59213,
-          "pnl_pct": 2.91
-        },
-        {
-          "code": "9107",
-          "name": "川崎汽船",
-          "entry": 2895.5,
-          "target": 2803.7,
-          "stop": 2258.6,
-          "exit": 2803.7,
-          "result": "win",
-          "shares": 703,
-          "pnl": -66571,
-          "pnl_pct": -3.27
-        },
-        {
-          "code": "8725",
-          "name": "MS&ADインシュアランス",
-          "entry": 4094.0,
-          "target": 4401.0,
-          "stop": 3890.3,
-          "exit": 4139.0,
-          "result": "win",
-          "shares": 497,
-          "pnl": 20330,
-          "pnl_pct": 1.0
-        },
-        {
-          "code": "9101",
-          "name": "日本郵船",
-          "entry": 6005.0,
-          "target": 5938.1,
-          "stop": 4992.0,
-          "exit": 5938.1,
-          "result": "win",
-          "shares": 339,
-          "pnl": -24715,
-          "pnl_pct": -1.21
-        },
-        {
-          "code": "9202",
-          "name": "ANAホールディングス",
-          "entry": 2983.0,
-          "target": 3426.9,
-          "stop": 2859.9,
-          "exit": 3030.0,
-          "result": "win",
-          "shares": 682,
-          "pnl": 30020,
-          "pnl_pct": 1.48
-        }
-      ],
-      "day_pnl": 18278,
-      "capital_after": 10201938
-    },
     {
       "date": "2026-03-19",
       "eval_date": "2026-03-20",
@@ -4725,6 +4657,74 @@
       ],
       "day_pnl": 125988,
       "capital_after": 8040116
+    },
+    {
+      "date": "2026-07-22",
+      "eval_date": "2026-07-23",
+      "trades": [
+        {
+          "code": "5713",
+          "name": "住友金属鉱山",
+          "entry": 7509.0,
+          "target": 8563.1,
+          "stop": 6597.6,
+          "exit": 7521.0,
+          "result": "win",
+          "shares": 214,
+          "pnl": 961,
+          "pnl_pct": 0.06
+        },
+        {
+          "code": "7267",
+          "name": "ホンダ",
+          "entry": 1552.0,
+          "target": 1601.8,
+          "stop": 1372.6,
+          "exit": 1559.0,
+          "result": "win",
+          "shares": 1036,
+          "pnl": 5644,
+          "pnl_pct": 0.35
+        },
+        {
+          "code": "8306",
+          "name": "三菱UFJフィナンシャル",
+          "entry": 3599.0,
+          "target": 3711.7,
+          "stop": 3147.6,
+          "exit": 3668.0,
+          "result": "win",
+          "shares": 446,
+          "pnl": 29169,
+          "pnl_pct": 1.82
+        },
+        {
+          "code": "4519",
+          "name": "中外製薬",
+          "entry": 7355.0,
+          "target": 7868.6,
+          "stop": 7026.6,
+          "exit": 7306.0,
+          "result": "loss",
+          "shares": 218,
+          "pnl": -12285,
+          "pnl_pct": -0.77
+        },
+        {
+          "code": "9022",
+          "name": "JR東海",
+          "entry": 3785.0,
+          "target": 3837.7,
+          "stop": 3254.3,
+          "exit": 3796.0,
+          "result": "win",
+          "shares": 424,
+          "pnl": 3059,
+          "pnl_pct": 0.19
+        }
+      ],
+      "day_pnl": 26548,
+      "capital_after": 8066664
     }
   ]
 }
