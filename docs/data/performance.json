@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8208116.004294501,
-  "total_trades": 385,
-  "wins": 180,
-  "losses": 205,
-  "total_profit": 3365424.1597593687,
-  "total_loss": 4634421.887512711,
+  "current_capital": 8201277.802294501,
+  "total_trades": 390,
+  "wins": 184,
+  "losses": 206,
+  "total_profit": 3398410.9477593685,
+  "total_loss": 4658781.277512711,
   "max_drawdown": 2533858.4058068935,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-03-24",
-      "eval_date": "2026-03-25",
-      "trades": [
-        {
-          "code": "4502",
-          "name": "武田薬品工業",
-          "entry": 5645.0,
-          "target": 5899.4,
-          "stop": 5478.3,
-          "exit": 5663.0,
-          "result": "win",
-          "shares": 355,
-          "pnl": 4386,
-          "pnl_pct": 0.22
-        },
-        {
-          "code": "4063",
-          "name": "信越化学工業",
-          "entry": 6273.0,
-          "target": 6765.0,
-          "stop": 5558.9,
-          "exit": 6060.0,
-          "result": "loss",
-          "shares": 319,
-          "pnl": -69948,
-          "pnl_pct": -3.5
-        },
-        {
-          "code": "6526",
-          "name": "ソシオネクスト",
-          "entry": 1790.0,
-          "target": 2060.2,
-          "stop": 1664.9,
-          "exit": 1795.0,
-          "result": "win",
-          "shares": 1119,
-          "pnl": 3592,
-          "pnl_pct": 0.18
-        },
-        {
-          "code": "9202",
-          "name": "ANAホールディングス",
-          "entry": 2950.5,
-          "target": 3406.1,
-          "stop": 2832.2,
-          "exit": 2934.5,
-          "result": "loss",
-          "shares": 679,
-          "pnl": -12867,
-          "pnl_pct": -0.64
-        },
-        {
-          "code": "7751",
-          "name": "キヤノン",
-          "entry": 4365.0,
-          "target": 4777.4,
-          "stop": 4227.2,
-          "exit": 4357.0,
-          "result": "loss",
-          "shares": 459,
-          "pnl": -5676,
-          "pnl_pct": -0.28
-        }
-      ],
-      "day_pnl": -80513,
-      "capital_after": 9941157
-    },
     {
       "date": "2026-03-25",
       "eval_date": "2026-03-26",
@@ -4725,6 +4657,74 @@
       ],
       "day_pnl": 45119,
       "capital_after": 8208116
+    },
+    {
+      "date": "2026-07-28",
+      "eval_date": "2026-07-29",
+      "trades": [
+        {
+          "code": "4901",
+          "name": "富士フイルム",
+          "entry": 3800.0,
+          "target": 3768.0,
+          "stop": 3397.3,
+          "exit": 3768.0,
+          "result": "win",
+          "shares": 432,
+          "pnl": -15466,
+          "pnl_pct": -0.94
+        },
+        {
+          "code": "4578",
+          "name": "大塚ホールディングス",
+          "entry": 11545.0,
+          "target": 11860.7,
+          "stop": 10511.0,
+          "exit": 11385.0,
+          "result": "loss",
+          "shares": 142,
+          "pnl": -24359,
+          "pnl_pct": -1.49
+        },
+        {
+          "code": "7733",
+          "name": "オリンパス",
+          "entry": 1820.0,
+          "target": 1833.1,
+          "stop": 1642.5,
+          "exit": 1833.1,
+          "result": "win",
+          "shares": 901,
+          "pnl": 10163,
+          "pnl_pct": 0.62
+        },
+        {
+          "code": "7267",
+          "name": "ホンダ",
+          "entry": 1590.0,
+          "target": 1610.4,
+          "stop": 1441.8,
+          "exit": 1610.4,
+          "result": "win",
+          "shares": 1032,
+          "pnl": 19412,
+          "pnl_pct": 1.18
+        },
+        {
+          "code": "5108",
+          "name": "ブリヂストン",
+          "entry": 3829.0,
+          "target": 3840.8,
+          "stop": 3353.8,
+          "exit": 3840.8,
+          "result": "win",
+          "shares": 428,
+          "pnl": 3412,
+          "pnl_pct": 0.21
+        }
+      ],
+      "day_pnl": -6838,
+      "capital_after": 8201278
     }
   ]
 }
