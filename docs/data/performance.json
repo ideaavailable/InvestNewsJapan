@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8201277.802294501,
-  "total_trades": 390,
-  "wins": 184,
+  "current_capital": 8162162.604794501,
+  "total_trades": 395,
+  "wins": 189,
   "losses": 206,
-  "total_profit": 3398410.9477593685,
+  "total_profit": 3435461.031259369,
   "total_loss": 4658781.277512711,
   "max_drawdown": 2533858.4058068935,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-03-25",
-      "eval_date": "2026-03-26",
-      "trades": [
-        {
-          "code": "5411",
-          "name": "JFEホールディングス",
-          "entry": 1935.5,
-          "target": 2250.8,
-          "stop": 1838.4,
-          "exit": 1887.0,
-          "result": "loss",
-          "shares": 1027,
-          "pnl": -51797,
-          "pnl_pct": -2.61
-        },
-        {
-          "code": "5401",
-          "name": "日本製鉄",
-          "entry": 598.2,
-          "target": 658.0,
-          "stop": 571.3,
-          "exit": 594.6,
-          "result": "loss",
-          "shares": 3323,
-          "pnl": -13951,
-          "pnl_pct": -0.7
-        },
-        {
-          "code": "7270",
-          "name": "SUBARU",
-          "entry": 2626.5,
-          "target": 3005.6,
-          "stop": 2456.2,
-          "exit": 2585.0,
-          "result": "loss",
-          "shares": 756,
-          "pnl": -33360,
-          "pnl_pct": -1.68
-        },
-        {
-          "code": "8725",
-          "name": "MS&ADインシュアランス",
-          "entry": 4162.0,
-          "target": 4388.4,
-          "stop": 3854.4,
-          "exit": 4214.0,
-          "result": "win",
-          "shares": 477,
-          "pnl": 22819,
-          "pnl_pct": 1.15
-        },
-        {
-          "code": "9202",
-          "name": "ANAホールディングス",
-          "entry": 2975.0,
-          "target": 3406.0,
-          "stop": 2832.3,
-          "exit": 2980.0,
-          "result": "win",
-          "shares": 668,
-          "pnl": 1353,
-          "pnl_pct": 0.07
-        }
-      ],
-      "day_pnl": -74936,
-      "capital_after": 9866221
-    },
     {
       "date": "2026-03-26",
       "eval_date": "2026-03-27",
@@ -4725,6 +4657,74 @@
       ],
       "day_pnl": -6838,
       "capital_after": 8201278
+    },
+    {
+      "date": "2026-07-29",
+      "eval_date": "2026-07-30",
+      "trades": [
+        {
+          "code": "5401",
+          "name": "日本製鉄",
+          "entry": 650.0,
+          "target": 641.8,
+          "stop": 526.3,
+          "exit": 641.8,
+          "result": "win",
+          "shares": 2523,
+          "pnl": -22329,
+          "pnl_pct": -1.36
+        },
+        {
+          "code": "7272",
+          "name": "ヤマハ発動機",
+          "entry": 1379.0,
+          "target": 1335.1,
+          "stop": 1195.3,
+          "exit": 1335.1,
+          "result": "win",
+          "shares": 1189,
+          "pnl": -53837,
+          "pnl_pct": -3.28
+        },
+        {
+          "code": "7751",
+          "name": "キヤノン",
+          "entry": 4616.0,
+          "target": 4642.6,
+          "stop": 4088.4,
+          "exit": 4642.6,
+          "result": "win",
+          "shares": 355,
+          "pnl": 7804,
+          "pnl_pct": 0.48
+        },
+        {
+          "code": "8316",
+          "name": "三井住友フィナンシャル",
+          "entry": 6857.0,
+          "target": 7274.7,
+          "stop": 6286.4,
+          "exit": 6876.0,
+          "result": "win",
+          "shares": 239,
+          "pnl": 2902,
+          "pnl_pct": 0.18
+        },
+        {
+          "code": "8750",
+          "name": "第一生命ホールディングス",
+          "entry": 1903.5,
+          "target": 1955.8,
+          "stop": 1737.2,
+          "exit": 1936.0,
+          "result": "win",
+          "shares": 861,
+          "pnl": 26344,
+          "pnl_pct": 1.61
+        }
+      ],
+      "day_pnl": -39115,
+      "capital_after": 8162163
     }
   ]
 }
