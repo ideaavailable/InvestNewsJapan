@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8162162.604794501,
-  "total_trades": 395,
-  "wins": 189,
+  "current_capital": 8022608.822099677,
+  "total_trades": 400,
+  "wins": 194,
   "losses": 206,
-  "total_profit": 3435461.031259369,
+  "total_profit": 3448358.508564545,
   "total_loss": 4658781.277512711,
   "max_drawdown": 2533858.4058068935,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-03-26",
-      "eval_date": "2026-03-27",
-      "trades": [
-        {
-          "code": "8766",
-          "name": "東京海上ホールディングス",
-          "entry": 7642.0,
-          "target": 7194.4,
-          "stop": 5643.9,
-          "exit": 7194.4,
-          "result": "win",
-          "shares": 258,
-          "pnl": -117452,
-          "pnl_pct": -5.96
-        },
-        {
-          "code": "5401",
-          "name": "日本製鉄",
-          "entry": 596.2,
-          "target": 645.8,
-          "stop": 571.5,
-          "exit": 596.0,
-          "result": "loss",
-          "shares": 3309,
-          "pnl": -2635,
-          "pnl_pct": -0.13
-        },
-        {
-          "code": "4755",
-          "name": "楽天グループ",
-          "entry": 751.2,
-          "target": 838.5,
-          "stop": 716.8,
-          "exit": 744.3,
-          "result": "loss",
-          "shares": 2626,
-          "pnl": -20092,
-          "pnl_pct": -1.02
-        },
-        {
-          "code": "5411",
-          "name": "JFEホールディングス",
-          "entry": 1904.0,
-          "target": 2229.9,
-          "stop": 1838.7,
-          "exit": 1883.0,
-          "result": "loss",
-          "shares": 1036,
-          "pnl": -23729,
-          "pnl_pct": -1.2
-        },
-        {
-          "code": "4502",
-          "name": "武田薬品工業",
-          "entry": 5813.0,
-          "target": 5899.8,
-          "stop": 5477.6,
-          "exit": 5789.0,
-          "result": "loss",
-          "shares": 339,
-          "pnl": -10107,
-          "pnl_pct": -0.51
-        }
-      ],
-      "day_pnl": -174014,
-      "capital_after": 9692206
-    },
     {
       "date": "2026-03-27",
       "eval_date": "2026-03-30",
@@ -4725,6 +4657,74 @@
       ],
       "day_pnl": -39115,
       "capital_after": 8162163
+    },
+    {
+      "date": "2026-07-30",
+      "eval_date": "2026-07-31",
+      "trades": [
+        {
+          "code": "4452",
+          "name": "花王",
+          "entry": 3387.0,
+          "target": 3408.2,
+          "stop": 3149.4,
+          "exit": 3408.2,
+          "result": "win",
+          "shares": 481,
+          "pnl": 8568,
+          "pnl_pct": 0.53
+        },
+        {
+          "code": "5401",
+          "name": "日本製鉄",
+          "entry": 657.1,
+          "target": 659.5,
+          "stop": 529.4,
+          "exit": 659.5,
+          "result": "win",
+          "shares": 2484,
+          "pnl": 4329,
+          "pnl_pct": 0.27
+        },
+        {
+          "code": "7272",
+          "name": "ヤマハ発動機",
+          "entry": 1411.0,
+          "target": 1369.2,
+          "stop": 1198.4,
+          "exit": 1369.2,
+          "result": "win",
+          "shares": 1156,
+          "pnl": -49952,
+          "pnl_pct": -3.06
+        },
+        {
+          "code": "5108",
+          "name": "ブリヂストン",
+          "entry": 4135.0,
+          "target": 3978.9,
+          "stop": 3398.1,
+          "exit": 3978.9,
+          "result": "win",
+          "shares": 394,
+          "pnl": -63133,
+          "pnl_pct": -3.88
+        },
+        {
+          "code": "4523",
+          "name": "エーザイ",
+          "entry": 5057.0,
+          "target": 4939.8,
+          "stop": 4069.0,
+          "exit": 4939.8,
+          "result": "win",
+          "shares": 322,
+          "pnl": -39367,
+          "pnl_pct": -2.42
+        }
+      ],
+      "day_pnl": -139554,
+      "capital_after": 8022609
     }
   ]
 }
