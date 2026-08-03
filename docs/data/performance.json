@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 8022608.822099677,
-  "total_trades": 400,
-  "wins": 194,
-  "losses": 206,
-  "total_profit": 3448358.508564545,
-  "total_loss": 4658781.277512711,
+  "current_capital": 7911778.814599677,
+  "total_trades": 405,
+  "wins": 196,
+  "losses": 209,
+  "total_profit": 3449130.708564545,
+  "total_loss": 4769444.12701271,
   "max_drawdown": 2533858.4058068935,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-03-30",
-      "eval_date": "2026-03-31",
-      "trades": [
-        {
-          "code": "7733",
-          "name": "オリンパス",
-          "entry": 1430.0,
-          "target": 1516.2,
-          "stop": 1258.0,
-          "exit": 1490.0,
-          "result": "win",
-          "shares": 1355,
-          "pnl": 79362,
-          "pnl_pct": 4.1
-        },
-        {
-          "code": "5411",
-          "name": "JFEホールディングス",
-          "entry": 1800.0,
-          "target": 2134.4,
-          "stop": 1792.4,
-          "exit": 1792.4,
-          "result": "loss",
-          "shares": 1076,
-          "pnl": -10114,
-          "pnl_pct": -0.52
-        },
-        {
-          "code": "7267",
-          "name": "ホンダ",
-          "entry": 1262.5,
-          "target": 1531.9,
-          "stop": 1228.0,
-          "exit": 1270.5,
-          "result": "win",
-          "shares": 1535,
-          "pnl": 10342,
-          "pnl_pct": 0.53
-        },
-        {
-          "code": "8267",
-          "name": "イオン",
-          "entry": 1881.0,
-          "target": 2192.5,
-          "stop": 1859.2,
-          "exit": 1905.5,
-          "result": "win",
-          "shares": 1030,
-          "pnl": 23298,
-          "pnl_pct": 1.2
-        },
-        {
-          "code": "9202",
-          "name": "ANAホールディングス",
-          "entry": 2841.0,
-          "target": 3257.7,
-          "stop": 2778.8,
-          "exit": 2864.5,
-          "result": "win",
-          "shares": 682,
-          "pnl": 14089,
-          "pnl_pct": 0.73
-        }
-      ],
-      "day_pnl": 116977,
-      "capital_after": 9809183
-    },
     {
       "date": "2026-03-31",
       "eval_date": "2026-04-01",
@@ -4725,6 +4657,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 8022609
+    },
+    {
+      "date": "2026-08-03",
+      "eval_date": "2026-08-04",
+      "trades": [
+        {
+          "code": "2413",
+          "name": "エムスリー",
+          "entry": 1768.5,
+          "target": 2011.4,
+          "stop": 1740.7,
+          "exit": 1740.7,
+          "result": "loss",
+          "shares": 907,
+          "pnl": -26819,
+          "pnl_pct": -1.67
+        },
+        {
+          "code": "6902",
+          "name": "デンソー",
+          "entry": 1968.0,
+          "target": 2226.1,
+          "stop": 1888.6,
+          "exit": 1928.0,
+          "result": "loss",
+          "shares": 815,
+          "pnl": -34204,
+          "pnl_pct": -2.13
+        },
+        {
+          "code": "2914",
+          "name": "日本たばこ産業",
+          "entry": 7002.0,
+          "target": 7004.9,
+          "stop": 5972.4,
+          "exit": 7004.9,
+          "result": "win",
+          "shares": 229,
+          "pnl": -939,
+          "pnl_pct": -0.06
+        },
+        {
+          "code": "4502",
+          "name": "武田薬品工業",
+          "entry": 5400.0,
+          "target": 5879.8,
+          "stop": 5206.2,
+          "exit": 5408.0,
+          "result": "win",
+          "shares": 297,
+          "pnl": 772,
+          "pnl_pct": 0.05
+        },
+        {
+          "code": "8316",
+          "name": "三井住友フィナンシャル",
+          "entry": 6700.0,
+          "target": 7276.5,
+          "stop": 6499.0,
+          "exit": 6499.0,
+          "result": "loss",
+          "shares": 239,
+          "pnl": -49640,
+          "pnl_pct": -3.1
+        }
+      ],
+      "day_pnl": -110830,
+      "capital_after": 7911779
     }
   ]
 }
