@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 7839265.170599678,
-  "total_trades": 415,
-  "wins": 199,
-  "losses": 216,
-  "total_profit": 3496624.3805645453,
-  "total_loss": 4889451.44301271,
-  "max_drawdown": 2533858.4058068935,
+  "current_capital": 7679100.828311957,
+  "total_trades": 420,
+  "wins": 203,
+  "losses": 217,
+  "total_profit": 3551708.678564545,
+  "total_loss": 4892376.61930043,
+  "max_drawdown": 2678499.4496880434,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-04-02",
-      "eval_date": "2026-04-03",
-      "trades": [
-        {
-          "code": "7267",
-          "name": "ホンダ",
-          "entry": 1291.5,
-          "target": 1460.1,
-          "stop": 1224.5,
-          "exit": 1273.0,
-          "result": "loss",
-          "shares": 1531,
-          "pnl": -30301,
-          "pnl_pct": -1.53
-        },
-        {
-          "code": "8267",
-          "name": "イオン",
-          "entry": 1947.5,
-          "target": 2095.8,
-          "stop": 1840.3,
-          "exit": 1927.5,
-          "result": "loss",
-          "shares": 1015,
-          "pnl": -22277,
-          "pnl_pct": -1.13
-        },
-        {
-          "code": "5411",
-          "name": "JFEホールディングス",
-          "entry": 1870.0,
-          "target": 1998.8,
-          "stop": 1767.3,
-          "exit": 1831.0,
-          "result": "loss",
-          "shares": 1057,
-          "pnl": -43200,
-          "pnl_pct": -2.19
-        },
-        {
-          "code": "4502",
-          "name": "武田薬品工業",
-          "entry": 6000.0,
-          "target": 5850.4,
-          "stop": 5378.7,
-          "exit": 5850.4,
-          "result": "win",
-          "shares": 329,
-          "pnl": -51192,
-          "pnl_pct": -2.59
-        },
-        {
-          "code": "9022",
-          "name": "JR東海",
-          "entry": 4200.0,
-          "target": 4546.5,
-          "stop": 4000.9,
-          "exit": 4190.0,
-          "result": "loss",
-          "shares": 470,
-          "pnl": -6674,
-          "pnl_pct": -0.34
-        }
-      ],
-      "day_pnl": -153643,
-      "capital_after": 9735048
-    },
     {
       "date": "2026-04-03",
       "eval_date": "2026-04-06",
@@ -4725,6 +4657,74 @@
       ],
       "day_pnl": 12965,
       "capital_after": 7839265
+    },
+    {
+      "date": "2026-08-06",
+      "eval_date": "2026-08-07",
+      "trades": [
+        {
+          "code": "9434",
+          "name": "ソフトバンク",
+          "entry": 231.0,
+          "target": 237.2,
+          "stop": 209.0,
+          "exit": 230.8,
+          "result": "loss",
+          "shares": 6787,
+          "pnl": -2925,
+          "pnl_pct": -0.19
+        },
+        {
+          "code": "7272",
+          "name": "ヤマハ発動機",
+          "entry": 1872.0,
+          "target": 1620.2,
+          "stop": 1195.4,
+          "exit": 1620.2,
+          "result": "win",
+          "shares": 837,
+          "pnl": -212323,
+          "pnl_pct": -13.55
+        },
+        {
+          "code": "9433",
+          "name": "KDDI",
+          "entry": 2924.0,
+          "target": 3109.8,
+          "stop": 2742.9,
+          "exit": 2956.5,
+          "result": "win",
+          "shares": 536,
+          "pnl": 15853,
+          "pnl_pct": 1.01
+        },
+        {
+          "code": "5411",
+          "name": "JFEホールディングス",
+          "entry": 1863.0,
+          "target": 1874.8,
+          "stop": 1590.4,
+          "exit": 1874.8,
+          "result": "win",
+          "shares": 841,
+          "pnl": 8357,
+          "pnl_pct": 0.53
+        },
+        {
+          "code": "7269",
+          "name": "スズキ",
+          "entry": 1955.0,
+          "target": 2170.3,
+          "stop": 1830.8,
+          "exit": 1995.5,
+          "result": "win",
+          "shares": 801,
+          "pnl": 30875,
+          "pnl_pct": 1.97
+        }
+      ],
+      "day_pnl": -160164,
+      "capital_after": 7679101
     }
   ]
 }
