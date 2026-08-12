@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 7613227.227311958,
-  "total_trades": 425,
-  "wins": 207,
-  "losses": 218,
+  "current_capital": 7357315.588811957,
+  "total_trades": 430,
+  "wins": 210,
+  "losses": 220,
   "total_profit": 3551708.678564545,
-  "total_loss": 4892376.61930043,
-  "max_drawdown": 2744373.0506880432,
+  "total_loss": 4915850.72980043,
+  "max_drawdown": 3000284.6891880436,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-04-08",
-      "eval_date": "2026-04-09",
-      "trades": [
-        {
-          "code": "7267",
-          "name": "ホンダ",
-          "entry": 1270.0,
-          "target": 1449.0,
-          "stop": 1224.6,
-          "exit": 1283.5,
-          "result": "win",
-          "shares": 1520,
-          "pnl": 18590,
-          "pnl_pct": 0.96
-        },
-        {
-          "code": "5411",
-          "name": "JFEホールディングス",
-          "entry": 1851.0,
-          "target": 1968.5,
-          "stop": 1770.0,
-          "exit": 1882.0,
-          "result": "win",
-          "shares": 1043,
-          "pnl": 30402,
-          "pnl_pct": 1.57
-        },
-        {
-          "code": "8591",
-          "name": "オリックス",
-          "entry": 4925.0,
-          "target": 5031.3,
-          "stop": 4477.4,
-          "exit": 4897.0,
-          "result": "loss",
-          "shares": 392,
-          "pnl": -12907,
-          "pnl_pct": -0.67
-        },
-        {
-          "code": "7269",
-          "name": "スズキ",
-          "entry": 1816.5,
-          "target": 2098.2,
-          "stop": 1723.0,
-          "exit": 1853.0,
-          "result": "win",
-          "shares": 1063,
-          "pnl": 36869,
-          "pnl_pct": 1.91
-        },
-        {
-          "code": "7270",
-          "name": "SUBARU",
-          "entry": 2579.0,
-          "target": 2695.6,
-          "stop": 2391.8,
-          "exit": 2593.5,
-          "result": "win",
-          "shares": 748,
-          "pnl": 8917,
-          "pnl_pct": 0.46
-        }
-      ],
-      "day_pnl": 81871,
-      "capital_after": 9736761
-    },
     {
       "date": "2026-04-09",
       "eval_date": "2026-04-10",
@@ -4664,6 +4596,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 7613227
+    },
+    {
+      "date": "2026-08-12",
+      "eval_date": "2026-08-13",
+      "trades": [
+        {
+          "code": "9433",
+          "name": "KDDI",
+          "entry": 2874.5,
+          "target": 3112.5,
+          "stop": 2749.0,
+          "exit": 2833.0,
+          "result": "loss",
+          "shares": 529,
+          "pnl": -23474,
+          "pnl_pct": -1.54
+        },
+        {
+          "code": "7832",
+          "name": "バンダイナムコ",
+          "entry": 5500.0,
+          "target": 5348.7,
+          "stop": 3925.4,
+          "exit": 5348.7,
+          "result": "win",
+          "shares": 276,
+          "pnl": -43277,
+          "pnl_pct": -2.85
+        },
+        {
+          "code": "6098",
+          "name": "リクルートホールディングス",
+          "entry": 16565.0,
+          "target": 14441.5,
+          "stop": 11676.9,
+          "exit": 14441.5,
+          "result": "win",
+          "shares": 91,
+          "pnl": -194746,
+          "pnl_pct": -12.92
+        },
+        {
+          "code": "4901",
+          "name": "富士フイルム",
+          "entry": 3162.0,
+          "target": 3922.6,
+          "stop": 3222.6,
+          "exit": 3222.6,
+          "result": "loss",
+          "shares": 481,
+          "pnl": 27628,
+          "pnl_pct": 1.82
+        },
+        {
+          "code": "5108",
+          "name": "ブリヂストン",
+          "entry": 4359.0,
+          "target": 4300.2,
+          "stop": 3534.8,
+          "exit": 4300.2,
+          "result": "win",
+          "shares": 349,
+          "pnl": -22042,
+          "pnl_pct": -1.45
+        }
+      ],
+      "day_pnl": -255912,
+      "capital_after": 7357316
     }
   ]
 }
