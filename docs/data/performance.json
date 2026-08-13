@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 7357315.588811957,
-  "total_trades": 430,
-  "wins": 210,
-  "losses": 220,
-  "total_profit": 3551708.678564545,
-  "total_loss": 4915850.72980043,
-  "max_drawdown": 3000284.6891880436,
+  "current_capital": 7238273.122811957,
+  "total_trades": 435,
+  "wins": 213,
+  "losses": 222,
+  "total_profit": 3574719.098564545,
+  "total_loss": 4943903.73580043,
+  "max_drawdown": 3119327.1551880436,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-04-09",
-      "eval_date": "2026-04-10",
-      "trades": [
-        {
-          "code": "7211",
-          "name": "三菱自動車",
-          "entry": 323.0,
-          "target": 375.2,
-          "stop": 297.8,
-          "exit": 318.6,
-          "result": "loss",
-          "shares": 6028,
-          "pnl": -28470,
-          "pnl_pct": -1.46
-        },
-        {
-          "code": "9022",
-          "name": "JR東海",
-          "entry": 4249.0,
-          "target": 4415.1,
-          "stop": 3984.7,
-          "exit": 4220.0,
-          "result": "loss",
-          "shares": 458,
-          "pnl": -15228,
-          "pnl_pct": -0.78
-        },
-        {
-          "code": "9107",
-          "name": "川崎汽船",
-          "entry": 2662.5,
-          "target": 2893.7,
-          "stop": 2458.2,
-          "exit": 2657.5,
-          "result": "loss",
-          "shares": 731,
-          "pnl": -5601,
-          "pnl_pct": -0.29
-        },
-        {
-          "code": "7267",
-          "name": "ホンダ",
-          "entry": 1290.0,
-          "target": 1419.3,
-          "stop": 1224.4,
-          "exit": 1276.0,
-          "result": "loss",
-          "shares": 1509,
-          "pnl": -23073,
-          "pnl_pct": -1.19
-        },
-        {
-          "code": "7269",
-          "name": "スズキ",
-          "entry": 1844.0,
-          "target": 2069.4,
-          "stop": 1715.5,
-          "exit": 1842.0,
-          "result": "loss",
-          "shares": 1056,
-          "pnl": -4059,
-          "pnl_pct": -0.21
-        }
-      ],
-      "day_pnl": -76431,
-      "capital_after": 9660330
-    },
     {
       "date": "2026-04-10",
       "eval_date": "2026-04-13",
@@ -4664,6 +4596,74 @@
       ],
       "day_pnl": -255912,
       "capital_after": 7357316
+    },
+    {
+      "date": "2026-08-13",
+      "eval_date": "2026-08-14",
+      "trades": [
+        {
+          "code": "4901",
+          "name": "富士フイルム",
+          "entry": 3230.0,
+          "target": 3921.7,
+          "stop": 3086.1,
+          "exit": 3277.0,
+          "result": "win",
+          "shares": 455,
+          "pnl": 19915,
+          "pnl_pct": 1.36
+        },
+        {
+          "code": "1812",
+          "name": "鹿島建設",
+          "entry": 4898.0,
+          "target": 5792.7,
+          "stop": 4803.3,
+          "exit": 4868.0,
+          "result": "loss",
+          "shares": 300,
+          "pnl": -10469,
+          "pnl_pct": -0.71
+        },
+        {
+          "code": "8802",
+          "name": "三菱地所",
+          "entry": 3742.0,
+          "target": 4309.0,
+          "stop": 3613.3,
+          "exit": 3701.0,
+          "result": "loss",
+          "shares": 393,
+          "pnl": -17584,
+          "pnl_pct": -1.2
+        },
+        {
+          "code": "2413",
+          "name": "エムスリー",
+          "entry": 1610.0,
+          "target": 2019.6,
+          "stop": 1476.6,
+          "exit": 1615.0,
+          "result": "win",
+          "shares": 913,
+          "pnl": 3095,
+          "pnl_pct": 0.21
+        },
+        {
+          "code": "6098",
+          "name": "リクルートホールディングス",
+          "entry": 16980.0,
+          "target": 15671.4,
+          "stop": 11738.2,
+          "exit": 15671.4,
+          "result": "win",
+          "shares": 86,
+          "pnl": -114000,
+          "pnl_pct": -7.81
+        }
+      ],
+      "day_pnl": -119042,
+      "capital_after": 7238273
     }
   ]
 }
