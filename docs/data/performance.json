@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 7238273.122811957,
-  "total_trades": 435,
-  "wins": 213,
-  "losses": 222,
-  "total_profit": 3574719.098564545,
-  "total_loss": 4943903.73580043,
-  "max_drawdown": 3119327.1551880436,
+  "current_capital": 7148698.751765327,
+  "total_trades": 440,
+  "wins": 215,
+  "losses": 225,
+  "total_profit": 3610516.509517914,
+  "total_loss": 5035071.09380043,
+  "max_drawdown": 3208901.5262346743,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-04-13",
-      "eval_date": "2026-04-14",
-      "trades": [
-        {
-          "code": "4385",
-          "name": "メルカリ",
-          "entry": 3568.0,
-          "target": 4097.4,
-          "stop": 3321.9,
-          "exit": 3602.0,
-          "result": "win",
-          "shares": 541,
-          "pnl": 16464,
-          "pnl_pct": 0.85
-        },
-        {
-          "code": "9434",
-          "name": "ソフトバンク",
-          "entry": 214.1,
-          "target": 219.6,
-          "stop": 207.7,
-          "exit": 219.5,
-          "result": "win",
-          "shares": 9024,
-          "pnl": 46798,
-          "pnl_pct": 2.42
-        },
-        {
-          "code": "3382",
-          "name": "セブン&アイ",
-          "entry": 2010.0,
-          "target": 2262.9,
-          "stop": 1978.5,
-          "exit": 2000.0,
-          "result": "loss",
-          "shares": 961,
-          "pnl": -11542,
-          "pnl_pct": -0.6
-        },
-        {
-          "code": "8267",
-          "name": "イオン",
-          "entry": 1760.0,
-          "target": 2037.0,
-          "stop": 1772.8,
-          "exit": 1772.8,
-          "result": "loss",
-          "shares": 1097,
-          "pnl": 12111,
-          "pnl_pct": 0.63
-        },
-        {
-          "code": "9433",
-          "name": "KDDI",
-          "entry": 2611.0,
-          "target": 2797.1,
-          "stop": 2531.1,
-          "exit": 2620.0,
-          "result": "win",
-          "shares": 739,
-          "pnl": 4721,
-          "pnl_pct": 0.24
-        }
-      ],
-      "day_pnl": 68552,
-      "capital_after": 9728881
-    },
     {
       "date": "2026-04-14",
       "eval_date": "2026-04-15",
@@ -4664,6 +4596,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 7238273
+    },
+    {
+      "date": "2026-08-17",
+      "eval_date": "2026-08-18",
+      "trades": [
+        {
+          "code": "2502",
+          "name": "アサヒグループ",
+          "entry": 1720.0,
+          "target": 1796.4,
+          "stop": 1564.5,
+          "exit": 1661.0,
+          "result": "loss",
+          "shares": 841,
+          "pnl": -51066,
+          "pnl_pct": -3.53
+        },
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3382.0,
+          "target": 3892.5,
+          "stop": 3326.4,
+          "exit": 3360.0,
+          "result": "loss",
+          "shares": 428,
+          "pnl": -10863,
+          "pnl_pct": -0.75
+        },
+        {
+          "code": "8802",
+          "name": "三菱地所",
+          "entry": 3747.0,
+          "target": 4299.8,
+          "stop": 3600.0,
+          "exit": 3675.0,
+          "result": "loss",
+          "shares": 386,
+          "pnl": -29238,
+          "pnl_pct": -2.02
+        },
+        {
+          "code": "9107",
+          "name": "川崎汽船",
+          "entry": 3067.0,
+          "target": 2997.6,
+          "stop": 2613.1,
+          "exit": 2997.6,
+          "result": "win",
+          "shares": 472,
+          "pnl": -34204,
+          "pnl_pct": -2.36
+        },
+        {
+          "code": "4755",
+          "name": "楽天グループ",
+          "entry": 757.9,
+          "target": 882.3,
+          "stop": 733.5,
+          "exit": 777.4,
+          "result": "win",
+          "shares": 1910,
+          "pnl": 35797,
+          "pnl_pct": 2.47
+        }
+      ],
+      "day_pnl": -89574,
+      "capital_after": 7148699
     }
   ]
 }
