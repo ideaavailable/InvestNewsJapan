@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6648275.697751686,
-  "total_trades": 470,
-  "wins": 230,
+  "current_capital": 6694791.993751686,
+  "total_trades": 475,
+  "wins": 235,
   "losses": 240,
-  "total_profit": 3629166.4305179147,
+  "total_profit": 3675682.726517915,
   "total_loss": 5268901.3129659565,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-04-23",
-      "eval_date": "2026-04-24",
-      "trades": [
-        {
-          "code": "5411",
-          "name": "JFEホールディングス",
-          "entry": 1724.0,
-          "target": 1899.8,
-          "stop": 1725.5,
-          "exit": 1725.5,
-          "result": "loss",
-          "shares": 1084,
-          "pnl": -243,
-          "pnl_pct": -0.01
-        },
-        {
-          "code": "9502",
-          "name": "中部電力",
-          "entry": 2622.5,
-          "target": 2963.7,
-          "stop": 2506.1,
-          "exit": 2594.0,
-          "result": "loss",
-          "shares": 713,
-          "pnl": -22190,
-          "pnl_pct": -1.19
-        },
-        {
-          "code": "9501",
-          "name": "東京電力HD",
-          "entry": 623.0,
-          "target": 688.9,
-          "stop": 585.7,
-          "exit": 585.7,
-          "result": "loss",
-          "shares": 3002,
-          "pnl": -113845,
-          "pnl_pct": -6.09
-        },
-        {
-          "code": "7013",
-          "name": "IHI",
-          "entry": 3071.0,
-          "target": 3594.3,
-          "stop": 2933.4,
-          "exit": 3027.0,
-          "result": "loss",
-          "shares": 609,
-          "pnl": -28666,
-          "pnl_pct": -1.53
-        },
-        {
-          "code": "4503",
-          "name": "アステラス製薬",
-          "entry": 2472.5,
-          "target": 2710.2,
-          "stop": 2442.0,
-          "exit": 2476.5,
-          "result": "win",
-          "shares": 756,
-          "pnl": 1155,
-          "pnl_pct": 0.06
-        }
-      ],
-      "day_pnl": -163789,
-      "capital_after": 9188718
-    },
     {
       "date": "2026-04-24",
       "eval_date": "2026-04-27",
@@ -4664,6 +4596,74 @@
       ],
       "day_pnl": 15363,
       "capital_after": 6648276
+    },
+    {
+      "date": "2026-08-27",
+      "eval_date": "2026-08-28",
+      "trades": [
+        {
+          "code": "6367",
+          "name": "ダイキン工業",
+          "entry": 20840.0,
+          "target": 23923.7,
+          "stop": 20375.5,
+          "exit": 20960.0,
+          "result": "win",
+          "shares": 63,
+          "pnl": 6247,
+          "pnl_pct": 0.48
+        },
+        {
+          "code": "4452",
+          "name": "花王",
+          "entry": 3600.0,
+          "target": 3771.0,
+          "stop": 3111.8,
+          "exit": 3639.0,
+          "result": "win",
+          "shares": 369,
+          "pnl": 13063,
+          "pnl_pct": 0.98
+        },
+        {
+          "code": "8802",
+          "name": "三菱地所",
+          "entry": 3755.0,
+          "target": 4042.4,
+          "stop": 3545.8,
+          "exit": 3799.0,
+          "result": "win",
+          "shares": 354,
+          "pnl": 14247,
+          "pnl_pct": 1.07
+        },
+        {
+          "code": "1812",
+          "name": "鹿島建設",
+          "entry": 4798.0,
+          "target": 5537.9,
+          "stop": 4626.3,
+          "exit": 4833.0,
+          "result": "win",
+          "shares": 277,
+          "pnl": 8366,
+          "pnl_pct": 0.63
+        },
+        {
+          "code": "2914",
+          "name": "日本たばこ産業",
+          "entry": 6948.0,
+          "target": 7235.3,
+          "stop": 6635.8,
+          "exit": 6979.0,
+          "result": "win",
+          "shares": 191,
+          "pnl": 4594,
+          "pnl_pct": 0.35
+        }
+      ],
+      "day_pnl": 46516,
+      "capital_after": 6694792
     }
   ]
 }
