@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6739565.748796852,
-  "total_trades": 480,
-  "wins": 239,
+  "current_capital": 6853948.58362571,
+  "total_trades": 485,
+  "wins": 244,
   "losses": 241,
-  "total_profit": 3723591.647517915,
+  "total_profit": 3838033.362346772,
   "total_loss": 5272036.47892079,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-04-28",
-      "eval_date": "2026-04-29",
-      "trades": [
-        {
-          "code": "4307",
-          "name": "野村総合研究所",
-          "entry": 4479.0,
-          "target": 5241.7,
-          "stop": 4241.5,
-          "exit": 4313.0,
-          "result": "loss",
-          "shares": 412,
-          "pnl": -70237,
-          "pnl_pct": -3.81
-        },
-        {
-          "code": "6902",
-          "name": "デンソー",
-          "entry": 1914.0,
-          "target": 2000.9,
-          "stop": 1848.5,
-          "exit": 1848.5,
-          "result": "loss",
-          "shares": 964,
-          "pnl": -64987,
-          "pnl_pct": -3.52
-        },
-        {
-          "code": "7211",
-          "name": "三菱自動車",
-          "entry": 320.0,
-          "target": 339.5,
-          "stop": 298.8,
-          "exit": 319.0,
-          "result": "loss",
-          "shares": 5770,
-          "pnl": -7616,
-          "pnl_pct": -0.41
-        },
-        {
-          "code": "5108",
-          "name": "ブリヂストン",
-          "entry": 3305.0,
-          "target": 3486.4,
-          "stop": 3235.5,
-          "exit": 3322.0,
-          "result": "win",
-          "shares": 558,
-          "pnl": 7642,
-          "pnl_pct": 0.41
-        },
-        {
-          "code": "4568",
-          "name": "第一三共",
-          "entry": 2606.0,
-          "target": 3022.9,
-          "stop": 2498.6,
-          "exit": 2650.5,
-          "result": "win",
-          "shares": 708,
-          "pnl": 29661,
-          "pnl_pct": 1.61
-        }
-      ],
-      "day_pnl": -105538,
-      "capital_after": 9127478
-    },
     {
       "date": "2026-04-29",
       "eval_date": "2026-04-30",
@@ -4664,6 +4596,74 @@
       ],
       "day_pnl": 44774,
       "capital_after": 6739566
+    },
+    {
+      "date": "2026-09-01",
+      "eval_date": "2026-09-02",
+      "trades": [
+        {
+          "code": "6367",
+          "name": "ダイキン工業",
+          "entry": 20920.0,
+          "target": 23786.7,
+          "stop": 20378.8,
+          "exit": 20940.0,
+          "result": "win",
+          "shares": 64,
+          "pnl": -59,
+          "pnl_pct": -0.0
+        },
+        {
+          "code": "3382",
+          "name": "セブン&アイ",
+          "entry": 2025.5,
+          "target": 2114.2,
+          "stop": 1939.1,
+          "exit": 2034.0,
+          "result": "win",
+          "shares": 665,
+          "pnl": 4306,
+          "pnl_pct": 0.32
+        },
+        {
+          "code": "5401",
+          "name": "日本製鉄",
+          "entry": 675.9,
+          "target": 707.0,
+          "stop": 630.0,
+          "exit": 700.3,
+          "result": "win",
+          "shares": 1994,
+          "pnl": 47306,
+          "pnl_pct": 3.51
+        },
+        {
+          "code": "1812",
+          "name": "鹿島建設",
+          "entry": 4860.0,
+          "target": 5481.2,
+          "stop": 4628.2,
+          "exit": 5016.0,
+          "result": "win",
+          "shares": 277,
+          "pnl": 41866,
+          "pnl_pct": 3.11
+        },
+        {
+          "code": "2914",
+          "name": "日本たばこ産業",
+          "entry": 6935.0,
+          "target": 7234.9,
+          "stop": 6709.5,
+          "exit": 7050.0,
+          "result": "win",
+          "shares": 194,
+          "pnl": 20965,
+          "pnl_pct": 1.56
+        }
+      ],
+      "day_pnl": 114383,
+      "capital_after": 6853949
     }
   ]
 }
