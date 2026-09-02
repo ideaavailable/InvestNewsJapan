@@ -1,21 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6853948.58362571,
-  "total_trades": 485,
-  "wins": 244,
-  "losses": 241,
-  "total_profit": 3838033.362346772,
-  "total_loss": 5272036.47892079,
+  "current_capital": 6790430.187305336,
+  "total_trades": 490,
+  "wins": 246,
+  "losses": 244,
+  "total_profit": 3849240.3940263987,
+  "total_loss": 5346761.906920791,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-04-29",
-      "eval_date": "2026-04-30",
-      "trades": [],
-      "day_pnl": 0,
-      "capital_after": 9127478
-    },
     {
       "date": "2026-04-30",
       "eval_date": "2026-05-01",
@@ -4664,6 +4657,74 @@
       ],
       "day_pnl": 114383,
       "capital_after": 6853949
+    },
+    {
+      "date": "2026-09-02",
+      "eval_date": "2026-09-03",
+      "trades": [
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3312.0,
+          "target": 3588.5,
+          "stop": 3241.1,
+          "exit": 3300.0,
+          "result": "loss",
+          "shares": 413,
+          "pnl": -6324,
+          "pnl_pct": -0.46
+        },
+        {
+          "code": "5401",
+          "name": "日本製鉄",
+          "entry": 689.8,
+          "target": 709.4,
+          "stop": 641.3,
+          "exit": 691.5,
+          "result": "win",
+          "shares": 1987,
+          "pnl": 2007,
+          "pnl_pct": 0.15
+        },
+        {
+          "code": "1812",
+          "name": "鹿島建設",
+          "entry": 4957.0,
+          "target": 5414.6,
+          "stop": 4628.0,
+          "exit": 4881.0,
+          "result": "loss",
+          "shares": 276,
+          "pnl": -22344,
+          "pnl_pct": -1.63
+        },
+        {
+          "code": "5411",
+          "name": "JFEホールディングス",
+          "entry": 1916.0,
+          "target": 1922.4,
+          "stop": 1740.6,
+          "exit": 1853.5,
+          "result": "loss",
+          "shares": 715,
+          "pnl": -46057,
+          "pnl_pct": -3.36
+        },
+        {
+          "code": "6367",
+          "name": "ダイキン工業",
+          "entry": 20610.0,
+          "target": 22951.4,
+          "stop": 20379.3,
+          "exit": 20770.0,
+          "result": "win",
+          "shares": 66,
+          "pnl": 9200,
+          "pnl_pct": 0.68
+        }
+      ],
+      "day_pnl": -63518,
+      "capital_after": 6790430
     }
   ]
 }
