@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6790430.187305336,
-  "total_trades": 490,
-  "wins": 246,
-  "losses": 244,
-  "total_profit": 3849240.3940263987,
-  "total_loss": 5346761.906920791,
+  "current_capital": 6801809.685305336,
+  "total_trades": 495,
+  "wins": 248,
+  "losses": 247,
+  "total_profit": 3880162.892026399,
+  "total_loss": 5366304.906920791,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-04-30",
-      "eval_date": "2026-05-01",
-      "trades": [
-        {
-          "code": "9021",
-          "name": "JR西日本",
-          "entry": 2900.0,
-          "target": 3234.6,
-          "stop": 2924.7,
-          "exit": 2924.7,
-          "result": "loss",
-          "shares": 629,
-          "pnl": 13712,
-          "pnl_pct": 0.75
-        },
-        {
-          "code": "4661",
-          "name": "オリエンタルランド",
-          "entry": 2250.0,
-          "target": 2774.4,
-          "stop": 2357.8,
-          "exit": 2357.8,
-          "result": "loss",
-          "shares": 811,
-          "pnl": 85601,
-          "pnl_pct": 4.69
-        },
-        {
-          "code": "7270",
-          "name": "SUBARU",
-          "entry": 2371.0,
-          "target": 2612.0,
-          "stop": 2408.9,
-          "exit": 2408.9,
-          "result": "loss",
-          "shares": 769,
-          "pnl": 27322,
-          "pnl_pct": 1.5
-        },
-        {
-          "code": "6902",
-          "name": "デンソー",
-          "entry": 1843.0,
-          "target": 2003.0,
-          "stop": 1820.1,
-          "exit": 1882.5,
-          "result": "win",
-          "shares": 990,
-          "pnl": 37280,
-          "pnl_pct": 2.04
-        },
-        {
-          "code": "6861",
-          "name": "キーエンス",
-          "entry": 73920.0,
-          "target": 72020.7,
-          "stop": 55500.1,
-          "exit": 72020.7,
-          "result": "win",
-          "shares": 24,
-          "pnl": -47357,
-          "pnl_pct": -2.67
-        }
-      ],
-      "day_pnl": 116558,
-      "capital_after": 9244036
-    },
     {
       "date": "2026-05-01",
       "eval_date": "2026-05-04",
@@ -4725,6 +4657,74 @@
       ],
       "day_pnl": -63518,
       "capital_after": 6790430
+    },
+    {
+      "date": "2026-09-03",
+      "eval_date": "2026-09-04",
+      "trades": [
+        {
+          "code": "1812",
+          "name": "鹿島建設",
+          "entry": 4936.0,
+          "target": 5359.5,
+          "stop": 4627.7,
+          "exit": 4922.0,
+          "result": "loss",
+          "shares": 275,
+          "pnl": -5207,
+          "pnl_pct": -0.38
+        },
+        {
+          "code": "8053",
+          "name": "住友商事",
+          "entry": 1816.0,
+          "target": 1849.7,
+          "stop": 1644.1,
+          "exit": 1849.7,
+          "result": "win",
+          "shares": 747,
+          "pnl": 23817,
+          "pnl_pct": 1.76
+        },
+        {
+          "code": "4578",
+          "name": "大塚ホールディングス",
+          "entry": 12260.0,
+          "target": 12828.2,
+          "stop": 11696.8,
+          "exit": 12240.0,
+          "result": "loss",
+          "shares": 110,
+          "pnl": -3549,
+          "pnl_pct": -0.26
+        },
+        {
+          "code": "4063",
+          "name": "信越化学工業",
+          "entry": 5900.0,
+          "target": 6515.2,
+          "stop": 5797.8,
+          "exit": 5859.0,
+          "result": "loss",
+          "shares": 230,
+          "pnl": -10787,
+          "pnl_pct": -0.79
+        },
+        {
+          "code": "6367",
+          "name": "ダイキン工業",
+          "entry": 20690.0,
+          "target": 22452.5,
+          "stop": 20338.7,
+          "exit": 20820.0,
+          "result": "win",
+          "shares": 65,
+          "pnl": 7105,
+          "pnl_pct": 0.53
+        }
+      ],
+      "day_pnl": 11379,
+      "capital_after": 6801810
     }
   ]
 }
