@@ -1,21 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6801809.685305336,
-  "total_trades": 495,
-  "wins": 248,
-  "losses": 247,
-  "total_profit": 3880162.892026399,
-  "total_loss": 5366304.906920791,
+  "current_capital": 6828864.0033053355,
+  "total_trades": 500,
+  "wins": 251,
+  "losses": 249,
+  "total_profit": 3922747.0500263986,
+  "total_loss": 5381834.7469207905,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-05-04",
-      "eval_date": "2026-05-05",
-      "trades": [],
-      "day_pnl": 0,
-      "capital_after": 9244036
-    },
     {
       "date": "2026-05-05",
       "eval_date": "2026-05-06",
@@ -4725,6 +4718,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 6801810
+    },
+    {
+      "date": "2026-09-07",
+      "eval_date": "2026-09-08",
+      "trades": [
+        {
+          "code": "6367",
+          "name": "ダイキン工業",
+          "entry": 20480.0,
+          "target": 22385.5,
+          "stop": 20281.3,
+          "exit": 20660.0,
+          "result": "win",
+          "shares": 66,
+          "pnl": 10528,
+          "pnl_pct": 0.78
+        },
+        {
+          "code": "4578",
+          "name": "大塚ホールディングス",
+          "entry": 11850.0,
+          "target": 12824.9,
+          "stop": 11787.2,
+          "exit": 11787.2,
+          "result": "loss",
+          "shares": 114,
+          "pnl": -8510,
+          "pnl_pct": -0.63
+        },
+        {
+          "code": "9983",
+          "name": "ファーストリテイリング",
+          "entry": 69460.0,
+          "target": 79866.8,
+          "stop": 67680.4,
+          "exit": 69160.0,
+          "result": "loss",
+          "shares": 19,
+          "pnl": -7020,
+          "pnl_pct": -0.53
+        },
+        {
+          "code": "8053",
+          "name": "住友商事",
+          "entry": 1834.0,
+          "target": 1878.0,
+          "stop": 1652.7,
+          "exit": 1878.0,
+          "result": "win",
+          "shares": 741,
+          "pnl": 31245,
+          "pnl_pct": 2.3
+        },
+        {
+          "code": "1812",
+          "name": "鹿島建設",
+          "entry": 5008.0,
+          "target": 5129.8,
+          "stop": 4631.1,
+          "exit": 5016.0,
+          "result": "win",
+          "shares": 271,
+          "pnl": 811,
+          "pnl_pct": 0.06
+        }
+      ],
+      "day_pnl": 27054,
+      "capital_after": 6828864
     }
   ]
 }
