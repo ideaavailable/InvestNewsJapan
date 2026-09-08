@@ -1,21 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6828864.0033053355,
-  "total_trades": 500,
-  "wins": 251,
-  "losses": 249,
-  "total_profit": 3922747.0500263986,
-  "total_loss": 5381834.7469207905,
+  "current_capital": 6770966.524305335,
+  "total_trades": 505,
+  "wins": 252,
+  "losses": 253,
+  "total_profit": 3923934.5850263988,
+  "total_loss": 5440919.76092079,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-05-05",
-      "eval_date": "2026-05-06",
-      "trades": [],
-      "day_pnl": 0,
-      "capital_after": 9244036
-    },
     {
       "date": "2026-05-06",
       "eval_date": "2026-05-07",
@@ -4786,6 +4779,74 @@
       ],
       "day_pnl": 27054,
       "capital_after": 6828864
+    },
+    {
+      "date": "2026-09-08",
+      "eval_date": "2026-09-09",
+      "trades": [
+        {
+          "code": "6367",
+          "name": "ダイキン工業",
+          "entry": 20605.0,
+          "target": 22209.8,
+          "stop": 20255.4,
+          "exit": 20460.0,
+          "result": "loss",
+          "shares": 66,
+          "pnl": -10930,
+          "pnl_pct": -0.8
+        },
+        {
+          "code": "7832",
+          "name": "バンダイナムコ",
+          "entry": 5343.0,
+          "target": 5841.8,
+          "stop": 5134.4,
+          "exit": 5353.0,
+          "result": "win",
+          "shares": 255,
+          "pnl": 1188,
+          "pnl_pct": 0.09
+        },
+        {
+          "code": "7733",
+          "name": "オリンパス",
+          "entry": 1989.0,
+          "target": 2223.4,
+          "stop": 1969.5,
+          "exit": 1969.5,
+          "result": "loss",
+          "shares": 686,
+          "pnl": -14741,
+          "pnl_pct": -1.08
+        },
+        {
+          "code": "4063",
+          "name": "信越化学工業",
+          "entry": 5798.0,
+          "target": 6510.1,
+          "stop": 5718.3,
+          "exit": 5718.3,
+          "result": "loss",
+          "shares": 235,
+          "pnl": -20092,
+          "pnl_pct": -1.47
+        },
+        {
+          "code": "6532",
+          "name": "ベイカレント",
+          "entry": 7400.0,
+          "target": 8312.4,
+          "stop": 6975.3,
+          "exit": 7335.0,
+          "result": "loss",
+          "shares": 184,
+          "pnl": -13322,
+          "pnl_pct": -0.98
+        }
+      ],
+      "day_pnl": -57897,
+      "capital_after": 6770967
     }
   ]
 }
