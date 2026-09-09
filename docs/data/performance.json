@@ -1,21 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6770966.524305335,
-  "total_trades": 505,
-  "wins": 252,
+  "current_capital": 6871817.110305335,
+  "total_trades": 510,
+  "wins": 257,
   "losses": 253,
-  "total_profit": 3923934.5850263988,
+  "total_profit": 4024785.171026399,
   "total_loss": 5440919.76092079,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-05-06",
-      "eval_date": "2026-05-07",
-      "trades": [],
-      "day_pnl": 0,
-      "capital_after": 9244036
-    },
     {
       "date": "2026-05-07",
       "eval_date": "2026-05-08",
@@ -4847,6 +4840,74 @@
       ],
       "day_pnl": -57897,
       "capital_after": 6770967
+    },
+    {
+      "date": "2026-09-09",
+      "eval_date": "2026-09-10",
+      "trades": [
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3212.0,
+          "target": 3478.9,
+          "stop": 3159.0,
+          "exit": 3307.0,
+          "result": "win",
+          "shares": 421,
+          "pnl": 38643,
+          "pnl_pct": 2.86
+        },
+        {
+          "code": "6367",
+          "name": "ダイキン工業",
+          "entry": 20300.0,
+          "target": 21921.6,
+          "stop": 20232.3,
+          "exit": 20835.0,
+          "result": "win",
+          "shares": 66,
+          "pnl": 33970,
+          "pnl_pct": 2.54
+        },
+        {
+          "code": "7203",
+          "name": "トヨタ自動車",
+          "entry": 2950.0,
+          "target": 3239.1,
+          "stop": 2915.6,
+          "exit": 2971.0,
+          "result": "win",
+          "shares": 459,
+          "pnl": 8285,
+          "pnl_pct": 0.61
+        },
+        {
+          "code": "7832",
+          "name": "バンダイナムコ",
+          "entry": 5360.0,
+          "target": 5840.6,
+          "stop": 5136.4,
+          "exit": 5382.0,
+          "result": "win",
+          "shares": 252,
+          "pnl": 4193,
+          "pnl_pct": 0.31
+        },
+        {
+          "code": "8802",
+          "name": "三菱地所",
+          "entry": 3636.0,
+          "target": 3879.0,
+          "stop": 3541.9,
+          "exit": 3682.0,
+          "result": "win",
+          "shares": 372,
+          "pnl": 15759,
+          "pnl_pct": 1.17
+        }
+      ],
+      "day_pnl": 100851,
+      "capital_after": 6871817
     }
   ]
 }
