@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6871817.110305335,
-  "total_trades": 510,
-  "wins": 257,
-  "losses": 253,
-  "total_profit": 4024785.171026399,
-  "total_loss": 5440919.76092079,
+  "current_capital": 6830147.700305335,
+  "total_trades": 515,
+  "wins": 258,
+  "losses": 257,
+  "total_profit": 4033663.111026399,
+  "total_loss": 5491467.110920791,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-05-07",
-      "eval_date": "2026-05-08",
-      "trades": [
-        {
-          "code": "7211",
-          "name": "三菱自動車",
-          "entry": 312.0,
-          "target": 339.5,
-          "stop": 297.6,
-          "exit": 310.0,
-          "result": "loss",
-          "shares": 5925,
-          "pnl": -13699,
-          "pnl_pct": -0.74
-        },
-        {
-          "code": "9021",
-          "name": "JR西日本",
-          "entry": 2808.5,
-          "target": 3231.4,
-          "stop": 2808.7,
-          "exit": 2808.7,
-          "result": "loss",
-          "shares": 658,
-          "pnl": -1716,
-          "pnl_pct": -0.09
-        },
-        {
-          "code": "7270",
-          "name": "SUBARU",
-          "entry": 2371.5,
-          "target": 2610.1,
-          "stop": 2336.7,
-          "exit": 2336.7,
-          "result": "loss",
-          "shares": 779,
-          "pnl": -28957,
-          "pnl_pct": -1.57
-        },
-        {
-          "code": "9020",
-          "name": "JR東日本",
-          "entry": 3573.0,
-          "target": 3724.2,
-          "stop": 3312.3,
-          "exit": 3610.0,
-          "result": "win",
-          "shares": 517,
-          "pnl": 17282,
-          "pnl_pct": 0.94
-        },
-        {
-          "code": "6861",
-          "name": "キーエンス",
-          "entry": 80280.0,
-          "target": 76397.2,
-          "stop": 56336.8,
-          "exit": 76397.2,
-          "result": "win",
-          "shares": 23,
-          "pnl": -91151,
-          "pnl_pct": -4.94
-        }
-      ],
-      "day_pnl": -118241,
-      "capital_after": 9125795
-    },
     {
       "date": "2026-05-08",
       "eval_date": "2026-05-11",
@@ -4908,6 +4840,74 @@
       ],
       "day_pnl": 100851,
       "capital_after": 6871817
+    },
+    {
+      "date": "2026-09-10",
+      "eval_date": "2026-09-11",
+      "trades": [
+        {
+          "code": "7832",
+          "name": "バンダイナムコ",
+          "entry": 5282.0,
+          "target": 5840.7,
+          "stop": 5136.2,
+          "exit": 5236.0,
+          "result": "loss",
+          "shares": 260,
+          "pnl": -13333,
+          "pnl_pct": -0.97
+        },
+        {
+          "code": "6367",
+          "name": "ダイキン工業",
+          "entry": 20960.0,
+          "target": 21713.2,
+          "stop": 20170.2,
+          "exit": 20850.0,
+          "result": "loss",
+          "shares": 65,
+          "pnl": -8512,
+          "pnl_pct": -0.62
+        },
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3262.0,
+          "target": 3470.2,
+          "stop": 3148.4,
+          "exit": 3227.0,
+          "result": "loss",
+          "shares": 421,
+          "pnl": -16108,
+          "pnl_pct": -1.17
+        },
+        {
+          "code": "4502",
+          "name": "武田薬品工業",
+          "entry": 5615.0,
+          "target": 5939.4,
+          "stop": 5452.9,
+          "exit": 5657.0,
+          "result": "win",
+          "shares": 244,
+          "pnl": 8878,
+          "pnl_pct": 0.65
+        },
+        {
+          "code": "8802",
+          "name": "三菱地所",
+          "entry": 3672.0,
+          "target": 3879.0,
+          "stop": 3542.1,
+          "exit": 3642.0,
+          "result": "loss",
+          "shares": 374,
+          "pnl": -12593,
+          "pnl_pct": -0.92
+        }
+      ],
+      "day_pnl": -41669,
+      "capital_after": 6830148
     }
   ]
 }
