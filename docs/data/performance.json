@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6830147.700305335,
-  "total_trades": 515,
-  "wins": 258,
-  "losses": 257,
-  "total_profit": 4033663.111026399,
-  "total_loss": 5491467.110920791,
+  "current_capital": 6843684.398305335,
+  "total_trades": 520,
+  "wins": 262,
+  "losses": 258,
+  "total_profit": 4073137.5930263987,
+  "total_loss": 5507776.91092079,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-05-11",
-      "eval_date": "2026-05-12",
-      "trades": [
-        {
-          "code": "5411",
-          "name": "JFEホールディングス",
-          "entry": 1747.0,
-          "target": 1899.5,
-          "stop": 1653.3,
-          "exit": 1685.5,
-          "result": "loss",
-          "shares": 1044,
-          "pnl": -66030,
-          "pnl_pct": -3.62
-        },
-        {
-          "code": "7013",
-          "name": "IHI",
-          "entry": 2950.0,
-          "target": 3513.8,
-          "stop": 2741.8,
-          "exit": 2870.0,
-          "result": "loss",
-          "shares": 618,
-          "pnl": -51263,
-          "pnl_pct": -2.81
-        },
-        {
-          "code": "7270",
-          "name": "SUBARU",
-          "entry": 2330.0,
-          "target": 2610.0,
-          "stop": 2304.4,
-          "exit": 2304.4,
-          "result": "loss",
-          "shares": 783,
-          "pnl": -21869,
-          "pnl_pct": -1.2
-        },
-        {
-          "code": "9433",
-          "name": "KDDI",
-          "entry": 2537.0,
-          "target": 2778.4,
-          "stop": 2485.0,
-          "exit": 2519.5,
-          "result": "loss",
-          "shares": 719,
-          "pnl": -14407,
-          "pnl_pct": -0.79
-        },
-        {
-          "code": "2802",
-          "name": "味の素",
-          "entry": 5179.0,
-          "target": 5115.8,
-          "stop": 4480.2,
-          "exit": 5115.8,
-          "result": "win",
-          "shares": 352,
-          "pnl": -24069,
-          "pnl_pct": -1.32
-        }
-      ],
-      "day_pnl": -177638,
-      "capital_after": 8948157
-    },
     {
       "date": "2026-05-12",
       "eval_date": "2026-05-13",
@@ -4908,6 +4840,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 6830148
+    },
+    {
+      "date": "2026-09-14",
+      "eval_date": "2026-09-15",
+      "trades": [
+        {
+          "code": "4063",
+          "name": "信越化学工業",
+          "entry": 5678.0,
+          "target": 6377.0,
+          "stop": 5597.8,
+          "exit": 5750.0,
+          "result": "win",
+          "shares": 240,
+          "pnl": 15917,
+          "pnl_pct": 1.17
+        },
+        {
+          "code": "6367",
+          "name": "ダイキン工業",
+          "entry": 20920.0,
+          "target": 21511.1,
+          "stop": 20176.5,
+          "exit": 20690.0,
+          "result": "loss",
+          "shares": 65,
+          "pnl": -16310,
+          "pnl_pct": -1.2
+        },
+        {
+          "code": "7832",
+          "name": "バンダイナムコ",
+          "entry": 5530.0,
+          "target": 5842.2,
+          "stop": 5114.9,
+          "exit": 5617.0,
+          "result": "win",
+          "shares": 247,
+          "pnl": 20123,
+          "pnl_pct": 1.47
+        },
+        {
+          "code": "9434",
+          "name": "ソフトバンク",
+          "entry": 248.0,
+          "target": 246.5,
+          "stop": 229.0,
+          "exit": 246.5,
+          "result": "win",
+          "shares": 5508,
+          "pnl": -9628,
+          "pnl_pct": -0.7
+        },
+        {
+          "code": "6301",
+          "name": "コマツ",
+          "entry": 7114.0,
+          "target": 7710.0,
+          "stop": 6753.0,
+          "exit": 7139.0,
+          "result": "win",
+          "shares": 192,
+          "pnl": 3434,
+          "pnl_pct": 0.25
+        }
+      ],
+      "day_pnl": 13537,
+      "capital_after": 6843684
     }
   ]
 }
