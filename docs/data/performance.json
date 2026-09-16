@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6739300.131305335,
-  "total_trades": 525,
-  "wins": 262,
+  "current_capital": 6811928.51214823,
+  "total_trades": 530,
+  "wins": 267,
   "losses": 263,
-  "total_profit": 4073137.5930263987,
+  "total_profit": 4146521.238026399,
   "total_loss": 5612161.17792079,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-05-13",
-      "eval_date": "2026-05-14",
-      "trades": [
-        {
-          "code": "7974",
-          "name": "任天堂",
-          "entry": 7175.0,
-          "target": 8757.9,
-          "stop": 6922.6,
-          "exit": 7141.0,
-          "result": "loss",
-          "shares": 249,
-          "pnl": -10253,
-          "pnl_pct": -0.57
-        },
-        {
-          "code": "5411",
-          "name": "JFEホールディングス",
-          "entry": 1700.0,
-          "target": 1891.4,
-          "stop": 1649.0,
-          "exit": 1720.5,
-          "result": "win",
-          "shares": 1052,
-          "pnl": 19778,
-          "pnl_pct": 1.11
-        },
-        {
-          "code": "9433",
-          "name": "KDDI",
-          "entry": 2579.5,
-          "target": 2720.7,
-          "stop": 2475.3,
-          "exit": 2540.5,
-          "result": "loss",
-          "shares": 693,
-          "pnl": -28815,
-          "pnl_pct": -1.61
-        },
-        {
-          "code": "3382",
-          "name": "セブン&アイ",
-          "entry": 1898.0,
-          "target": 2170.2,
-          "stop": 1826.6,
-          "exit": 1873.5,
-          "result": "loss",
-          "shares": 942,
-          "pnl": -24867,
-          "pnl_pct": -1.39
-        },
-        {
-          "code": "4385",
-          "name": "メルカリ",
-          "entry": 3860.0,
-          "target": 4198.1,
-          "stop": 3469.5,
-          "exit": 4195.0,
-          "result": "win",
-          "shares": 463,
-          "pnl": 153318,
-          "pnl_pct": 8.58
-        }
-      ],
-      "day_pnl": 109161,
-      "capital_after": 9053384
-    },
     {
       "date": "2026-05-14",
       "eval_date": "2026-05-15",
@@ -4908,6 +4840,74 @@
       ],
       "day_pnl": -104384,
       "capital_after": 6739300
+    },
+    {
+      "date": "2026-09-16",
+      "eval_date": "2026-09-17",
+      "trades": [
+        {
+          "code": "7012",
+          "name": "川崎重工業",
+          "entry": 2350.0,
+          "target": 2731.5,
+          "stop": 2228.1,
+          "exit": 2388.5,
+          "result": "win",
+          "shares": 573,
+          "pnl": 20714,
+          "pnl_pct": 1.54
+        },
+        {
+          "code": "6367",
+          "name": "ダイキン工業",
+          "entry": 20250.0,
+          "target": 21274.9,
+          "stop": 20174.0,
+          "exit": 20510.0,
+          "result": "win",
+          "shares": 66,
+          "pnl": 15824,
+          "pnl_pct": 1.18
+        },
+        {
+          "code": "4063",
+          "name": "信越化学工業",
+          "entry": 5749.0,
+          "target": 6202.5,
+          "stop": 5579.6,
+          "exit": 5820.0,
+          "result": "win",
+          "shares": 234,
+          "pnl": 15269,
+          "pnl_pct": 1.13
+        },
+        {
+          "code": "9104",
+          "name": "商船三井",
+          "entry": 7029.0,
+          "target": 7469.9,
+          "stop": 6707.1,
+          "exit": 7149.0,
+          "result": "win",
+          "shares": 191,
+          "pnl": 21577,
+          "pnl_pct": 1.61
+        },
+        {
+          "code": "5401",
+          "name": "日本製鉄",
+          "entry": 682.4,
+          "target": 717.7,
+          "stop": 648.2,
+          "exit": 682.7,
+          "result": "win",
+          "shares": 1975,
+          "pnl": -755,
+          "pnl_pct": -0.06
+        }
+      ],
+      "day_pnl": 72628,
+      "capital_after": 6811929
     }
   ]
 }
