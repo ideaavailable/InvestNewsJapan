@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6811928.51214823,
-  "total_trades": 530,
-  "wins": 267,
-  "losses": 263,
-  "total_profit": 4146521.238026399,
-  "total_loss": 5612161.17792079,
+  "current_capital": 6792628.49014823,
+  "total_trades": 535,
+  "wins": 269,
+  "losses": 266,
+  "total_profit": 4175818.414026399,
+  "total_loss": 5660758.37592079,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-05-14",
-      "eval_date": "2026-05-15",
-      "trades": [
-        {
-          "code": "5411",
-          "name": "JFEホールディングス",
-          "entry": 1724.0,
-          "target": 1881.4,
-          "stop": 1648.8,
-          "exit": 1690.5,
-          "result": "loss",
-          "shares": 1050,
-          "pnl": -36985,
-          "pnl_pct": -2.04
-        },
-        {
-          "code": "8267",
-          "name": "イオン",
-          "entry": 1535.0,
-          "target": 1792.3,
-          "stop": 1474.2,
-          "exit": 1474.2,
-          "result": "loss",
-          "shares": 1179,
-          "pnl": -73493,
-          "pnl_pct": -4.06
-        },
-        {
-          "code": "9433",
-          "name": "KDDI",
-          "entry": 2590.5,
-          "target": 2692.2,
-          "stop": 2474.1,
-          "exit": 2645.5,
-          "result": "win",
-          "shares": 698,
-          "pnl": 36582,
-          "pnl_pct": 2.02
-        },
-        {
-          "code": "5401",
-          "name": "日本製鉄",
-          "entry": 569.2,
-          "target": 606.0,
-          "stop": 551.1,
-          "exit": 556.2,
-          "result": "loss",
-          "shares": 3181,
-          "pnl": -43164,
-          "pnl_pct": -2.38
-        },
-        {
-          "code": "7270",
-          "name": "SUBARU",
-          "entry": 2346.5,
-          "target": 2594.7,
-          "stop": 2227.1,
-          "exit": 2402.0,
-          "result": "win",
-          "shares": 771,
-          "pnl": 40981,
-          "pnl_pct": 2.27
-        }
-      ],
-      "day_pnl": -76079,
-      "capital_after": 8977306
-    },
     {
       "date": "2026-05-15",
       "eval_date": "2026-05-18",
@@ -4908,6 +4840,74 @@
       ],
       "day_pnl": 72628,
       "capital_after": 6811929
+    },
+    {
+      "date": "2026-09-17",
+      "eval_date": "2026-09-18",
+      "trades": [
+        {
+          "code": "6367",
+          "name": "ダイキン工業",
+          "entry": 20720.0,
+          "target": 21273.8,
+          "stop": 20102.4,
+          "exit": 20700.0,
+          "result": "loss",
+          "shares": 65,
+          "pnl": -2647,
+          "pnl_pct": -0.2
+        },
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3211.0,
+          "target": 3437.5,
+          "stop": 3124.4,
+          "exit": 3253.0,
+          "result": "win",
+          "shares": 424,
+          "pnl": 16447,
+          "pnl_pct": 1.21
+        },
+        {
+          "code": "4063",
+          "name": "信越化学工業",
+          "entry": 5836.0,
+          "target": 6172.5,
+          "stop": 5579.6,
+          "exit": 5762.0,
+          "result": "loss",
+          "shares": 233,
+          "pnl": -18602,
+          "pnl_pct": -1.37
+        },
+        {
+          "code": "6954",
+          "name": "ファナック",
+          "entry": 5907.0,
+          "target": 6232.7,
+          "stop": 5525.3,
+          "exit": 5794.0,
+          "result": "loss",
+          "shares": 230,
+          "pnl": -27349,
+          "pnl_pct": -2.01
+        },
+        {
+          "code": "8802",
+          "name": "三菱地所",
+          "entry": 3640.0,
+          "target": 3878.2,
+          "stop": 3525.6,
+          "exit": 3678.0,
+          "result": "win",
+          "shares": 374,
+          "pnl": 12851,
+          "pnl_pct": 0.94
+        }
+      ],
+      "day_pnl": -19300,
+      "capital_after": 6792628
     }
   ]
 }
