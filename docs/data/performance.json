@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6796182.089148231,
-  "total_trades": 540,
+  "current_capital": 6717836.566148231,
+  "total_trades": 545,
   "wins": 273,
-  "losses": 267,
+  "losses": 272,
   "total_profit": 4233913.339026399,
-  "total_loss": 5715299.701920791,
+  "total_loss": 5793645.22492079,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-05-25",
-      "eval_date": "2026-05-26",
-      "trades": [
-        {
-          "code": "9022",
-          "name": "JR東海",
-          "entry": 3553.0,
-          "target": 4247.6,
-          "stop": 3471.6,
-          "exit": 3552.0,
-          "result": "loss",
-          "shares": 483,
-          "pnl": -2199,
-          "pnl_pct": -0.13
-        },
-        {
-          "code": "8267",
-          "name": "イオン",
-          "entry": 1480.0,
-          "target": 1703.5,
-          "stop": 1404.8,
-          "exit": 1410.0,
-          "result": "loss",
-          "shares": 1160,
-          "pnl": -82917,
-          "pnl_pct": -4.83
-        },
-        {
-          "code": "3382",
-          "name": "セブン&アイ",
-          "entry": 1845.0,
-          "target": 2026.4,
-          "stop": 1812.2,
-          "exit": 1837.5,
-          "result": "loss",
-          "shares": 930,
-          "pnl": -8691,
-          "pnl_pct": -0.51
-        },
-        {
-          "code": "6762",
-          "name": "TDK",
-          "entry": 3580.0,
-          "target": 3313.2,
-          "stop": 2479.7,
-          "exit": 3313.2,
-          "result": "win",
-          "shares": 479,
-          "pnl": -129512,
-          "pnl_pct": -7.55
-        },
-        {
-          "code": "4502",
-          "name": "武田薬品工業",
-          "entry": 5141.0,
-          "target": 5510.1,
-          "stop": 5038.0,
-          "exit": 5104.0,
-          "result": "loss",
-          "shares": 334,
-          "pnl": -14075,
-          "pnl_pct": -0.82
-        }
-      ],
-      "day_pnl": -237394,
-      "capital_after": 8350116
-    },
     {
       "date": "2026-05-26",
       "eval_date": "2026-05-27",
@@ -4725,6 +4657,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 6796182
+    },
+    {
+      "date": "2026-09-28",
+      "eval_date": "2026-09-29",
+      "trades": [
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3125.0,
+          "target": 3430.9,
+          "stop": 3127.0,
+          "exit": 3127.0,
+          "result": "loss",
+          "shares": 434,
+          "pnl": -488,
+          "pnl_pct": -0.04
+        },
+        {
+          "code": "9503",
+          "name": "関西電力",
+          "entry": 2722.0,
+          "target": 3074.9,
+          "stop": 2533.0,
+          "exit": 2685.5,
+          "result": "loss",
+          "shares": 499,
+          "pnl": -19572,
+          "pnl_pct": -1.44
+        },
+        {
+          "code": "8001",
+          "name": "伊藤忠商事",
+          "entry": 2207.0,
+          "target": 2397.2,
+          "stop": 2065.6,
+          "exit": 2170.5,
+          "result": "loss",
+          "shares": 615,
+          "pnl": -23805,
+          "pnl_pct": -1.75
+        },
+        {
+          "code": "4578",
+          "name": "大塚ホールディングス",
+          "entry": 11505.0,
+          "target": 12524.7,
+          "stop": 10690.4,
+          "exit": 11255.0,
+          "result": "loss",
+          "shares": 118,
+          "pnl": -30858,
+          "pnl_pct": -2.27
+        },
+        {
+          "code": "6367",
+          "name": "ダイキン工業",
+          "entry": 20740.0,
+          "target": 21271.8,
+          "stop": 20105.8,
+          "exit": 20705.0,
+          "result": "loss",
+          "shares": 65,
+          "pnl": -3623,
+          "pnl_pct": -0.27
+        }
+      ],
+      "day_pnl": -78346,
+      "capital_after": 6717837
     }
   ]
 }
