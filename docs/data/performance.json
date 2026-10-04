@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6662526.222599891,
-  "total_trades": 550,
-  "wins": 275,
+  "current_capital": 6744667.014327201,
+  "total_trades": 555,
+  "wins": 280,
   "losses": 275,
-  "total_profit": 4252171.471026399,
+  "total_profit": 4334312.262753709,
   "total_loss": 5867213.70046913,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-05-27",
-      "eval_date": "2026-05-28",
-      "trades": [
-        {
-          "code": "5411",
-          "name": "JFEホールディングス",
-          "entry": 1650.5,
-          "target": 1780.8,
-          "stop": 1606.8,
-          "exit": 1676.5,
-          "result": "win",
-          "shares": 1010,
-          "pnl": 24593,
-          "pnl_pct": 1.48
-        },
-        {
-          "code": "9022",
-          "name": "JR東海",
-          "entry": 3540.0,
-          "target": 4157.0,
-          "stop": 3459.8,
-          "exit": 3500.0,
-          "result": "loss",
-          "shares": 471,
-          "pnl": -20507,
-          "pnl_pct": -1.23
-        },
-        {
-          "code": "4661",
-          "name": "オリエンタルランド",
-          "entry": 2125.0,
-          "target": 2512.7,
-          "stop": 2077.8,
-          "exit": 2199.0,
-          "result": "win",
-          "shares": 784,
-          "pnl": 56350,
-          "pnl_pct": 3.38
-        },
-        {
-          "code": "3382",
-          "name": "セブン&アイ",
-          "entry": 1821.0,
-          "target": 2007.8,
-          "stop": 1793.0,
-          "exit": 1836.0,
-          "result": "win",
-          "shares": 915,
-          "pnl": 12059,
-          "pnl_pct": 0.72
-        },
-        {
-          "code": "9503",
-          "name": "関西電力",
-          "entry": 2332.5,
-          "target": 2532.8,
-          "stop": 2221.5,
-          "exit": 2321.0,
-          "result": "loss",
-          "shares": 714,
-          "pnl": -9876,
-          "pnl_pct": -0.59
-        }
-      ],
-      "day_pnl": 62618,
-      "capital_after": 8401082
-    },
     {
       "date": "2026-05-28",
       "eval_date": "2026-05-29",
@@ -4725,6 +4657,74 @@
       ],
       "day_pnl": -55310,
       "capital_after": 6662526
+    },
+    {
+      "date": "2026-09-30",
+      "eval_date": "2026-10-01",
+      "trades": [
+        {
+          "code": "9983",
+          "name": "ファーストリテイリング",
+          "entry": 70720.0,
+          "target": 72776.0,
+          "stop": 64691.2,
+          "exit": 72776.0,
+          "result": "win",
+          "shares": 18,
+          "pnl": 35735,
+          "pnl_pct": 2.81
+        },
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3150.0,
+          "target": 3390.6,
+          "stop": 3082.4,
+          "exit": 3180.0,
+          "result": "win",
+          "shares": 423,
+          "pnl": 11358,
+          "pnl_pct": 0.85
+        },
+        {
+          "code": "7832",
+          "name": "バンダイナムコ",
+          "entry": 5681.0,
+          "target": 5813.0,
+          "stop": 5116.0,
+          "exit": 5755.0,
+          "result": "win",
+          "shares": 234,
+          "pnl": 15987,
+          "pnl_pct": 1.2
+        },
+        {
+          "code": "9434",
+          "name": "ソフトバンク",
+          "entry": 237.7,
+          "target": 249.4,
+          "stop": 229.8,
+          "exit": 240.8,
+          "result": "win",
+          "shares": 5605,
+          "pnl": 16043,
+          "pnl_pct": 1.2
+        },
+        {
+          "code": "9104",
+          "name": "商船三井",
+          "entry": 7030.0,
+          "target": 7379.6,
+          "stop": 6670.0,
+          "exit": 7053.0,
+          "result": "win",
+          "shares": 189,
+          "pnl": 3018,
+          "pnl_pct": 0.23
+        }
+      ],
+      "day_pnl": 82141,
+      "capital_after": 6744667
     }
   ]
 }
