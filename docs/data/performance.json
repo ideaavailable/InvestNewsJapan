@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6744667.014327201,
-  "total_trades": 555,
-  "wins": 280,
-  "losses": 275,
-  "total_profit": 4334312.262753709,
-  "total_loss": 5867213.70046913,
+  "current_capital": 6744243.927327201,
+  "total_trades": 560,
+  "wins": 282,
+  "losses": 278,
+  "total_profit": 4356209.955753709,
+  "total_loss": 5889534.480469129,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-05-28",
-      "eval_date": "2026-05-29",
-      "trades": [
-        {
-          "code": "8267",
-          "name": "イオン",
-          "entry": 1425.0,
-          "target": 1597.5,
-          "stop": 1374.4,
-          "exit": 1402.0,
-          "result": "loss",
-          "shares": 1179,
-          "pnl": -28797,
-          "pnl_pct": -1.71
-        },
-        {
-          "code": "9503",
-          "name": "関西電力",
-          "entry": 2310.0,
-          "target": 2532.6,
-          "stop": 2221.8,
-          "exit": 2291.0,
-          "result": "loss",
-          "shares": 727,
-          "pnl": -15492,
-          "pnl_pct": -0.92
-        },
-        {
-          "code": "4661",
-          "name": "オリエンタルランド",
-          "entry": 2220.0,
-          "target": 2462.4,
-          "stop": 2077.1,
-          "exit": 2250.0,
-          "result": "win",
-          "shares": 756,
-          "pnl": 21002,
-          "pnl_pct": 1.25
-        },
-        {
-          "code": "4502",
-          "name": "武田薬品工業",
-          "entry": 5128.0,
-          "target": 5396.3,
-          "stop": 4986.9,
-          "exit": 5120.0,
-          "result": "loss",
-          "shares": 327,
-          "pnl": -4293,
-          "pnl_pct": -0.26
-        },
-        {
-          "code": "3382",
-          "name": "セブン&アイ",
-          "entry": 1854.0,
-          "target": 1993.3,
-          "stop": 1790.9,
-          "exit": 1835.5,
-          "result": "loss",
-          "shares": 906,
-          "pnl": -18441,
-          "pnl_pct": -1.1
-        }
-      ],
-      "day_pnl": -46021,
-      "capital_after": 8355061
-    },
     {
       "date": "2026-05-29",
       "eval_date": "2026-06-01",
@@ -4725,6 +4657,74 @@
       ],
       "day_pnl": 82141,
       "capital_after": 6744667
+    },
+    {
+      "date": "2026-10-05",
+      "eval_date": "2026-10-06",
+      "trades": [
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3063.0,
+          "target": 3318.9,
+          "stop": 3058.5,
+          "exit": 3058.5,
+          "result": "loss",
+          "shares": 440,
+          "pnl": -3328,
+          "pnl_pct": -0.25
+        },
+        {
+          "code": "4519",
+          "name": "中外製薬",
+          "entry": 6118.0,
+          "target": 6952.0,
+          "stop": 5923.2,
+          "exit": 6056.0,
+          "result": "loss",
+          "shares": 220,
+          "pnl": -14986,
+          "pnl_pct": -1.11
+        },
+        {
+          "code": "9101",
+          "name": "日本郵船",
+          "entry": 7090.0,
+          "target": 7496.6,
+          "stop": 6856.0,
+          "exit": 7076.0,
+          "result": "loss",
+          "shares": 190,
+          "pnl": -4007,
+          "pnl_pct": -0.3
+        },
+        {
+          "code": "6594",
+          "name": "ニデック",
+          "entry": 2186.0,
+          "target": 2935.6,
+          "stop": 1952.2,
+          "exit": 2198.0,
+          "result": "win",
+          "shares": 617,
+          "pnl": 6055,
+          "pnl_pct": 0.45
+        },
+        {
+          "code": "6532",
+          "name": "ベイカレント",
+          "entry": 8035.0,
+          "target": 8137.9,
+          "stop": 7039.4,
+          "exit": 8137.9,
+          "result": "win",
+          "shares": 167,
+          "pnl": 15842,
+          "pnl_pct": 1.18
+        }
+      ],
+      "day_pnl": -423,
+      "capital_after": 6744244
     }
   ]
 }
