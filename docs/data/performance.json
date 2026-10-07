@@ -1,21 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6744243.927327201,
-  "total_trades": 560,
-  "wins": 282,
-  "losses": 278,
-  "total_profit": 4356209.955753709,
-  "total_loss": 5889534.480469129,
+  "current_capital": 6726832.91358422,
+  "total_trades": 565,
+  "wins": 283,
+  "losses": 282,
+  "total_profit": 4370812.25329033,
+  "total_loss": 5921547.7917487305,
   "max_drawdown": 3724687.4003890622,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-05-29",
-      "eval_date": "2026-06-01",
-      "trades": [],
-      "day_pnl": 0,
-      "capital_after": 8355061
-    },
     {
       "date": "2026-06-01",
       "eval_date": "2026-06-02",
@@ -4725,6 +4718,74 @@
       ],
       "day_pnl": -423,
       "capital_after": 6744244
+    },
+    {
+      "date": "2026-10-06",
+      "eval_date": "2026-10-07",
+      "trades": [
+        {
+          "code": "4385",
+          "name": "メルカリ",
+          "entry": 3597.0,
+          "target": 4453.3,
+          "stop": 3435.2,
+          "exit": 3551.0,
+          "result": "loss",
+          "shares": 374,
+          "pnl": -18549,
+          "pnl_pct": -1.38
+        },
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3074.0,
+          "target": 3289.6,
+          "stop": 3026.5,
+          "exit": 3063.0,
+          "result": "loss",
+          "shares": 438,
+          "pnl": -6164,
+          "pnl_pct": -0.46
+        },
+        {
+          "code": "4755",
+          "name": "楽天グループ",
+          "entry": 659.5,
+          "target": 761.2,
+          "stop": 649.8,
+          "exit": 667.3,
+          "result": "win",
+          "shares": 2045,
+          "pnl": 14602,
+          "pnl_pct": 1.08
+        },
+        {
+          "code": "7201",
+          "name": "日産自動車",
+          "entry": 287.6,
+          "target": 321.8,
+          "stop": 276.6,
+          "exit": 286.9,
+          "result": "loss",
+          "shares": 4690,
+          "pnl": -4632,
+          "pnl_pct": -0.34
+        },
+        {
+          "code": "4519",
+          "name": "中外製薬",
+          "entry": 6126.0,
+          "target": 6859.7,
+          "stop": 5911.0,
+          "exit": 6120.0,
+          "result": "loss",
+          "shares": 220,
+          "pnl": -2668,
+          "pnl_pct": -0.2
+        }
+      ],
+      "day_pnl": -17411,
+      "capital_after": 6726833
     }
   ]
 }
