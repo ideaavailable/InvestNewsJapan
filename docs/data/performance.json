@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6661867.996967033,
-  "total_trades": 570,
+  "current_capital": 6605546.609580008,
+  "total_trades": 575,
   "wins": 283,
-  "losses": 287,
+  "losses": 292,
   "total_profit": 4370812.25329033,
-  "total_loss": 5991839.883365918,
-  "max_drawdown": 3724687.4003890622,
+  "total_loss": 6048161.270752943,
+  "max_drawdown": 3752053.6684199926,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-06-02",
-      "eval_date": "2026-06-03",
-      "trades": [
-        {
-          "code": "8267",
-          "name": "イオン",
-          "entry": 1329.0,
-          "target": 1584.1,
-          "stop": 1345.0,
-          "exit": 1345.0,
-          "result": "loss",
-          "shares": 1228,
-          "pnl": 18016,
-          "pnl_pct": 1.1
-        },
-        {
-          "code": "9503",
-          "name": "関西電力",
-          "entry": 2268.0,
-          "target": 2507.7,
-          "stop": 2220.8,
-          "exit": 2310.5,
-          "result": "win",
-          "shares": 720,
-          "pnl": 28967,
-          "pnl_pct": 1.77
-        },
-        {
-          "code": "7203",
-          "name": "トヨタ自動車",
-          "entry": 2849.5,
-          "target": 3119.7,
-          "stop": 2787.9,
-          "exit": 2844.0,
-          "result": "loss",
-          "shares": 573,
-          "pnl": -4784,
-          "pnl_pct": -0.29
-        },
-        {
-          "code": "2801",
-          "name": "キッコーマン",
-          "entry": 1410.0,
-          "target": 1484.7,
-          "stop": 1346.8,
-          "exit": 1444.5,
-          "result": "win",
-          "shares": 1158,
-          "pnl": 38318,
-          "pnl_pct": 2.35
-        },
-        {
-          "code": "5401",
-          "name": "日本製鉄",
-          "entry": 540.0,
-          "target": 583.2,
-          "stop": 535.6,
-          "exit": 536.6,
-          "result": "loss",
-          "shares": 3024,
-          "pnl": -11915,
-          "pnl_pct": -0.73
-        }
-      ],
-      "day_pnl": 68602,
-      "capital_after": 8234558
-    },
     {
       "date": "2026-06-03",
       "eval_date": "2026-06-04",
@@ -4786,6 +4718,74 @@
       ],
       "day_pnl": -64965,
       "capital_after": 6661868
+    },
+    {
+      "date": "2026-10-08",
+      "eval_date": "2026-10-09",
+      "trades": [
+        {
+          "code": "4385",
+          "name": "メルカリ",
+          "entry": 3697.0,
+          "target": 4140.4,
+          "stop": 3439.5,
+          "exit": 3656.0,
+          "result": "loss",
+          "shares": 360,
+          "pnl": -16091,
+          "pnl_pct": -1.21
+        },
+        {
+          "code": "4519",
+          "name": "中外製薬",
+          "entry": 6007.0,
+          "target": 6808.4,
+          "stop": 5913.8,
+          "exit": 6004.0,
+          "result": "loss",
+          "shares": 221,
+          "pnl": -1991,
+          "pnl_pct": -0.15
+        },
+        {
+          "code": "7012",
+          "name": "川崎重工業",
+          "entry": 2290.5,
+          "target": 2474.9,
+          "stop": 2219.8,
+          "exit": 2269.0,
+          "result": "loss",
+          "shares": 581,
+          "pnl": -13822,
+          "pnl_pct": -1.04
+        },
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3104.0,
+          "target": 3289.2,
+          "stop": 3010.9,
+          "exit": 3072.0,
+          "result": "loss",
+          "shares": 429,
+          "pnl": -15060,
+          "pnl_pct": -1.13
+        },
+        {
+          "code": "7201",
+          "name": "日産自動車",
+          "entry": 282.2,
+          "target": 319.3,
+          "stop": 276.9,
+          "exit": 280.5,
+          "result": "loss",
+          "shares": 4721,
+          "pnl": -9358,
+          "pnl_pct": -0.7
+        }
+      ],
+      "day_pnl": -56321,
+      "capital_after": 6605547
     }
   ]
 }
