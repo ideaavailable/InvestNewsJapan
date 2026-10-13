@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6605546.609580008,
-  "total_trades": 575,
-  "wins": 283,
-  "losses": 292,
-  "total_profit": 4370812.25329033,
-  "total_loss": 6048161.270752943,
-  "max_drawdown": 3752053.6684199926,
+  "current_capital": 6581480.962580008,
+  "total_trades": 580,
+  "wins": 285,
+  "losses": 295,
+  "total_profit": 4378527.20429033,
+  "total_loss": 6079941.868752944,
+  "max_drawdown": 3776119.3154199924,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-06-04",
-      "eval_date": "2026-06-05",
-      "trades": [
-        {
-          "code": "9021",
-          "name": "JR西日本",
-          "entry": 2489.0,
-          "target": 2892.8,
-          "stop": 2465.0,
-          "exit": 2465.0,
-          "result": "loss",
-          "shares": 660,
-          "pnl": -17483,
-          "pnl_pct": -1.06
-        },
-        {
-          "code": "6971",
-          "name": "京セラ",
-          "entry": 3772.0,
-          "target": 3697.8,
-          "stop": 2725.6,
-          "exit": 3697.8,
-          "result": "win",
-          "shares": 435,
-          "pnl": -33918,
-          "pnl_pct": -2.07
-        },
-        {
-          "code": "5401",
-          "name": "日本製鉄",
-          "entry": 544.7,
-          "target": 583.1,
-          "stop": 532.1,
-          "exit": 540.5,
-          "result": "loss",
-          "shares": 3016,
-          "pnl": -14310,
-          "pnl_pct": -0.87
-        },
-        {
-          "code": "9503",
-          "name": "関西電力",
-          "entry": 2370.0,
-          "target": 2472.7,
-          "stop": 2217.3,
-          "exit": 2331.0,
-          "result": "loss",
-          "shares": 693,
-          "pnl": -28669,
-          "pnl_pct": -1.75
-        },
-        {
-          "code": "6752",
-          "name": "パナソニック",
-          "entry": 3642.0,
-          "target": 3875.7,
-          "stop": 3085.4,
-          "exit": 3800.0,
-          "result": "win",
-          "shares": 451,
-          "pnl": 69615,
-          "pnl_pct": 4.24
-        }
-      ],
-      "day_pnl": -24765,
-      "capital_after": 8191747
-    },
     {
       "date": "2026-06-05",
       "eval_date": "2026-06-08",
@@ -4725,6 +4657,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 6605547
+    },
+    {
+      "date": "2026-10-12",
+      "eval_date": "2026-10-13",
+      "trades": [
+        {
+          "code": "4385",
+          "name": "メルカリ",
+          "entry": 3759.0,
+          "target": 4030.4,
+          "stop": 3436.7,
+          "exit": 3774.0,
+          "result": "win",
+          "shares": 351,
+          "pnl": 3946,
+          "pnl_pct": 0.3
+        },
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3110.0,
+          "target": 3279.6,
+          "stop": 3003.9,
+          "exit": 3122.0,
+          "result": "win",
+          "shares": 424,
+          "pnl": 3769,
+          "pnl_pct": 0.29
+        },
+        {
+          "code": "8802",
+          "name": "三菱地所",
+          "entry": 3472.0,
+          "target": 3706.0,
+          "stop": 3393.1,
+          "exit": 3470.0,
+          "result": "loss",
+          "shares": 380,
+          "pnl": -2079,
+          "pnl_pct": -0.16
+        },
+        {
+          "code": "6594",
+          "name": "ニデック",
+          "entry": 1902.0,
+          "target": 2932.6,
+          "stop": 1875.1,
+          "exit": 1875.1,
+          "result": "loss",
+          "shares": 694,
+          "pnl": -19989,
+          "pnl_pct": -1.51
+        },
+        {
+          "code": "6988",
+          "name": "日東電工",
+          "entry": 3610.0,
+          "target": 3662.8,
+          "stop": 3051.4,
+          "exit": 3587.0,
+          "result": "loss",
+          "shares": 365,
+          "pnl": -9713,
+          "pnl_pct": -0.74
+        }
+      ],
+      "day_pnl": -24066,
+      "capital_after": 6581481
     }
   ]
 }
