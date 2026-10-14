@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6623168.025000449,
-  "total_trades": 585,
-  "wins": 289,
-  "losses": 296,
-  "total_profit": 4444491.508710771,
-  "total_loss": 6104219.110752944,
-  "max_drawdown": 3776119.3154199924,
+  "current_capital": 6561494.446000449,
+  "total_trades": 590,
+  "wins": 291,
+  "losses": 299,
+  "total_profit": 4479958.948710771,
+  "total_loss": 6174501.879752944,
+  "max_drawdown": 3796105.8319995515,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-06-08",
-      "eval_date": "2026-06-09",
-      "trades": [
-        {
-          "code": "8801",
-          "name": "三井不動産",
-          "entry": 1470.0,
-          "target": 1703.3,
-          "stop": 1430.3,
-          "exit": 1462.5,
-          "result": "loss",
-          "shares": 1114,
-          "pnl": -9993,
-          "pnl_pct": -0.61
-        },
-        {
-          "code": "9022",
-          "name": "JR東海",
-          "entry": 3345.0,
-          "target": 3681.8,
-          "stop": 3251.5,
-          "exit": 3394.0,
-          "result": "win",
-          "shares": 489,
-          "pnl": 22325,
-          "pnl_pct": 1.36
-        },
-        {
-          "code": "9020",
-          "name": "JR東日本",
-          "entry": 3400.0,
-          "target": 3865.2,
-          "stop": 3212.1,
-          "exit": 3380.0,
-          "result": "loss",
-          "shares": 481,
-          "pnl": -11255,
-          "pnl_pct": -0.69
-        },
-        {
-          "code": "8267",
-          "name": "イオン",
-          "entry": 1360.5,
-          "target": 1567.4,
-          "stop": 1301.1,
-          "exit": 1394.5,
-          "result": "win",
-          "shares": 1204,
-          "pnl": 39298,
-          "pnl_pct": 2.4
-        },
-        {
-          "code": "8830",
-          "name": "住友不動産",
-          "entry": 3493.0,
-          "target": 4939.4,
-          "stop": 3422.0,
-          "exit": 3422.0,
-          "result": "loss",
-          "shares": 469,
-          "pnl": -34937,
-          "pnl_pct": -2.13
-        }
-      ],
-      "day_pnl": 5438,
-      "capital_after": 8197185
-    },
     {
       "date": "2026-06-09",
       "eval_date": "2026-06-10",
@@ -4786,6 +4718,74 @@
       ],
       "day_pnl": 41687,
       "capital_after": 6623168
+    },
+    {
+      "date": "2026-10-14",
+      "eval_date": "2026-10-15",
+      "trades": [
+        {
+          "code": "4519",
+          "name": "中外製薬",
+          "entry": 6100.0,
+          "target": 6808.1,
+          "stop": 5906.5,
+          "exit": 6040.0,
+          "result": "loss",
+          "shares": 217,
+          "pnl": -14344,
+          "pnl_pct": -1.08
+        },
+        {
+          "code": "4385",
+          "name": "メルカリ",
+          "entry": 3844.0,
+          "target": 3984.9,
+          "stop": 3436.3,
+          "exit": 3708.0,
+          "result": "loss",
+          "shares": 344,
+          "pnl": -48106,
+          "pnl_pct": -3.64
+        },
+        {
+          "code": "9983",
+          "name": "ファーストリテイリング",
+          "entry": 73680.0,
+          "target": 76742.3,
+          "stop": 64475.0,
+          "exit": 75840.0,
+          "result": "win",
+          "shares": 17,
+          "pnl": 35467,
+          "pnl_pct": 2.83
+        },
+        {
+          "code": "9104",
+          "name": "商船三井",
+          "entry": 7650.0,
+          "target": 7502.4,
+          "stop": 6720.1,
+          "exit": 7502.4,
+          "result": "win",
+          "shares": 173,
+          "pnl": -26858,
+          "pnl_pct": -2.03
+        },
+        {
+          "code": "8802",
+          "name": "三菱地所",
+          "entry": 3451.0,
+          "target": 3704.3,
+          "stop": 3387.8,
+          "exit": 3434.0,
+          "result": "loss",
+          "shares": 383,
+          "pnl": -7833,
+          "pnl_pct": -0.59
+        }
+      ],
+      "day_pnl": -61674,
+      "capital_after": 6561494
     }
   ]
 }
