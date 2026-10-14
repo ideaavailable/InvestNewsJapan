@@ -1,21 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6581480.962580008,
-  "total_trades": 580,
-  "wins": 285,
-  "losses": 295,
-  "total_profit": 4378527.20429033,
-  "total_loss": 6079941.868752944,
+  "current_capital": 6623168.025000449,
+  "total_trades": 585,
+  "wins": 289,
+  "losses": 296,
+  "total_profit": 4444491.508710771,
+  "total_loss": 6104219.110752944,
   "max_drawdown": 3776119.3154199924,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-06-05",
-      "eval_date": "2026-06-08",
-      "trades": [],
-      "day_pnl": 0,
-      "capital_after": 8191747
-    },
     {
       "date": "2026-06-08",
       "eval_date": "2026-06-09",
@@ -4725,6 +4718,74 @@
       ],
       "day_pnl": -24066,
       "capital_after": 6581481
+    },
+    {
+      "date": "2026-10-13",
+      "eval_date": "2026-10-14",
+      "trades": [
+        {
+          "code": "4519",
+          "name": "中外製薬",
+          "entry": 6100.0,
+          "target": 6807.7,
+          "stop": 5907.1,
+          "exit": 6170.0,
+          "result": "win",
+          "shares": 215,
+          "pnl": 13738,
+          "pnl_pct": 1.05
+        },
+        {
+          "code": "8002",
+          "name": "丸紅",
+          "entry": 4692.0,
+          "target": 5095.2,
+          "stop": 4585.6,
+          "exit": 4849.0,
+          "result": "win",
+          "shares": 280,
+          "pnl": 42646,
+          "pnl_pct": 3.25
+        },
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3110.0,
+          "target": 3259.2,
+          "stop": 3003.6,
+          "exit": 3119.0,
+          "result": "win",
+          "shares": 423,
+          "pnl": 2491,
+          "pnl_pct": 0.19
+        },
+        {
+          "code": "6506",
+          "name": "安川電機",
+          "entry": 4926.0,
+          "target": 5037.6,
+          "stop": 4124.3,
+          "exit": 4840.0,
+          "result": "loss",
+          "shares": 267,
+          "pnl": -24277,
+          "pnl_pct": -1.85
+        },
+        {
+          "code": "7201",
+          "name": "日産自動車",
+          "entry": 281.9,
+          "target": 319.3,
+          "stop": 275.9,
+          "exit": 283.7,
+          "result": "win",
+          "shares": 4669,
+          "pnl": 7088,
+          "pnl_pct": 0.54
+        }
+      ],
+      "day_pnl": 41687,
+      "capital_after": 6623168
     }
   ]
 }
