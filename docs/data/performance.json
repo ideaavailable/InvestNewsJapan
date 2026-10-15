@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6561494.446000449,
-  "total_trades": 590,
-  "wins": 291,
-  "losses": 299,
-  "total_profit": 4479958.948710771,
-  "total_loss": 6174501.879752944,
-  "max_drawdown": 3796105.8319995515,
+  "current_capital": 6536223.911000449,
+  "total_trades": 595,
+  "wins": 293,
+  "losses": 302,
+  "total_profit": 4517443.397710771,
+  "total_loss": 6254420.765752944,
+  "max_drawdown": 3821376.3669995517,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-06-09",
-      "eval_date": "2026-06-10",
-      "trades": [
-        {
-          "code": "9022",
-          "name": "JR東海",
-          "entry": 3448.0,
-          "target": 3679.2,
-          "stop": 3252.5,
-          "exit": 3463.0,
-          "result": "win",
-          "shares": 475,
-          "pnl": 5487,
-          "pnl_pct": 0.34
-        },
-        {
-          "code": "9021",
-          "name": "JR西日本",
-          "entry": 2576.0,
-          "target": 2797.8,
-          "stop": 2439.7,
-          "exit": 2552.0,
-          "result": "loss",
-          "shares": 636,
-          "pnl": -16902,
-          "pnl_pct": -1.03
-        },
-        {
-          "code": "9432",
-          "name": "日本電信電話",
-          "entry": 148.3,
-          "target": 156.8,
-          "stop": 144.5,
-          "exit": 146.7,
-          "result": "loss",
-          "shares": 11054,
-          "pnl": -19326,
-          "pnl_pct": -1.18
-        },
-        {
-          "code": "8267",
-          "name": "イオン",
-          "entry": 1383.5,
-          "target": 1565.9,
-          "stop": 1300.9,
-          "exit": 1370.0,
-          "result": "loss",
-          "shares": 1184,
-          "pnl": -17622,
-          "pnl_pct": -1.08
-        },
-        {
-          "code": "2502",
-          "name": "アサヒグループ",
-          "entry": 1500.0,
-          "target": 1604.8,
-          "stop": 1449.5,
-          "exit": 1492.5,
-          "result": "loss",
-          "shares": 1092,
-          "pnl": -9828,
-          "pnl_pct": -0.6
-        }
-      ],
-      "day_pnl": -58191,
-      "capital_after": 8138994
-    },
     {
       "date": "2026-06-10",
       "eval_date": "2026-06-11",
@@ -4786,6 +4718,74 @@
       ],
       "day_pnl": -61674,
       "capital_after": 6561494
+    },
+    {
+      "date": "2026-10-15",
+      "eval_date": "2026-10-16",
+      "trades": [
+        {
+          "code": "6594",
+          "name": "ニデック",
+          "entry": 1894.0,
+          "target": 2932.8,
+          "stop": 1777.2,
+          "exit": 1819.0,
+          "result": "loss",
+          "shares": 692,
+          "pnl": -53211,
+          "pnl_pct": -4.06
+        },
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3111.0,
+          "target": 3250.4,
+          "stop": 3002.2,
+          "exit": 3142.0,
+          "result": "win",
+          "shares": 421,
+          "pnl": 11741,
+          "pnl_pct": 0.9
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1129.0,
+          "target": 1393.6,
+          "stop": 1144.9,
+          "exit": 1144.9,
+          "result": "loss",
+          "shares": 1162,
+          "pnl": 17164,
+          "pnl_pct": 1.31
+        },
+        {
+          "code": "4519",
+          "name": "中外製薬",
+          "entry": 6140.0,
+          "target": 6807.6,
+          "stop": 5907.3,
+          "exit": 6267.0,
+          "result": "win",
+          "shares": 213,
+          "pnl": 25743,
+          "pnl_pct": 1.97
+        },
+        {
+          "code": "9502",
+          "name": "中部電力",
+          "entry": 2631.0,
+          "target": 2996.8,
+          "stop": 2544.5,
+          "exit": 2580.0,
+          "result": "loss",
+          "shares": 498,
+          "pnl": -26708,
+          "pnl_pct": -2.04
+        }
+      ],
+      "day_pnl": -25271,
+      "capital_after": 6536224
     }
   ]
 }
