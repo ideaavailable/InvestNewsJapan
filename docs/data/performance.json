@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6536223.911000449,
-  "total_trades": 595,
-  "wins": 293,
-  "losses": 302,
-  "total_profit": 4517443.397710771,
-  "total_loss": 6254420.765752944,
-  "max_drawdown": 3821376.3669995517,
+  "current_capital": 6530119.770701071,
+  "total_trades": 600,
+  "wins": 296,
+  "losses": 304,
+  "total_profit": 4530776.351710771,
+  "total_loss": 6260444.674052321,
+  "max_drawdown": 3827480.5072989296,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-06-11",
-      "eval_date": "2026-06-12",
-      "trades": [
-        {
-          "code": "9022",
-          "name": "JR東海",
-          "entry": 3473.0,
-          "target": 3669.7,
-          "stop": 3252.3,
-          "exit": 3405.0,
-          "result": "loss",
-          "shares": 469,
-          "pnl": -33521,
-          "pnl_pct": -2.06
-        },
-        {
-          "code": "8830",
-          "name": "住友不動産",
-          "entry": 3448.0,
-          "target": 4427.3,
-          "stop": 3295.0,
-          "exit": 3468.0,
-          "result": "win",
-          "shares": 472,
-          "pnl": 7813,
-          "pnl_pct": 0.48
-        },
-        {
-          "code": "8750",
-          "name": "第一生命ホールディングス",
-          "entry": 1727.5,
-          "target": 1759.7,
-          "stop": 1488.1,
-          "exit": 1730.5,
-          "result": "win",
-          "shares": 943,
-          "pnl": 1200,
-          "pnl_pct": 0.07
-        },
-        {
-          "code": "5411",
-          "name": "JFEホールディングス",
-          "entry": 1577.0,
-          "target": 1729.7,
-          "stop": 1549.1,
-          "exit": 1573.0,
-          "result": "loss",
-          "shares": 1033,
-          "pnl": -5761,
-          "pnl_pct": -0.35
-        },
-        {
-          "code": "4523",
-          "name": "エーザイ",
-          "entry": 3709.0,
-          "target": 4705.6,
-          "stop": 3664.1,
-          "exit": 3664.1,
-          "result": "loss",
-          "shares": 439,
-          "pnl": -21339,
-          "pnl_pct": -1.31
-        }
-      ],
-      "day_pnl": -51609,
-      "capital_after": 8097823
-    },
     {
       "date": "2026-06-12",
       "eval_date": "2026-06-15",
@@ -4725,6 +4657,74 @@
       "trades": [],
       "day_pnl": 0,
       "capital_after": 6536224
+    },
+    {
+      "date": "2026-10-19",
+      "eval_date": "2026-10-20",
+      "trades": [
+        {
+          "code": "7201",
+          "name": "日産自動車",
+          "entry": 280.4,
+          "target": 319.3,
+          "stop": 272.5,
+          "exit": 279.8,
+          "result": "loss",
+          "shares": 4662,
+          "pnl": -4104,
+          "pnl_pct": -0.31
+        },
+        {
+          "code": "4755",
+          "name": "楽天グループ",
+          "entry": 640.0,
+          "target": 737.5,
+          "stop": 608.7,
+          "exit": 639.7,
+          "result": "loss",
+          "shares": 2042,
+          "pnl": -1919,
+          "pnl_pct": -0.15
+        },
+        {
+          "code": "8830",
+          "name": "住友不動産",
+          "entry": 3248.0,
+          "target": 3261.2,
+          "stop": 2994.8,
+          "exit": 3261.2,
+          "result": "win",
+          "shares": 402,
+          "pnl": 4001,
+          "pnl_pct": 0.31
+        },
+        {
+          "code": "7832",
+          "name": "バンダイナムコ",
+          "entry": 6298.0,
+          "target": 6239.5,
+          "stop": 5350.0,
+          "exit": 6239.5,
+          "result": "win",
+          "shares": 207,
+          "pnl": -13413,
+          "pnl_pct": -1.03
+        },
+        {
+          "code": "7012",
+          "name": "川崎重工業",
+          "entry": 2270.0,
+          "target": 2476.1,
+          "stop": 2143.7,
+          "exit": 2288.5,
+          "result": "win",
+          "shares": 575,
+          "pnl": 9332,
+          "pnl_pct": 0.71
+        }
+      ],
+      "day_pnl": -6104,
+      "capital_after": 6530120
     }
   ]
 }
