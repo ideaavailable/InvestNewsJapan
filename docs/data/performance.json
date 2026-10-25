@@ -10,74 +10,6 @@
   "peak_capital": 10357600.278,
   "daily_results": [
     {
-      "date": "2026-06-17",
-      "eval_date": "2026-06-18",
-      "trades": [
-        {
-          "code": "9022",
-          "name": "JR東海",
-          "entry": 3364.0,
-          "target": 3619.7,
-          "stop": 3239.4,
-          "exit": 3297.0,
-          "result": "loss",
-          "shares": 479,
-          "pnl": -33704,
-          "pnl_pct": -2.09
-        },
-        {
-          "code": "4523",
-          "name": "エーザイ",
-          "entry": 3857.0,
-          "target": 4370.0,
-          "stop": 3643.4,
-          "exit": 3829.0,
-          "result": "loss",
-          "shares": 418,
-          "pnl": -13316,
-          "pnl_pct": -0.83
-        },
-        {
-          "code": "7974",
-          "name": "任天堂",
-          "entry": 7009.0,
-          "target": 7883.7,
-          "stop": 6833.9,
-          "exit": 7275.0,
-          "result": "win",
-          "shares": 230,
-          "pnl": 59568,
-          "pnl_pct": 3.7
-        },
-        {
-          "code": "9434",
-          "name": "ソフトバンク",
-          "entry": 212.3,
-          "target": 228.5,
-          "stop": 207.5,
-          "exit": 210.1,
-          "result": "loss",
-          "shares": 7595,
-          "pnl": -18321,
-          "pnl_pct": -1.14
-        },
-        {
-          "code": "8830",
-          "name": "住友不動産",
-          "entry": 3589.0,
-          "target": 3986.3,
-          "stop": 3297.1,
-          "exit": 3520.0,
-          "result": "loss",
-          "shares": 449,
-          "pnl": -32592,
-          "pnl_pct": -2.02
-        }
-      ],
-      "day_pnl": -38367,
-      "capital_after": 8024221
-    },
-    {
       "date": "2026-06-18",
       "eval_date": "2026-06-19",
       "trades": [
@@ -4785,6 +4717,13 @@
         }
       ],
       "day_pnl": -55061,
+      "capital_after": 6342149
+    },
+    {
+      "date": "2026-10-23",
+      "eval_date": "2026-10-26",
+      "trades": [],
+      "day_pnl": 0,
       "capital_after": 6342149
     }
   ]
