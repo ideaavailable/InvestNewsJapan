@@ -1,21 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6451652.842987967,
-  "total_trades": 620,
-  "wins": 305,
-  "losses": 315,
-  "total_profit": 4673283.584338152,
-  "total_loss": 6434830.794392806,
+  "current_capital": 6412019.614240896,
+  "total_trades": 625,
+  "wins": 307,
+  "losses": 318,
+  "total_profit": 4688054.032338152,
+  "total_loss": 6489234.471139875,
   "max_drawdown": 4015450.956512034,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-06-19",
-      "eval_date": "2026-06-22",
-      "trades": [],
-      "day_pnl": 0,
-      "capital_after": 8071725
-    },
     {
       "date": "2026-06-22",
       "eval_date": "2026-06-23",
@@ -4725,6 +4718,74 @@
       ],
       "day_pnl": 109504,
       "capital_after": 6451653
+    },
+    {
+      "date": "2026-10-27",
+      "eval_date": "2026-10-28",
+      "trades": [
+        {
+          "code": "1801",
+          "name": "大成建設",
+          "entry": 11465.0,
+          "target": 12496.1,
+          "stop": 10806.4,
+          "exit": 11495.0,
+          "result": "win",
+          "shares": 112,
+          "pnl": 2076,
+          "pnl_pct": 0.16
+        },
+        {
+          "code": "4755",
+          "name": "楽天グループ",
+          "entry": 627.4,
+          "target": 698.3,
+          "stop": 609.7,
+          "exit": 614.9,
+          "result": "loss",
+          "shares": 2056,
+          "pnl": -26990,
+          "pnl_pct": -2.09
+        },
+        {
+          "code": "8766",
+          "name": "東京海上ホールディングス",
+          "entry": 580.0,
+          "target": 589.2,
+          "stop": 464.3,
+          "exit": 578.6,
+          "result": "loss",
+          "shares": 2224,
+          "pnl": -4404,
+          "pnl_pct": -0.34
+        },
+        {
+          "code": "4385",
+          "name": "メルカリ",
+          "entry": 3504.0,
+          "target": 3901.1,
+          "stop": 3357.9,
+          "exit": 3542.0,
+          "result": "win",
+          "shares": 368,
+          "pnl": 12695,
+          "pnl_pct": 0.98
+        },
+        {
+          "code": "8267",
+          "name": "イオン",
+          "entry": 1188.0,
+          "target": 1303.5,
+          "stop": 1091.9,
+          "exit": 1168.0,
+          "result": "loss",
+          "shares": 1086,
+          "pnl": -23010,
+          "pnl_pct": -1.78
+        }
+      ],
+      "day_pnl": -39633,
+      "capital_after": 6412020
     }
   ]
 }
