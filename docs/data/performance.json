@@ -1,21 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6399204.468597814,
-  "total_trades": 640,
-  "wins": 316,
-  "losses": 324,
-  "total_profit": 4831928.1603598045,
-  "total_loss": 6619567.590804609,
-  "max_drawdown": 4015450.956512034,
+  "current_capital": 6317540.439831945,
+  "total_trades": 645,
+  "wins": 317,
+  "losses": 328,
+  "total_profit": 4843761.611177675,
+  "total_loss": 6713065.070388348,
+  "max_drawdown": 4040059.8381680558,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-06-26",
-      "eval_date": "2026-06-29",
-      "trades": [],
-      "day_pnl": 0,
-      "capital_after": 7952203
-    },
     {
       "date": "2026-06-29",
       "eval_date": "2026-06-30",
@@ -4725,6 +4718,74 @@
       ],
       "day_pnl": -104859,
       "capital_after": 6399204
+    },
+    {
+      "date": "2026-11-03",
+      "eval_date": "2026-11-04",
+      "trades": [
+        {
+          "code": "4755",
+          "name": "楽天グループ",
+          "entry": 605.0,
+          "target": 673.3,
+          "stop": 597.0,
+          "exit": 611.2,
+          "result": "win",
+          "shares": 2115,
+          "pnl": 11833,
+          "pnl_pct": 0.92
+        },
+        {
+          "code": "6752",
+          "name": "パナソニック",
+          "entry": 3769.0,
+          "target": 4843.2,
+          "stop": 3406.7,
+          "exit": 3602.0,
+          "result": "loss",
+          "shares": 339,
+          "pnl": -57891,
+          "pnl_pct": -4.53
+        },
+        {
+          "code": "6503",
+          "name": "三菱電機",
+          "entry": 4896.0,
+          "target": 5431.7,
+          "stop": 4542.4,
+          "exit": 4875.0,
+          "result": "loss",
+          "shares": 261,
+          "pnl": -6759,
+          "pnl_pct": -0.53
+        },
+        {
+          "code": "8035",
+          "name": "東京エレクトロン",
+          "entry": 9745.0,
+          "target": 12986.9,
+          "stop": 8789.2,
+          "exit": 9622.0,
+          "result": "loss",
+          "shares": 131,
+          "pnl": -17390,
+          "pnl_pct": -1.36
+        },
+        {
+          "code": "7201",
+          "name": "日産自動車",
+          "entry": 264.0,
+          "target": 290.3,
+          "stop": 258.9,
+          "exit": 261.9,
+          "result": "loss",
+          "shares": 4847,
+          "pnl": -11458,
+          "pnl_pct": -0.9
+        }
+      ],
+      "day_pnl": -81664,
+      "capital_after": 6317540
     }
   ]
 }
