@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6317540.439831945,
-  "total_trades": 645,
-  "wins": 317,
-  "losses": 328,
-  "total_profit": 4843761.611177675,
-  "total_loss": 6713065.070388348,
+  "current_capital": 6353465.617713415,
+  "total_trades": 650,
+  "wins": 320,
+  "losses": 330,
+  "total_profit": 4908521.147059145,
+  "total_loss": 6741899.428388348,
   "max_drawdown": 4040059.8381680558,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-06-29",
-      "eval_date": "2026-06-30",
-      "trades": [
-        {
-          "code": "8001",
-          "name": "伊藤忠商事",
-          "entry": 1845.0,
-          "target": 1925.0,
-          "stop": 1788.3,
-          "exit": 1849.5,
-          "result": "win",
-          "shares": 862,
-          "pnl": 2289,
-          "pnl_pct": 0.14
-        },
-        {
-          "code": "7203",
-          "name": "トヨタ自動車",
-          "entry": 2805.0,
-          "target": 2974.4,
-          "stop": 2657.3,
-          "exit": 2772.0,
-          "result": "loss",
-          "shares": 567,
-          "pnl": -20301,
-          "pnl_pct": -1.28
-        },
-        {
-          "code": "8725",
-          "name": "MS&ADインシュアランス",
-          "entry": 4258.0,
-          "target": 4748.3,
-          "stop": 4140.3,
-          "exit": 4260.0,
-          "result": "win",
-          "shares": 373,
-          "pnl": -842,
-          "pnl_pct": -0.05
-        },
-        {
-          "code": "8801",
-          "name": "三井不動産",
-          "entry": 1500.0,
-          "target": 1602.8,
-          "stop": 1418.2,
-          "exit": 1520.5,
-          "result": "win",
-          "shares": 1060,
-          "pnl": 20140,
-          "pnl_pct": 1.27
-        },
-        {
-          "code": "8267",
-          "name": "イオン",
-          "entry": 1333.0,
-          "target": 1429.1,
-          "stop": 1265.4,
-          "exit": 1372.0,
-          "result": "win",
-          "shares": 1193,
-          "pnl": 44937,
-          "pnl_pct": 2.83
-        }
-      ],
-      "day_pnl": 46222,
-      "capital_after": 7998424
-    },
     {
       "date": "2026-06-30",
       "eval_date": "2026-07-01",
@@ -4786,6 +4718,74 @@
       ],
       "day_pnl": -81664,
       "capital_after": 6317540
+    },
+    {
+      "date": "2026-11-04",
+      "eval_date": "2026-11-05",
+      "trades": [
+        {
+          "code": "4755",
+          "name": "楽天グループ",
+          "entry": 639.1,
+          "target": 671.0,
+          "stop": 594.8,
+          "exit": 664.4,
+          "result": "win",
+          "shares": 1977,
+          "pnl": 48755,
+          "pnl_pct": 3.86
+        },
+        {
+          "code": "1801",
+          "name": "大成建設",
+          "entry": 11250.0,
+          "target": 12383.1,
+          "stop": 10810.3,
+          "exit": 11170.0,
+          "result": "loss",
+          "shares": 112,
+          "pnl": -10220,
+          "pnl_pct": -0.81
+        },
+        {
+          "code": "9502",
+          "name": "中部電力",
+          "entry": 2525.0,
+          "target": 2732.8,
+          "stop": 2427.6,
+          "exit": 2558.0,
+          "result": "win",
+          "shares": 500,
+          "pnl": 15238,
+          "pnl_pct": 1.21
+        },
+        {
+          "code": "6594",
+          "name": "ニデック",
+          "entry": 1746.0,
+          "target": 2222.9,
+          "stop": 1584.0,
+          "exit": 1722.0,
+          "result": "loss",
+          "shares": 723,
+          "pnl": -18614,
+          "pnl_pct": -1.47
+        },
+        {
+          "code": "7182",
+          "name": "ゆうちょ銀行",
+          "entry": 3110.0,
+          "target": 3453.8,
+          "stop": 2867.8,
+          "exit": 3115.0,
+          "result": "win",
+          "shares": 406,
+          "pnl": 767,
+          "pnl_pct": 0.06
+        }
+      ],
+      "day_pnl": 35925,
+      "capital_after": 6353466
     }
   ]
 }
