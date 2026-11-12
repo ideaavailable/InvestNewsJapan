@@ -1,21 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6310346.771213415,
-  "total_trades": 665,
-  "wins": 331,
-  "losses": 334,
-  "total_profit": 5022264.821559145,
-  "total_loss": 6781446.836388348,
+  "current_capital": 6303352.499379431,
+  "total_trades": 670,
+  "wins": 334,
+  "losses": 336,
+  "total_profit": 5026652.034725161,
+  "total_loss": 6792828.321388347,
   "max_drawdown": 4121449.7732865857,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-07-03",
-      "eval_date": "2026-07-06",
-      "trades": [],
-      "day_pnl": 0,
-      "capital_after": 7984054
-    },
     {
       "date": "2026-07-06",
       "eval_date": "2026-07-07",
@@ -4786,6 +4779,74 @@
       ],
       "day_pnl": 38423,
       "capital_after": 6310347
+    },
+    {
+      "date": "2026-11-11",
+      "eval_date": "2026-11-12",
+      "trades": [
+        {
+          "code": "6594",
+          "name": "ニデック",
+          "entry": 1795.0,
+          "target": 1956.7,
+          "stop": 1535.1,
+          "exit": 1792.0,
+          "result": "loss",
+          "shares": 703,
+          "pnl": -3371,
+          "pnl_pct": -0.27
+        },
+        {
+          "code": "7011",
+          "name": "三菱重工業",
+          "entry": 3174.0,
+          "target": 3834.3,
+          "stop": 2848.1,
+          "exit": 3183.0,
+          "result": "win",
+          "shares": 397,
+          "pnl": 2313,
+          "pnl_pct": 0.18
+        },
+        {
+          "code": "9501",
+          "name": "東京電力HD",
+          "entry": 453.2,
+          "target": 524.7,
+          "stop": 406.8,
+          "exit": 453.7,
+          "result": "win",
+          "shares": 2784,
+          "pnl": 130,
+          "pnl_pct": 0.01
+        },
+        {
+          "code": "6504",
+          "name": "富士電機",
+          "entry": 12025.0,
+          "target": 14960.2,
+          "stop": 10140.2,
+          "exit": 11960.0,
+          "result": "loss",
+          "shares": 104,
+          "pnl": -8011,
+          "pnl_pct": -0.64
+        },
+        {
+          "code": "6301",
+          "name": "コマツ",
+          "entry": 6280.0,
+          "target": 7428.9,
+          "stop": 5756.4,
+          "exit": 6296.0,
+          "result": "win",
+          "shares": 200,
+          "pnl": 1944,
+          "pnl_pct": 0.15
+        }
+      ],
+      "day_pnl": -6994,
+      "capital_after": 6303352
     }
   ]
 }
