@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6328683.892540595,
-  "total_trades": 675,
+  "current_capital": 6246225.830540595,
+  "total_trades": 680,
   "wins": 338,
-  "losses": 337,
+  "losses": 342,
   "total_profit": 5072548.9648863245,
-  "total_loss": 6813393.858388347,
+  "total_loss": 6895851.920388347,
   "max_drawdown": 4121449.7732865857,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-07-07",
-      "eval_date": "2026-07-08",
-      "trades": [
-        {
-          "code": "1605",
-          "name": "INPEX",
-          "entry": 3327.0,
-          "target": 3624.7,
-          "stop": 3148.3,
-          "exit": 3281.0,
-          "result": "loss",
-          "shares": 483,
-          "pnl": -23825,
-          "pnl_pct": -1.48
-        },
-        {
-          "code": "8031",
-          "name": "三井物産",
-          "entry": 4725.0,
-          "target": 5023.6,
-          "stop": 4368.4,
-          "exit": 4677.0,
-          "result": "loss",
-          "shares": 340,
-          "pnl": -17926,
-          "pnl_pct": -1.12
-        },
-        {
-          "code": "9501",
-          "name": "東京電力HD",
-          "entry": 468.1,
-          "target": 541.5,
-          "stop": 437.4,
-          "exit": 462.3,
-          "result": "loss",
-          "shares": 3437,
-          "pnl": -21544,
-          "pnl_pct": -1.34
-        },
-        {
-          "code": "9104",
-          "name": "商船三井",
-          "entry": 5285.0,
-          "target": 5953.0,
-          "stop": 4998.3,
-          "exit": 5322.0,
-          "result": "win",
-          "shares": 304,
-          "pnl": 9641,
-          "pnl_pct": 0.6
-        },
-        {
-          "code": "7201",
-          "name": "日産自動車",
-          "entry": 324.0,
-          "target": 361.9,
-          "stop": 288.7,
-          "exit": 321.8,
-          "result": "loss",
-          "shares": 4966,
-          "pnl": -12534,
-          "pnl_pct": -0.78
-        }
-      ],
-      "day_pnl": -66188,
-      "capital_after": 7979300
-    },
     {
       "date": "2026-07-08",
       "eval_date": "2026-07-09",
@@ -4847,6 +4779,74 @@
       ],
       "day_pnl": 25331,
       "capital_after": 6328684
+    },
+    {
+      "date": "2026-11-13",
+      "eval_date": "2026-11-16",
+      "trades": [
+        {
+          "code": "4543",
+          "name": "テルモ",
+          "entry": 2429.5,
+          "target": 2645.0,
+          "stop": 2238.1,
+          "exit": 2425.0,
+          "result": "loss",
+          "shares": 520,
+          "pnl": -3603,
+          "pnl_pct": -0.29
+        },
+        {
+          "code": "6981",
+          "name": "村田製作所",
+          "entry": 5114.0,
+          "target": 7154.6,
+          "stop": 4501.1,
+          "exit": 5008.0,
+          "result": "loss",
+          "shares": 247,
+          "pnl": -27445,
+          "pnl_pct": -2.17
+        },
+        {
+          "code": "7011",
+          "name": "三菱重工業",
+          "entry": 2920.0,
+          "target": 3832.8,
+          "stop": 2850.7,
+          "exit": 2910.5,
+          "result": "loss",
+          "shares": 433,
+          "pnl": -5378,
+          "pnl_pct": -0.43
+        },
+        {
+          "code": "8035",
+          "name": "東京エレクトロン",
+          "entry": 9488.0,
+          "target": 10713.5,
+          "stop": 7827.3,
+          "exit": 9303.0,
+          "result": "loss",
+          "shares": 133,
+          "pnl": -25867,
+          "pnl_pct": -2.05
+        },
+        {
+          "code": "2802",
+          "name": "味の素",
+          "entry": 4216.0,
+          "target": 5387.5,
+          "stop": 4088.3,
+          "exit": 4153.0,
+          "result": "loss",
+          "shares": 300,
+          "pnl": -20165,
+          "pnl_pct": -1.59
+        }
+      ],
+      "day_pnl": -82458,
+      "capital_after": 6246226
     }
   ]
 }
