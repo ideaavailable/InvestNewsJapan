@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6222636.784868475,
-  "total_trades": 685,
+  "current_capital": 6115544.133868475,
+  "total_trades": 690,
   "wins": 341,
-  "losses": 344,
+  "losses": 349,
   "total_profit": 5097068.744886325,
-  "total_loss": 6943960.746060465,
-  "max_drawdown": 4134963.493131526,
+  "total_loss": 7051053.397060466,
+  "max_drawdown": 4242056.144131525,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-07-09",
-      "eval_date": "2026-07-10",
-      "trades": [
-        {
-          "code": "8031",
-          "name": "三井物産",
-          "entry": 4620.0,
-          "target": 4962.6,
-          "stop": 4367.9,
-          "exit": 4614.0,
-          "result": "loss",
-          "shares": 348,
-          "pnl": -3696,
-          "pnl_pct": -0.23
-        },
-        {
-          "code": "9501",
-          "name": "東京電力HD",
-          "entry": 477.8,
-          "target": 537.1,
-          "stop": 437.5,
-          "exit": 479.1,
-          "result": "win",
-          "shares": 3367,
-          "pnl": 2768,
-          "pnl_pct": 0.17
-        },
-        {
-          "code": "1605",
-          "name": "INPEX",
-          "entry": 3457.0,
-          "target": 3595.4,
-          "stop": 3148.1,
-          "exit": 3427.0,
-          "result": "loss",
-          "shares": 465,
-          "pnl": -15558,
-          "pnl_pct": -0.97
-        },
-        {
-          "code": "9503",
-          "name": "関西電力",
-          "entry": 2304.5,
-          "target": 2389.5,
-          "stop": 2204.4,
-          "exit": 2290.0,
-          "result": "loss",
-          "shares": 698,
-          "pnl": -11730,
-          "pnl_pct": -0.73
-        },
-        {
-          "code": "2503",
-          "name": "キリン",
-          "entry": 2948.0,
-          "target": 2921.3,
-          "stop": 2595.1,
-          "exit": 2921.3,
-          "result": "win",
-          "shares": 545,
-          "pnl": -16158,
-          "pnl_pct": -1.01
-        }
-      ],
-      "day_pnl": -44373,
-      "capital_after": 8000262
-    },
     {
       "date": "2026-07-10",
       "eval_date": "2026-07-13",
@@ -4847,6 +4779,74 @@
       ],
       "day_pnl": -23589,
       "capital_after": 6222637
+    },
+    {
+      "date": "2026-11-17",
+      "eval_date": "2026-11-18",
+      "trades": [
+        {
+          "code": "7013",
+          "name": "IHI",
+          "entry": 2321.0,
+          "target": 2589.4,
+          "stop": 2125.4,
+          "exit": 2280.5,
+          "result": "loss",
+          "shares": 536,
+          "pnl": -22952,
+          "pnl_pct": -1.84
+        },
+        {
+          "code": "2802",
+          "name": "味の素",
+          "entry": 4209.0,
+          "target": 5363.9,
+          "stop": 3979.8,
+          "exit": 4151.0,
+          "result": "loss",
+          "shares": 295,
+          "pnl": -18352,
+          "pnl_pct": -1.48
+        },
+        {
+          "code": "6594",
+          "name": "ニデック",
+          "entry": 1700.0,
+          "target": 1891.3,
+          "stop": 1537.5,
+          "exit": 1671.0,
+          "result": "loss",
+          "shares": 732,
+          "pnl": -22472,
+          "pnl_pct": -1.81
+        },
+        {
+          "code": "6971",
+          "name": "京セラ",
+          "entry": 2905.0,
+          "target": 3654.0,
+          "stop": 2696.1,
+          "exit": 2847.0,
+          "result": "loss",
+          "shares": 428,
+          "pnl": -26067,
+          "pnl_pct": -2.1
+        },
+        {
+          "code": "8591",
+          "name": "オリックス",
+          "entry": 5350.0,
+          "target": 5960.0,
+          "stop": 5141.4,
+          "exit": 5281.0,
+          "result": "loss",
+          "shares": 232,
+          "pnl": -17249,
+          "pnl_pct": -1.39
+        }
+      ],
+      "day_pnl": -107093,
+      "capital_after": 6115544
     }
   ]
 }
