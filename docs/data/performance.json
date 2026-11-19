@@ -1,21 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6115544.133868475,
-  "total_trades": 690,
-  "wins": 341,
-  "losses": 349,
-  "total_profit": 5097068.744886325,
-  "total_loss": 7051053.397060466,
-  "max_drawdown": 4242056.144131525,
+  "current_capital": 6099445.907112067,
+  "total_trades": 695,
+  "wins": 343,
+  "losses": 352,
+  "total_profit": 5108573.860629916,
+  "total_loss": 7078656.739560466,
+  "max_drawdown": 4258154.370887934,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-07-10",
-      "eval_date": "2026-07-13",
-      "trades": [],
-      "day_pnl": 0,
-      "capital_after": 8000262
-    },
     {
       "date": "2026-07-13",
       "eval_date": "2026-07-14",
@@ -4847,6 +4840,74 @@
       ],
       "day_pnl": -107093,
       "capital_after": 6115544
+    },
+    {
+      "date": "2026-11-18",
+      "eval_date": "2026-11-19",
+      "trades": [
+        {
+          "code": "6981",
+          "name": "村田製作所",
+          "entry": 5010.0,
+          "target": 7088.5,
+          "stop": 4375.6,
+          "exit": 4996.0,
+          "result": "loss",
+          "shares": 244,
+          "pnl": -4638,
+          "pnl_pct": -0.38
+        },
+        {
+          "code": "7013",
+          "name": "IHI",
+          "entry": 2261.5,
+          "target": 2578.8,
+          "stop": 2127.5,
+          "exit": 2282.0,
+          "result": "win",
+          "shares": 540,
+          "pnl": 9849,
+          "pnl_pct": 0.81
+        },
+        {
+          "code": "6762",
+          "name": "TDK",
+          "entry": 2257.5,
+          "target": 2933.9,
+          "stop": 2000.8,
+          "exit": 2220.5,
+          "result": "loss",
+          "shares": 541,
+          "pnl": -21238,
+          "pnl_pct": -1.74
+        },
+        {
+          "code": "9432",
+          "name": "日本電信電話",
+          "entry": 169.9,
+          "target": 180.4,
+          "stop": 158.9,
+          "exit": 170.3,
+          "result": "win",
+          "shares": 7198,
+          "pnl": 1656,
+          "pnl_pct": 0.14
+        },
+        {
+          "code": "4578",
+          "name": "大塚ホールディングス",
+          "entry": 12095.0,
+          "target": 12860.4,
+          "stop": 11381.1,
+          "exit": 12090.0,
+          "result": "loss",
+          "shares": 101,
+          "pnl": -1727,
+          "pnl_pct": -0.14
+        }
+      ],
+      "day_pnl": -16098,
+      "capital_after": 6099446
     }
   ]
 }
