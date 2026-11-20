@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6099445.907112067,
-  "total_trades": 695,
-  "wins": 343,
-  "losses": 352,
-  "total_profit": 5108573.860629916,
-  "total_loss": 7078656.739560466,
-  "max_drawdown": 4258154.370887934,
+  "current_capital": 6076996.687698981,
+  "total_trades": 700,
+  "wins": 345,
+  "losses": 355,
+  "total_profit": 5174421.592216831,
+  "total_loss": 7166953.690560467,
+  "max_drawdown": 4280603.59030102,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-07-13",
-      "eval_date": "2026-07-14",
-      "trades": [
-        {
-          "code": "9983",
-          "name": "ファーストリテイリング",
-          "entry": 81720.0,
-          "target": 89011.6,
-          "stop": 79119.5,
-          "exit": 81230.0,
-          "result": "loss",
-          "shares": 19,
-          "pnl": -10863,
-          "pnl_pct": -0.7
-        },
-        {
-          "code": "8031",
-          "name": "三井物産",
-          "entry": 4618.0,
-          "target": 4929.9,
-          "stop": 4372.4,
-          "exit": 4580.0,
-          "result": "loss",
-          "shares": 346,
-          "pnl": -14746,
-          "pnl_pct": -0.92
-        },
-        {
-          "code": "9503",
-          "name": "関西電力",
-          "entry": 2262.0,
-          "target": 2389.0,
-          "stop": 2205.3,
-          "exit": 2252.5,
-          "result": "loss",
-          "shares": 707,
-          "pnl": -8316,
-          "pnl_pct": -0.52
-        },
-        {
-          "code": "2503",
-          "name": "キリン",
-          "entry": 2863.5,
-          "target": 2952.6,
-          "stop": 2613.6,
-          "exit": 2832.0,
-          "result": "loss",
-          "shares": 558,
-          "pnl": -19175,
-          "pnl_pct": -1.2
-        },
-        {
-          "code": "8306",
-          "name": "三菱UFJフィナンシャル",
-          "entry": 3487.0,
-          "target": 3514.5,
-          "stop": 3148.2,
-          "exit": 3514.5,
-          "result": "win",
-          "shares": 458,
-          "pnl": 10998,
-          "pnl_pct": 0.69
-        }
-      ],
-      "day_pnl": -42101,
-      "capital_after": 7958161
-    },
     {
       "date": "2026-07-14",
       "eval_date": "2026-07-15",
@@ -4908,6 +4840,74 @@
       ],
       "day_pnl": -16098,
       "capital_after": 6099446
+    },
+    {
+      "date": "2026-11-19",
+      "eval_date": "2026-11-20",
+      "trades": [
+        {
+          "code": "8591",
+          "name": "オリックス",
+          "entry": 5265.0,
+          "target": 5956.9,
+          "stop": 5136.5,
+          "exit": 5290.0,
+          "result": "win",
+          "shares": 231,
+          "pnl": 4559,
+          "pnl_pct": 0.37
+        },
+        {
+          "code": "6762",
+          "name": "TDK",
+          "entry": 2182.5,
+          "target": 2879.9,
+          "stop": 2002.8,
+          "exit": 2127.0,
+          "result": "loss",
+          "shares": 558,
+          "pnl": -32187,
+          "pnl_pct": -2.64
+        },
+        {
+          "code": "7013",
+          "name": "IHI",
+          "entry": 2263.0,
+          "target": 2572.0,
+          "stop": 2129.8,
+          "exit": 2247.5,
+          "result": "loss",
+          "shares": 539,
+          "pnl": -9574,
+          "pnl_pct": -0.78
+        },
+        {
+          "code": "6981",
+          "name": "村田製作所",
+          "entry": 4891.0,
+          "target": 7007.4,
+          "stop": 4383.5,
+          "exit": 4709.0,
+          "result": "loss",
+          "shares": 249,
+          "pnl": -46536,
+          "pnl_pct": -3.82
+        },
+        {
+          "code": "8766",
+          "name": "東京海上ホールディングス",
+          "entry": 560.0,
+          "target": 613.4,
+          "stop": 547.8,
+          "exit": 588.7,
+          "result": "win",
+          "shares": 2178,
+          "pnl": 61289,
+          "pnl_pct": 5.03
+        }
+      ],
+      "day_pnl": -22449,
+      "capital_after": 6076997
     }
   ]
 }
