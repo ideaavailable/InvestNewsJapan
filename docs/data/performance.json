@@ -10,74 +10,6 @@
   "peak_capital": 10357600.278,
   "daily_results": [
     {
-      "date": "2026-07-14",
-      "eval_date": "2026-07-15",
-      "trades": [
-        {
-          "code": "9983",
-          "name": "ファーストリテイリング",
-          "entry": 82200.0,
-          "target": 89005.9,
-          "stop": 78999.0,
-          "exit": 79790.0,
-          "result": "loss",
-          "shares": 19,
-          "pnl": -47352,
-          "pnl_pct": -3.03
-        },
-        {
-          "code": "8031",
-          "name": "三井物産",
-          "entry": 4626.0,
-          "target": 4869.1,
-          "stop": 4374.2,
-          "exit": 4698.0,
-          "result": "win",
-          "shares": 344,
-          "pnl": 23177,
-          "pnl_pct": 1.46
-        },
-        {
-          "code": "9503",
-          "name": "関西電力",
-          "entry": 2271.5,
-          "target": 2375.0,
-          "stop": 2194.4,
-          "exit": 2307.0,
-          "result": "win",
-          "shares": 700,
-          "pnl": 23260,
-          "pnl_pct": 1.46
-        },
-        {
-          "code": "8306",
-          "name": "三菱UFJフィナンシャル",
-          "entry": 3511.0,
-          "target": 3544.9,
-          "stop": 3147.4,
-          "exit": 3544.9,
-          "result": "win",
-          "shares": 453,
-          "pnl": 13766,
-          "pnl_pct": 0.87
-        },
-        {
-          "code": "2503",
-          "name": "キリン",
-          "entry": 2848.0,
-          "target": 2951.9,
-          "stop": 2628.1,
-          "exit": 2862.5,
-          "result": "win",
-          "shares": 558,
-          "pnl": 6502,
-          "pnl_pct": 0.41
-        }
-      ],
-      "day_pnl": 19353,
-      "capital_after": 7977514
-    },
-    {
       "date": "2026-07-15",
       "eval_date": "2026-07-16",
       "trades": [
@@ -4907,6 +4839,13 @@
         }
       ],
       "day_pnl": -22449,
+      "capital_after": 6076997
+    },
+    {
+      "date": "2026-11-20",
+      "eval_date": "2026-11-23",
+      "trades": [],
+      "day_pnl": 0,
       "capital_after": 6076997
     }
   ]
