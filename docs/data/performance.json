@@ -1,82 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6081150.830023199,
-  "total_trades": 705,
-  "wins": 348,
-  "losses": 357,
-  "total_profit": 5199706.28655765,
-  "total_loss": 7188084.2425770685,
-  "max_drawdown": 4280603.59030102,
+  "current_capital": 6075185.208023199,
+  "total_trades": 710,
+  "wins": 349,
+  "losses": 361,
+  "total_profit": 5201241.7315576505,
+  "total_loss": 7221891.022577069,
+  "max_drawdown": 4282415.069976802,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-07-16",
-      "eval_date": "2026-07-17",
-      "trades": [
-        {
-          "code": "7012",
-          "name": "川崎重工業",
-          "entry": 2766.5,
-          "target": 3371.9,
-          "stop": 2524.7,
-          "exit": 2737.5,
-          "result": "loss",
-          "shares": 575,
-          "pnl": -18266,
-          "pnl_pct": -1.15
-        },
-        {
-          "code": "5713",
-          "name": "住友金属鉱山",
-          "entry": 7238.0,
-          "target": 9231.8,
-          "stop": 6815.8,
-          "exit": 7276.0,
-          "result": "win",
-          "shares": 219,
-          "pnl": 6737,
-          "pnl_pct": 0.43
-        },
-        {
-          "code": "8306",
-          "name": "三菱UFJフィナンシャル",
-          "entry": 3678.0,
-          "target": 3658.6,
-          "stop": 3152.1,
-          "exit": 3658.6,
-          "result": "win",
-          "shares": 432,
-          "pnl": -9970,
-          "pnl_pct": -0.63
-        },
-        {
-          "code": "8411",
-          "name": "みずほフィナンシャル",
-          "entry": 8541.0,
-          "target": 8666.5,
-          "stop": 7526.8,
-          "exit": 8440.0,
-          "result": "loss",
-          "shares": 186,
-          "pnl": -20375,
-          "pnl_pct": -1.28
-        },
-        {
-          "code": "8604",
-          "name": "野村ホールディングス",
-          "entry": 1601.5,
-          "target": 1602.2,
-          "stop": 1377.0,
-          "exit": 1602.2,
-          "result": "win",
-          "shares": 993,
-          "pnl": -895,
-          "pnl_pct": -0.06
-        }
-      ],
-      "day_pnl": -42768,
-      "capital_after": 7914128
-    },
     {
       "date": "2026-07-17",
       "eval_date": "2026-07-20",
@@ -4847,6 +4779,74 @@
       ],
       "day_pnl": 4154,
       "capital_after": 6081151
+    },
+    {
+      "date": "2026-11-24",
+      "eval_date": "2026-11-25",
+      "trades": [
+        {
+          "code": "7735",
+          "name": "SCREENホールディングス",
+          "entry": 7060.0,
+          "target": 12286.2,
+          "stop": 6846.8,
+          "exit": 7019.0,
+          "result": "loss",
+          "shares": 172,
+          "pnl": -8266,
+          "pnl_pct": -0.68
+        },
+        {
+          "code": "6723",
+          "name": "ルネサスエレクトロニクス",
+          "entry": 2375.0,
+          "target": 3126.7,
+          "stop": 2294.8,
+          "exit": 2337.0,
+          "result": "loss",
+          "shares": 512,
+          "pnl": -20672,
+          "pnl_pct": -1.7
+        },
+        {
+          "code": "6301",
+          "name": "コマツ",
+          "entry": 5644.0,
+          "target": 6915.5,
+          "stop": 5519.9,
+          "exit": 5627.0,
+          "result": "loss",
+          "shares": 215,
+          "pnl": -4868,
+          "pnl_pct": -0.4
+        },
+        {
+          "code": "8591",
+          "name": "オリックス",
+          "entry": 5295.0,
+          "target": 5944.7,
+          "stop": 5111.0,
+          "exit": 5307.0,
+          "result": "win",
+          "shares": 229,
+          "pnl": 1535,
+          "pnl_pct": 0.13
+        },
+        {
+          "code": "9984",
+          "name": "ソフトバンクグループ",
+          "entry": 2849.5,
+          "target": 4829.2,
+          "stop": 2914.1,
+          "exit": 2914.1,
+          "result": "loss",
+          "shares": 426,
+          "pnl": 26306,
+          "pnl_pct": 2.17
+        }
+      ],
+      "day_pnl": -5966,
+      "capital_after": 6075185
     }
   ]
 }
