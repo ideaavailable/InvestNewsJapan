@@ -1,21 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6075185.208023199,
-  "total_trades": 710,
-  "wins": 349,
-  "losses": 361,
-  "total_profit": 5201241.7315576505,
-  "total_loss": 7221891.022577069,
-  "max_drawdown": 4282415.069976802,
+  "current_capital": 6014170.568023199,
+  "total_trades": 715,
+  "wins": 350,
+  "losses": 365,
+  "total_profit": 5205201.7315576505,
+  "total_loss": 7286865.662577068,
+  "max_drawdown": 4343429.709976802,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-07-17",
-      "eval_date": "2026-07-20",
-      "trades": [],
-      "day_pnl": 0,
-      "capital_after": 7914128
-    },
     {
       "date": "2026-07-20",
       "eval_date": "2026-07-21",
@@ -4847,6 +4840,74 @@
       ],
       "day_pnl": -5966,
       "capital_after": 6075185
+    },
+    {
+      "date": "2026-11-25",
+      "eval_date": "2026-11-26",
+      "trades": [
+        {
+          "code": "8591",
+          "name": "オリックス",
+          "entry": 5400.0,
+          "target": 5944.0,
+          "stop": 5112.2,
+          "exit": 5423.0,
+          "result": "win",
+          "shares": 225,
+          "pnl": 3960,
+          "pnl_pct": 0.33
+        },
+        {
+          "code": "6594",
+          "name": "ニデック",
+          "entry": 1608.0,
+          "target": 1889.5,
+          "stop": 1529.8,
+          "exit": 1557.0,
+          "result": "loss",
+          "shares": 755,
+          "pnl": -39719,
+          "pnl_pct": -3.27
+        },
+        {
+          "code": "6971",
+          "name": "京セラ",
+          "entry": 2780.0,
+          "target": 3601.9,
+          "stop": 2644.9,
+          "exit": 2772.0,
+          "result": "loss",
+          "shares": 437,
+          "pnl": -4711,
+          "pnl_pct": -0.39
+        },
+        {
+          "code": "6301",
+          "name": "コマツ",
+          "entry": 5740.0,
+          "target": 6914.2,
+          "stop": 5496.7,
+          "exit": 5736.0,
+          "result": "loss",
+          "shares": 211,
+          "pnl": -2055,
+          "pnl_pct": -0.17
+        },
+        {
+          "code": "2914",
+          "name": "日本たばこ産業",
+          "entry": 5600.0,
+          "target": 7695.2,
+          "stop": 5087.8,
+          "exit": 5520.0,
+          "result": "loss",
+          "shares": 216,
+          "pnl": -18490,
+          "pnl_pct": -1.53
+        }
+      ],
+      "day_pnl": -61015,
+      "capital_after": 6014171
     }
   ]
 }
