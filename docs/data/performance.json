@@ -1,21 +1,14 @@
 {
   "initial_capital": 10000000,
-  "current_capital": 6014170.568023199,
-  "total_trades": 715,
-  "wins": 350,
+  "current_capital": 6121636.685951666,
+  "total_trades": 720,
+  "wins": 355,
   "losses": 365,
-  "total_profit": 5205201.7315576505,
+  "total_profit": 5312667.849486118,
   "total_loss": 7286865.662577068,
   "max_drawdown": 4343429.709976802,
   "peak_capital": 10357600.278,
   "daily_results": [
-    {
-      "date": "2026-07-20",
-      "eval_date": "2026-07-21",
-      "trades": [],
-      "day_pnl": 0,
-      "capital_after": 7914128
-    },
     {
       "date": "2026-07-21",
       "eval_date": "2026-07-22",
@@ -4908,6 +4901,74 @@
       ],
       "day_pnl": -61015,
       "capital_after": 6014171
+    },
+    {
+      "date": "2026-11-26",
+      "eval_date": "2026-11-27",
+      "trades": [
+        {
+          "code": "8591",
+          "name": "オリックス",
+          "entry": 5470.0,
+          "target": 5943.3,
+          "stop": 5113.4,
+          "exit": 5527.0,
+          "result": "win",
+          "shares": 219,
+          "pnl": 11285,
+          "pnl_pct": 0.94
+        },
+        {
+          "code": "9501",
+          "name": "東京電力HD",
+          "entry": 430.0,
+          "target": 500.5,
+          "stop": 397.9,
+          "exit": 436.4,
+          "result": "win",
+          "shares": 2797,
+          "pnl": 16698,
+          "pnl_pct": 1.39
+        },
+        {
+          "code": "6301",
+          "name": "コマツ",
+          "entry": 5681.0,
+          "target": 6755.9,
+          "stop": 5501.0,
+          "exit": 5850.0,
+          "result": "win",
+          "shares": 211,
+          "pnl": 34460,
+          "pnl_pct": 2.87
+        },
+        {
+          "code": "6702",
+          "name": "富士通",
+          "entry": 3553.0,
+          "target": 4296.0,
+          "stop": 3212.8,
+          "exit": 3591.0,
+          "result": "win",
+          "shares": 338,
+          "pnl": 11643,
+          "pnl_pct": 0.97
+        },
+        {
+          "code": "6981",
+          "name": "村田製作所",
+          "entry": 4860.0,
+          "target": 6929.2,
+          "stop": 4237.2,
+          "exit": 5000.0,
+          "result": "win",
+          "shares": 247,
+          "pnl": 33380,
+          "pnl_pct": 2.78
+        }
+      ],
+      "day_pnl": 107466,
+      "capital_after": 6121637
     }
   ]
 }
