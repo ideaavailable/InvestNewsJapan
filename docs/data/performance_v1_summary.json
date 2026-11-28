@@ -1,0 +1,16 @@
+{
+  "strategy": "v1 (retired 2026-11-28)",
+  "note": "Final v1 simulation results. Full daily history remains in the git history of docs/data/performance.json.",
+  "initial_capital": 10000000,
+  "final_capital": 6121637,
+  "return_pct": -38.78,
+  "total_trades": 720,
+  "wins": 355,
+  "losses": 365,
+  "win_rate_pct": 49.3,
+  "total_profit": 5312668,
+  "total_loss": 7286866,
+  "profit_factor": 0.73,
+  "max_drawdown": 4343430,
+  "peak_capital": 10357600
+}
