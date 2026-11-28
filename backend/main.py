@@ -3,6 +3,8 @@ Orchestrates data fetching, analysis, screening, and report generation.
 Run daily at 06:00 JST to generate the morning report.
 
 Enhanced with multi-timeframe analysis, sector rotation, and risk management.
+Strategy v2 (2026-11-28): trend-following swing selection via
+backend.strategy_v2; the v1 daytrade/swing scoring selectors are retired.
 """
 import sys
 import os
@@ -26,7 +28,7 @@ from backend.analyzer.sector_rotation import analyze_sector_rotation
 from backend.analyzer.risk_manager import (
     calculate_position_sizing, check_portfolio_correlation, build_risk_dashboard
 )
-from backend.screener.recommender import select_daytrade_picks, select_swing_picks
+from backend.strategy_v2 import get_market_regime, select_v2_picks
 from backend.reporter.json_generator import generate_report, save_report
 from backend.reporter.templates import build_sector_analysis
 
@@ -105,31 +107,39 @@ def main(force=False):
     sector_scores = rotation.get("sector_scores", {})
     logger.info(f"  Economic phase: {rotation.get('economic_phase', {}).get('phase', 'unknown')}")
 
-    # Step 8: Select picks & generate report
-    logger.info("[8/9] Selecting picks with expanded scoring...")
-    daytrade_picks = select_daytrade_picks(
-        tech_results, fund_results, sentiment_score,
-        weekly_results=weekly_results, sector_scores=sector_scores, vix_regime=vix_regime
-    )
-    swing_picks = select_swing_picks(
-        tech_results, fund_results, sentiment_score,
-        weekly_results=weekly_results, sector_scores=sector_scores, vix_regime=vix_regime
-    )
-    logger.info(f"  Daytrade picks: {len(daytrade_picks)}, Swing picks: {len(swing_picks)}")
-
-    # Risk management (NEW)
+    # Step 8: Select picks & generate report (v2 trend-swing strategy)
+    logger.info("[8/9] Selecting picks (v2 strategy)...")
     perf_data = None
     try:
         from backend.performance_tracker import load_performance
         perf_data = load_performance()
     except Exception:
         pass
+    current_capital = perf_data.get("current_capital", 10_000_000) if perf_data else 10_000_000
+    open_positions = perf_data.get("open_positions", []) if perf_data else []
 
-    position_sizing = calculate_position_sizing(
-        perf_data, vix_value, daytrade_picks,
-        perf_data.get("current_capital", 10_000_000) if perf_data else 10_000_000
+    regime = get_market_regime(vix_value)
+    logger.info(
+        f"  Market regime: {'ON' if regime.get('regime_on') else 'OFF'} "
+        f"({regime.get('reason', '')})"
     )
-    correlation_check = check_portfolio_correlation(daytrade_picks, tech_results)
+
+    # v2 is swing-only; the daytrade slot stays empty by design
+    daytrade_picks = []
+    if regime.get("regime_on"):
+        swing_picks = select_v2_picks(
+            tech_results, fund_results, open_positions, current_capital,
+            vix_value=vix_value
+        )
+    else:
+        swing_picks = []
+    logger.info(f"  V2 swing picks: {len(swing_picks)} (open positions: {len(open_positions)})")
+
+    # Risk management dashboard
+    position_sizing = calculate_position_sizing(
+        perf_data, vix_value, swing_picks, current_capital
+    )
+    correlation_check = check_portfolio_correlation(swing_picks, tech_results)
     risk_dashboard = build_risk_dashboard(position_sizing, correlation_check, vix_value, perf_data)
 
     # Build and save report
@@ -147,8 +157,8 @@ def main(force=False):
     filepath = save_report(report, today)
     logger.info(f"=== Report generated: {filepath} ===")
 
-    # Step 9: Evaluate previous day's performance
-    logger.info("[9/9] Evaluating previous day's performance...")
+    # Step 9: Advance the v2 performance simulation
+    logger.info("[9/9] Advancing v2 performance simulation...")
     try:
         from backend.performance_tracker import evaluate_previous_day, get_summary_stats
         perf = evaluate_previous_day(today)
@@ -157,7 +167,8 @@ def main(force=False):
             logger.info(
                 f"  Performance: ¥{stats['current_capital']:,} "
                 f"(P&L: ¥{stats['cumulative_pnl']:+,}, "
-                f"Win: {stats['win_rate']}%, PF: {stats['profit_factor']})"
+                f"Win: {stats['win_rate']}%, PF: {stats['profit_factor']}, "
+                f"Open: {stats['open_positions']})"
             )
     except Exception as e:
         logger.warning(f"  Performance evaluation skipped: {e}")
