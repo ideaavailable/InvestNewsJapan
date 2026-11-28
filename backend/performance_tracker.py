@@ -196,12 +196,14 @@ def evaluate_previous_day(report_date=None):
     for date in new_dates:
         bucket = {"date": date, "eval_date": date, "trades": [], "day_pnl": 0}
 
-        # 2) Entries at today's open for any queued report whose entry
-        #    session is today
+        # 2) Entries at the open of the first session on/after the report
+        #    date. Reports are generated before the open from the previous
+        #    close, so that session's open is the backtested fill point;
+        #    its bar becomes available at the following morning's run.
         if perf.get("pending_entries"):
             remaining = []
             for pend in perf["pending_entries"]:
-                after = [d for d in all_dates if d > pend["report_date"]]
+                after = [d for d in all_dates if d >= pend["report_date"]]
                 entry_date = after[0] if after else None
                 if entry_date == date:
                     _enter_pending(perf, pend.get("picks", []), bars, date)
